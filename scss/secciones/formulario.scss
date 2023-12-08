@@ -1,0 +1,293 @@
+.section-form{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    display: grid;
+    place-items: center;
+    background: #1766a3;
+    background: linear-gradient(to top right, #3E92CC, #0c426c);
+
+    @include tablet {
+        height: 800px;
+        background: #1766a3;
+        background: linear-gradient(to top right, #1867a3, #0c426c);
+    }
+
+    @include tablet-medium {
+        width: 660px;
+        height: 800px;
+        background: #1766a3;
+        background: linear-gradient(to top right, #1867a3, #0c426c);
+    }
+
+    @include mobile-L-14promax {
+        width: 660px;
+        margin-left: -8px;
+        background: #1766a3;
+        background: linear-gradient(to top right, #1867a3, #0c426c);
+    }
+
+    @include mobile-a54 {
+        width: 390px;
+        height: 800px;
+        margin-left: 0px;
+        margin-top: -60%;
+        background: #0f4c81;
+        // background: #1766a3;
+        // background: linear-gradient(to top right, #1867a3, #0c426c);
+    }
+
+    
+
+    .contactForm{
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        gap: 20px;
+        padding: 40px;
+        width: 90%;
+        height: 90%;
+        background: #9cdafa;
+        box-shadow: 1px 9px 20px -5px rgba(0, 0, 0, 0.5);
+        border-radius: 30px;
+
+        @include desktop {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+
+        @include desktop-b {
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        }
+
+        @include tablet {
+            width: 650px;
+            height: 114vh;
+            margin: -2px 0px 0px 8px
+        }
+
+        @include tablet-medium {
+            width: 610px;
+            height: 114vh;
+            margin: -2px 0px 0px 8px
+        }
+
+        @include mobile-L-14promax {
+            width: 630px;
+            margin-left: 2px;
+            height: 120vh
+        }
+
+        @include mobile-a54 {
+            width: 355px;
+            margin-left: 0px;
+            margin-top: -5px;
+            height: 765px;
+        }
+
+        .form{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 85%;
+            margin-left: 30px;
+
+            @include mobile-a54 {
+                margin-left: 8px;
+                width: 75%;
+            }
+
+            .texto{
+                h2{
+                    font-family: 'Poppins';
+                    color: #1766a3;
+                    font-size: 2em;
+                    margin-bottom: 10px;
+
+                    @include mobile-a54 {
+                        margin-left: -55px;
+                        width: 320px;
+                        font-size: 1.8em;
+                    }
+                }
+                p{
+                    font-family: 'Poppins';    
+                    color: #0b426c;
+                    font-size: 1.5em;
+                    margin-bottom: 20px;
+
+                    @include mobile-a54 {
+                        margin-left: -44px;
+                        font-size: 22px;
+                        width: 320px;
+                    }
+                }
+            } 
+        }
+        form{
+            width: 100%;
+            
+            @include mobile-a54 {
+                width: 90%;
+                margin-right: 36px;
+            }
+            input[type="submit"] {
+                background: #1766a3;
+                display: inline-block;
+                text-align: center;
+                width: 250px;
+                padding: 10px;
+                border-radius: 15px;
+                color: #fff;
+                letter-spacing: 1px;
+                border: none;
+                cursor: pointer;
+                box-shadow: 1px 9px 20px -5px rgba(0, 0, 0, 0.59);
+                transition: 0.3s;
+            }
+            input[type="submit"]:hover{
+                background: #0b426c;
+            }
+            //Cajas de texto
+            .inputBox{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 15px;
+
+                @include mobile-a54 {
+                    margin-right: 200px;
+                }
+                //Etiquetas e inputs
+                label{
+                    color: #1766a3;
+                    font-weight: 700;
+                    @include mobile-a54 {
+                        margin-left: -30px;
+                    }
+                }
+                input[type="text"],
+                input[type="email"],
+                textarea{
+                    border: none;
+                    background: #cbebfb;
+                    padding: 10px;
+                    border-radius: 10px;
+                    color: #1766a3;
+                    resize: none;
+                }
+                input[type="text"],
+                input[type="email"]{
+                    @include mobile-a54 {
+                        width: 318px;
+                        margin-left: -30px;
+                    }
+                }
+                textarea{
+                    @include mobile-a54 {
+                        width: 318px;
+                        margin-left: -30px;
+                    }
+                }
+                input[type="text"]:focus,
+                input[type="email"]:focus,
+                textarea:focus {
+                    outline: 2px solid #1766a3;
+                }
+            }
+        }
+        //Contendero de informacion
+        .info{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            @include tablet {
+                height: 300px;
+                padding: 30px;
+            }
+
+            @include mobile-a54 {
+                margin-right: 117px;
+                margin-top: -88px;
+                font-size: .75em;
+            }
+
+            //Imagen de box 
+            .imgBox {
+                position: relative;
+                width: 420px;
+                height: 420px;
+                margin-bottom: 5%;
+
+                @include desktop-b {
+                    display: none;
+                }
+
+                @include tablet {
+                    display: none;
+                }
+
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            //Información de contacto 
+            .textBox {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                .infoContact {
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                    margin-bottom: 10px;
+                    p {
+                        color: #0b426c;
+                    }
+                    ion-icon{
+                        font-size: 2em;
+                        margin-right: 10px;
+                        color: #0b426c;
+                    }
+                }
+            }
+            //Redes Sociales
+            .rrss {
+                @include tablet {
+                    margin-top: -47%;
+                }
+
+                @include mobile-L-14promax {
+                    display: flex;
+                }
+
+                @include mobile-a54 {
+                    display: flex;
+                    margin-top: -40%;
+                }
+
+                a{
+                    padding: 20px;
+                    font-size: 2em;
+                    color: #1766a3;
+                    transition: 0.3s;
+                }
+                a:hover {
+                    color: #0b426c;
+                }
+            }
+            
+        }
+    }
+}
+#dreyja-email{
+    opacity: 0;
+}
