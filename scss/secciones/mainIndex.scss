@@ -119,8 +119,8 @@ main {
                     margin-top: -85px;
                     position: absolute;
                     z-index: 333;
-                    margin-top: -23%;
-                    margin-left: 3%;
+                    margin-top: -25%;
+                    margin-left: 25%;
                     
                     @include tablet {
                         font-size: 1.8rem;
@@ -133,12 +133,12 @@ main {
                     text-shadow: 4px 4px map-get($color--azul, dreyja );
                     z-index: 333;
                     position: absolute;
-                    margin-top: -20%;
-                    margin-left: 3%;
+                    margin-top: -21%;
+                    margin-left: 18%;
                     @include tablet {
                         font-size: 1.3rem;
                         margin-top: -85%;
-                        margin-left: 24px;
+                        margin-left: 34px;
                         width: 75%;
                     }
                 }
@@ -247,7 +247,7 @@ main {
                         font-weight: 600;
                         margin-left: -74%;
                         font-size: 35px;
-                        margin-top: -117%;
+                        margin-top: -100%;
                         background: rgb(124, 160, 180);
                         background: linear-gradient(90deg, rgb(113, 139, 153) 40%, rgba(211,8,9,1) 60%);
                         text-transform: uppercase;
@@ -298,6 +298,9 @@ main {
             justify-content: space-between;
             flex-wrap: wrap;
             margin: 60px;
+            @include tablet {
+                margin-top: 35%;
+            }
             h2{
                 display: flex;
                 position: absolute;
@@ -334,7 +337,7 @@ main {
 
                 @include tablet {
                     font-size: 1.6rem;
-                    margin-left: 0%;
+                    margin-left: 18%;
                 }
             }
             .info-links{
@@ -352,6 +355,9 @@ main {
                 @include tablet {
                     margin-left: 0%;
                     margin-top: 10px;
+                    margin-bottom: -7%;
+                    display: flex;
+                    flex-direction: row;
                 }
                     a{
                         font-family: $typo-apple;

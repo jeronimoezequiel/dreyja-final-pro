@@ -150,6 +150,9 @@ header{
                     .nav__link{
                         position: relative;
                         transition: all 0.1ms;
+                        @include tablet {
+                            color: #fff
+                        }
                     }
                     .active{
                         color: map-get($color--bordo , dreyja );

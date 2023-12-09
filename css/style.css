@@ -15,6 +15,25 @@ a {
   text-decoration: none; }
 
 /* ------------ contenido gral ------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000; }
+  #preloader #typing-text {
+    font-size: 1.7rem;
+    color: #fff;
+    font-family: "Poppins", sans-serif; }
+
+#content {
+  display: none; }
+
 :root {
   --open-color: green;
   --closed-color: red; }
@@ -182,6 +201,9 @@ header nav {
         header nav .menu ul .nav__item .nav__link {
           position: relative;
           transition: all 0.1ms; }
+          @media only screen and (max-width: 768px) {
+            header nav .menu ul .nav__item .nav__link {
+              color: #fff; } }
         header nav .menu ul .nav__item .active {
           color: #d30809;
           font-weight: 400;
@@ -457,8 +479,8 @@ main #home {
         margin-top: -85px;
         position: absolute;
         z-index: 333;
-        margin-top: -23%;
-        margin-left: 3%; }
+        margin-top: -25%;
+        margin-left: 25%; }
         @media only screen and (max-width: 768px) {
           main #home .container .container-info h1 {
             font-size: 1.8rem;
@@ -469,13 +491,13 @@ main #home {
         text-shadow: 4px 4px #273238;
         z-index: 333;
         position: absolute;
-        margin-top: -20%;
-        margin-left: 3%; }
+        margin-top: -21%;
+        margin-left: 18%; }
         @media only screen and (max-width: 768px) {
           main #home .container .container-info .subtitle-ppal {
             font-size: 1.3rem;
             margin-top: -85%;
-            margin-left: 24px;
+            margin-left: 34px;
             width: 75%; } }
 
 main .home_1 {
@@ -536,7 +558,7 @@ main .home_1 {
           font-weight: 600;
           margin-left: -74%;
           font-size: 35px;
-          margin-top: -117%;
+          margin-top: -100%;
           background: #7ca0b4;
           background: linear-gradient(90deg, #718b99 40%, #d30809 60%);
           text-transform: uppercase;
@@ -575,6 +597,9 @@ main #cards {
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 60px; }
+    @media only screen and (max-width: 768px) {
+      main #cards .home-container {
+        margin-top: 35%; } }
     main #cards .home-container h2 {
       display: flex;
       position: absolute;
@@ -607,7 +632,7 @@ main #cards {
       @media only screen and (max-width: 768px) {
         main #cards .home-container h2 {
           font-size: 1.6rem;
-          margin-left: 0%; } }
+          margin-left: 18%; } }
     main #cards .home-container .info-links {
       display: flex;
       margin-top: -1%;
@@ -622,7 +647,10 @@ main #cards {
       @media only screen and (max-width: 768px) {
         main #cards .home-container .info-links {
           margin-left: 0%;
-          margin-top: 10px; } }
+          margin-top: 10px;
+          margin-bottom: -7%;
+          display: flex;
+          flex-direction: row; } }
       main #cards .home-container .info-links a {
         font-family: "Source Sans 3", sans-serif;
         font-size: 20px; }
@@ -646,8 +674,7 @@ main #cards {
       margin: 30px 0;
       border-radius: 6px;
       background: #f0f0f0;
-      box-shadow: 5px 5px 25px #cacaca,
- -5px -5px 25px #ffffff; }
+      box-shadow: 5px 5px 25px #cacaca, -5px -5px 25px #ffffff; }
       @media only screen and (max-width: 998px) {
         main #cards .home-container .home-card {
           width: 400px; } }
