@@ -372,7 +372,76 @@ main #home {
   main #home .container {
     position: relative;
     height: 560px;
-    max-width: 1350px; }
+    max-width: 1350px;
+    margin-top: -7px;
+    padding: 0px; }
+    main #home .container .home-slider {
+      background-color: red;
+      width: 100%;
+      height: 500px;
+      margin: auto;
+      position: relative;
+      overflow: hidden; }
+      @media only screen and (max-width: 768px) {
+        main #home .container .home-slider {
+          display: flex;
+          margin-top: -24%;
+          height: 530px; } }
+      main #home .container .home-slider .home-list {
+        position: absolute;
+        width: max-content;
+        height: 100%;
+        left: 0;
+        top: 0;
+        display: flex;
+        transition: 1s; }
+        main #home .container .home-slider .home-list img {
+          width: 1350px;
+          max-width: 100vw;
+          height: 100%;
+          object-fit: cover;
+          z-index: 990;
+          filter: brightness(0.3); }
+      main #home .container .home-slider .home-buttons {
+        position: absolute;
+        top: 46.5%;
+        left: 1%;
+        width: 98%;
+        display: flex;
+        justify-content: space-between; }
+        main #home .container .home-slider .home-buttons button {
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          background-color: #fff5;
+          color: #000000;
+          border: none;
+          font-family: monospace;
+          font-weight: bold; }
+          @media only screen and (max-width: 768px) {
+            main #home .container .home-slider .home-buttons button {
+              display: none; } }
+        main #home .container .home-slider .home-buttons .home-dots {
+          position: absolute;
+          bottom: 10px;
+          left: 0;
+          color: #fff;
+          width: 100%;
+          margin: -1px;
+          padding: 0;
+          display: flex;
+          justify-content: center;
+          cursor: pointer; }
+          main #home .container .home-slider .home-buttons .home-dots li {
+            list-style: none;
+            width: 10px;
+            height: 10px;
+            background-color: #fff;
+            margin: 5px;
+            border-radius: 20px;
+            transition: 0.5s; }
+          main #home .container .home-slider .home-buttons .home-dots li.active {
+            width: 30px; }
     main #home .container .container-info {
       margin-top: 50px;
       margin-left: 4%; }
@@ -388,58 +457,34 @@ main #home {
         margin-top: -85px;
         position: absolute;
         z-index: 333;
-        margin-top: 10%;
+        margin-top: -23%;
         margin-left: 3%; }
         @media only screen and (max-width: 768px) {
           main #home .container .container-info h1 {
             font-size: 1.8rem;
-            margin-left: 0%; } }
+            margin-left: 6%;
+            margin-top: -97%; } }
       main #home .container .container-info .subtitle-ppal {
         color: #fff;
         text-shadow: 4px 4px #273238;
         z-index: 333;
         position: absolute;
-        margin-top: 14%;
+        margin-top: -20%;
         margin-left: 3%; }
         @media only screen and (max-width: 768px) {
           main #home .container .container-info .subtitle-ppal {
             font-size: 1.3rem;
-            margin-top: 25%;
+            margin-top: -85%;
+            margin-left: 24px;
             width: 75%; } }
-      main #home .container .container-info video {
-        position: absolute;
-        top: -28px;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        background-attachment: fixed;
-        z-index: 111; }
-        @media only screen and (max-width: 768px) {
-          main #home .container .container-info video {
-            width: 100%;
-            margin-top: -21%;
-            height: 490px; } }
-      main #home .container .container-info .capa {
-        position: absolute;
-        top: -28px;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #1c1c1d;
-        opacity: 0.5;
-        mix-blend-mode: overlay; }
-        @media only screen and (max-width: 768px) {
-          main #home .container .container-info .capa {
-            width: 100%;
-            margin-top: -21%; } }
 
 main .home_1 {
   font-family: "Poppins", sans-serif;
   background: white;
   background: radial-gradient(circle, white 0%, #f6f6f6 47%, white 100%);
   width: 100%;
-  margin-top: -8%;
+  height: 235px;
+  margin-top: -12%;
   margin-bottom: 10%; }
   main .home_1 .home_txt-fx {
     display: flex;
@@ -450,7 +495,34 @@ main .home_1 {
     max-width: 1000px;
     margin-left: 10.5em;
     height: 280px; }
-    main .home_1 .home_txt-fx .futuro {
+    @media only screen and (max-width: 768px) {
+      main .home_1 .home_txt-fx .columns {
+        margin-top: -110px; } }
+    main .home_1 .home_txt-fx .columns .col + .col {
+      margin-left: 1.5em; }
+    main .home_1 .home_txt-fx .columns .fade-in {
+      opacity: 0;
+      transition: opacity 300ms ease-in; }
+    main .home_1 .home_txt-fx .columns .fade-in.appear {
+      opacity: 1; }
+    main .home_1 .home_txt-fx .columns .more-stuff-grid {
+      background: #fff;
+      padding: 4em 0;
+      display: grid;
+      grid-gap: 2em;
+      align-items: center;
+      grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 400px)) minmax(1em, 1fr); }
+    main .home_1 .home_txt-fx .columns .from-left {
+      grid-column: 2 / 3;
+      transform: translateX(-50%); }
+    main .home_1 .home_txt-fx .columns .from-right {
+      grid-column: 3 / 4;
+      transform: translateX(50%); }
+    main .home_1 .home_txt-fx .columns .from-left, main .home_1 .home_txt-fx .columns .from-right {
+      transition: transform 400ms ease-in; }
+    main .home_1 .home_txt-fx .columns .from-left.appear, main .home_1 .home_txt-fx .columns .from-right.appear {
+      transform: translateX(0); }
+    main .home_1 .home_txt-fx .columns .futuro {
       font-family: "Poppins", sans-serif;
       font-size: 2.8em;
       background: #7ca0b4;
@@ -459,7 +531,7 @@ main .home_1 {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
       @media only screen and (max-width: 768px) {
-        main .home_1 .home_txt-fx .futuro {
+        main .home_1 .home_txt-fx .columns .futuro {
           font-family: "Poppins", sans-serif;
           font-weight: 600;
           margin-left: -74%;
@@ -470,9 +542,6 @@ main .home_1 {
           text-transform: uppercase;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent; } }
-    @media only screen and (max-width: 768px) {
-      main .home_1 .home_txt-fx .columns {
-        margin-top: -110px; } }
     main .home_1 .home_txt-fx .columns h3 {
       font-family: "Poppins", sans-serif;
       font-weight: 500; }
@@ -486,30 +555,6 @@ main .home_1 {
       @media only screen and (max-width: 768px) {
         main .home_1 .home_txt-fx .columns p {
           display: none; } }
-    main .home_1 .home_txt-fx .columns .col + .col {
-      margin-left: 1.5em; }
-  main .home_1 .fade-in {
-    opacity: 0;
-    transition: opacity 300ms ease-in; }
-  main .home_1 .fade-in.appear {
-    opacity: 1; }
-  main .home_1 .more-stuff-grid {
-    background: #fff;
-    padding: 4em 0;
-    display: grid;
-    grid-gap: 2em;
-    align-items: center;
-    grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 400px)) minmax(1em, 1fr); }
-  main .home_1 .from-left {
-    grid-column: 2 / 3;
-    transform: translateX(-50%); }
-  main .home_1 .from-right {
-    grid-column: 3 / 4;
-    transform: translateX(50%); }
-  main .home_1 .from-left, main .home_1 .from-right {
-    transition: transform 400ms ease-in; }
-  main .home_1 .from-left.appear, main .home_1 .from-right.appear {
-    transform: translateX(0); }
 
 main #cards {
   display: flex;
@@ -569,6 +614,11 @@ main #cards {
       margin-left: 35.5%;
       gap: 35px;
       padding: 5px; }
+      @media only screen and (max-width: 998px) {
+        main #cards .home-container .info-links {
+          width: 100%;
+          flex-direction: column;
+          align-items: center; } }
       @media only screen and (max-width: 768px) {
         main #cards .home-container .info-links {
           margin-left: 0%;
@@ -587,11 +637,6 @@ main #cards {
           main #cards .home-container .info-links i {
             font-size: 13px;
             margin-top: 7px; } }
-    @media only screen and (max-width: 998px) {
-      main #cards .home-container {
-        width: 100%;
-        flex-direction: column;
-        align-items: center; } }
     main #cards .home-container .home-card {
       position: relative;
       height: 250px;
@@ -601,7 +646,8 @@ main #cards {
       margin: 30px 0;
       border-radius: 6px;
       background: #f0f0f0;
-      box-shadow: 5px 5px 25px #cacaca, -5px -5px 25px #ffffff; }
+      box-shadow: 5px 5px 25px #cacaca,
+ -5px -5px 25px #ffffff; }
       @media only screen and (max-width: 998px) {
         main #cards .home-container .home-card {
           width: 400px; } }

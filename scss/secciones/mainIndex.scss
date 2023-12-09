@@ -11,6 +11,99 @@ main {
             position: relative;
             height: 560px;
             max-width: 1350px;
+            margin-top: -7px;
+            padding: 0px;
+            .home-slider {
+                background-color: red;
+                width: 100%;
+                height: 500px;
+                margin: auto;
+                position: relative;
+                overflow: hidden;
+
+                @include tablet {
+                    display: flex;
+                    margin-top: -24%;
+                    height: 530px;
+                }
+                .home-list {
+                    position: absolute;
+                    width: max-content;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    display: flex;
+                    transition: 1s;
+                    img {
+                        width: 1350px;
+                        max-width: 100vw;
+                        height: 100%;
+                        object-fit: cover;
+                        z-index: 990; 
+                        filter: brightness(0.3);
+                    }
+                }
+                .home-buttons {
+                    position: absolute;
+                    top: 46.5%;
+                    left: 1%;
+                    width: 98%;
+                    display: flex;
+                    justify-content: space-between;
+                    button {
+                        width: 35px;
+                        height: 35px;
+                        border-radius: 50%;
+                        background-color: #fff5;
+                        color: #000000;
+                        border: none;
+                        font-family: monospace;
+                        font-weight: bold;
+                        @include tablet {
+                            display: none;
+                    }
+                    
+                }
+                .home-dots {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 0;
+                    color: #fff;
+                    width: 100%;
+                    margin: -1px;
+                    padding: 0;
+                    display: flex;
+                    justify-content: center;
+                    cursor: pointer;
+                    li {
+                        list-style: none;
+                        width: 10px;
+                        height: 10px;
+                        background-color: #fff;
+                        margin: 5px;
+                        border-radius: 20px;
+                        transition: 0.5s;
+                    }
+                    li.active {
+                        width: 30px;
+                    }
+                }
+                }
+            // .capa {
+            //     position: absolute;
+            //     top: -28px;
+            //     left: 0;
+            //     width: 100%;
+            //     height: 100%;
+            //     background: #1c1c1d5b;
+            //     opacity: 0.5;
+            //     mix-blend-mode: overlay;
+            //     @include tablet {
+            //         width: 100%;
+            //         margin-top: -21%;
+            //     }
+            // }   
+            }
             .container-info{
                 margin-top: 50px;
                 margin-left: 4%;
@@ -26,12 +119,13 @@ main {
                     margin-top: -85px;
                     position: absolute;
                     z-index: 333;
-                    margin-top: 10%;
+                    margin-top: -23%;
                     margin-left: 3%;
                     
                     @include tablet {
                         font-size: 1.8rem;
-                        margin-left: 0%;
+                        margin-left: 6%;
+                        margin-top: -97%;
                     }
                     }
                 .subtitle-ppal{
@@ -39,45 +133,47 @@ main {
                     text-shadow: 4px 4px map-get($color--azul, dreyja );
                     z-index: 333;
                     position: absolute;
-                    margin-top: 14%;
+                    margin-top: -20%;
                     margin-left: 3%;
                     @include tablet {
                         font-size: 1.3rem;
-                        margin-top: 25%;
+                        margin-top: -85%;
+                        margin-left: 24px;
                         width: 75%;
                     }
                 }
-                video {
-                    position: absolute;
-                    top: -28px;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    background-attachment: fixed;
-                    z-index: 111;
-                    @include tablet {
-                        width: 100%;
-                        margin-top: -21%;
-                        height: 490px;
-                    }
+                // video {
+                //     position: absolute;
+                //     top: -28px;
+                //     left: 0;
+                //     width: 100%;
+                //     height: 100%;
+                //     object-fit: cover;
+                //     background-attachment: fixed;
+                //     z-index: 111;
+                //     @include tablet {
+                //         width: 100%;
+                //         margin-top: -21%;
+                //         height: 490px;
+                //     }
+                // }
+                // .capa {
+                //     position: absolute;
+                //     top: -28px;
+                //     left: 0;
+                //     width: 100%;
+                //     height: 100%;
+                //     background: #1c1c1d;
+                //     opacity: 0.5;
+                //     mix-blend-mode: overlay;
+                //     @include tablet {
+                //         width: 100%;
+                //         margin-top: -21%;
+                //     }
+                // }
+                
                 }
-                .capa{
-                    position: absolute;
-                    top: -28px;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    background: #1c1c1d;
-                    opacity: 0.5;
-                    mix-blend-mode: overlay;
-                    @include tablet {
-                        width: 100%;
-                        margin-top: -21%;
-                    }
-                }
-            }
-        }   
+        }
     }
 
     .home_1{
@@ -85,7 +181,8 @@ main {
             background: rgb(255,255,255);
             background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(255,255,255,1) 100%);
             width: 100%;
-            margin-top: -8%;
+            height: 235px;
+            margin-top: -12%;
             margin-bottom: 10%;
             .home_txt-fx{
                 display: flex;
@@ -96,8 +193,47 @@ main {
                 max-width: 1000px;
                 margin-left: 10.5em;
                 height: 280px;
-                
-                .futuro{
+                .columns{
+
+                    @include tablet {
+                        margin-top: -110px;
+                    }
+                    .col + .col {
+                        margin-left: 1.5em;
+                    }
+                    .fade-in{
+                        opacity: 0;
+                        transition: opacity 300ms ease-in;
+                    }
+                    .fade-in.appear {
+                        opacity: 1;
+                    }
+                    .more-stuff-grid{
+                        background: #fff;
+                        padding: 4em 0;
+                        display: grid;
+                        grid-gap: 2em;
+                        align-items: center;
+                        grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 400px)) minmax(
+                            1em,
+                            1fr
+                        );
+                    }
+                    .from-left{
+                        grid-column: 2 / 3;
+                        transform: translateX(-50%);
+                    }
+                    .from-right{
+                        grid-column: 3 / 4;
+                        transform: translateX(50%);
+                    }
+                    .from-left, .from-right {
+                        transition: transform 400ms ease-in;
+                    }
+                    .from-left.appear, .from-right.appear {
+                        transform: translateX(0);
+                    }
+                    .futuro{
                     font-family: $typo-poppins;
                     font-size: 2.8em;
                     background: rgb(124, 160, 180);
@@ -117,14 +253,8 @@ main {
                         text-transform: uppercase;
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
+                        }
                     }
-                }
-                .columns{
-
-                    @include tablet {
-                        margin-top: -110px;
-                    }
-                    
                     h3{
                         font-family: $typo-poppins;
                         font-weight: 500;
@@ -142,42 +272,8 @@ main {
                             display: none;
                         }
                     }
-                    .col + .col {
-                        margin-left: 1.5em;
-                    }
+                    
                 }
-            }
-            .fade-in{
-                opacity: 0;
-                transition: opacity 300ms ease-in;
-            }
-            .fade-in.appear {
-                opacity: 1;
-            }
-            .more-stuff-grid{
-                background: #fff;
-                padding: 4em 0;
-                display: grid;
-                grid-gap: 2em;
-                align-items: center;
-                grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 400px)) minmax(
-                    1em,
-                    1fr
-                );
-            }
-            .from-left{
-                grid-column: 2 / 3;
-                transform: translateX(-50%);
-            }
-            .from-right{
-                grid-column: 3 / 4;
-                transform: translateX(50%);
-            }
-            .from-left, .from-right {
-                transition: transform 400ms ease-in;
-            }
-            .from-left.appear, .from-right.appear {
-                transform: translateX(0);
             }
         }
 
@@ -248,35 +344,34 @@ main {
                 gap: 35px;
                 padding: 5px;
 
+                @include desktop-b {
+                    width: 100%;
+                    flex-direction: column;
+                    align-items: center;
+                }
                 @include tablet {
                     margin-left: 0%;
                     margin-top: 10px;
                 }
-                a{
-                    font-family: $typo-apple;
-                    font-size: 20px;
+                    a{
+                        font-family: $typo-apple;
+                        font-size: 20px;
 
-                    @include tablet {
-                        font-size: 18px;
-                        display: flex;
-                        margin: 8px;
+                        @include tablet {
+                            font-size: 18px;
+                            display: flex;
+                            margin: 8px;
+                        }
+                    }
+                    i {
+                        font-size: 16px;
+                        @include tablet {
+                            font-size: 13px;
+                            margin-top: 7px;
+                        }
                     }
                 }
-                i {
-                    font-size: 16px;
-                    @include tablet {
-                        font-size: 13px;
-                        margin-top: 7px;
-                    }
-                }
-            }
 
-            @include desktop-b {
-                width: 100%;
-                flex-direction: column;
-                align-items: center;
-            }
-            
             .home-card{
                 position: relative;
                 height: 250px;
@@ -292,7 +387,6 @@ main {
                 @include desktop-b {
                     width: 400px;
                 }
-
                 @include tablet {
                     max-width: 300px;
                     flex-direction: column;
