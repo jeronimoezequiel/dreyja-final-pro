@@ -391,7 +391,7 @@ header .btn-wsp {
 
 @media only screen and (max-width: 768px) {
   main {
-    background: #ffffff; } }
+    background: #e3e3e3; } }
 
 main #home {
   height: 750px; }
@@ -406,6 +406,11 @@ main #home {
     max-width: 1350px;
     margin-top: -7px;
     padding: 0px; }
+    @media only screen and (max-width: 768px) {
+      main #home .container {
+        margin: -46% 0 0 0;
+        background: #000;
+        height: 800px; } }
     main #home .container .home-slider {
       width: 100%;
       height: 500px;
@@ -415,8 +420,7 @@ main #home {
       @media only screen and (max-width: 768px) {
         main #home .container .home-slider {
           display: flex;
-          margin-top: -24%;
-          height: 530px; } }
+          height: 800px; } }
       main #home .container .home-slider .home-list {
         position: absolute;
         width: max-content;
@@ -426,9 +430,9 @@ main #home {
         display: flex;
         transition: 1s; }
         @media only screen and (max-width: 768px) {
-          main #home .container .home-slider .home-list .home-item {
-            height: 650px; } }
-        main #home .container .home-slider .home-list img {
+          main #home .container .home-slider .home-list {
+            display: flex; } }
+        main #home .container .home-slider .home-list .home-item img {
           width: 1350px;
           max-width: 100vw;
           height: 100%;
@@ -436,9 +440,9 @@ main #home {
           z-index: 990;
           filter: brightness(0.3); }
           @media only screen and (max-width: 768px) {
-            main #home .container .home-slider .home-list img {
-              width: 100%;
-              height: 530px; } }
+            main #home .container .home-slider .home-list .home-item img {
+              display: flex;
+              margin: 29% 0 0 0; } }
       main #home .container .home-slider .home-buttons {
         position: absolute;
         top: 46.5%;
@@ -517,8 +521,7 @@ main #home {
 
 main .home_1 {
   font-family: "Poppins", sans-serif;
-  background: white;
-  background: radial-gradient(circle, white 0%, #f6f6f6 47%, white 100%);
+  background: #ffffff;
   width: 100%;
   height: 235px;
   margin-top: -12%;
@@ -570,7 +573,7 @@ main .home_1 {
           font-weight: 600;
           margin-left: -74%;
           font-size: 35px;
-          margin-top: -277px;
+          margin-top: -150px;
           background: #7ca0b4;
           background: linear-gradient(90deg, #718b99 40%, #d30809 60%);
           text-transform: uppercase;
@@ -591,7 +594,7 @@ main .home_1 {
           display: flex;
           align-items: center;
           width: 84%;
-          margin: 0px 0px 8px -136px;
+          margin: 6px 0px 8px -136px;
           position: absolute;
           font-size: .7em;
           text-align: justify; } }
@@ -600,13 +603,13 @@ main #cards {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f6f6f6;
+  background: #f1f1f1;
   min-height: 800px;
   margin-top: -130px; }
   @media only screen and (max-width: 768px) {
     main #cards {
       margin-top: -175px;
-      background: #ffffff; } }
+      background: #fff; } }
   main #cards .home-container {
     position: relative;
     width: 900px;
@@ -614,7 +617,7 @@ main #cards {
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: -340px;
-    background: #f6f6f6; }
+    background: #ffffff; }
     @media only screen and (max-width: 768px) {
       main #cards .home-container {
         margin-top: -110%;
@@ -702,7 +705,8 @@ main #cards {
           max-width: 300px;
           flex-direction: column;
           height: auto;
-          margin-left: 12%; } }
+          margin-left: 12%;
+          background: #fff; } }
       main #cards .home-container .home-card .home-imgBx {
         position: absolute;
         top: 0;
@@ -808,14 +812,14 @@ main .slider {
 
 main .section-5 {
   height: 600px;
-  background: white;
-  background: linear-gradient(180deg, white 0%, whitesmoke 100%); }
+  background: #f1f1f1; }
   @media only screen and (max-width: 768px) {
     main .section-5 {
       width: 100%;
       height: 1450px;
       font-size: 1.5rem;
-      padding: 10px; } }
+      padding: 10px;
+      background: #000000; } }
   main .section-5 .subtitle-center {
     display: flex;
     align-items: center;
@@ -846,7 +850,8 @@ main .section-5 {
     @media only screen and (max-width: 768px) {
       main .section-5 .subtitle-center {
         padding-left: 0%;
-        font-size: 25px; } }
+        font-size: 25px;
+        color: #ffffff; } }
   main .section-5 .info-links {
     display: flex;
     margin-top: -1%;
@@ -924,10 +929,16 @@ main .section-5 {
       font-size: 24px; }
       main .section-5 .services .icon-box h4 a {
         color: #273238; }
+        @media only screen and (max-width: 768px) {
+          main .section-5 .services .icon-box h4 a {
+            color: #ffffff; } }
     main .section-5 .services .icon-box p {
       line-height: 24px;
       font-size: 14px;
       margin-bottom: 0; }
+      @media only screen and (max-width: 768px) {
+        main .section-5 .services .icon-box p {
+          color: #afafaf; } }
   main .section-5 .services .icon-box:hover {
     background: #f8f8f8;
     border-color: #2c528c;
@@ -959,7 +970,7 @@ main .grid .grid-gallery {
     main .grid .grid-gallery {
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       grid-auto-rows: 250px;
-      background: #000; } }
+      background: #ffffff; } }
   main .grid .grid-gallery .grid-item {
     position: relative;
     background-color: #efefef;
@@ -1394,7 +1405,7 @@ main {
     @media only screen and (max-width: 768px) {
       main button {
         display: flex;
-        margin-top: 111.5%;
+        margin-top: 155.5%;
         margin-left: 96px;
         z-index: 222; } }
     main button .text {
@@ -1781,6 +1792,9 @@ main {
         width: 100%;
         flex-direction: column;
         margin-top: -55px; }
+        @media only screen and (max-width: 768px) {
+          main .muro-compuesto .muro-compuesto-detalle .container-partes {
+            display: none; } }
         @media only screen and (max-width: 768px) {
           main .muro-compuesto .muro-compuesto-detalle .container-partes {
             display: block;

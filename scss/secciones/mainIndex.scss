@@ -1,13 +1,9 @@
 main {
     @include tablet {
-        background: #ffffff;
+        background: rgb(227,227,227);
     }
     #home {
         height: 750px;
-        // background: linear-gradient(to bottom, rgba(5, 7, 12, 0.884), rgba(5, 7, 12, 0)), url("https://www.fagua.com.ar/wp-content/uploads/2022/06/WhatsApp-Image-2022-06-29-at-9.45.35-AM.jpeg");
-        // background-size: cover;
-        // background-position: center;
-        // background-attachment: fixed;
         
         @include tablet {
             background: rgb(227,227,227);
@@ -21,6 +17,12 @@ main {
             margin-top: -7px;
             padding: 0px;
 
+            @include tablet {
+                margin: -46% 0 0 0;
+                background: #000;
+                height: 800px;
+            }
+
             .home-slider {
                 width: 100%;
                 height: 500px;
@@ -30,8 +32,7 @@ main {
 
                 @include tablet {
                     display: flex;
-                    margin-top: -24%;
-                    height: 530px;
+                    height: 800px;
                 }
                 .home-list {
                     position: absolute;
@@ -41,22 +42,25 @@ main {
                     top: 0;
                     display: flex;
                     transition: 1s;
-                    .home-item {
-                        @include tablet {
-                            height: 650px;
-                        }
-                    }
-                    img {
-                        width: 1350px;
-                        max-width: 100vw;
-                        height: 100%;
-                        object-fit: cover;
-                        z-index: 990; 
-                        filter: brightness(0.3);
 
-                        @include tablet {
-                            width: 100%;
-                            height: 530px;
+                    @include tablet {
+                        display: flex;
+                        // height: 650px;
+                    }
+
+                    .home-item {
+                        img {
+                            width: 1350px;
+                            max-width: 100vw;
+                            height: 100%;
+                            object-fit: cover;
+                            z-index: 990; 
+                            filter: brightness(0.3);
+    
+                            @include tablet {
+                                display: flex;
+                                margin: 29% 0 0 0;
+                            }
                         }
                     }
                 }
@@ -195,8 +199,7 @@ main {
 
     .home_1{
             font-family: $typo-poppins;
-            background: rgb(255,255,255);
-            background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(255,255,255,1) 100%);
+            background: #ffffff;
             width: 100%;
             height: 235px;
             margin-top: -12%;
@@ -266,12 +269,13 @@ main {
                         font-weight: 600;
                         margin-left: -74%;
                         font-size: 35px;
-                        margin-top: -277px;
+                        margin-top: -150px;
                         background: rgb(124, 160, 180);
                         background: linear-gradient(90deg, rgb(113, 139, 153) 40%, rgba(211,8,9,1) 60%);
                         text-transform: uppercase;
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
+                        // background: orangered;
                         }
                     }
                     h3{
@@ -291,10 +295,11 @@ main {
                             display: flex;
                             align-items: center;
                             width: 84%;
-                            margin: 0px 0px 8px -136px;
+                            margin: 6px 0px 8px -136px;
                             position: absolute;
                             font-size: .7em;
                             text-align: justify;
+                            // background: green;
                         }
                     }
                     
@@ -306,14 +311,14 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
-        background:  rgba(246,246,246,1);
+        background: #f1f1f1;
         min-height: 800px;
         margin-top: -130px;
 
         @include tablet{
             margin-top: -175px;
-            background: #ffffff;
-            
+            background: #fff;
+            // background: #f1f1f1;
         }
         .home-container{
             position: relative;
@@ -322,7 +327,7 @@ main {
             justify-content: space-between;
             flex-wrap: wrap;
             margin-top: -340px;
-            background:  rgba(246,246,246,1);
+            background: #ffffff;
 
             @include tablet {
                 margin-top: -110%;
@@ -425,6 +430,7 @@ main {
                     flex-direction: column;
                     height: auto;
                     margin-left: 12%;
+                    background: #fff;
                 }
 
                 .home-imgBx{
@@ -562,14 +568,14 @@ main {
 
     .section-5{
         height: 600px;
-        background: rgb(255,255,255);
-        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(245, 245, 245)100%);
+        background: #f1f1f1;
         
         @include tablet{
             width: 100%;
             height: 1450px;
             font-size: 1.5rem;
             padding: 10px;
+            background: #000000;
             }
             .subtitle-center{
                 display: flex;
@@ -606,6 +612,7 @@ main {
                 @include tablet {
                     padding-left: 0%;
                     font-size: 25px;
+                    color: #ffffff;
                 }
             }
             .info-links{
@@ -702,14 +709,23 @@ main {
                         font-weight: 700;
                         margin-bottom: 15px;
                         font-size: 24px;
+
+                        
                         a {
                             color: map-get($color--azul, dreyja );
+                            @include tablet {
+                                color: #ffffff;
+                            }
                         }
                     }
                     p {
                         line-height: 24px;
                         font-size: 14px;
                         margin-bottom: 0;
+
+                        @include tablet {
+                            color: #afafaf;
+                        }
                     }
                 }
                 .icon-box:hover {
@@ -750,7 +766,7 @@ main {
             @include tablet {
                 grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
                 grid-auto-rows: 250px;
-                background: #000;
+                background: #ffffff;
             }
             .grid-item{
                 position: relative;
@@ -834,13 +850,6 @@ main {
     //     }
     // }
 }
-
-
-        
-    
-
-
-
 
 .seccion-b{
         

@@ -15,7 +15,7 @@ main {
 
         @include tablet {
             display: flex;
-            margin-top: 111.5%;
+            margin-top: 155.5%;
             margin-left: 96px;
             z-index: 222;
         }
@@ -507,6 +507,9 @@ main {
                 width: 100%;
                 flex-direction: column;
                 margin-top: -55px;
+                @include tablet {
+                    display: none;
+                }
 
                 @include tablet {
                     display: block;
