@@ -15,8 +15,9 @@ main {
 
         @include tablet {
             display: flex;
-            margin-top: 155.5%;
-            margin-left: 96px;
+            position: fixed;
+            margin-top: 159%;
+            margin-left: 88px; 
             z-index: 222;
         }
         .text {
@@ -350,7 +351,7 @@ main {
                 @include tablet {
                     height: 300px;
                     width: 300px;
-                    margin: 3% 0px 0px 23px;
+                    margin: 4.5% 0px 0px 23px;
                 }
             }
         }
@@ -391,7 +392,7 @@ main {
                     font-size: 1.4em;
 
                     @include tablet {
-                        margin: -41.8% 0px 0px 292.5px;
+                        margin: -41.4% 0px 0px 292.5px;
                     }
                 }
                 li:nth-child(2) a:hover {
@@ -560,7 +561,7 @@ main {
                     }
                 }
                 .derecha {
-                    margin: 8% 0 0 81%; 
+                    margin: 6% 0 0 81%; 
                     float: right;   
                     
                     @include tablet {
@@ -707,9 +708,10 @@ main {
     
     .banner-shop {
         background-color: #8baac0;
-        height: 180px;
+        height: 245px;
         width: 100%;
         padding: 1px;
+        margin: 0 0 0 0;
 
         @include tablet {
             display: flex;

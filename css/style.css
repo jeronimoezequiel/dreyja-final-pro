@@ -1405,8 +1405,9 @@ main {
     @media only screen and (max-width: 768px) {
       main button {
         display: flex;
-        margin-top: 155.5%;
-        margin-left: 96px;
+        position: fixed;
+        margin-top: 159%;
+        margin-left: 88px;
         z-index: 222; } }
     main button .text {
       font-family: "Inter", sans-serif;
@@ -1671,7 +1672,7 @@ main {
           main .muro-compuesto .muro-compuesto-img img {
             height: 300px;
             width: 300px;
-            margin: 3% 0px 0px 23px; } }
+            margin: 4.5% 0px 0px 23px; } }
     @media only screen and (max-width: 768px) {
       main .muro-compuesto .muro-compuesto-referencias {
         display: flex; } }
@@ -1701,7 +1702,7 @@ main {
         font-size: 1.4em; }
         @media only screen and (max-width: 768px) {
           main .muro-compuesto .muro-compuesto-referencias .muro-sf-partes ul li:nth-child(2) a {
-            margin: -41.8% 0px 0px 292.5px; } }
+            margin: -41.4% 0px 0px 292.5px; } }
       main .muro-compuesto .muro-compuesto-referencias .muro-sf-partes ul li:nth-child(2) a:hover {
         color: #d30809; }
       main .muro-compuesto .muro-compuesto-referencias .muro-sf-partes ul li:nth-child(3) a {
@@ -1835,7 +1836,7 @@ main {
             main .muro-compuesto .muro-compuesto-detalle .container-partes .izquierda {
               margin: -26px 0 0 17px; } }
         main .muro-compuesto .muro-compuesto-detalle .container-partes .derecha {
-          margin: 8% 0 0 81%;
+          margin: 6% 0 0 81%;
           float: right; }
           @media only screen and (max-width: 768px) {
             main .muro-compuesto .muro-compuesto-detalle .container-partes .derecha {
@@ -1955,9 +1956,10 @@ main {
             margin: -24px 0 15px 228px; } }
   main .banner-shop {
     background-color: #8baac0;
-    height: 180px;
+    height: 245px;
     width: 100%;
-    padding: 1px; }
+    padding: 1px;
+    margin: 0 0 0 0; }
     @media only screen and (max-width: 768px) {
       main .banner-shop {
         display: flex;
