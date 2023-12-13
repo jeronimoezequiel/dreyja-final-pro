@@ -4,9 +4,12 @@
 @import './utilities/vars.scss';
 @import './utilities/reset.scss';
 /* ------------ contenido gral ------------*/
+//INDEX
 @import './secciones/preLoader.scss';
 @import './secciones/topBar.scss';
 @import './secciones/navIndex.scss';
 @import './secciones/mainIndex.scss';
 @import './secciones/formulario.scss';
 @import './secciones/footer.scss';
+//STEEL FRAMING
+@import './secciones/02mainSf.scss';

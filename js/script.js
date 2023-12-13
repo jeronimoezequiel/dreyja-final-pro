@@ -1,3 +1,6 @@
+//Scroll en partes de steel frame
+
+
 //Menu activo
 const navLinkEls = document.querySelectorAll('.nav__link');
 const windowPathname = window.location.pathname;
