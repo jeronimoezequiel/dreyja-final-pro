@@ -87,7 +87,8 @@ main {
                 margin: 11% 0 0 -370px;
                 text-align: flex-start;
                 color: rgb(22, 22, 22);
-                border-bottom: 6px solid rgb(102, 102, 102); padding-bottom: .1em;
+                border-bottom: 6px solid rgb(102, 102, 102); 
+                padding-bottom: .1em;
 
                 @include tablet {
                     font-family: 'Poppins';
@@ -351,7 +352,7 @@ main {
                 @include tablet {
                     height: 300px;
                     width: 300px;
-                    margin: 4.5% 0px 0px 23px;
+                    margin: 3.2% 0px 0px 23px;
                 }
             }
         }

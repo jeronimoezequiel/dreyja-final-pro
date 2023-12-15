@@ -327,7 +327,7 @@ main {
             justify-content: space-between;
             flex-wrap: wrap;
             margin-top: -340px;
-            background: #ffffff;
+            background: #f1f1f1;
 
             @include tablet {
                 margin-top: -110%;
@@ -371,6 +371,7 @@ main {
                 @include tablet {
                     font-size: 1.6rem;
                     margin-left: 28%;
+                    margin-top: -7px
                 }
             }
             .info-links{
@@ -530,15 +531,16 @@ main {
     }
             
     .slider{
-
+        margin-bottom: 10px;
         width: 100%;
         height: auto;
         margin: auto;
         overflow: hidden;
-        background: #fff;
+        background: map-get($color--azul, dreyja );
 
         @include tablet {
             margin-top: 235px;
+            background: #fff;
         }
         .slide-track{
             display: flex;
@@ -575,7 +577,7 @@ main {
             height: 1450px;
             font-size: 1.5rem;
             padding: 10px;
-            background: #000000;
+            background: map-get($color--azul, dreyja );
             }
             .subtitle-center{
                 display: flex;
@@ -750,7 +752,7 @@ main {
 
     .grid {
         @include tablet {
-            height: 1900px;
+            height: 1826px;
         }
         .grid-gallery{
             width: 100%;

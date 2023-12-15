@@ -9,8 +9,8 @@
 
     @include tablet {
         height: 800px;
-        background: #1766a3;
-        background: linear-gradient(to top right, #1867a3, #0c426c);
+        // background: #1766a3;
+        // background: linear-gradient(to top right, #1867a3, #0c426c);
     }
 
     @include tablet-medium {
@@ -21,7 +21,7 @@
     }
 
     @include mobile-L-14promax {
-        width: 660px;
+        width: 390px;
         margin-left: -8px;
         background: #1766a3;
         background: linear-gradient(to top right, #1867a3, #0c426c);
