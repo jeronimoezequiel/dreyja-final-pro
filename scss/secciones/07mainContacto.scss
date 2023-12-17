@@ -1,0 +1,341 @@
+.wrapper-gallery {
+    columns: 3 350px;
+    column-gap: 0.5em;
+    margin: 80px 0 0 0;
+    position: relative; 
+
+    @include tablet {
+        margin: 0px;
+    }
+
+    .img5 {
+        @include tablet {
+            display: flex;
+        }
+    }
+
+    .none {
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 1) 70%);
+        pointer-events: none;
+
+        @include tablet {
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 1) 80%);
+        }
+    }
+
+    img {
+        max-width: 100%;
+        margin-bottom: 0.5em;
+    }
+}
+
+.contacto-container {
+    height: 63vh;
+    margin: -28% 0 0 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    // background: #fff;
+    background: linear-gradient(180deg, #fff, #d7e1ec 75%);
+    @include tablet {
+        display: flex;
+        margin-top: -18%;
+        height: 70px
+        }
+    .contacto-title-center {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 500;
+        font-family: $typo-poppins;
+        margin: 0 0 150px -1%;
+
+        @include tablet {
+            font-size: 2rem
+        }
+    }
+
+    .boton {
+        display: inline-block;
+        height: 60px;
+        width: 60px;
+        margin: 0 20px -8% 0;
+        padding: 0;
+        overflow: hidden;
+        background: #fff;
+        border-radius: 50px;
+        cursor: pointer;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        transition: width 0.3s ease-out, height 0.3s ease-out;
+
+        @include tablet {
+            width: 40px;
+            height: 40px;
+            margin-top: -60px;
+        }
+        .redes-icono {
+            display: inline-block;
+            height: 60px;
+            width: 60px;
+            border-radius: 50px;
+            box-sizing: border-box;
+            text-align: center;
+            position: relative;
+            line-height: initial;
+            
+        i {
+            font-size: 30px;
+            line-height: 60px;
+
+            @include tablet {
+                margin: -10px 0 0 -18px;
+                font-size: 21px;
+            }
+        }
+        
+        span {
+            font-family: 'Poppins';
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 60px;
+            color: #000; 
+            position: absolute;
+            left: 70px; 
+            top: 0;
+            white-space: nowrap; 
+        }
+        }
+
+        &:nth-child(1):hover .redes-icono {
+        background: #00cf4d;
+        color: #fff;
+        }
+
+        &:hover {
+        width: 200px;
+        height: 60px;
+        color: #000;
+        }
+
+        &:nth-child(2):hover .redes-icono {
+        background: #00cf4d;
+        color: #fff;
+        }
+
+        &:nth-child(3):hover .redes-icono {
+        background: linear-gradient(30deg, #3040e6 10%, #d41356, #e74f31, #f0ce6c);
+        color: #fff;
+        }
+
+        &:nth-child(4):hover .redes-icono {
+        background: #1877f2;
+        color: #fff;
+        }
+
+        &:nth-child(5):hover .redes-icono {
+        background: #333;
+        color: #fff;
+        }
+
+        &:nth-child(6):hover .redes-icono {
+        background: red;
+        color: #fff;
+        }
+    }
+}
+
+.section-3-contacto{
+    background: #d7e1ec;
+    height: 620px;
+
+    @include tablet {
+        height: 700px;
+    }
+    .grid-contacto {  
+        padding: 40px;
+        display: grid;
+        grid-template-columns: 1fr 0.5fr;
+        grid-template-rows: 1fr;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        gap: 0px 15px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "ayuda g-maps";
+
+        @include tablet {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .ayuda { 
+            border-radius: 30px;
+            grid-area: ayuda;
+            height: 550px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+
+            @include tablet {
+                height: 300px;
+                margin-bottom: 20px;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 30px;
+
+                @include tablet {
+                    height: 230px;
+                    margin-top: 71px;
+                }
+            }
+            .ayuda-title{
+                display: flex;
+                position: absolute;
+                text-align: center;
+                margin-top: 4%;
+                font-family: 'Poppins';
+                font-size: 2rem;
+
+                @include tablet {
+                    font-size: 1.4rem;
+                }
+            }
+            .ayuda-parrafo{
+                display: flex;
+                position: absolute;
+                text-align: center;
+                margin-top: 8%;
+                font-family: 'Poppins';
+                font-size: .8rem;
+
+                @include tablet {
+                    font-size: .85rem;
+                    width: 68%;
+                    margin-top: 41px;
+                    text-align: justify;
+                }
+            }
+            .ayuda-link{
+                display: flex;
+                position: absolute;
+                text-align: center;
+                margin-top: 10.5%;
+                font-family: 'Poppins';
+                font-size: 1rem;
+                background: #d7e1ec;
+                padding: 13px;
+                border-radius: 30px;
+
+                @include tablet {
+                    display: flex;
+                    margin-top: 122px;
+                    width: 162px;
+                    height: 35px;
+                }
+
+                a {
+                    @include tablet {
+                        font-size: 14px;
+                        margin: -3px 0 0 14px;
+                        }
+                    }
+                }
+            }
+        }
+        .g-maps { 
+            grid-area: g-maps;
+            height: 550px;
+            width: 100%;
+            display: flex;
+            border-radius: 30px;
+            background-color: #fff;
+
+            @include tablet {
+                height: 320px;
+                margin-top: 21px;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 30px;
+                
+            }
+            .ayuda-title-link{
+                display: flex;
+                position: absolute;
+                text-align: center;
+                margin-left: 7%;
+                margin-top: 4%;
+                font-family: 'Poppins';
+                font-size: 2rem;
+
+                @include tablet {
+                    font-size: 1.4rem;
+                    margin: 17px 0 0 64px
+                }
+            }
+            .ayuda-parrafo-link{
+                display: flex;
+                position: absolute;
+                text-align: center;
+                margin-left: 1%;
+                width: 30%;
+                margin-top: 8%;
+                font-family: 'Poppins';
+                font-size: .8rem;
+
+                @include tablet {
+                    display: none;
+                }
+            }
+            .ayuda-link-link{
+                display: flex;
+                position: absolute;
+                text-align: center;
+                margin-top: 11.5%;
+                margin-left: 11.5%;
+                font-family: 'Poppins';
+                font-size: .8rem;
+                background: #d7e1ec;
+                padding: 8px;
+                border-radius: 30px;
+
+                @include tablet {
+                    display: flex;
+                    margin: 51px 0 0 75px;
+                    width: 140px;
+                    height: 32px
+                }
+
+                a {
+                    @include tablet {
+                        font-size: 14px;
+                        margin: -2px 0 0 10px
+                        }
+                    }
+            }
+        }
+    }
+
