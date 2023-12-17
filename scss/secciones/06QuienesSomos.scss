@@ -36,11 +36,11 @@
 
 .section-2-quienes-somos {
     height: 200vh;
-    margin: 45% 0 -5% 30px;
+    margin: 10% 0 -5% 30px;
     width: 95%;
 
     @include tablet {
-        margin-top: 10%;
+        margin-top: 43%;
     }
 
     .quienes-somos-content {
@@ -57,7 +57,7 @@
             color: #333;
 
             @include tablet {
-                margin: 0 0 10% -25px;
+                margin: 0 0 0 -25px;
             }
         }
         .quienes-somos-grid{
@@ -65,7 +65,7 @@
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: 1fr;
             margin-bottom: 5%;
-            grid-template-areas: 
+            grid-template-areas:
             "ahorro sustentabilidad";
 
             .ahorro {
@@ -107,7 +107,7 @@
                 // color: blue;
                 width: 90%;
                 text-align: center;
-                margin: -102px 0 22px -12px 
+                margin: -102px 0 22px -12px
             }
         }
         .introduction{
@@ -169,7 +169,7 @@
 
         @include tablet {
             height: 270px;
-            margin: 165% 0 0 0;
+            margin: 170% 0 0 0;
         }
     }
     .disposicion-content-qs {
@@ -198,11 +198,11 @@
         position: absolute;
         margin-top: -14%;
         margin-left: 40%;
-        background: var(--section-cs); 
+        background: var(--section-cs);
         border: 2px solid #fff;
         border-radius: 30px;
         padding: 10px 0px 10px 35px;
-        width: 200px; 
+        width: 200px;
 
         @include tablet {
             display: flex;
@@ -223,5 +223,5 @@
         color: #333;
         font-family: 'Poppins';
         font-weight: 500;
-    } 
+    }
 }

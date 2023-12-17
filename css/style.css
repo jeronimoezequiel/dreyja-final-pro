@@ -3024,11 +3024,11 @@ main {
 
 .section-2-quienes-somos {
   height: 200vh;
-  margin: 45% 0 -5% 30px;
+  margin: 10% 0 -5% 30px;
   width: 95%; }
   @media only screen and (max-width: 768px) {
     .section-2-quienes-somos {
-      margin-top: 10%; } }
+      margin-top: 43%; } }
   .section-2-quienes-somos .quienes-somos-content .introduction {
     display: flex;
     text-align: justify;
@@ -3041,7 +3041,7 @@ main {
     color: #333; }
     @media only screen and (max-width: 768px) {
       .section-2-quienes-somos .quienes-somos-content .introduction {
-        margin: 0 0 10% -25px; } }
+        margin: 0 0 0 -25px; } }
   .section-2-quienes-somos .quienes-somos-content .quienes-somos-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -3130,7 +3130,7 @@ main {
   @media only screen and (max-width: 768px) {
     .disposicion-qs .disposicion-6-qs {
       height: 270px;
-      margin: 165% 0 0 0; } }
+      margin: 170% 0 0 0; } }
 
 .disposicion-qs .disposicion-content-qs {
   display: flex; }
