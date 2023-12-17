@@ -1,0 +1,222 @@
+.quienes-somos-main {
+    overflow-x: hidden;
+}
+.home-qs {
+    width: 100%;
+
+    @include tablet {
+        height: 170px;
+    }
+
+    img {
+        width: 100%;
+        height: 360px;
+        margin: 6.8% 0 0 0;
+
+        @include tablet {
+            height: auto;
+            width: 100%;
+        }
+    }
+
+    .logo-azul {
+        width: 140px;
+        height: 140px;
+        margin: -8% 0 0 7%;
+        box-shadow: .4em 9px 0.8em rgba(0, 0, 0, 0.3);
+
+        @include tablet {
+            height: auto;
+            width: 80px;
+            margin: -40px 0 0 20px;
+        }
+    }
+}
+
+.section-2-quienes-somos {
+    height: 200vh;
+    margin: 10% 0 -5% 30px;
+    width: 95%;
+
+    .quienes-somos-content {
+
+        .introduction {
+            display: flex;
+            text-align: justify;
+            width: 100%;
+            padding: 5%;
+            margin-top: -11%;
+            font-family: 'Poppins';
+            font-size: 1rem;
+            font-weight: 300;
+            color: #333;
+
+            @include tablet {
+                margin: 0 0 10% -25px;
+            }
+        }
+        .quienes-somos-grid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+            margin-bottom: 5%;
+            grid-template-areas: 
+            "ahorro sustentabilidad";
+
+            .ahorro {
+                grid-area: ahorro;
+                height: 200px;
+                width: 200px;
+                display: flex;
+                margin-left: 65%;
+                margin-top: -8%;
+
+                @include tablet {
+                    margin-left: 10px;
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+            .sustentabilidad {
+                grid-area: sustentabilidad;
+                height: 200px;
+                width: 200px;
+                display: flex;
+                margin-top: -8%;
+
+                @include tablet {
+                    margin-left: -25px;
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+        }
+        .title-2{
+            color: #e90303;
+            padding: 5%;
+            margin-top: -13%;
+            margin-bottom: 2%;
+            font-size: 1.6rem;
+
+            @include tablet {
+                // color: blue;
+                width: 90%;
+                text-align: center;
+                margin: -102px 0 22px -12px 
+            }
+        }
+        .introduction{
+            display: flex;
+            text-align: justify;
+            width: 100%;
+            padding: 5%;
+            margin-top: -11%;
+            font-family: 'Poppins';
+            font-size: 1rem;
+            font-weight: 300;
+            color: #333;
+        }
+        .lista-principios{
+            display: flex;
+            width: 100%;
+            border-radius: 20px;
+            gap: 1rem;
+            margin-bottom: 1%;
+
+            @include tablet {
+                flex-direction: column;
+            }
+
+            .ul-izquierda{
+                display: flex;
+                flex-direction: column;
+                margin-left: 15%;
+                background: rgb(245, 245, 245);
+                padding: 50px;
+
+                @include tablet {
+                    background: rgb(245, 245, 245);
+                    width: 332px;
+                    margin: 0 0 0 1px
+                }
+            }
+            .ul-derecha{
+                display: flex;
+                flex-direction: column;
+                margin-left: 0%;
+                background: rgb(238, 238, 238);
+                padding: 50px;
+            }
+        }
+    }
+}
+
+.disposicion-qs {
+
+    .disposicion-6-qs{
+        height: 70vh;
+        background-image: url(https://i.pinimg.com/564x/09/dc/24/09dc24e77ec05440710cbc536e6426b5.jpg);
+        filter: opacity(25%);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+
+        @include tablet {
+            height: 270px;
+            margin: 188% 0 0 0;
+        }
+    }
+    .disposicion-content-qs {
+        display: flex;
+        .disposicion-title-qs {
+            font-family: 'Poppins';
+            font-weight: 300;
+            font-size: 2rem;
+            color: #000;
+            width: 100%;
+            display: flex;
+            position: relative;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin-top: -38%;
+
+            @include tablet {
+                font-size: 1.3rem;
+                margin: -80% 0 0 0;
+            }
+        }
+    }
+    .btn-redirect-qs{
+        display: flex;
+        position: absolute;
+        margin-top: -14%;
+        margin-left: 40%;
+        background: var(--section-cs); 
+        border: 2px solid #fff;
+        border-radius: 30px;
+        padding: 10px 0px 10px 35px;
+        width: 200px; 
+
+        @include tablet {
+            display: flex;
+            margin: -75px 0 0 90px
+        }
+        a {
+            font-size: 'Poppins';
+            font-weight: 400;
+            text-decoration: none;
+            color: #333;
+        }
+    }
+    .btn-redirect-qs:hover{
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+        background-color: #ffffff;
+        border: 2px solid #000000;
+        color: #333;
+        font-family: 'Poppins';
+        font-weight: 500;
+    } 
+}

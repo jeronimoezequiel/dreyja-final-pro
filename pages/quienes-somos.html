@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Fav-Icon -->
+    <link rel="icon" type="image/png" href="../scss/recursos/isotipo-nuevo.gif">
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/f39f83ef3f.js" crossorigin="anonymous"></script>
+
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Sweet Alert -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.min.css" rel="stylesheet">
+
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="lightbox2/dist/css/lightbox.min.css" />
+
+    <!-- Aos Next on scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Css style -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Steel Framing </title>
+</head>
+<body>
+    <!--------------------------------------------------------------------------------------
+                                    # topbar
+    --------------------------------------------------------------------------------------->
+    <div id="topbar" class=" align-items-center fixed-top">
+        <div class="container d-flex justify-content-between">
+            <div class="contact-info align-item-center">
+            <i class="bi bi-telephone"> Horario: Lunes a Viernes de 08:00 a 16.00hs</i>
+            </div>
+        </div>
+        <div class="clock-container">
+            <div id="clock" class="clock"></div>
+            <div id="status" class="status"></div>
+        </div>
+    </div>
+
+    <!--------------------------------------------------------------------------------------
+                                    # Header + Navbar
+    --------------------------------------------------------------------------------------->
+    <header>
+        <div>
+            <i class="fa-solid fa-bars" id="btn__menu"></i>
+                <a href="../index.html"><img class="header-logo" src="../scss/recursos/isotipo-nuevo.gif" alt="isotipo-nuevo"></a>
+            <a  href="https://pvcenter.mercadoshops.com.ar/" target="_blank"><i class="bi bi-bag" id="bag-shop"></i></a></li>
+        </div>
+        <div id="back_menu"></div>
+
+        <nav id="nav">
+            <div class="menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="../index.html"><img class="logo" src="../scss/recursos/imagotipo.png" alt="Imagotipo de Dreyjar"></a></li>
+                    <li class="nav__item"><a href="../index.html"><img class="isotipo" src="../scss/recursos/isotipo-nuevo.gif" alt="isotipo de Dreyjar"></a></li>
+                    <li class="nav__item">
+                        <a href="../index.html" class="menu-item nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../pages/steel-fr.html" class="menu-item nav__link">Steel Framing</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../pages/cs.html" class="menu-item nav__link">Construcción en seco</a
+                        ></li>
+                    <li class="nav__item">
+                        <a href="../pages/tya.html" class="menu-item nav__link">Techo y Aislación</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../pages/pvc.html" class="menu-item nav__link">Revestimiento de PVC</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../pages/quienes-somos.html" class="menu-item nav__link">Quienes Somos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../pages/contacto.html" class="menu-item nav__link">Contacto</a>
+                    </li>
+                    <li class="nav__item"><a  href="#" id="search"><i class="bi bi-search"></i></a></li>
+                    <li class="nav__item"><a  href="https://pvcenter.mercadoshops.com.ar/" target="_blank"><i class="bi bi-bag"></i></a></li>
+                    <div class="bottom-line"></div>
+                </ul>
+            </div>
+
+
+            <!-- Search -->
+            <div class="search-form">
+                <form>
+                    <input type="search" id="inputSearch" placeholder="Ingrese categoria o producto" autocomplete="off">
+                </form>
+            </div>
+
+            <ul id="box-search">
+                <li><a href="#"><i class="bi bi-search"></i> Perfil Galvanizado</a></li>
+                <li><a href="#"><i class="bi bi-search"></i> Fijación Fisher</a></li>
+                <li><a href="#"><i class="bi bi-search"></i> Tarugo para tornillo</a></li>
+                <li><a href="#"><i class="bi bi-search"></i> Tornillo T1</a></li>
+                <li><a href="#"><i class="bi bi-search"></i> Tornillo T2</a></li>
+            </ul>
+
+            <div class="" id="cover-ctn-search"></div>
+
+            <a class="close"><i class="fa fa-times"></i></a>
+        </nav>
+
+        <!-- # boton de wsp -->
+        <a href="https://wa.me/5492995479547" class="btn-wsp" target="_blank">
+            <i class="fa fa-whatsapp icono"></i>
+        </a>
+    </header>
+
+    <!--------------------------------------------------------------------------------------
+                                    # Main
+    --------------------------------------------------------------------------------------->
+
+    <main class="quienes-somos-main">
+        <a href="https://pvcenter.mercadoshops.com.ar/" target="_blank">
+        <button class="button" type="button">
+            <span class="text">Dreyja e-shop</span>
+            <span class="icon" aria-hidden="true">
+                <svg id="icon-modify" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"/>
+                </svg>
+            </span>
+        </button>
+        </a>
+
+        <section id="home-qs" class="home-qs">
+            <img src="../scss/recursos/isover-fondo.jpg.jfif" alt="Fondo de aislacion en obra">
+            <img class="logo-azul" src="../scss/recursos/logo-azul.jpeg" alt="">
+            <div class="home-qs-content">
+                <!-- <p>Construcción en seco</p> -->
+            </div>
+        </section>
+<!-- --------------------------------------------------------------------------------------------------------- -->
+
+        <!-- # Seccion 2 - Visión y Misión -->
+        <section class="section-2-quienes-somos">
+            <div class="quienes-somos-content" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
+                <h3 class="introduction" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
+                    Dreyja Srl. forma parte de las nuevas empresas dedicadas a la venta de materiales para la construcción en seco, con soluciones innovadoras y energeticamente eficientes, que contribuyen a la protección del medio ambiente. <br>
+                    <br>
+                    En Dreyja Srl, nos dedicamos a proporcionar soluciones que superan las expectativas de nuestros clientes. Nuestra reputación sólida, ventas lider y calificaciones destacadas en ventas son el resultado de años de compromiso con la excelencia y la satisfacción del cliente. <br>
+                    <br>
+                    Nos esforzamos por ofrecer una amplia gama de materiales de construcción en seco, desde placas de yeso, aislaciones, revestimientos hasta perfiles metálicos, asegurando que cada producto cumpla con los más altos estándares de calidad. En Dreyja Srl, no solo vendemos materiales; ofrecemos soluciones confiables para construcciones sólidas y de alta calidad al mejor precio.
+                </h3>
+                <div class="quienes-somos-grid">
+                    <div class="ahorro">
+                        <img src="../scss/recursos/ahorro-economico.jfif" alt="Imagen de peso ahorro" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
+                    </div>
+                    <div class="sustentabilidad">
+                        <img src="../scss/recursos/producto-sustentable.jfif" alt="Imagen de producto sustentable" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
+                    </div>
+                </div>
+                    <br>
+                    <br>
+                    <br>
+                <h2 class="title-2" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">Nuestra Visión y Misión</h2>
+                <h3 class="introduction" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
+                    VISIÓN: 
+                    <br>
+                    <br>
+                    Ser la primera elección de la construcción, ofreciendo productos que no solo cumplen, sino que superan las expectativas. Liderar el mercado con soluciones constructivas, priorizando el desarrollo sustentable de la empresa y su entorno. Nos esforzamos por ser un referente en sostenibilidad y eficiencia, contribuyendo al desarrollo de construcciones más resistentes y amigables con el medio ambiente. <br>
+                    <br>
+                    <br>
+                    MISIÓN:
+                    <br>
+                    <br>
+                    Nuestra misión en Dreyja Srl es proporcionar a nuestros clientes materiales de construcción en seco de la más alta calidad, respaldados por un servicio excepcional. Nos comprometemos a ser el socio preferido de constructores, arquitectos y bricoladores, ofreciendo soluciones versátiles y sostenibles que impulsen la eficiencia en cada proyecto. A través de la innovación constante y el respeto por el medio ambiente, buscamos facilitar la construcción de estructuras sólidas y duraderas que mejoren la calidad de vida.
+                </h3>
+                    <br>
+                    <br>
+                    <br>
+                <h2 class="title-2" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">Principios de conducta de la empresa</h2>
+                <h3 class="introduction" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
+
+                <div class="lista-principios">
+                    <ul class="ul-izquierda" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
+                        <h4><i class="bi bi-bookmark-check-fill"></i> Conducta Dreyja</h4>
+                        <li><i class="bi bi-arrow-right"></i> Compromiso Profesional</li>
+                        <li><i class="bi bi-arrow-right"></i> Comportamiento responsable y ético</li>
+                        <li><i class="bi bi-arrow-right"></i> Respeto entre pares</li>
+                        <li><i class="bi bi-arrow-right"></i> Trabajo en equipo y Cooperación</li>
+                        <li><i class="bi bi-arrow-right"></i> Mejora continua</li>
+                    </ul>
+                    <ul class="ul-derecha" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
+                        <h4><i class="bi bi-check-lg"></i> Acción Dreyja</h4>
+                        <li><i class="bi bi-arrow-right"></i> Compromiso Profesional</li>
+                        <li><i class="bi bi-arrow-right"></i> Comportamiento responsable y ético</li>
+                        <li><i class="bi bi-arrow-right"></i> Respeto entre pares</li>
+                        <li><i class="bi bi-arrow-right"></i> Trabajo en equipo y Cooperación</li>
+                        <li><i class="bi bi-arrow-right"></i> Mejora continua</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+<!-- --------------------------------------------------------------------------------------------------------- -->
+        <!-- # Sección 3 - Estamos a tu disposicion -->
+        <section class="disposicion-qs">     
+            <div class="disposicion-6-qs"></div>       
+            <div class="disposicion-content-qs">
+                <h2 class="disposicion-title-qs" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">Gracias por confiar en nosotros! <br> Adquiri nuestros productos en nuestra tienda online.</h2>
+            </div>
+            <div class="btn-redirect-qs" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100"><a href="https://pvcenter.mercadoshops.com.ar/"><i class="bi bi-bag-plus"></i> Tienda On-Line</a></div>
+        </section>
+    </main>
+
+    <!--------------------------------------------------------------------------------------
+                                    # Footer
+    --------------------------------------------------------------------------------------->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6">
+                    <div class="footer-info">
+                        <img class="img-logo-footer" src="./scss/recursos/imagotipo.png" alt="imagotipo de Dreyja">
+                        <p>
+                        Calle 524 #4453 - cp:1900<br>
+                        LA PLATA, Buenos Aires. <br><br>
+                        <strong>Telefono:</strong> +549 221 436 7824<br>
+                        <strong>Email:</strong> dreyjasrl@gmail.com<br>
+                        </p>
+                        <div class="social-links mt-3">
+                        <a href="https://www.facebook.com/groups/577400563258704" class="facebook"><i class="bi bi-facebook"></i></i></a>
+                        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                        <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
+                        <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>   -->
+                        <!-- <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links">
+                    <h4>Ayuda!</h4>
+                    <ul>
+                        <li><i class="bx bx-chevron-right"></i> <a href="./index.html">Home</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="./pages/quienes-somos.html">Acerca de Nosotros</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Servicios</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Politica y Privacidad</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="./pages/contacto.html">Contacto</a></li>
+                    </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Nuestros Servicios</h4>
+                    <ul>
+                        <li><a href="tel:+5492214367824">Acompañamiento</a></li>
+                        <li><a href="../pages/contacto.html">Logistica</a></li>
+                        <li><a href="https://wa.me/5492995479547" class="btn-wsp" target="_blank">Asesoramiento profesional</a></li>
+                        <!-- <li><a href="#">Llenar campos </a></li> -->
+                        <!-- <li><a href="#">Llenar campos </a></li> -->
+                    </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                        <h4>Nuestro Newsletter</h4>
+                        <p>Enterate sobre nuevos ingresos y actualizaciones (todas las semanas) sobre nuestros productos</p>
+
+                        <form id="subscribeForm" action="" method="post">
+                            <input type="email" name="email" id="emailInput">
+                            <input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="container">
+        <div class="copyright">&copy; Copyright <strong><span>DREYJA SRL</span></strong><div class="br"></div> Todos los derechos reservados
+        </div>
+        <div class="credits">Designed by <a href="mailto:jeronimonunez96@gmail.com">Jeronimo Nuñez</a>
+        </div>
+    </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!--------------------------------------------------------------------------------------
+    // Scripts
+    --------------------------------------------------------------------------------------->
+    <!-- Lightbox JS -->
+    <script src="lightbox2/dist/js/lightbox.min.js"></script>
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <!-- Boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.all.min.js"></script>
+    <!-- Aos Next on scroll -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+
+    <!-- Java Scripts links -->
+    <!-- <script src="./js/formulario-automatico.js"></script> -->
+    <script src="../reloj.js"></script> <!-- Js Clock -->
+    <script src="../js/preLoader.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/buscadorInterno.js"></script>
+    <script src="../js/aosSliderEffect.js"></script>
+    <script src="../js/productos.js"></script>
+    <script src="../js/menuHamburguesa.js"></script>
+</body>
+</html>
