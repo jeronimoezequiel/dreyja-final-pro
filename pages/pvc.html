@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Fav-Icon -->
+    <link rel="icon" type="image/png" href="../scss/recursos/isotipo-nuevo.gif">
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/f39f83ef3f.js" crossorigin="anonymous"></script>
+
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Sweet Alert -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.min.css" rel="stylesheet">
+
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="lightbox2/dist/css/lightbox.min.css" />
+
+    <!-- Aos Next on scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Css style -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Steel Framing </title>
+</head>
+<body>
+    <!--------------------------------------------------------------------------------------
+                                    # topbar
+    --------------------------------------------------------------------------------------->
+    <div id="topbar" class=" align-items-center fixed-top">
+        <div class="container d-flex justify-content-between">
+            <div class="contact-info align-item-center">
+            <i class="bi bi-telephone"> Horario: Lunes a Viernes de 08:00 a 16.00hs</i>
+            </div>
+        </div>
+        <div class="clock-container">
+            <div id="clock" class="clock"></div>
+            <div id="status" class="status"></div>
+        </div>
+    </div>
+
+    <!--------------------------------------------------------------------------------------
+                                    # Header + Navbar
+    --------------------------------------------------------------------------------------->
+    <header>
+        <div>
+            <i class="fa-solid fa-bars" id="btn__menu"></i>
+                <a href="../index.html"><img class="header-logo" src="../scss/recursos/isotipo-nuevo.gif" alt="isotipo-nuevo"></a>
+            <a  href="https://pvcenter.mercadoshops.com.ar/" target="_blank"><i class="bi bi-bag" id="bag-shop"></i></a></li>
+        </div>
+        <div id="back_menu"></div>
+
+        <nav id="nav">
+            <div class="menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="../index.html"><img class="logo" src="../scss/recursos/imagotipo.png" alt="Imagotipo de Dreyjar"></a></li>
+                    <li class="nav__item"><a href="../index.html"><img class="isotipo" src="../scss/recursos/isotipo-nuevo.gif" alt="isotipo de Dreyjar"></a></li>
+                    <li class="nav__item">
+                        <a href="../index.html" class="menu-item nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../pages/steel-fr.html" class="menu-item nav__link">Steel Framing</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../pages/cs.html" class="menu-item nav__link">Construcción en seco</a
+                        ></li>
+                    <li class="nav__item">
+                        <a href="../pages/tya.html" class="menu-item nav__link">Techo y Aislación</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../pages/pvc.html" class="menu-item nav__link">Revestimiento de PVC</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../pages/quienes-somos.html" class="menu-item nav__link">Quienes Somos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../pages/contacto.html" class="menu-item nav__link">Contacto</a>
+                    </li>
+                    <li class="nav__item"><a  href="#" id="search"><i class="bi bi-search"></i></a></li>
+                    <li class="nav__item"><a  href="https://pvcenter.mercadoshops.com.ar/" target="_blank"><i class="bi bi-bag"></i></a></li>
+                    <div class="bottom-line"></div>
+                </ul>
+            </div>
+
+
+            <!-- Search -->
+            <div class="search-form">
+                <form>
+                    <input type="search" id="inputSearch" placeholder="Ingrese categoria o producto" autocomplete="off">
+                </form>
+            </div>
+
+            <ul id="box-search">
+                <li><a href="#"><i class="bi bi-search"></i> Perfil Galvanizado</a></li>
+                <li><a href="#"><i class="bi bi-search"></i> Fijación Fisher</a></li>
+                <li><a href="#"><i class="bi bi-search"></i> Tarugo para tornillo</a></li>
+                <li><a href="#"><i class="bi bi-search"></i> Tornillo T1</a></li>
+                <li><a href="#"><i class="bi bi-search"></i> Tornillo T2</a></li>
+            </ul>
+
+            <div class="" id="cover-ctn-search"></div>
+
+            <a class="close"><i class="fa fa-times"></i></a>
+        </nav>
+
+        <!-- # boton de wsp -->
+        <a href="https://wa.me/5492995479547" class="btn-wsp" target="_blank">
+            <i class="fa fa-whatsapp icono"></i>
+        </a>
+    </header>
+
+    <!--------------------------------------------------------------------------------------
+                                    # Main
+    --------------------------------------------------------------------------------------->
+
+    <main class="main-pvc">
+        <a href="https://pvcenter.mercadoshops.com.ar/" target="_blank">
+        <button class="button" type="button">
+            <span class="text">Dreyja e-shop</span>
+            <span class="icon" aria-hidden="true">
+                <svg id="icon-modify" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"/>
+                </svg>
+            </span>
+        </button>
+        </a>
+
+        <!-- # sección 1 - Preguntas de inicio -->
+        <section id="home-pvc" class="home-pvc">
+            <div class="trapezoide-pvc"></div>
+            <div class="home-pvc-content" id="home-pvc-content">
+                <p>Revestimiento de PVC</p>
+            </div>
+        </section>
+
+        <div class="home-container">
+            <h1>¿Qué 
+                <div class="home-lista">
+                    <div class="home-lista-item">
+                        son los revestimientos de PVC?
+                    </div>
+                    <div class="home-lista-item">
+                        tipos de aplicación tienen?
+                    </div>
+                </div>
+            </h1>
+        </div>
+
+        <div class="home-container-p">
+            <div class="home-lista">
+                <p class="home-lista-item">
+                    Los revestimientos de PVC son láminas de policloruro de vinilo, un plástico resistente, utilizadas para diversos fines, como impermeabilización y protección.
+                </p>
+                <p class="home-lista-item">
+                    Los revestimientos de PVC se utilizan en construcción como en techos, paredes, impermeabilización.
+                </p>
+            </div>
+        </div>
+
+        <div class="home-container-img">
+            <img class="sf-img-container" src="https://revestimientodepared.com.ar/wp-content/uploads/Revestimientos-siding-Tabaco.jpg" alt="Imagen de revestimiento siding pvc exterior">
+            <img class="sf-img-container-2" src="https://maderasmeyer.com.ar/wp-content/uploads/2023/04/wallpanel-black-1.jpg" alt="Imagen de revestimiento exterior">
+        </div> 
+<!-- --------------------------------------------------------------------------------------------------------- -->
+
+        <!-- # Seccion 2 - Tipos de construcción en seco -->
+        <section class="tiposDeMuros">
+            <div class="strip">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_792584-MLA44997916076_022021-O.webp" alt="Revestimiento exterior" >
+                <div class="strip-content">
+                    <h2>Revestimiento de pvc exterior</h2>
+                    <p> 
+                        Existen diversos revestimientos de PVC para construcción, como el siding exterior que imita madera o ladrillo, paneles de pared, láminas para cubiertas y perfiles para ventanas. Estos productos ofrecen durabilidad, resistencia y versatilidad en aplicaciones constructivas.
+                    </p>
+                </div>
+            </div>
+
+            <div class="strip">
+                <img src="https://www.eurocyd.com/1003-home_default/listones-de-pared-imitacion-madera.jpg" alt="Revestimiento interior">
+                <div class="strip-content">
+                    <h2>Revestimiento de pvc interior</h2>
+                    <p>
+                        Los revestimientos de PVC interior incluyen paneles de pared decorativos, techos suspendidos, molduras y zócalos. Estos productos ofrecen opciones estéticas y funcionales, siendo fáciles de instalar y mantener. Son utilizados en interiores para mejorar la apariencia y la durabilidad de los espacios.
+                    </p>
+                </div>
+            </div>
+
+            <div class="strip">
+                <img src="https://i.pinimg.com/564x/cc/19/c7/cc19c78200fc7c98c3defabfd4180a27.jpg" alt="Revestimiento de techo">
+                <div class="strip-content">
+                    <h2>Revestimiento de pvc para techo</h2>
+                    <p>
+                        Los revestimientos de PVC para techos incluyen láminas corrugadas, paneles y tejas. Estos productos proporcionan protección impermeable y resistencia a la intemperie, siendo ideales para techados en construcciones residenciales, comerciales o industriales.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+<!-- --------------------------------------------------------------------------------------------------------- -->
+        <!-- # Sección 3 - Ventajas -->
+        <section>
+            <div class="ventajas-cs">
+                <div class="content-cs" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
+                    <h2>¿Qué ventajas <br> tiene este sistema?</h2>
+                </div>
+    
+                <div class="card-cs" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="container-image-cs">
+                        <img class="image-circle-cs" src="../scss/recursos/water-fee.svg" alt="Icono de Anticorrosivo">
+                    </div>
+                    <div class="content-cs">
+                        <div class="detail-cs">
+                            <span>Resistente <br> al agua</span>
+                        </div>
+                    
+                    <div class="product-image-cs">
+                            <div class="box-image-cs">
+                                <img class="image-circle-cs" src="../scss/recursos/water-fee.svg" alt="Descripción de la imagen">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="card-cs" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="container-image-cs">
+                        <img class="image-circle-cs" src="../scss/recursos/cash-money.svg" alt="Icono de ecofriendly">
+                    </div>
+                    <div class="content-cs">
+                    <div class="detail-cs">
+                        <span>Costo eficiente</span>
+                    </div>
+                    <div class="product-image-cs">
+                        <div class="box-image-cs">
+                            <img class="image-circle-cs" src="../scss/recursos/cash-money.svg" alt="Icono de moneda peso">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+    
+                <div class="card-cs" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="container-image-cs">
+                        <img class="image-circle-cs" src="../scss/recursos/time.svg" alt="Icono de ahorro de tiempo en obra">
+                    </div>
+                    <div class="content-cs">
+                    <div class="detail-cs">
+                        <span>Durabilidad <br> en el tiempo</span>
+                    </div>
+                    <div class="product-image-cs">
+                        <div class="box-image-cs">
+                            <img class="image-circle-cs" src="../scss/recursos/time.svg" alt="Icono de ahorro de tiempo en obra">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+                <div class="card-cs" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="container-image-cs">
+                        <img class="image-circle-cs" src="../scss/recursos/recycle.svg" alt="Icono de aislación acustica">
+                    </div>
+                    <div class="content-cs">
+                        <div class="detail-cs">
+                            <span>100% Reciclable</span>
+                        </div>
+                        <div class="product-image-cs">
+                            <div class="box-image-cs">
+                                <img class="image-circle-cs" src="../scss/recursos/recycle.svg" alt="Icono de ahorro de tiempo en obra">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- --------------------------------------------------------------------------------------------------------- -->
+        <!-- # Seccion 4 - Banner shop -->
+        <section>
+            <div class="banner-shop-cs">
+                <h2 class="fade-in-cs" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">Búsca los productos que necesitas en nuestra tienda online y pagá con todos los medios de pago disponibles</h2>
+                <div class="btn-e-shop-cs" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100"><a href="https://pvcenter.mercadoshops.com.ar/"><i class="bi bi-bag-plus"></i> Tienda On-Line</a></div>
+            </div>
+        </section>
+
+<!-- --------------------------------------------------------------------------------------------------------- -->
+        <!-- # Seccion 5 - E-SHOP -->
+        <div class="wrapper">
+            <header class="header-mobile">
+                <div class="shop-logo"><img src="../scss/recursos/imagotipo.png" alt=""></div>
+                <span class="open-menu-header" id="open-menu-header">
+                    <i class="bi bi-list"></i>
+                </span>
+            </header>
+            <aside class="aside-visible">
+                <span class="close-menu-header" id="close-menu-header">
+                    <i class="bi bi-x-lg"></i>
+                </span>
+                <header>
+                    <h2 class="shop-logo">Dreyja Shop</h2>
+                </header>
+                <nav>
+                    <ul class="menu-ul">
+                        <li>
+                            <span id="todos" class="boton-menu boton-categoria active"><i class="bi bi-arrow-up-square"></i> Productos destacados <i class="bi bi-bookmark-star-fill"></i></span>
+                        </li>
+                        <li>
+                            <span id="perfiles" class="boton-menu boton-categoria"><i class="bi bi-arrow-up-square"></i> Perfiles</span>
+                        </li>
+                        <!-- <li>
+                            <span id="placas" class="boton-menu boton-categoria"><i class="bi bi-arrow-up-square"></i> Placas</span>
+                        </li> -->
+                        <li>
+                            <span id="accesorios" class="boton-menu boton-categoria"><i class="bi bi-arrow-up-square"></i> Accesorios</span>
+                        </li>
+                        <li>
+                            <span id="complementos" class="boton-menu boton-categoria"><i class="bi bi-arrow-up-square"></i> Complementos</span>
+                        </li>
+                        <li>
+                            <span id="tx" class="boton-menu boton-categoria"><i class="bi bi-arrow-up-square"></i> TX</span>
+                        </li>
+                        <li>
+                            <span id="drywall" class="boton-menu boton-categoria"><i class="bi bi-arrow-up-square"></i> Drywall</span>
+                        </li>
+                        <li>
+                            <a class="boton-menu boton-carrito" href="https://pvcenter.mercadoshops.com.ar/">
+                                <i class="bi bi-bag-check-fill"></i>E-shop <span class="numerito"></span></a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer-shop">
+                    <p class="texto-footer">© 2023 Jerónimo Núñez</p>
+                </div>
+            </aside>
+            <main class="main-eshop">
+                <h2 class="titulo-principal" id="titulo-principal"><i class="bi bi-bookmark-star-fill"></i> Productos Destacados </h2>
+                <div id="contenedor-productos" class="contenedor-productos"></div>
+            </main>
+        </div>
+
+<!-- --------------------------------------------------------------------------------------------------------- -->
+        <!-- # Seccion 6 - Estamos a tu disposicion -->
+        <section class="disposicion">     
+            <div class="disposicion-6-cs"></div>       
+            <div class="disposicion-content">
+                <h2 class="disposicion-title" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">Estamos a tu disposición! <br>Asesorate con nuestros profesionales <br> especializados en la construcción en seco!</h2>
+            </div>
+            <div class="btn-redirect" ><a href="https://pvcenter.mercadoshops.com.ar/"><i class="bi bi-bag-plus"></i> Tienda On-Line</a></div>
+        </section>
+    </main>
+    <!--------------------------------------------------------------------------------------
+                                    # Formulario
+    --------------------------------------------------------------------------------------->
+    <section class="section-form">
+        <div class="contactForm">
+            <div class="form">
+                <div class="texto">
+                    <h2>¡Hacenos tu consulta!</h2>
+                    <p>Dejanos tu inquietud para brindarte más información!</p>
+                </div>
+
+                <form id="form" action="" class="form-form">
+                    <div class="inputBox">
+                        <label for="name">Nombre</label>
+                        <input name="name" id="name" type="text" placeholder="Nombre..." required autocomplete="off">
+                    </div>
+                    <div class="inputBox">
+                        <label for="email">email</label>
+                        <input name="email" id="email" type="text" placeholder="Email..." required autocomplete="off">
+                    </div>
+                    <div class="inputBox">
+                        <label for="message">Ingrese su mensaje</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Tu mensaje..."></textarea>
+                    </div>
+                    <input class="btn primary full" type="submit" value="Enviar mensaje">
+                </form>
+            </div>
+
+            <div class="info">
+
+                <div class="imgBox">
+                    <img src="./scss/recursos/construirFuturo.jpe" alt="">
+                </div>
+
+                <div class="rrss">
+                    <a href="https://www.google.com/maps?q=-34.92482,-58.01217" target="_blank"><i class="bi bi-pin-map"></i></ion-icon></a>
+                    <a href="https://www.facebook.com/profile.php?id=100087201953877"><i class="bi bi-facebook"></i></ion-icon></a>
+                    <a href="https://www.instagram.com/dreyjasrl/"><i class="bi bi-instagram"></i></ion-icon></a>
+                    <a href="mailto:dreyjasrl@gmail.com?subject=Asunto del correo&body=Cuerpo del correo"><i class="bi bi-envelope"></i></ion-icon></a>
+                    <a href="tel:+5492214367824"><i class="bi bi-telephone"></i></ion-icon></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------------------------------------------------------------------------------------
+                                    # Footer
+    --------------------------------------------------------------------------------------->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6">
+                    <div class="footer-info">
+                        <img class="img-logo-footer" src="./scss/recursos/imagotipo.png" alt="imagotipo de Dreyja">
+                        <p>
+                        Calle 524 #4453 - cp:1900<br>
+                        LA PLATA, Buenos Aires. <br><br>
+                        <strong>Telefono:</strong> +549 221 436 7824<br>
+                        <strong>Email:</strong> dreyjasrl@gmail.com<br>
+                        </p>
+                        <div class="social-links mt-3">
+                        <a href="https://www.facebook.com/groups/577400563258704" class="facebook"><i class="bi bi-facebook"></i></i></a>
+                        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                        <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
+                        <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>   -->
+                        <!-- <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links">
+                    <h4>Ayuda!</h4>
+                    <ul>
+                        <li><i class="bx bx-chevron-right"></i> <a href="./index.html">Home</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="./pages/quienes-somos.html">Acerca de Nosotros</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Servicios</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Politica y Privacidad</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="./pages/contacto.html">Contacto</a></li>
+                    </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Nuestros Servicios</h4>
+                    <ul>
+                        <li><a href="tel:+5492214367824">Acompañamiento</a></li>
+                        <li><a href="../pages/contacto.html">Logistica</a></li>
+                        <li><a href="https://wa.me/5492995479547" class="btn-wsp" target="_blank">Asesoramiento profesional</a></li>
+                        <!-- <li><a href="#">Llenar campos </a></li> -->
+                        <!-- <li><a href="#">Llenar campos </a></li> -->
+                    </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                        <h4>Nuestro Newsletter</h4>
+                        <p>Enterate sobre nuevos ingresos y actualizaciones (todas las semanas) sobre nuestros productos</p>
+
+                        <form id="subscribeForm" action="" method="post">
+                            <input type="email" name="email" id="emailInput">
+                            <input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="container">
+        <div class="copyright">&copy; Copyright <strong><span>DREYJA SRL</span></strong><div class="br"></div> Todos los derechos reservados
+        </div>
+        <div class="credits">Designed by <a href="mailto:jeronimonunez96@gmail.com">Jeronimo Nuñez</a>
+        </div>
+    </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!--------------------------------------------------------------------------------------
+    // Scripts
+    --------------------------------------------------------------------------------------->
+    <!-- Lightbox JS -->
+    <script src="lightbox2/dist/js/lightbox.min.js"></script>
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <!-- Boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.all.min.js"></script>
+    <!-- Aos Next on scroll -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+
+    <!-- Java Scripts links -->
+    <!-- <script src="./js/formulario-automatico.js"></script> -->
+    <script src="../reloj.js"></script> <!-- Js Clock -->
+    <script src="../js/preLoader.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/buscadorInterno.js"></script>
+    <script src="../js/aosSliderEffect.js"></script>
+    <script src="../js/productos.js"></script>
+    <script src="../js/menuHamburguesa.js"></script>
+</body>
+</html>

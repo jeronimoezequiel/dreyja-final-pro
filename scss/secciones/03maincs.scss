@@ -60,9 +60,8 @@ main {
         width: 100%;
         height: 520px;
         // background: blue;
-        background: url("https://www.clarin.com/img/2017/09/21/Hy5Rgt-sZ_1256x620.jpg") top center;
+        background: url("../scss/recursos/isover-fondo.jpg.jfif");
         background-size: cover;
-        background-position: center;
 
         @include tablet {
             height: 170px;
@@ -170,6 +169,7 @@ main {
     .tiposDeMuros {
         .strip {
             width: 100%;
+            height: 250px;
             max-width: 1310px; /* Ancho máximo para mantener la legibilidad en pantallas grandes */
             margin: 20px; /* Ajustado para mayor espacio entre tiras */
             background-color: #ffffff;
@@ -188,8 +188,8 @@ main {
             }
             img {
                 max-width: 100%; 
-                width: 420px;
-                height: 300px; 
+                width: 410px;
+                height: 248px; 
                 border-top-left-radius: 20px;
                 border-bottom-left-radius: 20px;
                 @include tablet {
@@ -207,24 +207,58 @@ main {
                 flex-direction: column; 
                 max-width: 900px;
                 padding: 5%;
+
+                .textWrapperTechos {
+                    display: inline-block;
+                    background: #d30809;
+                    color: #d30809;
+                    width: 57px;
+                    height: 3px;
+                    margin-bottom: 18px;
+                    font-size: 16px;
+                }
                 h2 {
                     font-family: 'Poppins';
                     font-size: 1.8rem;
-                    color: #43484b;
+                    font-weight: 700;
+                    color: #383f47;
 
                     @include tablet {
                         display: flex;
-                        font-size: 1.3rem;
+                        font-size: 1.1rem;
                     }
                 }
                 p {
                     font-family: 'Poppins';
                     font-size: 1rem;
-                    color: #6d8392;
+                    color: #383f47;
 
                     @include tablet {
                         display: none;
                     }
+                }
+                #btn-techos {
+                    display: inline-block;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    background: #383f47;
+                    color: #fff;
+                    padding: 6px 40px;
+                    letter-spacing: 1px;
+                    user-select: none;
+                    border-radius: 20px;
+                    width: 140px;
+
+                    @include tablet {
+                        font-size: 12px;
+                        width: 94px;
+                        padding: 7px 23px 
+                    }
+                }
+                #btn-techos:hover {
+                    background: #757575;
+                    color: #000;
+                    border-radius: 20px;
                 }
             }
         }
@@ -789,8 +823,9 @@ main {
                     .producto-imagen {
                         max-width: 100%;
                         border-top-right-radius: 1rem;
-                        border-bottom-left-radius: 0rem;
-                        border-bottom-right-radius: 0rem;
+                        border-top-left-radius: 1rem;
+                        border-bottom-left-radius: 0px;
+                        border-bottom-right-radius: 0px;
                     }
                     .producto-detalles{
                         background-color: #6b8b63;
@@ -803,6 +838,14 @@ main {
                         flex-direction: column;
                         gap: .25rem;
                         text-align: center;
+                        border-top-right-radius: 0px;
+                        border-top-left-radius: 0px;
+                        border-bottom-left-radius: 1rem;
+                        border-bottom-right-radius: 1rem;
+
+                        @include tablet {
+                            width: 300px;
+                        }
                         .producto-titulo{
                             font-size: 1rem;
                             text-align: center;
