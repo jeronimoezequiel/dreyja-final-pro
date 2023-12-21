@@ -1,0 +1,30 @@
+#zinc {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    background-image: url("https://img.freepik.com/fotos-premium/trabajador-herramientas-techador-usando-equipo-proteccion-instalando-techo-nuevo-techo-superior-sitio-construccion-techo-metal_64073-1077.jpg?size=626&ext=jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: inherit;
+        filter: brightness(40%) contrast(120%) saturate(80%) grayscale(10%);
+    }
+
+    h2 {
+        color: #fff;
+        font-size: 2.5rem;
+        font-family: $typo-poppins;
+        font-weight: 200;
+        position: absolute;
+        margin: 16% 0 0 38%;
+        z-index: 10;
+    }
+}

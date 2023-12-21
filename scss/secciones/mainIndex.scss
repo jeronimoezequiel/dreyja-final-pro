@@ -4,6 +4,7 @@ main {
     }
     #home {
         height: 750px;
+        position: relative;
         
         @include tablet {
             background: rgb(227,227,227);

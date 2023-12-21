@@ -23,10 +23,13 @@
     <!-- Aos Next on scroll -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+
     <!-- Css style -->
     <link rel="stylesheet" href="../css/style.css">
 
-    <title>Steel Framing </title>
+    <title>Techos y Aislaciones </title>
 </head>
 <body>
     <!--------------------------------------------------------------------------------------
@@ -168,7 +171,7 @@
         </div> 
 <!-- --------------------------------------------------------------------------------------------------------- -->
 
-        <!-- # Seccion 2 - Tipos de construcción en seco -->
+        <!-- # Seccion 2 - Tipos de techos -->
         <section class="tiposDeMuros">
             <div class="strip">
                 <img src="https://www.herramat.com/post/techo-chapa1-big.jpg" alt="Foto de techo de chapa de zinc negra"  data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
@@ -180,7 +183,7 @@
                     <p data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100"> 
                         Los techos de chapas de zinc son duraderos, resistentes a la corrosión y fáciles de mantener. Su esperanza de vida es de aproximadamente 50 años. Son excelentes para la protección contra las inclemencias del tiempo, ofrecen aislamiento térmico y vienen en varios colores.
                     </p>
-                    <a id="btn-techos" href="#">+ Info</a>
+                    <a id="btn-techos" href="#zinc">+ Info</a>
                 </div>
             </div>
 
@@ -194,7 +197,7 @@
                     <p data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
                         Los techos de chapas de policarbonato son ligeros, translúcidos permitiendo la entrada de luz natural dando flexibilidad estética. Su duración ronda alrededor de 15 a 25 años. Sus ventajas incluyen resistencia a impactos, flexibilidad en el diseño y aislamiento térmico. 
                     </p>
-                    <a id="btn-techos" href="#">+ Info</a>
+                    <a id="btn-techos" href="#pol">+ Info</a>
                 </div>
             </div>
         </section>
@@ -214,7 +217,7 @@
                         </span>
                         <h2 data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">Espuma aluminizada</h2>
                         <p data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">La espuma aluminizada es un material compuesto por una capa de aluminio adherida a una estructura de espuma.Se aplica comúnmente en techos y paredes de edificaciones para mejorar la eficiencia energética.</p>
-                        <a href="#">+ Info</a>
+                        <a href="#aislaciones">+ Info</a>
                     </div>
                 </div>
             </div>
@@ -230,8 +233,8 @@
                         </span>
                         <h2 data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">Super TBA</h2>
                         <p data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">El aislante Super TBA es un impermeable y barrera de vapor que evita la condensación y tambien sirve como aislante térmico. Su aplicación se hace sobre estructuras de machimbre con teja, estructuras metálicas con chapa, estructuras de steel framing con OSB o multilaminado fenólico.</p>
-                        <a href="#">+ Info</a>
-                        <a id="btn-isolant" href="#">Isolant</a>
+                        <a href="#aislaciones">+ Info</a>
+                        <a id="btn-isolant" href="#aislaciones">Isolant</a>
                     </div>
                 </div>
             </div>
@@ -247,65 +250,240 @@
                         </span>
                         <h2 data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">Rolac Plata</h2>
                         <p data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">Fieltro de lana de vidrio hidrorepelente Isover, revestido en una de sus caras con fóil de aluminio liso que actúa como barrera de vapor, con una solapa de 10 cm para darle continuidad a la misma. Para ser instalado sobre machimbre en cubiertas de chapa.</p>
-                        <a href="#">+ Info</a>
-                        <a id="btn-isover" href="#">Isover</a>
+                        <a href="#aislaciones">+ Info</a>
+                        <a id="btn-isover" href="#aislaciones">Isover</a>
                     </div>
                 </div>
             </div>
         </section>
 
 <!-- --------------------------------------------------------------------------------------------------------- -->
-        <!-- # Sección 4 - Proveedores -->
-        <!-- <section class="slider-tya">
-            <div class="slide-track-tya">
-                <div class="slide">
-                    <img src="../scss/recursos/1.png" alt="">
+        <!-- # Sección 4 - Techos de Zinc -->
+        <div class="zinc" id="zinc">
+            <h2 data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">Techos de Zinc</h2>
+            <h3 data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">Duración prolongada <br> para tu construcción</h3>
+        </div>
+
+        <div class="tya-ventajas">
+            <div class="durable"><i class="bi bi-clock-history"></i><br> Durablilidad en el tiempo</div>
+            <div class="anticorrosivo"><i class="bi bi-droplet-fill"></i><br> Anticorrosivo</div>
+            <div class="nocombustible"><i class="bi bi-fire"></i><br> No Combustible</div>
+        </div>
+
+        <div class="tya-chapasCards">
+            <section class="zincContainer">
+                <div class="zinc__container swiper">
+                    <div class="zinc__card--content">
+                        <div class="swiper-wrapper">
+                            <article class="card__article swiper-slide">
+                                <div class="card__image">
+                                    <img  class="card__img" src="https://http2.mlstatic.com/D_NQ_NP_996089-MLA47311768689_082021-O.webp" alt="foto de chapa de zinc 25mm">
+                                    <div class="card__shadow"></div>
+                                </div>
+
+                                <div class="card__data">
+                                    <h3 class="card__name">Chapa ondulada de Zinc </h3>
+                                    <p class="card__description">
+                                        Chapa ondulada de Zinc sin prepintar <br> espesor 25mm. <br> color: Zinc.
+                                    </p>
+                                    
+                                    <a href="#" class="card__button">Ir al shop</a>
+                                </div>
+                            </article>
+
+                            <article class="card__article swiper-slide">
+                                <div class="card__image">
+                                    <img src="https://www.ferreservi.com.uy/imgs/productos/productos34_27784.jpg" alt="foto de chapa de zinc 27mm" class="card__img">
+                                    <div class="card__shadow"></div>
+                                </div>
+
+                                <div class="card__data">
+                                    <h3 class="card__name">Chapa ondulada de Zinc</h3>
+                                    <p class="card__description">
+                                        Chapa ondulada de Zinc sin prepintar <br> espesor 27mm. <br> color: zinc
+                                    </p>
+                                    
+                                    <a href="#" class="card__button">Ir al shop</a>
+                                </div>
+                            </article>
+
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
-                <div class="slide">
-                    <img src="../scss/recursos/2.png" alt="">
+            </section>
+        </div>
+<!------ Techos --------------------------------->
+        <div class="pol" id="pol">
+            <h2 data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">Techos de policarbonato</h2>
+            <h3 data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">Luz natural, resistencia, <br> elegancia en armonía.</h3>
+        </div>
+
+        <div class="tya-ventajas">
+            <div class="durable"><i class="bi bi-volume-mute"></i><br> Aislante acústico</div>
+            <div class="anticorrosivo"><i class="bi bi-building-fill-check"></i><br> Resistente</div>
+            <div class="nocombustible"><i class="bi bi-sunrise"></i><br> Luz natural</div>
+        </div>
+
+        <div class="tya-chapasCards">
+            <section class="zincContainer">
+                <div class="zinc__container swiper">
+                    <div class="zinc__card--content">
+                        <div class="swiper-wrapper">
+                            <article class="card__article swiper-slide">
+                                <div class="card__image">
+                                    <img  class="card__img" src="https://http2.mlstatic.com/D_NQ_NP_905568-MLA32557501981_102019-O.webp" alt="foto de chapa de policarbonato transparente">
+                                    <div class="card__shadow"></div>
+                                </div>
+
+                                <div class="card__data">
+                                    <h3 class="card__name">Chapa de policarbonato.</h3>
+                                    <p class="card__description">
+                                        tipo: sinusoidal <br>espesor: 4mm/6mm/8mm/10mm <br> color: transparente.
+                                    </p>
+                                    
+                                    <a href="#" class="card__button">Ir al shop</a>
+                                </div>
+                            </article>
+
+                            <article class="card__article swiper-slide">
+                                <div class="card__image">
+                                    <img  class="card__img" src="https://http2.mlstatic.com/D_NQ_NP_700991-MLU72387898998_102023-O.webp" alt="foto de chapa de policarbonato color bronce">
+                                    <div class="card__shadow"></div>
+                                </div>
+
+                                <div class="card__data">
+                                    <h3 class="card__name">Chapa de policarbonato.</h3>
+                                    <p class="card__description">
+                                        tipo: sinusoidal <br>espesor: 4mm/6mm/8mm/10mm <br> color: bronce.
+                                    </p>
+                                    
+                                    <a href="#" class="card__button">Ir al shop</a>
+                                </div>
+                            </article>
+
+                            <article class="card__article swiper-slide">
+                                <div class="card__image">
+                                    <img  class="card__img" src="https://ferroscarp.com.ar/wp-content/uploads/2020/06/chapa-plastica-blanca.jpg" alt="foto de chapa de policarbonato color opalino">
+                                    <div class="card__shadow"></div>
+                                </div>
+
+                                <div class="card__data">
+                                    <h3 class="card__name">Chapa de policarbonato.</h3>
+                                    <p class="card__description">
+                                        tipo: sinusoidal <br>espesor: 4mm/6mm/8mm/10mm <br> color: opalino.
+                                    </p>
+                                    
+                                    <a href="#" class="card__button">Ir al shop</a>
+                                </div>
+                            </article>
+
+                            <article class="card__article swiper-slide">
+                                <div class="card__image">
+                                    <img  class="card__img" src="https://http2.mlstatic.com/D_NQ_NP_754656-MLB48195980610_112021-O.webp" alt="foto de chapa de policarbonato color transparente">
+                                    <div class="card__shadow"></div>
+                                </div>
+
+                                <div class="card__data">
+                                    <h3 class="card__name">Chapa de policarbonato.</h3>
+                                    <p class="card__description">
+                                        tipo: alveolar <br>espesor: 4mm/6mm/8mm/10mm <br> color: transparente.
+                                    </p>
+                                    
+                                    <a href="#" class="card__button">Ir al shop</a>
+                                </div>
+                            </article>
+
+                            <article class="card__article swiper-slide">
+                                <div class="card__image">
+                                    <img  class="card__img" src="https://http2.mlstatic.com/D_NQ_NP_797143-MLA71096719595_082023-O.webp" alt="foto de chapa de policarbonato color opalino">
+                                    <div class="card__shadow"></div>
+                                </div>
+
+                                <div class="card__data">
+                                    <h3 class="card__name">Chapa de policarbonato.</h3>
+                                    <p class="card__description">
+                                        tipo: alveolar <br>espesor: 4mm/6mm/8mm/10mm <br> color: opalino.
+                                    </p>
+                                    
+                                    <a href="#" class="card__button">Ir al shop</a>
+                                </div>
+                            </article>
+
+                            <article class="card__article swiper-slide">
+                                <div class="card__image">
+                                    <img  class="card__img" src="https://http2.mlstatic.com/D_NQ_NP_824378-MLA71096856259_082023-O.webp" alt="foto de chapa de policarbonato color gris">
+                                    <div class="card__shadow"></div>
+                                </div>
+
+                                <div class="card__data">
+                                    <h3 class="card__name">Chapa de policarbonato.</h3>
+                                    <p class="card__description">
+                                        tipo: alveolar <br>espesor: 4mm/6mm/8mm/10mm <br> color: gris.
+                                    </p>
+                                    
+                                    <a href="#" class="card__button">Ir al shop</a>
+                                </div>
+                            </article>
+
+                            <article class="card__article swiper-slide">
+                                <div class="card__image">
+                                    <img  class="card__img" src="https://http2.mlstatic.com/D_NQ_NP_773046-MLA71096592357_082023-O.webp" alt="foto de chapa de policarbonato color bronce">
+                                    <div class="card__shadow"></div>
+                                </div>
+
+                                <div class="card__data">
+                                    <h3 class="card__name">Chapa de policarbonato.</h3>
+                                    <p class="card__description">
+                                        tipo: alveolar <br>espesor: 4mm/6mm/8mm/10mm <br> color: bronce.
+                                    </p>
+                                    
+                                    <a href="#" class="card__button">Ir al shop</a>
+                                </div>
+                            </article>
+
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
-                <div class="slide">
-                    <img src="../scss/recursos/3.png" alt="">
-                </div>
-                <div class="../scss/recursos/4.pngide">
-                    <img src="" alt="">
-                </div>
-                <div class="slide">
-                    <img src="../scss/recursos/5.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="../scss/recursos/6.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="../scss/recursos/7.png" alt="">
+            </section>
+        </div>
+<!------ Aislaciones --------------------------------->
+        <div class="aislaciones" id="aislaciones">
+            <h2 data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">Aislantes únicos</h2>
+            <h3 data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">Protege tu casa <br>del frio y el calor</h3>
+        </div>
+
+        <section class="p-slider">
+            <div class="product-box">
+                <div class="p-img-container">
+                    <div class="p-img">
+
+                        <a href="">
+                            <img class="p-img-front" src="https://http2.mlstatic.com/D_NQ_NP_629476-MLM69305243617_052023-O.webp" alt="">
+                        </a>
+
+                    </div>
                 </div>
 
-                <div class="slide">
-                    <img src="../scss/recursos/1.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="../scss/recursos/2.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="../scss/recursos/3.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="../scss/recursos/4.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="../scss/recursos/5.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="../scss/recursos/6.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="../scss/recursos/7.png" alt="">
+                <div class="p-box-text">
+                    <div class="product-category">
+                        <span>Aislaciones</span>
+                    </div>
+                    <a href="#" class="product-title">
+                        Espuma Polietileno Aluminizada
+                    </a>
+                    <p>Espuma de politetileno de 5mm y 10mm/1x20</p>
+                    <div class="price-buy">
+                        <a href="#" class="p-buy-btn">Ir al shop.</a>
+                    </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 <!-- --------------------------------------------------------------------------------------------------------- -->
         <!-- # Sección 4 - Ventajas -->
-
         <!-- <section>
             <div class="ventajas-cs">
                 <div class="content-cs" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
@@ -585,16 +763,20 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.all.min.js"></script>
     <!-- Aos Next on scroll -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!--=============== SWIPER JS ===============-->
+    <script src="../js/swiper-bundle.min.js"></script>
 
 
     <!-- Java Scripts links -->
     <!-- <script src="./js/formulario-automatico.js"></script> -->
     <script src="../reloj.js"></script> <!-- Js Clock -->
+    <script src="../js/swipper.js"></script>
     <script src="../js/preLoader.js"></script>
     <script src="../js/script.js"></script>
     <script src="../js/buscadorInterno.js"></script>
     <script src="../js/aosSliderEffect.js"></script>
     <script src="../js/productos.js"></script>
     <script src="../js/menuHamburguesa.js"></script>
+    
 </body>
 </html>
