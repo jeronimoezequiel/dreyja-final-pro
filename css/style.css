@@ -3217,6 +3217,10 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; }
+    @media only screen and (max-width: 768px) {
+      #main-tya #zinc {
+        display: flex;
+        margin: -95% 0 0 0; } }
     #main-tya #zinc::before {
       content: "";
       position: absolute;
@@ -3234,6 +3238,9 @@ main {
       position: absolute;
       margin: 16% 0 0 11.5%;
       z-index: 10; }
+      @media only screen and (max-width: 768px) {
+        #main-tya #zinc h2 {
+          font-size: 2.3rem; } }
     #main-tya #zinc h3 {
       color: #fff;
       font-size: 2.5rem;
@@ -3241,6 +3248,10 @@ main {
       font-weight: 450;
       position: absolute;
       margin: 20% 0 0 100px; }
+      @media only screen and (max-width: 768px) {
+        #main-tya #zinc h3 {
+          font-size: 2.3rem;
+          margin: 100px 0 0 47px; } }
   #main-tya .tya-ventajas {
     margin: -18% 0 0 -3%;
     display: grid;
@@ -3251,12 +3262,24 @@ main {
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: "anticorrosivo durable nocombustible"; }
+    @media only screen and (max-width: 768px) {
+      #main-tya .tya-ventajas {
+        display: flex;
+        width: 5px;
+        height: 5px;
+        margin: -356px 0 243px 15px;
+        gap: 30px; } }
     #main-tya .tya-ventajas i {
       font-size: 3rem;
       display: flex;
       position: absolute;
       margin-bottom: 4%;
       color: #eeeeee; }
+      @media only screen and (max-width: 768px) {
+        #main-tya .tya-ventajas i {
+          display: flex;
+          font-size: 2.4rem;
+          margin-bottom: 103px; } }
     #main-tya .tya-ventajas .durable {
       font-family: 'Poppins';
       font-size: 1rem;
@@ -3270,6 +3293,9 @@ main {
       z-index: 10;
       height: 150px;
       width: 230px; }
+      @media only screen and (max-width: 768px) {
+        #main-tya .tya-ventajas .durable {
+          margin-top: 40px; } }
     #main-tya .tya-ventajas .anticorrosivo {
       font-family: 'Poppins';
       display: flex;
@@ -3282,6 +3308,9 @@ main {
       color: #eeeeee;
       height: 150px;
       width: 230px; }
+      @media only screen and (max-width: 768px) {
+        #main-tya .tya-ventajas .anticorrosivo {
+          margin-top: 40px; } }
     #main-tya .tya-ventajas .nocombustible {
       font-family: 'Poppins';
       display: flex;
@@ -3294,6 +3323,9 @@ main {
       color: #eeeeee;
       height: 150px;
       width: 230px; }
+      @media only screen and (max-width: 768px) {
+        #main-tya .tya-ventajas .nocombustible {
+          margin-top: 40px; } }
   #main-tya .tya-chapasCards {
     height: 500px;
     margin: -31% 0 0 43%; }
@@ -3337,7 +3369,7 @@ main {
               z-index: 10; }
               #main-tya .tya-chapasCards .zincContainer .zinc__container .zinc__card--content .card__article .card__data .card__name {
                 font-size: 1.3rem;
-                color: #333;
+                color: #fff;
                 margin-bottom: .75rem; }
               #main-tya .tya-chapasCards .zincContainer .zinc__container .zinc__card--content .card__article .card__data .card__description {
                 font-weight: 500;
@@ -3353,7 +3385,7 @@ main {
                 background: #eeeeee;
                 color: #5c7383; }
           #main-tya .tya-chapasCards .zincContainer .zinc__container .zinc__card--content .swiper-pagination {
-            bottom: 59%; }
+            bottom: 94%; }
   #main-tya #pol {
     position: relative;
     height: 600px;
@@ -3455,7 +3487,7 @@ main {
     left: 65%;
     transform: translate(-50%, 50%);
     width: 920px;
-    height: 450px;
+    height: 460px;
     background: #f5f5f5;
     overflow-x: hidden; }
     #main-tya .ais-container .ais-slide {
@@ -3467,7 +3499,6 @@ main {
         top: 50%;
         transform: translate(0, -50%);
         border-radius: 20px;
-        box-shadow: 0 30px 50px #505050;
         background-position: 50% 50%;
         background-size: cover;
         display: inline-block;
@@ -3497,11 +3528,15 @@ main {
             opacity: 0;
             animation: animate 1s ease-in-out 0.3s 1 forwards; }
           #main-tya .ais-container .ais-slide .item .content span {
-            padding: 10px 20px;
+            padding: 7px 20px;
             border: none;
             cursor: pointer;
             opacity: 0;
-            animation: animate 1s ease-in-out 0.6s 1 forwards; }
+            animation: animate 1s ease-in-out 0.6s 1 forwards;
+            border: 1px solid #5c7383;
+            border-radius: 30px; }
+          #main-tya .ais-container .ais-slide .item .content span:hover {
+            background: #ababab; }
 
 @keyframes animate {
   from {
@@ -3535,7 +3570,10 @@ main {
       width: 100%;
       text-align: center;
       position: absolute;
-      bottom: 20px; }
+      bottom: 20px;
+      font-size: 28px;
+      cursor: pointer;
+      margin: 0 0 0 -200px; }
       #main-tya .ais-container .button span {
         width: 40px;
         height: 35px;
@@ -3543,7 +3581,7 @@ main {
         border: none;
         cursor: pointer;
         margin: 0 5px;
-        border: 1px solid #000;
+        border: 1px solid #5c7383;
         transition: 0.3s; }
       #main-tya .ais-container .button span:hover {
         background: #ababab;
@@ -3582,7 +3620,7 @@ main {
     height: 245px;
     width: 100%;
     padding: 1px;
-    margin: 3.8% 0 0 0; }
+    margin: 0 0 0 0; }
     @media only screen and (max-width: 768px) {
       #main-tya .banner-shop-tya {
         display: flex;
