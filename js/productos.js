@@ -8,7 +8,8 @@ const productos = [
             nombre: "Perfiles",
             id: "",
         },
-        precio: 1000,
+        marca: "BARBIERI",
+        detalle: "",
     },
     {
         id: "perfiles",
@@ -18,7 +19,8 @@ const productos = [
             nombre: "Perfiles",
             id: "perfiles",
         },
-        precio: 1000,
+        marca: "BARBIERI",
+        detalle: "",
     },
     {
         id: "perfiles",
@@ -28,7 +30,8 @@ const productos = [
             nombre: "Perfiles",
             id: "perfiles",
         },
-        precio: 1000,
+        marca: "BARBIERI",
+        detalle: "",
     },
     {
         id: "perfiles",
@@ -38,7 +41,8 @@ const productos = [
             nombre: "Perfiles",
             id: "perfiles",
         },
-        precio: 1000,
+        marca: "BARBIERI",
+        detalle: "",
     },
     {
         id: "perfiles",
@@ -48,7 +52,8 @@ const productos = [
             nombre: "Perfiles",
             id: "perfiles",
         },
-        precio: 1000,
+        marca: "BARBIERI",
+        detalle: "",
     },
     {
         id: "perfiles",
@@ -58,7 +63,8 @@ const productos = [
             nombre: "Perfiles",
             id: "perfiles",
         },
-        precio: 1000,
+        marca: "BARBIERI",
+        detalle: "",
     },
     {
         id: "accesorios",
@@ -68,7 +74,8 @@ const productos = [
             nombre: "Accesorios",
             id: "accesorios",
         },
-        precio: 1000,
+        marca: "BARBIERI",
+        detalle: "",
     },
     {
         id: "accesorios",
@@ -78,7 +85,19 @@ const productos = [
             nombre: "Accesorios",
             id: "accesorios",
         },
-        precio: 1000,
+        marca: "BARBIERI",
+        detalle: "",
+    },
+    {
+        id: "accesorios",
+        nombre:"MASILLA PLACO® SC",
+        imagen: "../scss/recursos/placas/Placo-Masilla-SC.jpg.jfif",
+        categoria: {
+            nombre: "Accesorios",
+            id: "accesorios",
+        },
+        marca: "PLACO",
+        detalle: "Para todos los pasos del tomado de juntas con cinta de papel micro perforada, recubrimiento de tornillos y masillado completo en semicubiertos.",
     },
     {
         id: "accesorios",
@@ -88,7 +107,8 @@ const productos = [
             nombre: "Accesorios",
             id: "accesorios",
         },
-        precio: 1000,
+        marca: "BARBIERI",
+        detalle: "",
     },
     {
         id: "accesorios",
@@ -98,7 +118,8 @@ const productos = [
             nombre: "Accesorios",
             id: "accesorios",
         },
-        precio: 1000,
+        marca: "BARBIERI",
+        detalle: "",
     },
     {
         id: "accesorios",
@@ -108,7 +129,8 @@ const productos = [
             nombre: "Accesorios",
             id: "accesorios",
         },
-        precio: 1000,
+        marca: "BARBIERI",
+        detalle: "",
     },
     {
         id: "accesorios",
@@ -118,7 +140,8 @@ const productos = [
             nombre: "Accesorios",
             id: "accesorios",
         },
-        precio: 1000,
+        marca: "BARBIERI",
+        detalle: "",
     },
     {
         id: "complementos",
@@ -128,7 +151,8 @@ const productos = [
             nombre: "Complementos",
             id: "complementos",
         },
-        precio: 1000,
+        marca: "BARBIERI",
+        detalle: "",
     },
     {
         id: "complementos",
@@ -138,7 +162,8 @@ const productos = [
             nombre: "Complementos",
             id: "complementos",
         },
-        precio: 1000,
+        marca: "BARBIERI",
+        detalle: "",
     },
     {
         id: "complementos",
@@ -148,7 +173,8 @@ const productos = [
             nombre: "Complementos",
             id: "complementos",
         },
-        precio: 1000,
+        marca: "BARBIERI",
+        detalle: "",
     },
     {
         id: "complementos",
@@ -158,7 +184,8 @@ const productos = [
             nombre: "Complementos",
             id: "complementos",
         },
-        precio: 1000,
+        marca: "BARBIERI",
+        detalle: "",
     },
     {
         id: "complementos",
@@ -168,7 +195,8 @@ const productos = [
             nombre: "Complementos",
             id: "complementos",
         },
-        precio: 1000,
+        marca: "BARBIERI",
+        detalle: "",
     },
     {
         id: "complementos",
@@ -178,7 +206,8 @@ const productos = [
             nombre: "Complementos",
             id: "complementos",
         },
-        precio: 1000,
+        marca: "BARBIERI",
+        detalle: "",
     },
     {
         id: "complementos",
@@ -188,28 +217,75 @@ const productos = [
             nombre: "Complementos",
             id: "complementos",
         },
-        precio: 1000,
+        marca: "BARBIERI",
+        detalle: "",
     },
-    // {
-    //     id: "placas",
-    //     nombre:"Placa de OSB",
-    //     imagen: "../img/",
-    //     categoria: {
-    //         nombre: "Placas",
-    //         id: "placas",
-    //     },
-    //     precio: 1000,
-    // },
-    // {
-    //     id: "placas",
-    //     nombre:"Placa de Yeso",
-    //     imagen: "../img/",
-    //     categoria: {
-    //         nombre: "Placas",
-    //         id: "placas",
-    //     },
-    //     precio: 1000,
-    // },
+    {
+        id: "placas",
+        nombre:"Placa STD®",
+        imagen: "../scss/recursos/placas/Placo-STD-Thumbnail.jfif",
+        categoria: {
+            nombre: "Placas",
+            id: "placas",
+        },
+        marca: "PLACO",
+        detalle: "Placa de yeso estandar PLACO® STD para usos interiores en ambientes libres de humedad.",
+    },
+    {
+        id: "placas",
+        nombre:"Placa IMPACT®",
+        imagen: "../scss/recursos/placas/Placo-IMPACT-Thumbnail.jpg.jfif",
+        categoria: {
+            nombre: "Placas",
+            id: "placas",
+        },
+        marca: "PLACO",
+        detalle: "Placa de yeso PLACO® IMPACT, para usos interiores en ambientes con alto requerimiento al impacto y aislación acústica.",
+    },
+    {
+        id: "placas",
+        nombre:"Placa GLASROC X®",
+        imagen: "../scss/recursos/placas/GlasrocX_Placa.JPG.jfif",
+        categoria: {
+            nombre: "Placas",
+            id: "placas",
+        },
+        marca: "PLACO",
+        detalle: "GLASROC X®, placa de yeso laminado para fachadas, cerramientos y semicubiertos sustentables.",
+    },
+    {
+        id: "placas",
+        nombre:"Placa IMPACT RH®",
+        imagen: "../scss/recursos/placas/Placa-Impact-RH.jpg.jfif",
+        categoria: {
+            nombre: "Placas",
+            id: "placas",
+        },
+        marca: "PLACO",
+        detalle: "Placa de yeso PLACO® IMPACT RH, para usos interiores en ambientes humedos con alto requerimiento al impacto y aislación acústica.",
+    },
+    {
+        id: "placas",
+        nombre:"Placa SC®",
+        imagen: "../scss/recursos/placas/Placo-SC.jpg.jfif",
+        categoria: {
+            nombre: "Placas",
+            id: "placas",
+        },
+        marca: "PLACO",
+        detalle: "Placa de yeso PLACO® SC, para uso en cielorrasos semicubiertos.",
+    },
+    {
+        id: "placas",
+        nombre:"Placa RF®",
+        imagen: "../scss/recursos/placas/Placo-RF.jpg.jfif",
+        categoria: {
+            nombre: "Placas",
+            id: "placas",
+        },
+        marca: "PLACO",
+        detalle: "Placa de yeso PLACO®  RF, para usos interiores en ambientes con requerimiento de alta resistencia al fuego.",
+    },
     {
         id: "tx",
         nombre:"Larguero 24mm",
@@ -218,7 +294,8 @@ const productos = [
             nombre: "Tx",
             id: "tx",
         },
-        precio: 1000,
+        marca: "BARBIERI",
+        detalle: "",
     },
     {
         id: "tx",
@@ -228,7 +305,8 @@ const productos = [
             nombre: "Tx",
             id: "tx",
         },
-        precio: 1000,
+        marca: "BARBIERI",
+        detalle: "",
     },
     {
         id: "tx",
@@ -238,7 +316,8 @@ const productos = [
             nombre: "Tx",
             id: "tx",
         },
-        precio: 1000,
+        marca: "BARBIERI",
+        detalle: "",
     },
     {
         id: "drywall",
@@ -248,7 +327,8 @@ const productos = [
             nombre: "Drywall",
             id: "drywall",
         },
-        precio: 1000,
+        marca: "BARBIERI",
+        detalle: "",
     },
     {
         id: "drywall",
@@ -258,7 +338,8 @@ const productos = [
             nombre: "Drywall",
             id: "drywall",
         },
-        precio: 1000,
+        marca: "BARBIERI",
+        detalle: "",
     },
     {
         id: "drywall",
@@ -268,7 +349,8 @@ const productos = [
             nombre: "Drywall",
             id: "drywall",
         },
-        precio: 1000,
+        marca: "BARBIERI",
+        detalle: "",
     },
     {
         id: "drywall",
@@ -278,7 +360,8 @@ const productos = [
             nombre: "Drywall",
             id: "drywall",
         },
-        precio: 1000,
+        marca: "BARBIERI",
+        detalle: "",
     },
     {
         id: "drywall",
@@ -288,7 +371,8 @@ const productos = [
             nombre: "Drywall",
             id: "drywall",
         },
-        precio: 1000,
+        marca: "BARBIERI",
+        detalle: "",
     },
     {
         id: "drywall",
@@ -298,7 +382,8 @@ const productos = [
             nombre: "Drywall",
             id: "drywall",
         },
-        precio: 1000,
+        marca: "BARBIERI",
+        detalle: "",
     },
     {
         id: "drywall",
@@ -308,7 +393,8 @@ const productos = [
             nombre: "Drywall",
             id: "drywall",
         },
-        precio: 1000,
+        marca: "BARBIERI",
+        detalle: "",
     },
     {
         id: "drywall",
@@ -318,7 +404,8 @@ const productos = [
             nombre: "Drywall",
             id: "drywall",
         },
-        precio: 1000,
+        marca: "BARBIERI",
+        detalle: "",
     },
 ];
 
@@ -348,8 +435,9 @@ function cargarProductos(productosElegidos) {
             <img class="producto-imagen" src="${producto.imagen}" alt="${producto.nombre}" width="300px">
             <div class="producto-detalles">
                 <h5 class="producto-titulo">${producto.nombre}</h3>
-                <p class="producto-precio">${producto.precio}</p>
-                <span class="producto-agregar" id="${producto.id}">Agregar</span>
+                <p class="producto-marca">${producto.marca}</p>
+                <p class="producto-detalle">${producto.detalle}</p>
+                <span class="producto-consultar" id="${producto.id}"><a href="https://wa.me/5492995479547" class="btn-wsp" target="_blank">Consultar</span>
             </div>
         `;
         contenedorProductos.append(div);

@@ -2699,6 +2699,210 @@ main {
           main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column-img .carousel-selectors .selector i {
             color: #333;
             font-size: 30px; }
+  main #cielorraso-desmontable {
+    position: relative;
+    height: 580px;
+    width: 100%;
+    background-color: #4b4b4b;
+    z-index: 1;
+    margin: -18.5% 0 -5% 0; }
+    @media only screen and (max-width: 768px) {
+      main #cielorraso-desmontable {
+        display: flex;
+        margin: -95% 0 0 0; } }
+    main #cielorraso-desmontable::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: inherit;
+      filter: brightness(40%) contrast(120%) saturate(80%) grayscale(10%); }
+    main #cielorraso-desmontable h2 {
+      color: #fff;
+      font-size: 2rem;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      position: absolute;
+      margin: 7.9% 0 10px 7.4%;
+      z-index: 10;
+      background-color: #d30809;
+      padding: 15px 10px; }
+      @media only screen and (max-width: 768px) {
+        main #cielorraso-desmontable h2 {
+          font-size: 2.3rem; } }
+    main #cielorraso-desmontable .navegacion-cielorraso-desmontable {
+      height: 100%;
+      overflow: hidden;
+      margin: 250px 0 0 -950px;
+      z-index: 4;
+      position: relative; }
+      main #cielorraso-desmontable .navegacion-cielorraso-desmontable ul {
+        margin: 8.5% 0 0 0; }
+        main #cielorraso-desmontable .navegacion-cielorraso-desmontable ul li {
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+          main #cielorraso-desmontable .navegacion-cielorraso-desmontable ul li .inbox-cielorraso-desmontable {
+            width: 100%;
+            height: 70px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            text-decoration: none;
+            border-radius: 10px;
+            list-style-type: none;
+            color: #fff;
+            font-family: 'Poppins';
+            font-size: .9rem;
+            margin-bottom: 5px; }
+            main #cielorraso-desmontable .navegacion-cielorraso-desmontable ul li .inbox-cielorraso-desmontable .inbox-img-cielorraso-desmontable {
+              width: 40px;
+              height: 40px;
+              margin-bottom: 5px; }
+    main #cielorraso-desmontable .nav-cielorraso-desmontable {
+      font-family: "Inter", sans-serif;
+      height: 90px;
+      position: relative;
+      width: 1700px;
+      margin: -39% 0 0 -32%;
+      z-index: 555;
+      color: #fff; }
+      @media only screen and (max-width: 768px) {
+        main #cielorraso-desmontable .nav-cielorraso-desmontable {
+          position: fixed;
+          top: 0;
+          right: -250px;
+          background: #000;
+          width: 250px;
+          height: 120vh;
+          display: flex;
+          transition: all 300ms; } }
+      main #cielorraso-desmontable .nav-cielorraso-desmontable .menu-cielorraso-desmontable {
+        position: relative;
+        margin: 70px 0 0 58%;
+        max-width: 4500px;
+        overflow: hidden; }
+        main #cielorraso-desmontable .nav-cielorraso-desmontable .menu-cielorraso-desmontable ul {
+          width: 100%;
+          margin: 1.8% 0% 0% 0%;
+          padding-right: 0;
+          display: flex;
+          justify-content: space-between;
+          font-size: .9rem;
+          font-weight: 300; }
+          @media only screen and (max-width: 768px) {
+            main #cielorraso-desmontable .nav-cielorraso-desmontable .menu-cielorraso-desmontable ul {
+              display: flex;
+              flex-direction: column;
+              margin-top: 34px;
+              margin-left: 0px;
+              font-size: 1em; } }
+          main #cielorraso-desmontable .nav-cielorraso-desmontable .menu-cielorraso-desmontable ul .nav__item-cielorraso-desmontable {
+            margin-top: .5%; }
+            main #cielorraso-desmontable .nav-cielorraso-desmontable .menu-cielorraso-desmontable ul .nav__item-cielorraso-desmontable a {
+              list-style: none;
+              text-decoration: none;
+              color: #fff; }
+              @media only screen and (max-width: 768px) {
+                main #cielorraso-desmontable .nav-cielorraso-desmontable .menu-cielorraso-desmontable ul .nav__item-cielorraso-desmontable a {
+                  margin-top: -6%;
+                  margin-left: 1px; } }
+              main #cielorraso-desmontable .nav-cielorraso-desmontable .menu-cielorraso-desmontable ul .nav__item-cielorraso-desmontable a:before {
+                content: "";
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background-color: #d30809;
+                transition: width 0.3s ease; }
+              main #cielorraso-desmontable .nav-cielorraso-desmontable .menu-cielorraso-desmontable ul .nav__item-cielorraso-desmontable a:hover, main #cielorraso-desmontable .nav-cielorraso-desmontable .menu-cielorraso-desmontable ul .nav__item-cielorraso-desmontable a.active-card-cielorraso-desmontable {
+                color: #d30809;
+                font-weight: bold;
+                border-bottom: 2px solid #d30809; }
+    main #cielorraso-desmontable .cielorraso-container-desmontable {
+      display: flex;
+      justify-content: center;
+      height: 100vh;
+      align-items: center;
+      margin: -10.5% 0 0 20.5%;
+      z-index: 333;
+      position: relative; }
+      main #cielorraso-desmontable .cielorraso-container-desmontable .cielorraso-background-left-column {
+        background: #273238; }
+      main #cielorraso-desmontable .cielorraso-container-desmontable .cielorraso-background2-left-column {
+        background: #273238; }
+      main #cielorraso-desmontable .cielorraso-container-desmontable .cielorraso-background3-left-column {
+        background: #273238; }
+      main #cielorraso-desmontable .cielorraso-container-desmontable .cielorraso-card-desmontable {
+        background-color: #fff;
+        border-radius: 1rem;
+        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+        display: flex;
+        margin: 1.5rem;
+        overflow: hidden;
+        width: 58rem;
+        height: 23rem;
+        z-index: 444;
+        position: relative; }
+        main #cielorraso-desmontable .cielorraso-container-desmontable .cielorraso-card-desmontable.active-card-cielorraso-desmontable {
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          z-index: 4; }
+        main #cielorraso-desmontable .cielorraso-container-desmontable .cielorraso-card-desmontable h2 {
+          letter-spacing: .1rem;
+          margin: 1rem 0;
+          color: #000; }
+        main #cielorraso-desmontable .cielorraso-container-desmontable .cielorraso-card-desmontable h6 {
+          opacity: 0.6;
+          letter-spacing: .1rem;
+          text-transform: uppercase; }
+        main #cielorraso-desmontable .cielorraso-container-desmontable .cielorraso-card-desmontable .cielorraso-left-column-desmontable {
+          color: #fff;
+          padding: 2rem;
+          max-width: 10rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between; }
+          main #cielorraso-desmontable .cielorraso-container-desmontable .cielorraso-card-desmontable .cielorraso-left-column-desmontable h4 {
+            color: #fff; }
+          main #cielorraso-desmontable .cielorraso-container-desmontable .cielorraso-card-desmontable .cielorraso-left-column-desmontable i {
+            font-size: 5rem; }
+        main #cielorraso-desmontable .cielorraso-container-desmontable .cielorraso-card-desmontable .cielorraso-right-column-desmontable {
+          padding: 2rem;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-between; }
+          main #cielorraso-desmontable .cielorraso-container-desmontable .cielorraso-card-desmontable .cielorraso-right-column-desmontable p {
+            font-family: 'Poppins';
+            font-size: .9rem;
+            color: #000;
+            max-width: 400px; }
+          main #cielorraso-desmontable .cielorraso-container-desmontable .cielorraso-card-desmontable .cielorraso-right-column-desmontable span {
+            border-radius: 3rem;
+            background: #273238;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+            color: #fff;
+            font-size: 1.2rem;
+            padding: .8rem 1.3rem;
+            letter-spacing: .1rem;
+            align-self: flex-end; }
+        main #cielorraso-desmontable .cielorraso-container-desmontable .cielorraso-card-desmontable .cielorraso-left-column-img-desmontable {
+          width: 350px;
+          max-width: 300px;
+          margin-left: auto; }
+          main #cielorraso-desmontable .cielorraso-container-desmontable .cielorraso-card-desmontable .cielorraso-left-column-img-desmontable .owl-carousel-desmontable .cielorraso-item-desmontable img {
+            width: 100%;
+            height: auto;
+            margin: 0; }
+          main #cielorraso-desmontable .cielorraso-container-desmontable .cielorraso-card-desmontable .cielorraso-left-column-img-desmontable .carousel-selectors-desmontable .selector-desmontable i {
+            color: #333;
+            font-size: 30px; }
   main .drywall {
     position: absolute;
     height: 500px;
@@ -2960,7 +3164,7 @@ main {
       text-align: center;
       justify-content: center;
       align-items: center;
-      top: 40%; }
+      top: 35%; }
       @media only screen and (max-width: 768px) {
         main .banner-shop-cs h2 {
           display: flex;
@@ -3007,7 +3211,7 @@ main {
     main .wrapper aside {
       padding: -1rem;
       padding-right: 0;
-      color: #4e6448;
+      color: #273238;
       position: sticky;
       top: 0;
       height: 100vh;
@@ -3097,7 +3301,7 @@ main {
           padding: 2rem;
           margin: 0 0 170px 0; } }
       main .wrapper .main-eshop .titulo-principal {
-        color: #4e6448;
+        color: #273238;
         margin-bottom: 2rem; }
       main .wrapper .main-eshop .contenedor-productos {
         display: grid;
@@ -3125,7 +3329,7 @@ main {
           border-bottom-left-radius: 0px;
           border-bottom-right-radius: 0px; }
         main .wrapper .main-eshop .contenedor-productos .producto .producto-detalles {
-          background-color: #6b8b63;
+          background-color: #273238;
           color: #fff;
           padding: .5rem;
           border-radius: 1rem;
@@ -3145,18 +3349,18 @@ main {
           main .wrapper .main-eshop .contenedor-productos .producto .producto-detalles .producto-titulo {
             font-size: 1rem;
             text-align: center; }
-          main .wrapper .main-eshop .contenedor-productos .producto .producto-detalles .producto-agregar {
+          main .wrapper .main-eshop .contenedor-productos .producto .producto-detalles .producto-consultar {
             border: 0;
             background-color: #fff;
-            color: #6b8b63;
+            color: #273238;
             padding: .4rem;
             text-transform: uppercase;
             border-radius: 2rem;
             cursor: pointer;
             border: 2px solid #fff;
             transition: background-color .2s, color .2s; }
-          main .wrapper .main-eshop .contenedor-productos .producto .producto-detalles .producto-agregar:hover {
-            background-color: #6b8b63;
+          main .wrapper .main-eshop .contenedor-productos .producto .producto-detalles .producto-consultar:hover {
+            background-color: #8baac0;
             color: #fff; }
   @media only screen and (max-width: 768px) {
     main .disposicion {

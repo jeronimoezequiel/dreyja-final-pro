@@ -84,6 +84,54 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+//CIELORRASO DESMONTABLE
+document.addEventListener('DOMContentLoaded', function () {
+    const navLinksCielorrasoDesmontable = document.querySelectorAll('.nav__link-cielorraso-desmontable');
+    const cardsCielorrasoDesmontable = document.querySelectorAll('.cielorraso-card-desmontable');
+    const navCielorrasoDesmontable = document.querySelector('.nav-cielorraso-desmontable');
+
+    // Mostrar la tarjeta correspondiente a "PERIMETRAL" al cargar la página
+    showCardCielorrasoDesmontable('cielorraso-desmontable-card-1');
+    activateLinkCielorrasoDesmontable(navLinksCielorrasoDesmontable[0]); // Activar el primer enlace al cargar la página
+
+    navLinksCielorrasoDesmontable.forEach((link, index) => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetCardId = this.getAttribute('data-target');
+            showCardCielorrasoDesmontable(targetCardId);
+            activateLinkCielorrasoDesmontable(this);
+        });
+    });
+
+    function showCardCielorrasoDesmontable(cardId) {
+        cardsCielorrasoDesmontable.forEach(card => {
+            card.style.display = 'none';
+        });
+
+        const targetCard = document.getElementById(cardId);
+        if (targetCard) {
+            targetCard.style.display = 'flex';
+        }
+    }
+
+    function activateLinkCielorrasoDesmontable(activeLink) {
+        navLinksCielorrasoDesmontable.forEach(link => {
+            link.classList.remove('active-card-cielorraso-desmontable');
+            link.style.color = ''; // Restablecer color
+            link.style.fontWeight = ''; // Restablecer peso de la fuente
+            link.style.textDecoration = ''; // Restablecer subrayado
+        });
+
+        activeLink.classList.add('active-card-cielorraso-desmontable');
+        activeLink.style.color = '#d30809';
+        activeLink.style.fontWeight = 'bold';
+    }
+});
+
+
+
+
+
 // SCROLL VERTICAL DE CIELORRASOS A SU SECCIÓN
 $(document).ready(function () {
     $("#btn-techos").on("click", function (e) {
