@@ -18,3 +18,8 @@ $color--back: (verde-back: #5c8364);
 $color--green-garden: (verde-shop: #6b8b63);
 $color--bottom-line: (bottom-line: #666666);
 
+
+/* ------------ mixin ------------*/
+@mixin degradado-repeticion {
+    mask: linear-gradient(to right, transparent 0%, black 50%, transparent 100%);
+}
