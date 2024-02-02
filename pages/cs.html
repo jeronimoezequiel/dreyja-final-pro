@@ -10,6 +10,13 @@
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/f39f83ef3f.js" crossorigin="anonymous"></script>
 
+    <!-- OwlCarousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- BoxIcons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <!-- Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -119,7 +126,7 @@
     --------------------------------------------------------------------------------------->
 
     <main>
-        <a href="https://pvcenter.mercadoshops.com.ar/" target="_blank">
+        <!-- <a href="https://pvcenter.mercadoshops.com.ar/" target="_blank">
         <button class="button" type="button">
             <span class="text">Dreyja e-shop</span>
             <span class="icon" aria-hidden="true">
@@ -128,7 +135,7 @@
                 </svg>
             </span>
         </button>
-        </a>
+        </a> -->
 
         <!-- # sección 1 - Preguntas de inicio -->
         <section id="home-cs" class="home-cs">
@@ -173,8 +180,9 @@
             <div class="strip">
                 <img src="https://i.pinimg.com/564x/59/8d/e9/598de93cd8d0b0bdcc3d8b111824943d.jpg" alt="Foto de cielorraso desmontable" >
                 <div class="strip-content">
-                    <h2>Cielorrasos</h2>
+                    <h2>Cielorraso</h2>
                     <p>Los cielorrasos suspendidos se instalan debajo de la estructura principal del techo. Es permanente y se fija directamente a la estructura. El cielorraso desmontable se coloca en un marco, permitiendo fácil desmontaje para acceder al espacio entre el cielorraso y la estructura. El desmontable es versátil y común en entornos comerciales, mientras que el suspendido es más permanente en aplicaciones residenciales.</p>
+                    <a id="btn-techos" href="#cielorraso">+ Info</a>
                 </div>
             </div>
 
@@ -183,82 +191,469 @@
                 <div class="strip-content">
                     <h2>DryWall</h2>
                     <p>Sistema basado en el uso de paneles prefabricados de yeso, que se ensamblan para formar paredes y techos en una estructura. Este método prescinde del uso de materiales húmedos, permitiendo una construcción más rápida y eficiente. Los paneles se fijan a una estructura metálica o de madera, proporcionando un acabado liso y versátil para espacios interiores. </p>
+                    <a id="btn-techos" href="#drywall">+ Info</a>
+                </div>
+            </div>
+
+            <div class="strip">
+                <img src="https://i.pinimg.com/564x/f2/17/21/f21721de490301d56e38d63033e427e8.jpg" alt="Foto de semicubierto de chapa de policarbonato transparente" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
+                <div class="strip-content">
+                    <span class="textWrapperTechos" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
+                        <span>Accesorios</span>
+                    </span>
+                    <h2 data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">Accesorios de sistema</h2>
+                    <p data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
+                        
+                    </p>
+                    <a id="btn-techos" href="#shop">+ Info</a>
                 </div>
             </div>
         </section>
+
+        <!-- Secciones -->
+
+        <section class="cielorraso">
+            <div class="cielorraso" id="cielorraso">
+                <h2 data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">Cielorraso desmontable</h2>
+
+                <!-- Ventajas -->
+                <nav class="navegacion-cielorraso">
+                    <ul>
+                        <li>
+                            <a class="inbox-cielorraso">
+                                <img class="inbox-img-cielorraso" src="../scss/recursos/calidad-certificada.svg" alt="">
+                                <span>CÁLIDAD CERTIFICADA</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="inbox-cielorraso">
+                                <img class="inbox-img-cielorraso" src="../scss/recursos/encastre-preciso (1).svg" alt="">
+                                <span>ENCASTRE PRECISO</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="inbox-cielorraso">
+                                <img class="inbox-img-cielorraso" src="../scss/recursos/encastre-preciso (1).svg" alt="">
+                                <span>MÁXIMA COMPATIBILIDAD</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="inbox-cielorraso">
+                                <img class="inbox-img-cielorraso" src="../scss/recursos/mayor-resistencia-al-fuego.svg" alt="">
+                                <span>RESISTENTE AL FUEGO</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="inbox-cielorraso">
+                                <img class="inbox-img-cielorraso" src="../scss/recursos/baja-deformacion.svg" alt="">
+                                <span>MUY BAJA DEFORMACIÓN</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav id="nav-cielorraso" class="nav-cielorraso">
+                    <div class="menu-cielorraso">
+                        <ul class="nav__list-cielorraso">
+                            <li class="nav__item-cielorraso">
+                                <a href="#" class="menu-item-cielorraso nav__link-cielorraso" data-target="cielorraso-card-1">LARGUERO</a>
+                            </li>
+                            <li class="nav__item-cielorraso">
+                                <a href="#" class="menu-item-cielorraso nav__link-cielorraso" data-target="cielorraso-card-2">TRAVESAÑO</a>
+                            </li>
+                            <li class="nav__item-cielorraso">
+                                <a href="#" class="menu-item-cielorraso nav__link-cielorraso" data-target="cielorraso-card-3">PERIMETRAL</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <!-- CARDS -->
+                <div class="cielorraso-container">
+
+                    <div class="cielorraso-card" id="cielorraso-card-1">
+
+                        <div class="cielorraso-left-column cielorraso-background-left-column">
+                            <h6>PERFILES TX</h6>
+                            <h4>PERFÍL LARGUERO "L"</h4>
+                            <i class='bx bxs-leaf'></i>
+                        </div>
         
-<!-- --------------------------------------------------------------------------------------------------------- -->
-        <!-- # Sección 3 - Ventajas -->
-        <section>
-            <div class="ventajas-cs">
-                <div class="content-cs" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
-                    <h2>¿Qué ventajas <br> tiene este sistema?</h2>
-                </div>
-    
-                <div class="card-cs" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
-                    <div class="container-image-cs">
-                        <img class="image-circle-cs" src="../scss/recursos/water-fee.svg" alt="Icono de Anticorrosivo">
-                    </div>
-                    <div class="content-cs">
-                        <div class="detail-cs">
-                            <span>Anticorrosivo</span>
+                        <div class="cielorraso-right-column">
+
+                            <h6>¿Qué es?</h6>
+                                <p> Es un perfil de acero galvanizado conformado en frío y vaina prepintada con forma de "T" invertida.
+                            <h6>Aplicación</h6>
+                                <p>Elemento que conforma la estructura principal de la cuadrícula del cielorraso suspendido.
+                            <h6>Dimensiones</h6>
+                                <p>Larguero 15/16"	3,66m	32mm	24mm <br>
+                                    Montante 69mm	0,52mm / Tira	2,6m
+                            </p>
+                            
                         </div>
-                    
-                    <div class="product-image-cs">
-                            <div class="box-image-cs">
-                                <img class="image-circle-cs" src="../scss/recursos/water-fee.svg" alt="Descripción de la imagen">
+
+                        <div class="cielorraso-left-column-img">
+                            <div class="owl-carousel">
+                                <div class="cielorraso-item">
+                                    <img src="../scss/recursos/TX/BARBIERI-LARGUERO-TX-LP-(24 MM).jpg" alt="Foto 1">
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                    
-                <div class="card-cs" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
-                    <div class="container-image-cs">
-                        <img class="image-circle-cs" src="../scss/recursos/gas-costs.svg" alt="Icono de ecofriendly">
-                    </div>
-                    <div class="content-cs">
-                    <div class="detail-cs">
-                        <span>No combustible</span>
-                    </div>
-                    <div class="product-image-cs">
-                        <div class="box-image-cs">
-                            <img class="image-circle-cs" src="../scss/recursos/gas-costs.svg" alt="Icono de ecofriendly">
+
+                    <div class="cielorraso-card" id="cielorraso-card-2">
+
+                        <div class="cielorraso-left-column cielorraso-background2-left-column">
+                            <h6>PERFILES TX</h6>
+                            <h4>PERFÍL TRAVESAÑO</h4>
+                            <i class='bx bxs-leaf'></i>
+                        </div>
+        
+                        <div class="cielorraso-right-column">
+
+                            <h6>¿Qué es?</h6>
+                                <p>Es un perfil de acero galvanizado conformado en frío y vaina prepintada con forma de "T" invertida.
+                            <h6>Aplicación</h6>
+                                <p> Elemento que vincula la estructura de perfiles largueros y perimetrales conformando la cuadrícula del cielorraso.
+                            <h6>Dimensiones</h6>
+                                <p>Travesaño largo TX TP 15/16"	1,22m	26mm	24mm <br>
+                                    Travesaño corto TX TP 15/16"	0,61m	26mm	 24mm
+                            </p>
+                            
+                        </div>
+
+                        <div class="cielorraso-left-column-img">
+                            <div class="owl-carousel">
+                                <div class="cielorraso-item">
+                                    <img src="../scss/recursos/TX/BARBIERI-TRAV-CORTO-TX-TP-1516(24 MM).jpg" alt="Foto 1">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    </div>
-                </div>
-    
-                <div class="card-cs" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
-                    <div class="container-image-cs">
-                        <img class="image-circle-cs" src="../scss/recursos/time.svg" alt="Icono de ahorro de tiempo en obra">
-                    </div>
-                    <div class="content-cs">
-                    <div class="detail-cs">
-                        <span>Durabilidad <br> en el tiempo</span>
-                    </div>
-                    <div class="product-image-cs">
-                        <div class="box-image-cs">
-                            <img class="image-circle-cs" src="../scss/recursos/time.svg" alt="Icono de ahorro de tiempo en obra">
+
+                    <div class="cielorraso-card" id="cielorraso-card-3">
+
+                        <div class="cielorraso-left-column cielorraso-background3-left-column">
+                            <h6>PERFILES TX</h6>
+                            <h4>PERFÍL PERIMETRAL</h4>
+                            <i class='bx bxs-leaf'></i>
+                        </div>
+        
+                        <div class="cielorraso-right-column">
+
+                            <h6>¿Qué es?</h6>
+                                <p>Es un perfil de acero prepintado conformado en frío con forma de "L".
+                            <h6>Aplicación</h6>
+                                <p> Elemento perimetral del cielorraso suspendido que se vincula al edificio existente. Se utiliza como soporte en cielorrasos suspendidos.
+                            <h6>Dimensiones</h6>
+                                <p>Perimetral TX P 15/16"	3,05m	20mm	22mm <br>
+                                    Perimetral Tx P 9/16"	3,05m	2omm	 15mm
+                            </p>
+                            
+                        </div>
+
+                        <div class="cielorraso-left-column-img">
+                            <div class="owl-carousel">
+                                <div class="cielorraso-item">
+                                    <img src="../scss/recursos/TX/BARBIERI-PERIMETRAL-TX-P1516.jpg" alt="Foto 1">
+                                </div>
+                            </div>
                         </div>
                     </div>
+
                 </div>
+                
             </div>
-    
-                <div class="card-cs" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
-                    <div class="container-image-cs">
-                        <img class="image-circle-cs" src="../scss/recursos/recycle.svg" alt="Icono de aislación acustica">
+        </section>
+
+        <section class="drywall">
+            <div class="drywall" id="drywall">
+                <h2 data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">Drywall</h2>
+                <!-- <h3 data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">Rápido, ligero, versátil. </h3> -->
+                <a href="#shop" class="drywall-button" id="btn-drywall">Ir al shop</a>
+
+                <!-- Ventajas -->
+                <nav class="navegacion">
+                    <ul>
+                        <li>
+                            <a>
+                                <img class="inbox-img" src="../scss/recursos/facil-de-atornillar.svg" alt="">
+                                <span>FÁCIL DE ATORNILLAR</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <img class="inbox-img" src="../scss/recursos/aislacion.svg" alt="">
+                                <span>MAYOR AISLACIÓN ACÚSTICA</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <img class="inbox-img" src="../scss/recursos/resistente.svg" alt="">
+                                <span>PAREDES MÁS RESISTENTES</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <img class="inbox-img" src="../scss/recursos/rapido.svg" alt="">
+                                <span>RÁPIDO DE INSTALAR</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <img class="inbox-img" src="../scss/recursos/telescopicidad.svg" alt="">
+                                <span>MEJOR TELESCOPICIDAD</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <nav id="nav">
+                <div class="menu-drywall">
+                    <ul class="nav__list-drywall">
+                        <li class="nav__item-drywall">
+                            <a href="#" class="menu-item-drywall nav__link-drywall" data-target="drywall-card-1">MONTANTE</a>
+                        </li>
+                        <li class="nav__item-drywall">
+                            <a href="#" class="menu-item-drywall nav__link-drywall" data-target="drywall-card-2">SOLERA</a>
+                        </li>
+                        <li class="nav__item-drywall">
+                            <a href="#" class="menu-item-drywall nav__link-drywall" data-target="drywall-card-3">BUÑA</a
+                            ></li>
+                        <li class="nav__item-drywall">
+                            <a href="#" class="menu-item-drywall nav__link-drywall" data-target="drywall-card-4">OMEGA</a>
+                        </li>
+                        <li class="nav__item-drywall">
+                            <a href="#" class="menu-item-drywall nav__link-drywall" data-target="drywall-card-5">ANGULO DE AJUSTE</a>
+                        </li>
+                        <li class="nav__item-drywall">
+                            <a href="#" class="menu-item-drywall nav__link-drywall" data-target="drywall-card-6">CANTONERA</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- CARDS -->
+            <div class="drywall-container">
+
+                <div class="drywall-card" id="drywall-card-1">
+
+                    <div class="left-column background-left-column">
+                        <h6>ESTRUCTURAL</h6>
+                        <h4>MONTANTE</h4>
+                        <i class='bx bxs-leaf'></i>
                     </div>
-                    <div class="content-cs">
-                        <div class="detail-cs">
-                            <span>Reciclable</span>
+    
+                    <div class="right-column">
+
+                        <h6>¿Qué es?</h6>
+                            <p>Perfil de acero galvanizado certificado bajo <br> Normas IRAM IAS U 500-243. 
+                        <h6>Aplicación</h6>
+                            <p>El Montante de 69 se utiliza en tabiques como elemento vertical al cual se fijan las placas de yeso y como viga maestra en cielorrasos monolíticos. El Montante de 34 se utiliza principalmente como estructura secundaria en dichos cielorrasos
+                        <h6>Dimensiones</h6>
+                            <p>Montante 34mm	0,52mm / Tira	2,6m <br>
+                                Montante 69mm	0,52mm / Tira	2,6m
+                        </p>
+                        
+                        <!-- <div>
+                            <h5>dificultad</h5>
+                            <h6>media-baja</h6>
+                        </div> -->
+                    </div>
+
+                    <div class="left-column-img">
+                        <div class="owl-carousel">
+                            <div class="item">
+                                <img src="../scss/recursos/drywall/BARBIERI-MONTANTE-69-RIGIDIZADO.jpg" alt="Foto 1">
+                            </div>
+                            <div class="item">
+                                <img src="../scss/recursos/drywall/BARBIERI-MONTANTE-34-RIGIDIZADO.jpg" alt="Foto 2">
+                            </div>
                         </div>
-                        <div class="product-image-cs">
-                            <div class="box-image-cs">
-                                <img class="image-circle-cs" src="../scss/recursos/recycle.svg" alt="Icono de ahorro de tiempo en obra">
+                        <div class="carousel-selectors">
+                            <!-- Botones selectores para cambiar de foto -->
+                            <span class="selector arrow-left" data-target="#drywall-card-1" data-slide="0"><i class='bx bx-left-arrow-circle'></i></span>
+                            <span class="selector arrow-right" data-target="#drywall-card-1" data-slide="1"><i class='bx bx-right-arrow-circle'></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="drywall-card" id="drywall-card-2">
+
+                    <div class="left-column background2-left-column">
+                        <h6>ESTRUCTURAL</h6>
+                        <h4>SOLERA</h4>
+                        <i class='bx bxs-leaf'></i>
+                    </div>
+    
+                    <div class="right-column">
+
+                        <h6>¿Qué es?</h6>
+                            <p>Perfil de acero galvanizado con forma de U certificado bajo Normas IRAM IAS U 500-243. 
+                        <h6>Aplicación</h6>
+                            <p>Las soleras, tanto la de 70 como la de 35 se utilizan como guías superior e inferior de paneles y en el perímetro de los cielorrasos monolíticos, para fijar a los montantes en su posición.
+                            </h6>
+                            <p>Solera 40mm	0,52mm / Tira	2,6m <br>
+                                Solera 70mm	0,52mm / Tira	2,6m
+                        </p>
+                        
+                        <!-- <div>
+                            <h5>dificultad</h5>
+                            <h6>media-baja</h6>
+                        </div> -->
+                    </div>
+
+                    <div class="left-column-img">
+                        <div class="owl-carousel">
+                            <div class="item">
+                                <img src="../scss/recursos/drywall/BARBIERI-SOLERA-70-RIGIDIZADA.jpg" alt="Foto 1">
+                            </div>
+                            <div class="item">
+                                <img src="../scss/recursos/drywall/BARBIERI-SOLERA-35-RIGIDIZADA.jpg" alt="Foto 2">
+                            </div>
+                        </div>
+                        <div class="carousel-selectors">
+                            <!-- Botones selectores para cambiar de foto -->
+                            <span class="selector arrow-left" data-target="#drywall-card-2" data-slide="0"><i class='bx bx-left-arrow-circle'></i></span>
+                            <span class="selector arrow-right" data-target="#drywall-card-2" data-slide="1"><i class='bx bx-right-arrow-circle'></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="drywall-card" id="drywall-card-3">
+
+                    <div class="left-column background2-left-column">
+                        <h6>UNIÓN</h6>
+                        <h4>BUÑA</h4>
+                        <i class='bx bxs-leaf'></i>
+                    </div>
+    
+                    <div class="right-column">
+
+                        <h6>¿Qué es?</h6>
+                            <p> Es un perfil de acero galvanizado y prepintado certificado bajo IRAM IAS U 500-243 con forma de “Z”.  
+                        <h6>Aplicación</h6>
+                            <p>Su función es proveer una transición prolija entre un cielorrasos monolítico y un tabique, evitando la aparición de fisuras. Adicionalmente provee un espacio entre ambos que permite definir en forma adecuada el cambio de pintura.
+                        <h6>Dimensiones</h6>
+                            <p>Buña perimetral	0,43mm / Tira	2,6m </p>
+                        
+                        <!-- <div>
+                            <h5>dificultad</h5>
+                            <h6>media-baja</h6>
+                        </div> -->
+                    </div>
+
+                    <div class="left-column-img">
+                        <div class="owl-carousel">
+                            <div class="item">
+                                <img src="../scss/recursos/drywall/BARBIERI-BUÑA-PERIM.-PPLACA12,5MM.jpg" alt="Foto 1">
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="drywall-card" id="drywall-card-4">
+
+                    <div class="left-column background2-left-column">
+                        <h6>SUJECIÓN</h6>
+                        <h4>OMEGA</h4>
+                        <i class='bx bxs-leaf'></i>
+                    </div>
+    
+                    <div class="right-column">
+
+                        <h6>¿Qué es?</h6>
+                            <p> Es un perfil de acero galvanizado conformado en frío con forma trapezoidal certificado bajo IRAM IAS U 500-243.
+                        <h6>Aplicación</h6>
+                            <p>Su uso principal es como perfil de sujeción de placas de yeso o de perfiles de PVC a paredes existentes, de modo de configurar revestimientos. 
+                        <h6>Dimensiones</h6>
+                            <p>Omega 12,5mm	0,52mm / Tira	2,6m
+                        </p>
+                        
+                        <!-- <div>
+                            <h5>dificultad</h5>
+                            <h6>media-baja</h6>
+                        </div> -->
+                    </div>
+
+                    <div class="left-column-img">
+                        <div class="owl-carousel">
+                            <div class="item">
+                                <img src="../scss/recursos/drywall/BARBIERI-OMEGA-12,5.jpg" alt="Foto 1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="drywall-card" id="drywall-card-5">
+
+                    <div class="left-column background2-left-column">
+                        <h6>PERFÍL L</h6>
+                        <h4>ANGULO DE AJUSTE</h4>
+                        <i class='bx bxs-leaf'></i>
+                    </div>
+    
+                    <div class="right-column">
+
+                        <h6>¿Qué es?</h6>
+                            <p>Es un perfil de acero galvanizado conformado en frío con forma de “L” certificado bajo IRAM IAS U 500-243.  
+                        <h6>Aplicación</h6>
+                            <p>Su función es generar una junta visible y recta en la transición entre una pared húmeda existente y un tabique de construcción en seco.
+                        <h6>Dimensiones</h6>
+                            <p>Montante 34mm	0,52mm / Tira	2,6m <br>
+                                Montante 69mm	0,52mm / Tira	2,6m
+                        </p>
+                        
+                        <!-- <div>
+                            <h5>dificultad</h5>
+                            <h6>media-baja</h6>
+                        </div> -->
+                    </div>
+
+                    <div class="left-column-img">
+                        <div class="owl-carousel">
+                            <div class="item">
+                                <img src="../scss/recursos/drywall/BARBIERI-ANGULO-DE-AJUSTE.jpg" alt="Foto 1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="drywall-card" id="drywall-card-6">
+
+                    <div class="left-column background2-left-column">
+                        <h6>TERMINACIÓN</h6>
+                        <h4>CANTONERA</h4>
+                        <i class='bx bxs-leaf'></i>
+                    </div>
+    
+                    <div class="right-column">
+
+                        <h6>¿Qué es?</h6>
+                            <p> Es un perfil de acero galvanizado conformado en frío certificado bajo IRAM IAS U 500-243 con forma de “V”.  
+                        <h6>Aplicación</h6>
+                            <p> Es un elemento de terminación que se utiliza en esquinas para brindar mayor protección ante impactos.
+                        <h6>Dimensiones</h6>
+                            <p>Montante 34mm	0,52mm / Tira	2,6m <br>
+                                Montante 69mm	0,52mm / Tira	2,6m
+                        </p>
+                        
+                        <!-- <div>
+                            <h5>dificultad</h5>
+                            <h6>media-baja</h6>
+                        </div> -->
+                    </div>
+
+                    <div class="left-column-img">
+                        <div class="owl-carousel">
+                            <div class="item">
+                                <img src="../scss/recursos/drywall/BARBIERI-CANTONERA-31.jpg" alt="Foto 1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -267,13 +662,13 @@
         <section>
             <div class="banner-shop-cs">
                 <h2 class="fade-in-cs" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">Búsca los productos que necesitas en nuestra tienda online y pagá con todos los medios de pago disponibles</h2>
-                <div class="btn-e-shop-cs" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100"><a href="https://pvcenter.mercadoshops.com.ar/"><i class="bi bi-bag-plus"></i> Tienda On-Line</a></div>
+                <!-- <div class="btn-e-shop-cs" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100"><a href="https://pvcenter.mercadoshops.com.ar/"><i class="bi bi-bag-plus"></i> Tienda On-Line</a></div> -->
             </div>
         </section>
 
 <!-- --------------------------------------------------------------------------------------------------------- -->
         <!-- # Seccion 5 - E-SHOP -->
-        <div class="wrapper">
+        <div class="wrapper" id="shop">
             <header class="header-mobile">
                 <div class="shop-logo"><img src="../scss/recursos/imagotipo.png" alt=""></div>
                 <span class="open-menu-header" id="open-menu-header">
@@ -295,9 +690,9 @@
                         <li>
                             <span id="perfiles" class="boton-menu boton-categoria"><i class="bi bi-arrow-up-square"></i> Perfiles</span>
                         </li>
-                        <!-- <li>
+                        <li>
                             <span id="placas" class="boton-menu boton-categoria"><i class="bi bi-arrow-up-square"></i> Placas</span>
-                        </li> -->
+                        </li>
                         <li>
                             <span id="accesorios" class="boton-menu boton-categoria"><i class="bi bi-arrow-up-square"></i> Accesorios</span>
                         </li>
@@ -334,7 +729,7 @@
                 <h2 class="disposicion-title" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">Estamos a tu disposición! <br>Asesorate con nuestros profesionales <br> especializados en la construcción en seco!</h2>
             </div>
             <div class="btn-redirect" ><a href="https://pvcenter.mercadoshops.com.ar/"><i class="bi bi-bag-plus"></i> Tienda On-Line</a></div>
-        </section>
+        </section> 
     </main>
     <!--------------------------------------------------------------------------------------
                                     # Formulario
@@ -379,7 +774,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
 
     <!--------------------------------------------------------------------------------------
                                     # Footer
@@ -401,9 +796,6 @@
                         <div class="social-links mt-3">
                         <a href="https://www.facebook.com/groups/577400563258704" class="facebook"><i class="bi bi-facebook"></i></i></a>
                         <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                        <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
-                        <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>   -->
-                        <!-- <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
                         </div>
                     </div>
                     </div>
@@ -425,8 +817,6 @@
                         <li><a href="tel:+5492214367824">Acompañamiento</a></li>
                         <li><a href="../pages/contacto.html">Logistica</a></li>
                         <li><a href="https://wa.me/5492995479547" class="btn-wsp" target="_blank">Asesoramiento profesional</a></li>
-                        <!-- <li><a href="#">Llenar campos </a></li> -->
-                        <!-- <li><a href="#">Llenar campos </a></li> -->
                     </ul>
                     </div>
 
@@ -449,7 +839,7 @@
         <div class="credits">Designed by <a href="mailto:jeronimonunez96@gmail.com">Jeronimo Nuñez</a>
         </div>
     </div>
-    </footer>
+    </footer> 
     <!-- End Footer -->
 
     <!--------------------------------------------------------------------------------------
@@ -466,8 +856,13 @@
 
     <!-- Sweet Alert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.all.min.js"></script>
+
     <!-- Aos Next on scroll -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+    <!-- OwlCarousel -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 
     <!-- Java Scripts links -->
@@ -479,5 +874,7 @@
     <script src="../js/aosSliderEffect.js"></script>
     <script src="../js/productos.js"></script>
     <script src="../js/menuHamburguesa.js"></script>
+    <script src="../js/navHorizontal.js"></script>
+    <script src="../js/carouselNavHorizontal.js"></script>
 </body>
 </html>

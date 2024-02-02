@@ -2478,258 +2478,471 @@ main {
         background: #757575;
         color: #000;
         border-radius: 20px; }
-  main .ventajas-cs {
-    height: 500px;
-    background: white;
-    background: linear-gradient(0deg, white 51%, #d9d9d9 100%); }
+  main .tiposDeMuros a {
+    display: flex;
+    align-items: center; }
+  main #cielorraso {
+    position: relative;
+    height: 580px;
+    width: 100%;
+    background-color: #4b4b4b;
+    z-index: 1;
+    margin: -15% 0 -5% 0; }
     @media only screen and (max-width: 768px) {
-      main .ventajas-cs {
+      main #cielorraso {
         display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin: -93% 0 0 0;
-        height: 370px;
-        background: #fff; } }
-    @media only screen and (max-width: 768px) {
-      main .ventajas-cs .content-cs {
-        display: flex; } }
-    main .ventajas-cs .content-cs h2 {
-      font-family: 'Poppins';
-      font-size: 1.9rem;
-      color: #000;
-      display: flex;
+        margin: -95% 0 0 0; } }
+    main #cielorraso::before {
+      content: "";
       position: absolute;
-      margin: 17% 0px 0px 5%;
-      -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-      animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: inherit;
+      filter: brightness(40%) contrast(120%) saturate(80%) grayscale(10%); }
+    main #cielorraso h2 {
+      color: #fff;
+      font-size: 2rem;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      position: absolute;
+      margin: 7.9% 0 10px 7.4%;
+      z-index: 10;
+      background-color: #d30809;
+      padding: 15px 10px; }
       @media only screen and (max-width: 768px) {
-        main .ventajas-cs .content-cs h2 {
-          position: static;
-          font-size: 1.1rem;
-          display: flex;
-          margin: 18px 0 42px 113px;
-          text-align: center; } }
-
-@-webkit-keyframes text-focus-in {
-  0% {
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    opacity: 0; }
-  100% {
-    -webkit-filter: blur(0px);
-    filter: blur(0px);
-    opacity: 1; } }
-
-@keyframes text-focus-in {
-  0% {
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    opacity: 0; }
-  100% {
-    -webkit-filter: blur(0px);
-    filter: blur(0px);
-    opacity: 1; } }
-    main .ventajas-cs .card-cs {
-      position: relative;
-      background: transparent;
-      width: 300px;
-      height: 300px;
-      border: none;
-      margin: -7% 0px 0px 30%; }
-      @media only screen and (max-width: 768px) {
-        main .ventajas-cs .card-cs {
-          height: 120px;
-          width: 120px; } }
-      main .ventajas-cs .card-cs .container-image-cs {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: #e7e7e7;
-        width: 190px;
-        height: 190px;
-        cursor: pointer;
-        border: none;
-        border-radius: 50%;
-        box-shadow: 0 0 3px 1px #1818183d, 2px 2px 3px #18181865, inset 2px 2px 2px #ffffff;
-        transition: all .3s ease-in-out, opacity .3s;
-        transition-delay: .6s, 0s; }
-        @media only screen and (max-width: 768px) {
-          main .ventajas-cs .card-cs .container-image-cs {
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            height: 100px;
-            width: 100px; } }
-        main .ventajas-cs .card-cs .container-image-cs .image-circle-cs {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          width: 125px;
-          height: auto;
-          object-fit: contain;
-          filter: drop-shadow(2px 2px 2px #1818188a);
-          transition: all .3s ease-in-out;
-          transition-delay: .4s; }
-          @media only screen and (max-width: 768px) {
-            main .ventajas-cs .card-cs .container-image-cs .image-circle-cs {
-              display: flex;
-              flex-direction: column;
-              position: absolute;
-              height: 70px;
-              width: 70px; } }
-      main .ventajas-cs .card-cs .content-cs {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: #e7e7e7;
-        padding: 20px;
-        width: 190px;
-        height: 190px;
-        cursor: pointer;
-        border: none;
-        border-radius: 8px;
-        box-shadow: 0 0 3px 1px #1818183d, 2px 2px 3px #18181865, inset 2px 2px 2px #ffffff;
-        visibility: hidden;
-        transition: .3s ease-in-out;
-        transition-delay: 0s;
-        z-index: 1; }
-        main .ventajas-cs .card-cs .content-cs .detail-cs {
+        main #cielorraso h2 {
+          font-size: 2.3rem; } }
+    main #cielorraso .navegacion-cielorraso {
+      height: 100%;
+      overflow: hidden;
+      margin: 250px 0 0 -950px;
+      z-index: 4;
+      position: relative; }
+      main #cielorraso .navegacion-cielorraso ul {
+        margin: 8.5% 0 0 0; }
+        main #cielorraso .navegacion-cielorraso ul li {
+          list-style: none;
           display: flex;
           flex-direction: column;
-          width: 100%;
-          height: 100%;
-          opacity: 0;
-          transition: all .3s ease-in-out;
-          transition-delay: 0s; }
-          main .ventajas-cs .card-cs .content-cs .detail-cs span {
-            margin-bottom: 5px;
-            font-size: 18px;
-            font-weight: 800; }
-          main .ventajas-cs .card-cs .content-cs .detail-cs button {
-            background: #b8854b;
-            margin-top: auto;
-            width: 75px;
-            height: 25px;
-            color: #ffffff;
-            font-size: 13px;
-            border: none;
-            border-radius: 8px;
-            transition: .3s ease-in-out; }
-          main .ventajas-cs .card-cs .content-cs .detail-cs button:hover {
-            background: #d39f63; }
-        main .ventajas-cs .card-cs .content-cs .product-image-cs {
-          position: relative;
-          width: 100%;
-          height: 100%; }
-          main .ventajas-cs .card-cs .content-cs .product-image-cs .box-image-cs {
-            display: flex;
-            position: absolute;
-            top: 0;
-            left: -25%;
+          align-items: center; }
+          main #cielorraso .navegacion-cielorraso ul li .inbox-cielorraso {
             width: 100%;
-            height: 115%;
-            opacity: 0;
-            transform: scale(0.5);
-            transition: all .5s ease-in-out;
-            transition-delay: 0s; }
-            main .ventajas-cs .card-cs .content-cs .product-image-cs .box-image-cs .img-product-cs {
-              margin: auto;
-              width: 7rem;
-              height: auto; }
-    main .ventajas-cs .card-cs:nth-child(2) {
+            height: 70px;
+            /* Ajustar la altura según sea necesario */
+            display: flex;
+            flex-direction: column;
+            /* Establecer la dirección de la columna */
+            align-items: center;
+            /* Centrar elementos en el eje transversal (vertical) */
+            justify-content: flex-start;
+            /* Alinear elementos en la parte superior del contenedor */
+            text-decoration: none;
+            border-radius: 10px;
+            list-style-type: none;
+            color: #fff;
+            font-family: 'Poppins';
+            font-size: .9rem;
+            margin-bottom: 5px; }
+          main #cielorraso .navegacion-cielorraso ul li .inbox-img-cielorraso {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 5px;
+            /* Agregar un espacio entre la imagen y el texto */ }
+    main #cielorraso .nav-cielorraso {
+      font-family: "Inter", sans-serif;
+      height: 90px;
+      position: relative;
+      width: 1220px;
+      margin: -39% 0 0 8%;
+      z-index: 555;
+      color: #fff; }
+      @media only screen and (max-width: 768px) {
+        main #cielorraso .nav-cielorraso {
+          position: fixed;
+          top: 0;
+          right: -250px;
+          background: #000;
+          width: 250px;
+          height: 120vh;
+          display: flex;
+          transition: all 300ms; } }
+      main #cielorraso .nav-cielorraso .menu-cielorraso {
+        position: relative;
+        margin: 70px 0 0 58%;
+        max-width: 450px;
+        overflow: hidden; }
+        main #cielorraso .nav-cielorraso .menu-cielorraso ul {
+          width: 100%;
+          margin: 1.8% 0% 0% 0%;
+          padding-right: 0;
+          display: flex;
+          justify-content: space-between;
+          font-size: .9rem;
+          font-weight: 300; }
+          @media only screen and (max-width: 768px) {
+            main #cielorraso .nav-cielorraso .menu-cielorraso ul {
+              display: flex;
+              flex-direction: column;
+              margin-top: 34px;
+              margin-left: 0px;
+              font-size: 1em; } }
+          main #cielorraso .nav-cielorraso .menu-cielorraso ul .nav__item-cielorraso {
+            margin-top: .5%; }
+            main #cielorraso .nav-cielorraso .menu-cielorraso ul .nav__item-cielorraso a {
+              list-style: none;
+              text-decoration: none;
+              color: #fff; }
+            @media only screen and (max-width: 768px) {
+              main #cielorraso .nav-cielorraso .menu-cielorraso ul .nav__item-cielorraso {
+                margin-top: -6%;
+                margin-left: 1px; } }
+            main #cielorraso .nav-cielorraso .menu-cielorraso ul .nav__item-cielorraso .nav__link-cielorraso {
+              position: relative;
+              transition: color 0.3s; }
+              @media only screen and (max-width: 768px) {
+                main #cielorraso .nav-cielorraso .menu-cielorraso ul .nav__item-cielorraso .nav__link-cielorraso {
+                  color: #fff; } }
+              main #cielorraso .nav-cielorraso .menu-cielorraso ul .nav__item-cielorraso .nav__link-cielorraso:before {
+                content: "";
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background-color: #d30809;
+                transition: width 0.3s ease; }
+              main #cielorraso .nav-cielorraso .menu-cielorraso ul .nav__item-cielorraso .nav__link-cielorraso.active-card-cielorraso {
+                color: #d30809;
+                font-weight: bold; }
+                main #cielorraso .nav-cielorraso .menu-cielorraso ul .nav__item-cielorraso .nav__link-cielorraso.active-card-cielorraso:before {
+                  width: 100%; }
+    main #cielorraso .cielorraso-container {
       display: flex;
-      margin: 15px 0 0 30%;
-      height: 250px; }
-    main .ventajas-cs .card-cs:nth-child(2) {
-      display: flex;
-      margin: 0px 0 0 40%;
-      height: 250px; }
-      @media only screen and (max-width: 768px) {
-        main .ventajas-cs .card-cs:nth-child(2) {
-          margin: -22px 0 0 53px;
-          height: 120px; } }
-    main .ventajas-cs .card-cs:nth-child(3) {
-      display: flex;
-      margin: -250px 0 0 65%;
-      height: 250px; }
-      @media only screen and (max-width: 768px) {
-        main .ventajas-cs .card-cs:nth-child(3) {
-          margin: -120px 0 0 210px;
-          height: 120px; } }
-    main .ventajas-cs .card-cs:nth-child(4) {
-      display: flex;
-      margin: 10px 0 0 40%;
-      height: 250px; }
-      @media only screen and (max-width: 768px) {
-        main .ventajas-cs .card-cs:nth-child(4) {
-          margin: 0px 0 0 53px;
-          height: 120px; } }
-    main .ventajas-cs .card-cs:nth-child(5) {
-      display: flex;
-      margin: -250px 0 0 65%;
-      height: 250px; }
-      @media only screen and (max-width: 768px) {
-        main .ventajas-cs .card-cs:nth-child(5) {
-          margin: -120px 0 0 210px;
-          height: 120px; } }
-    main .ventajas-cs .card-cs:hover {
-      width: 300px; }
-      @media only screen and (max-width: 768px) {
-        main .ventajas-cs .card-cs:hover {
-          display: none; } }
-    main .ventajas-cs .card-cs:hover .container-image-cs {
-      opacity: 0;
-      border-radius: 8px;
-      transition-delay: 0s, .6s; }
-      @media only screen and (max-width: 768px) {
-        main .ventajas-cs .card-cs:hover .container-image-cs {
-          display: none; } }
-    main .ventajas-cs .card-cs:hover .container-image-cs .image-circle-cs {
-      opacity: 0;
-      transition-delay: 0s; }
-      @media only screen and (max-width: 768px) {
-        main .ventajas-cs .card-cs:hover .container-image-cs .image-circle-cs {
-          display: none; } }
-    main .ventajas-cs .card-cs:hover .content-cs {
-      width: 290px;
-      height: 190px;
-      visibility: visible;
-      transition-delay: .5s; }
-      @media only screen and (max-width: 768px) {
-        main .ventajas-cs .card-cs:hover .content-cs {
-          display: none; } }
-    main .ventajas-cs .card-cs:hover .content-cs .detail-cs {
-      color: #181818;
-      opacity: 100%;
-      transition: 1s;
-      transition-delay: .3s;
-      margin-top: 40%; }
-      @media only screen and (max-width: 768px) {
-        main .ventajas-cs .card-cs:hover .content-cs .detail-cs {
-          display: none; } }
-    main .ventajas-cs .card-cs:hover .content-cs .product-image-cs .box-image-cs {
-      top: 10%;
+      justify-content: center;
+      height: 100vh;
+      align-items: center;
+      margin: -10.5% 0 0 20.5%;
+      z-index: 333;
+      position: relative; }
+      main #cielorraso .cielorraso-container .cielorraso-background-left-column {
+        background: #273238; }
+      main #cielorraso .cielorraso-container .cielorraso-background2-left-column {
+        background: #273238; }
+      main #cielorraso .cielorraso-container .cielorraso-background3-left-column {
+        background: #273238; }
+      main #cielorraso .cielorraso-container .cielorraso-card {
+        background-color: #fff;
+        border-radius: 1rem;
+        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+        display: flex;
+        margin: 1.5rem;
+        overflow: hidden;
+        width: 58rem;
+        height: 23rem;
+        z-index: 444;
+        position: relative; }
+        main #cielorraso .cielorraso-container .cielorraso-card.active-card {
+          border: 2px solid #d30809;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          z-index: 4; }
+        main #cielorraso .cielorraso-container .cielorraso-card h2 {
+          letter-spacing: .1rem;
+          margin: 1rem 0;
+          color: #000; }
+        main #cielorraso .cielorraso-container .cielorraso-card h6 {
+          opacity: 0.6;
+          letter-spacing: .1rem;
+          text-transform: uppercase; }
+        main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column {
+          color: #fff;
+          padding: 2rem;
+          max-width: 10rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between; }
+          main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column h4 {
+            color: #fff; }
+          main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column i {
+            font-size: 5rem; }
+        main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-right-column {
+          padding: 2rem;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-between; }
+          main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-right-column p {
+            font-family: 'Poppins';
+            font-size: .9rem;
+            color: #000;
+            max-width: 400px; }
+          main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-right-column span {
+            border-radius: 3rem;
+            background: #273238;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+            color: #fff;
+            font-size: 1.2rem;
+            padding: .8rem 1.3rem;
+            letter-spacing: .1rem;
+            align-self: flex-end; }
+        main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column-img {
+          width: 350px;
+          max-width: 300px;
+          margin-left: auto;
+          position: relative; }
+          main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column-img .owl-carousel .cielorraso-item img {
+            width: 100%;
+            height: auto;
+            margin: 0; }
+          main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column-img .carousel-selectors .selector i {
+            color: #333;
+            font-size: 30px; }
+  main .drywall {
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    margin: 0% 0 10% 0;
+    z-index: 1; }
+    @media only screen and (max-width: 768px) {
+      main .drywall {
+        display: flex;
+        margin: -95% 0 0 0;
+        height: 500px; } }
+    main .drywall::before {
+      content: "";
+      position: absolute;
+      top: 0;
       left: 0;
-      opacity: 100%;
-      transform: scale(1);
-      transition-delay: .3s;
-      width: 100px;
-      height: 100px; }
+      width: 100%;
+      height: 100%;
+      background: inherit;
+      filter: brightness(40%) contrast(120%) saturate(80%) grayscale(10%); }
+    main .drywall h2 {
+      color: #fff;
+      font-size: 2.2rem;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      position: absolute;
+      margin: 10% 0 0 7.4%;
+      z-index: 10;
+      background-color: #d30809;
+      padding: 10px 50px; }
       @media only screen and (max-width: 768px) {
-        main .ventajas-cs .card-cs:hover .content-cs .product-image-cs .box-image-cs {
-          display: none; } }
+        main .drywall h2 {
+          font-size: 2.3rem; } }
+    main .drywall h3 {
+      color: #fff;
+      font-size: 1.5rem;
+      font-family: "Poppins", sans-serif;
+      font-weight: 200;
+      position: absolute;
+      margin: 15% 0 0 100px;
+      background-color: #273238;
+      padding: 10px 50px; }
+      @media only screen and (max-width: 768px) {
+        main .drywall h3 {
+          font-size: 2.3rem;
+          margin: 100px 0 0 47px; } }
+    main .drywall .navegacion {
+      height: 100%;
+      overflow-y: auto;
+      overflow-x: hidden;
+      margin: 15px 0 0 -420px; }
+      main .drywall .navegacion ul li {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        main .drywall .navegacion ul li a {
+          width: 100%;
+          height: 70px;
+          /* Ajustar la altura según sea necesario */
+          display: flex;
+          flex-direction: column;
+          /* Establecer la dirección de la columna */
+          align-items: center;
+          /* Centrar elementos en el eje transversal (vertical) */
+          justify-content: flex-start;
+          /* Alinear elementos en la parte superior del contenedor */
+          text-decoration: none;
+          border-radius: 10px;
+          list-style-type: none;
+          color: #333;
+          font-family: 'Poppins';
+          font-size: .9rem;
+          margin-bottom: 5px; }
+        main .drywall .navegacion ul li .inbox-img {
+          width: 40px;
+          height: 40px;
+          margin-bottom: 5px;
+          /* Agregar un espacio entre la imagen y el texto */ }
+    main .drywall .drywall-button {
+      display: flex;
+      color: #fff;
+      align-items: center;
+      justify-content: space-around;
+      width: 60%;
+      height: auto;
+      margin: 12% 0 0 25.9%;
+      background-color: #273238;
+      padding: 5px;
+      width: 160px;
+      border-radius: 8px;
+      cursor: pointer; }
+    main .drywall .drywall-button:hover {
+      cursor: pointer; }
+    main .drywall nav {
+      font-family: "Inter", sans-serif;
+      height: 90px;
+      position: relative;
+      width: 1160px;
+      margin: 10.5% 0 0 8%;
+      z-index: 2; }
+      @media only screen and (max-width: 768px) {
+        main .drywall nav {
+          position: fixed;
+          top: 0;
+          right: -250px;
+          background: #000;
+          width: 250px;
+          height: 120vh;
+          display: flex;
+          transition: all 300ms; } }
+      main .drywall nav .menu-drywall {
+        position: relative;
+        margin: 60px 0 0 32.5%;
+        max-width: 900px;
+        overflow: hidden; }
+        main .drywall nav .menu-drywall ul {
+          width: 100%;
+          margin: 1.8% 0% 0% 0%;
+          padding-right: 0;
+          display: flex;
+          justify-content: space-between;
+          font-size: .9rem;
+          font-weight: 300; }
+          @media only screen and (max-width: 768px) {
+            main .drywall nav .menu-drywall ul {
+              display: flex;
+              flex-direction: column;
+              margin-top: 34px;
+              margin-left: 0px;
+              font-size: 1em; } }
+          main .drywall nav .menu-drywall ul .nav__item-drywall {
+            margin-top: .5%; }
+            main .drywall nav .menu-drywall ul .nav__item-drywall a {
+              list-style: none;
+              text-decoration: none;
+              color: #000; }
+            @media only screen and (max-width: 768px) {
+              main .drywall nav .menu-drywall ul .nav__item-drywall {
+                margin-top: -6%;
+                margin-left: 1px; } }
+            main .drywall nav .menu-drywall ul .nav__item-drywall .nav__link-drywall {
+              position: relative;
+              transition: color 0.3s; }
+              @media only screen and (max-width: 768px) {
+                main .drywall nav .menu-drywall ul .nav__item-drywall .nav__link-drywall {
+                  color: #fff; } }
+              main .drywall nav .menu-drywall ul .nav__item-drywall .nav__link-drywall:before {
+                content: "";
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background-color: #d30809;
+                transition: width 0.3s ease; }
+              main .drywall nav .menu-drywall ul .nav__item-drywall .nav__link-drywall.active-card {
+                color: #d30809;
+                font-weight: bold; }
+                main .drywall nav .menu-drywall ul .nav__item-drywall .nav__link-drywall.active-card:before {
+                  width: 100%; }
+    main .drywall .drywall-container {
+      display: flex;
+      justify-content: center;
+      height: 100vh;
+      align-items: center;
+      margin: -10.5% 0 0 20.5%;
+      z-index: 3; }
+      main .drywall .drywall-container .background-left-column {
+        background: linear-gradient(100deg, #243949, #517fa4); }
+      main .drywall .drywall-container .background2-left-column {
+        background: linear-gradient(100deg, #517fa4, #5786ad); }
+      main .drywall .drywall-container .drywall-card {
+        background-color: #fff;
+        border-radius: 1rem;
+        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+        display: flex;
+        margin: 1.5rem;
+        overflow: hidden;
+        width: 58rem;
+        height: 23rem;
+        display: none; }
+        main .drywall .drywall-container .drywall-card.active-card {
+          border: 2px solid #d30809;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          z-index: 4; }
+        main .drywall .drywall-container .drywall-card h2 {
+          letter-spacing: .1rem;
+          margin: 1rem 0;
+          color: #000; }
+        main .drywall .drywall-container .drywall-card h6 {
+          opacity: 0.6;
+          letter-spacing: .1rem;
+          text-transform: uppercase; }
+        main .drywall .drywall-container .drywall-card .left-column {
+          color: #fff;
+          padding: 2rem;
+          max-width: 10rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between; }
+          main .drywall .drywall-container .drywall-card .left-column h4 {
+            color: #fff; }
+          main .drywall .drywall-container .drywall-card .left-column i {
+            font-size: 5rem; }
+        main .drywall .drywall-container .drywall-card .right-column {
+          padding: 2rem;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-between; }
+          main .drywall .drywall-container .drywall-card .right-column p {
+            font-family: 'Poppins';
+            font-size: .9rem;
+            color: #000;
+            max-width: 400px; }
+          main .drywall .drywall-container .drywall-card .right-column span {
+            border-radius: 3rem;
+            background: #273238;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+            color: #fff;
+            font-size: 1.2rem;
+            padding: .8rem 1.3rem;
+            letter-spacing: .1rem;
+            align-self: flex-end; }
+        main .drywall .drywall-container .drywall-card .left-column-img {
+          width: 350px;
+          max-width: 300px;
+          margin-left: auto;
+          position: relative; }
+          main .drywall .drywall-container .drywall-card .left-column-img .owl-carousel .item img {
+            width: 100%;
+            height: auto;
+            margin: 0; }
+          main .drywall .drywall-container .drywall-card .left-column-img .carousel-selectors .selector i {
+            color: #333;
+            font-size: 30px; }
   main .banner-shop-cs {
     background-color: #8baac0;
     height: 245px;
     width: 100%;
     padding: 1px;
-    margin: 0 0 0 0; }
+    margin: 45% 0 0 0; }
     @media only screen and (max-width: 768px) {
       main .banner-shop-cs {
         display: flex;
@@ -2747,35 +2960,12 @@ main {
       text-align: center;
       justify-content: center;
       align-items: center;
-      top: 20%; }
+      top: 40%; }
       @media only screen and (max-width: 768px) {
         main .banner-shop-cs h2 {
           display: flex;
           font-size: 1.2rem;
           margin: -133px 0 0 0; } }
-    main .banner-shop-cs .btn-e-shop-cs {
-      display: flex;
-      position: absolute;
-      background: #5c7383;
-      border: 2px solid #fff;
-      border-radius: 30px;
-      padding: 10px 0px 10px 35px;
-      width: 200px;
-      margin-top: 5%;
-      margin-left: 40%; }
-      @media only screen and (max-width: 768px) {
-        main .banner-shop-cs .btn-e-shop-cs {
-          display: flex;
-          margin: 105px 0 0 92px; } }
-      main .banner-shop-cs .btn-e-shop-cs a {
-        text-decoration: none;
-        color: #fff; }
-      main .banner-shop-cs .btn-e-shop-cs .btn-e-shop-cs:hover {
-        cursor: pointer;
-        transition: all .3s ease-in-out;
-        background-color: #9fc7e6;
-        border: 2px solid #cbebfb;
-        color: #fff; }
   main .wrapper {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -3483,7 +3673,7 @@ main {
       margin: 10% 0 0 -880px; }
   #main-tya .ais-container {
     position: absolute;
-    top: 668%;
+    top: 627%;
     left: 65%;
     transform: translate(-50%, 50%);
     width: 920px;
