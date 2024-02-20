@@ -128,10 +128,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-
-
-
-
 // SCROLL VERTICAL DE CIELORRASOS A SU SECCIÓN
 $(document).ready(function () {
     $("#btn-techos").on("click", function (e) {
@@ -167,6 +163,9 @@ document.addEventListener('DOMContentLoaded', function () {
         window.scrollTo({ top: shopSection.offsetTop - offset, behavior: 'smooth' }); // Desplazarse a la sección "shop" considerando el título
     });
 });
+
+
+
 
 
 

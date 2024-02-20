@@ -144,7 +144,6 @@
         }
     }
 
-    
     #cielorraso-desmontable {
         position: relative;
         height: 580px;
@@ -420,5 +419,164 @@
                         }
                     }
         }
+    }
+    
+    .detallePvc {
+        margin: 6% 0 0 0;
+
+        .strip-Pvc {
+            width: 100%;
+            height: 350px;
+            max-width: 1310px; /* Ancho máximo para mantener la legibilidad en pantallas grandes */
+            margin: 20px; /* Ajustado para mayor espacio entre tiras */
+            // background-color: #e6e6e6;
+            // border: 1px solid ;
+            // border-radius: 20px;
+            // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex; /* Utiliza flexbox para alinear elementos */
+            align-items: center;
+
+            @include tablet {
+                display: flex;
+                width: 98%;
+                height: 170px;
+                margin: -98% 0 385px 3px;
+                padding: 0 0 0 3px;
+            }
+            img {
+                max-width: 100%; 
+                width: 448px;
+                height: 448px; 
+                margin: 10% 0 0 10%;
+                border-radius: 20px;
+
+                @include tablet {
+                    display: flex;
+                    max-width: 100%; 
+                    width: 225px;
+                    height: 168px; 
+                    margin: 0 0 0 -3px;
+                }
+            }
+            .strip-content-Pvc {
+                font-family: 'Poppins';
+                color: #333;
+                display: flex;
+                flex-direction: column; 
+                max-width: 1000px;
+                margin: 0 0 0 8%;
+                // padding: 5%;
+
+                h2 {
+                    font-family: 'Poppins';
+                    font-size: 1.8rem;
+                    font-weight: 700;
+                    color: #383f47;
+                    display: flex;
+                    margin: 55% 0 0 0;
+
+                    @include tablet {
+                        display: flex;
+                        font-size: 1.1rem;
+                    }
+                }
+                p {
+                    font-family: 'Poppins';
+                    font-size: 1rem;
+                    color: #383f47;
+
+                    @include tablet {
+                        display: none;
+                    }
+                }
+                #btn-techos {
+                    display: inline-block;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    background: #383f47;
+                    color: #fff;
+                    padding: 6px 40px;
+                    letter-spacing: 1px;
+                    user-select: none;
+                    border-radius: 20px;
+                    width: 140px;
+
+                    @include tablet {
+                        font-size: 12px;
+                        width: 94px;
+                        padding: 7px 23px 
+                    }
+                }
+                #btn-techos:hover {
+                    background: #757575;
+                    color: #000;
+                    border-radius: 20px;
+                }
+            }
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .banner-shop-cs {
+        background-color: #8baac0;
+        height: 245px;
+        width: 100%;
+        padding: 1px;
+        margin: 13% 0 0 0;
+
+        @include tablet {
+            display: flex;
+            height: 180px;
+            width: 100%;
+            margin: 0 0 40% 0;
+        }
+        h2 {
+            font-family: 'Poppins';
+            font-weight: 300;
+            font-size: 2rem;
+            color: #fff;
+            width: 100%;
+            display: flex;
+            position: relative;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            top: 35%;
+            @include tablet {
+                display: flex;
+                font-size: 1.2rem;
+                margin: -133px 0 0 0;
+            }
+        }
+        // .btn-e-shop-cs{
+        //     display: flex;
+        //     position: absolute;
+        //     background: #5c7383; 
+        //     border: 2px solid #fff;
+        //     border-radius: 30px;
+        //     padding: 10px 0px 10px 35px;
+        //     width: 200px;
+        //     margin: 45px 0 0 45%;
+
+        //     @include tablet {
+        //         display: flex;
+        //         margin: 105px 0 0 92px;
+        //     }
+        //     a {
+        //         text-decoration: none;
+        //         color: #fff;
+        //         }
+        //     .btn-e-shop-cs:hover{
+        //         cursor: pointer;
+        //         transition: all .3s ease-in-out;
+        //         background-color: #9fc7e6;
+        //         border: 2px solid #cbebfb;
+        //         color: #fff;
+        //         }
+        // }
     }
 }

@@ -1,30 +1,328 @@
-#zinc {
-    position: relative;
-    height: 600px;
-    width: 100%;
-    background-image: url("https://img.freepik.com/fotos-premium/trabajador-herramientas-techador-usando-equipo-proteccion-instalando-techo-nuevo-techo-superior-sitio-construccion-techo-metal_64073-1077.jpg?size=626&ext=jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: inherit;
-        filter: brightness(40%) contrast(120%) saturate(80%) grayscale(10%);
-    }
-
-    h2 {
-        color: #fff;
-        font-size: 2.5rem;
-        font-family: $typo-poppins;
-        font-weight: 200;
-        position: absolute;
-        margin: 16% 0 0 38%;
-        z-index: 10;
-    }
+.techos{
+    margin: 0% 0 -9% 0;
 }
+.techos, .techosAlveolar {
+    position: relative;
+    height: 650px;
+    width: 100%;
+    z-index: 1;
+
+        @include tablet {
+            display: flex;
+            margin: -95% 0 0 0;
+        }
+    
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: inherit;
+            filter: brightness(40%) contrast(120%) saturate(80%) grayscale(10%);
+        }
+    
+        h2 {
+            color: #fff;
+            font-size: 2rem;
+            font-family: $typo-poppins;
+            font-weight: 500;
+            position: absolute;
+            margin: 2.5% 0 10px 7.4%;
+            z-index: 10;
+            background-color: map-get($color--bordo, dreyja );
+            padding: 15px 10px;
+
+            @include tablet {
+                font-size: 2.3rem;
+            }
+        }
+
+        .itemBtn {
+            background-color: map-get($color--azul, dreyja);
+            width: 220px;
+            height: 44px;
+            position: absolute;
+            top: 18%;
+            left: 120px;
+            border-radius: 20px;
+            background-position: 50% 50%;
+            background-size: cover;
+            display: inline-block;
+            transition: 0.5s;
+
+                .contentBtn {
+                    position: relative;
+                    top: 27%;
+                    width: 300px;
+                    text-align: left;
+                    color: #000;
+                    left: 50px;
+                    font-family: $typo-poppins;
+
+                    span {
+
+                        a {
+                            color: #fff;
+                        }
+                    }
+                }
+        }
+
+        .itemBtn:hover {
+            background-color: map-get($color--bordo, dreyja );
+        }
+
+        .navTechoAlveolar, .navTecho {
+            font-family: $typo-apple-actually;
+            height: 90px;
+            position: relative;
+            width: 1220px;
+            margin: -50% 0 0 8%;
+            z-index: 555;
+            color: #fff;
+        
+            .menuTecho, .menuTechoAlveolar {
+                position: relative;
+                margin: 70px 0 0 58%;
+                max-width: 450px;
+                overflow: hidden;
+
+                ul {
+                    width: 80%;
+                    margin: 1.8% 0% 0% 20%;
+                    padding-right: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: .9rem;
+                    font-weight: bold;
+
+                    .nav__itemTecho, .nav__itemTechoAlveolar {
+                        margin-top: .5%;
+                        color: #ffffff;
+
+                        .nav__linkTecho, .nav__linkTechoAlveolar {
+                            color: map-get($color--azul, dreyja);
+                            cursor: pointer;
+                            list-style: none;
+                            text-decoration: none;
+                            position: relative;
+
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                bottom: -2px;
+                                left: 0;
+                                width: 0;
+                                height: 2px;
+                                background-color: transparent; // Cambiar a transparente para todas las pestañas
+                                transition: width 0.3s ease;
+                            }
+
+                            &.active-card {
+                                color: #d30809; // Color para la pestaña activa
+                                font-weight: bold;
+
+                                &:before {
+                                    width: 100%;
+                                    background-color: #d30809; // Subrayado para la pestaña activa
+                                }
+                            }
+
+                            &:hover {
+                                color: #d30809; // Cambiar color al pasar el mouse
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .containerTecho, .containerTechoAlveolar {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+            margin: -10.5% 0 0 20.5%;
+            z-index: 333;
+            position: relative;
+        
+            .techo-background-left-column {
+                background: map-get($color--azul, dreyja);
+            }
+        
+            .techo-background2-left-column {
+                background:  #3b4c55;
+            }
+
+            .background3 {
+                background:  #ffffff;
+            }
+        }
+        
+        .cardTecho, .cardTechoAlveolar {
+            background-color: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+            display: flex;
+            margin: 1.5rem;
+            overflow: hidden;
+            width: 58rem;
+            height: 23rem;
+            // display: none;
+            z-index: 444;
+            position: relative;
+            margin-top: 2%;
+        
+            h2 {
+                letter-spacing: .1rem;
+                margin: 1rem 0;
+                color: #000;
+            }
+        
+            h6 {
+                opacity: 0.6;
+                letter-spacing: .1rem;
+                text-transform: uppercase;
+            }
+        
+            .techo-left-column, .techoAlveolar-left-column {
+                color: #fff;
+                padding: 2rem;
+                height: 23rem;
+                max-width: 10rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                flex: 1;
+        
+                h4 {
+                    color: #fff;
+                    padding: 1rem;
+                }
+        
+                i {
+                    font-size: 5rem;
+                }
+            }
+        
+            .techo-right-column {
+                padding: 2rem;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                margin: -42% 0px 0 16%;
+                max-width: 500px;
+        
+                p {
+                    font-family: 'Poppins';
+                    font-size: .9rem;
+                    color: #000;
+                    max-width: 400px;
+                }
+        
+                span {
+                    border-radius: 3rem;
+                    background: map-get($color--azul, dreyja);
+                    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+                    color: #fff;
+                    font-size: 1.2rem;
+                    padding: .8rem 1.3rem;
+                    letter-spacing: .1rem;
+                    align-self: flex-end;
+                }
+            }
+
+            .techoAlveolar-right-column {
+                padding: 2rem;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                margin: -41% 0px 0 16%;
+                max-width: 500px;
+        
+                p {
+                    font-family: 'Poppins';
+                    font-size: .9rem;
+                    color: #000;
+                    max-width: 400px;
+                }
+        
+                span {
+                    border-radius: 3rem;
+                    background: map-get($color--azul, dreyja);
+                    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+                    color: #fff;
+                    font-size: 1.2rem;
+                    padding: .8rem 1.3rem;
+                    letter-spacing: .1rem;
+                    align-self: flex-end;
+                }
+            }
+        
+            .techo-left-column-img {
+                width: 350px;
+                max-width: 300px; // Establecer el ancho máximo de la imagen
+                margin-left: auto; // Alinear a la derecha
+                position: relative;
+                margin-top: -28%;
+        
+                .owl-carousel {
+                    .cielorraso-item {
+                        img {
+                            width: 100%; // La imagen ocupa el 100% del contenedor
+                            height: auto; // Altura automática para mantener la proporción
+                            margin: 0; // Eliminar el margen
+                        }
+                    }
+                }
+        
+                .carousel-selectors {
+                    .selector {
+                        i {
+                            color: #333;
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+
+            .techoAlveolar-left-column-img {
+                width: 350px;
+                max-width: 300px;  /*Establecer el ancho máximo de la imagen*/
+                margin-left: auto;  /*Alinear a la derecha*/
+                position: relative;
+                margin-top: -28%;
+        
+                .owl-carousel {
+                    .cielorraso-item {
+                        img {
+                            width: 100%;  /*La imagen ocupa el 100% del contenedor*/
+                            height: auto;  /*Altura automática para mantener la proporción*/
+                            margin: 0;  /*Eliminar el margen*/
+                        }
+                    }
+                }
+        
+                .carousel-selectors {
+                    .selector {
+                        i {
+                            color: #333;
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+        }
+}
+
+.alveolar {
+    background-color: #333;
+}
+
+
+
