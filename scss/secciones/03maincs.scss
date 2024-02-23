@@ -1,5 +1,5 @@
 main {
-    background: #fafafa;
+    // background: #fafafa;
     button {
         border: none;
         display: flex;
@@ -239,7 +239,7 @@ main {
                         display: none;
                     }
                 }
-                #btn-techos {
+                #btn-techos, #btn-techoZinc, #btn-techoAlveolar, #btn-techoPolicarbonato, #btn-Accesorios, #btn-Aislaciones {
                     display: inline-block;
                     text-decoration: none;
                     text-transform: uppercase;
@@ -257,8 +257,8 @@ main {
                         padding: 7px 23px 
                     }
                 }
-                #btn-techos:hover {
-                    background: #757575;
+                #btn-techos:hover, #btn-techoZinc:hover, #btn-techoAlveolar:hover, #btn-techoPolicarbonato:hover, #btn-Accesorios:hover, #btn-Aislaciones:hover, #btn-pvc:hover {
+                    background: map-get($color--bordo, dreyja);
                     color: #000;
                     border-radius: 20px;
                 }

@@ -39,3 +39,23 @@
         @content;
     }
 }
+
+//BREAKPOINTS
+@mixin monitor-27 {
+    @media only screen and (min-width: 1440px) and (max-width: 1920px) {
+        @content;
+    }
+}
+
+@mixin portatil-L {
+    @media only screen and (max-width: 1440px) {
+        @content;
+    }
+}
+
+@mixin portatil {
+    @media only screen and (max-width: 1024px) {
+        @content;
+    }
+}
+

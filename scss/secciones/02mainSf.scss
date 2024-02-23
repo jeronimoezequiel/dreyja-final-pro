@@ -1,5 +1,5 @@
 main {
-    background: #fafafa;
+    // background: #fafafa;
     button {
         border: none;
         display: flex;
@@ -106,6 +106,10 @@ main {
         height: 300px;
         background: #fafafa;
         border-radius: 20px;
+
+        @include monitor-27 {
+            margin: -3% 0 0 0;
+        }
 
         @include tablet {
             width: 100%;
@@ -223,6 +227,10 @@ main {
 
     .home-container-img {
 
+        // @include monitor-27 {
+        //     margin: 10% 0 0 0;
+        // }
+
         @include tablet {
             display: flex;
         }
@@ -270,6 +278,10 @@ main {
         font-family: $typo-poppins;
         background: #fafafa;
         margin-top: -5%;
+
+        @include monitor-27 {
+            margin: 11% 0 0 0;
+        }
         
         @include tablet {
             width: 100%;
@@ -376,21 +388,29 @@ main {
                     font-family: $typo-apple-actually;
                     font-size: 1.4em;
 
+                    @include monitor-27 {
+                        color: map-get($color--azul, dreyja);
+                        margin: -13.4% 0px 0px 67.4%;
+                    }
+
                     @include tablet {
                         margin: -42.4% 0px 0px 19.5px
                     }
                 }
                 li:nth-child(1) a:hover {
                     color: map-get($color--bordo, dreyja );
-                    
                 }
                 li:nth-child(2) a {
-                    color: #000000;
+                    color: map-get($color--azul, dreyja);
                     position: absolute;
                     margin-top: -15.3%;
                     margin-left: 93.8%;
                     font-family: $typo-apple-actually;
                     font-size: 1.4em;
+
+                    @include monitor-27 {
+                        margin: -13.2% 0px 0px 86.5%;
+                    }
 
                     @include tablet {
                         margin: -41.4% 0px 0px 292.5px;
@@ -407,6 +427,11 @@ main {
                     font-family: $typo-apple-actually;
                     font-size: 1.4em;
 
+                    @include monitor-27 {
+                        color: map-get($color--azul, dreyja);
+                        margin: -17% 0px 0px 86.5%;
+                    }
+
                     @include tablet {
                         margin: -56% 0px 0px 292.5px;
                     }
@@ -421,6 +446,10 @@ main {
                     margin-left: 93.7%;
                     font-family: $typo-apple-actually;
                     font-size: 1.4em;
+
+                    @include monitor-27 {
+                        margin: -18.6% 0px 0px 86.5%;
+                    }
 
                     @include tablet {
                         margin: -61.5% 0px 0px 292px;
@@ -437,6 +466,11 @@ main {
                     font-family: $typo-apple-actually;
                     font-size: 1.4em;
 
+                    @include monitor-27 {
+                        color: map-get($color--azul, dreyja);
+                        margin: -15.8% 0px 0px 67.3%;
+                    }
+
                     @include tablet {
                         margin: -51.5% 0px 0px 19px;
                     }
@@ -451,6 +485,11 @@ main {
                     margin-left: 66.6%;
                     font-family: $typo-apple-actually;
                     font-size: 1.4em;
+
+                    @include monitor-27 {
+                        color: map-get($color--azul, dreyja);
+                        margin: -18.5% 0px 0px 67.3%;
+                    }
 
                     @include tablet {
                         margin: -61.5% 0px 0px 18.5px;
@@ -467,6 +506,11 @@ main {
                     font-family: $typo-apple-actually;
                     font-size: 1.4em;
 
+                    @include monitor-27 {
+                        color: map-get($color--azul, dreyja);
+                        margin: -21% 0px 0px 67.4%;
+                    }
+
                     @include tablet {
                         margin: -70.5% 0px 0px 19.5px;
                     }
@@ -482,6 +526,11 @@ main {
                     font-family: $typo-apple-actually;
                     font-size: 1.4em;
 
+                    @include monitor-27 {
+                        color: map-get($color--azul, dreyja);
+                        margin: -24.6% 0px 0px 74.3%;
+                    }
+
                     @include tablet {
                         margin: -83.6% 0px 0px 118px;
                     }
@@ -495,7 +544,7 @@ main {
         .muro-compuesto-detalle {
             background: #fafafa;
             overflow: hidden;
-            height: 1800px;
+            height: 1900px;
             margin-top: -15px;
 
             @include tablet {
@@ -522,6 +571,10 @@ main {
                     margin-left: 21%;
                     margin-top: -12.2%;
                     width: 100%;
+
+                    @include monitor-27 {
+                        margin: -9% 0 0 21%;
+                    }
 
                     @include tablet {
                         float: left;
@@ -563,7 +616,8 @@ main {
                 }
                 .derecha {
                     margin: 6% 0 0 81%; 
-                    float: right;   
+                    float: right;  
+
                     
                     @include tablet {
                         margin: 0 20px 0 0;
@@ -616,7 +670,7 @@ main {
                         }
                     }
                 }
-                .btn-content{
+                .btn-content, .btn-contentSf{
                     font-family: 'Poppins';
                     background-color: black;
                     width: 100px;
@@ -638,8 +692,12 @@ main {
                         height: 24px;
                         width: 62px;
                     }
+
+                    i {
+                        font-size: 1.1rem;
+                    }
                 }
-                .btn-c-right {
+                .btn-c-right, .btn-c-rightSf {
                     @include tablet {
                         font-family: 'Poppins';
                         background-color: black;
@@ -657,7 +715,7 @@ main {
                         border-radius: 10px;
                     }
                 }
-                .btn-content:hover {
+                .btn-content:hover, .btn-contentSf:hover {
                     cursor: pointer;
                     transition: all .3s ease-in-out;
                     transform: scale(1.1);
@@ -679,6 +737,10 @@ main {
                     font-size: 14px;
                     letter-spacing: 1px;
                     border-radius: 10px;
+
+                    @include monitor-27 {
+                        margin: 1% 0 0 0;
+                    }
 
                     @include tablet {
                         display: flex;

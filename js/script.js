@@ -37,8 +37,9 @@ appearOptions);
 
 faders.forEach(fader => {
     appearOnScroll.observe(fader);
-})
+});
 
 sliders.forEach(slider => {
     appearOnScroll.observe(slider);
-})
+});
+

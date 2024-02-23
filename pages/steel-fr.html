@@ -35,7 +35,7 @@
     <div id="topbar" class=" align-items-center fixed-top">
         <div class="container d-flex justify-content-between">
             <div class="contact-info align-item-center">
-            <i class="bi bi-telephone"> Horario: Lunes a Viernes de 08:00 a 16.00hs</i>
+            <i class="bi bi-telephone"> Horario: Lunes a Viernes de 08:00 a 16.00hs | Sabados de 8:30 a 12:30</i>
             </div>
         </div>
         <div class="clock-container">
@@ -109,7 +109,7 @@
         </nav>
 
         <!-- # boton de wsp -->
-        <a href="https://wa.me/5492995479547" class="btn-wsp" target="_blank">
+        <a href="https://wa.me/5492216541916" class="btn-wsp" target="_blank">
             <i class="fa fa-whatsapp icono"></i>
         </a>
     </header>
@@ -183,29 +183,29 @@
                 </div>
             </div> 
 
-            <div class="muro-compuesto-img">
+            <div class="muro-compuesto-img" id="muro-compuesto-img">
                 <img src="../scss/recursos/steelframing-detail-para-hover.png" alt="">
             </div>
             
-            <div class="muro-compuesto-referencias">
+            <div class="muro-compuesto-referencias" id="muroDetalle">
                 <div class="muro-sf-partes fade-in">
                     <ul>
-                        <li><a class="1 btn" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" href="#">1</a></li>
-                        <li><a class="2 btn" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" href="#">2</a></li>
-                        <li><a class="3 btn" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" href="#">3</a></li>
-                        <li><a class="4 btn" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" href="#">4</a></li>
-                        <li><a class="5 btn" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" href="#">5</a></li>
-                        <li><a class="6 btn" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" href="#">6</a></li>
-                        <li><a class="7 btn" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" href="#">7</a></li>
-                        <li><a class="8 btn" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" href="#">8</a></li>
+                        <li><a class="1 btn" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" href="#parte1">1</a></li>
+                        <li><a class="2 btn" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" href="#parte2">2</a></li>
+                        <li><a class="3 btn" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" href="#parte3">3</a></li>
+                        <li><a class="4 btn" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" href="#parte4">4</a></li>
+                        <li><a class="5 btn" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" href="#parte5">5</a></li>
+                        <li><a class="6 btn" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" href="#parte6">6</a></li>
+                        <li><a class="7 btn" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" href="#parte7">7</a></li>
+                        <li><a class="8 btn" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" href="#parte8">8</a></li>
                     </ul>
                 </div>
             </div>
 
-            <div class="muro-compuesto-detalle">
+            <div class="muro-compuesto-detalle" id="muroDetalle">
                 <div class="container-partes">
 
-                    <div class="div izquierda" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">Imagen1</div>
+                    <div class="div izquierda" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" id="parte1"><img class="div" src="../scss/recursos/contrapisoHormigon.png" alt=""></div>
                     <div class="titulo" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
                         <h5>1 - Contrapiso de H° A°</h5>
                     </div>
@@ -213,66 +213,68 @@
                         <p class="p-left">El contrapiso de hormigon armado se coloca sobre el suelo. Sirve para nivelar, proporciona resistencia estructural y crear una base sólida para la instalación de la estructura</p>
                     </div>
     
-                    <div class="div derecha" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="50">Imagen2</div>
+                    <div class="div derecha" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="50" id="parte2"><img class="div" src="../scss/recursos/revestmientoExterior.png" alt=""></div>
                     <div class="titulo titulo-fade-der" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
                         <h5>2 - Revestimiento exterior</h5></div>
                     <div class="parrafo parrafo-fade-der" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
                         <p class="p-right">Los revestimientos exteriores son capas que se aplican en fachadas. Sirven para protección climática, estética y mejorar la durabilidad de edificaciones.</p>
                     </div>
-                    <div class="btn-content" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100"><a href="">+ info</a></div>
-                    <div class="btn-content-shop" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100"><a href="https://pvcenter.mercadoshops.com.ar/">Dreyja Shop</a></div>
+                    <div class="btn-contentSf" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100"><a href="#muro-compuesto-img"><i class="bi bi-arrow-up-circle"></i> inicio</a></div>
+                    <!-- <div class="btn-content-shop" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100"><a href="https://pvcenter.mercadoshops.com.ar/">Dreyja Shop</a></div> -->
     
-                    <div class="div izquierda" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="50">Imagen3</div>
+                    <div class="div izquierda" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="50" id="parte3"><img class="div" src="../scss/recursos/aislacionHidrofuga.png" alt=""></div>
                     <div class="titulo" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
                         <h5>3 - Membrana Hidrófuga</h5></div>
                     <div class="parrafo" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
                         <p class="p-left">Las membranas hidrofugas son capas que repelen el agua, usadas para impermeabilizar superficies y estructuras.</p>
                     </div>
-                    <div class="btn-content btn-c-right" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100"><a href="">+ info</a></div>
-                    <div class="btn-content-shop btn-shop-right" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100"><a href="https://pvcenter.mercadoshops.com.ar/">Dreyja Shop</a></div>
+                    <div class="btn-contentSf btn-c-right" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100"><a href="#muro-compuesto-img"><i class="bi bi-arrow-up-circle"></i> inicio</a></div>
+                    <!-- <div class="btn-content-shop btn-shop-right" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100"><a href="https://pvcenter.mercadoshops.com.ar/">Dreyja Shop</a></div> -->
     
-                    <div class="div derecha" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="50">Imagen4</div>
+                    <div class="div derecha" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="50" id="parte4"><img class="div" src="../scss/recursos/placaOsb.png" alt=""></div>
                     <div class="titulo titulo-fade-der" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
                         <h5>4 - Placa Rigidizadora (OSB)</h5></div>
                     <div class="parrafo parrafo-fade-der" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
                         <p class="p-right">
                             Las placas rigidizadoras de OSB, refuerzan estructuras, proporcionando resistencia y estabilidad en construcciones. Sus medidas van desde los 9mm hasta los 25mm.</p>
                     </div>
+                    <div class="btn-contentSf" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100"><a href="#muro-compuesto-img"><i class="bi bi-arrow-up-circle"></i> inicio</a></div>
     
-                    <div class="div izquierda" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="50">Imagen5</div>
+                    <div class="div izquierda" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="50" id="parte5"><img class="div" src="../scss/recursos/lanaVidrio.png" alt=""></div>
                     <div class="titulo" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
                         <h5>5 - Aislación Termoacustica</h5></div>
                     <div class="parrafo" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
                         <p class="p-left">Las aislaciones termoacústicas, reducen la transferencia de calor y sonido, mejoran el confort térmico y acústico.</p>
                     </div>
-                    <div class="btn-content btn-c-right" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100"><a href="">+ info</a></div>
-                    <div class="btn-content-shop btn-shop-right" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100"><a href="https://pvcenter.mercadoshops.com.ar/">Dreyja Shop</a></div>
+                    <div class="btn-contentSf btn-c-right" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100"><a href="#muro-compuesto-img"><i class="bi bi-arrow-up-circle"></i> inicio</a></div>
+                    <!-- <div class="btn-content-shop btn-shop-right" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100"><a href="https://pvcenter.mercadoshops.com.ar/">Dreyja Shop</a></div> -->
     
-                    <div class="div derecha" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="50">Imagen6</div>
+                    <div class="div derecha" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="50" id="parte6"><img class="div" src="../scss/recursos/revestimientoInterior.png" alt=""></div>
                     <div class="titulo titulo-fade-der" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
                         <h5>6 - Revestimiento Interior</h5></div>
                     <div class="parrafo parrafo-fade-der" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
                         <p class="p-right">Los revestimientos interiores son capas aplicadas en paredes y techos para mejorar la estética y proteger.</p>
                     </div>
-                    <!-- <div class="btn-content" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100"><a href="">+ info</a></div> -->
-                    <div class="btn-content-shop" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100"><a href="https://pvcenter.mercadoshops.com.ar/">Dreyja Shop</a></div>
+                    <div class="btn-contentSf" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100"><a href="#muro-compuesto-img"><i class="bi bi-arrow-up-circle"></i> inicio</a></div>
+                    <!-- <div class="btn-content-shop" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100"><a href="https://pvcenter.mercadoshops.com.ar/">Dreyja Shop</a></div> -->
 
-                    <div class="div izquierda" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="50">Imagen7</div>
+                    <div class="div izquierda" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="50" id="parte7"><img class="div" src="../scss/recursos/perfilesPgcPgu.png" alt=""></div>
                     <div class="titulo" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
                         <h5>7 - Perfiles PGC - PGU</h5>
                     </div>
                     <div class="parrafo" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
                         <p class="p-left">Los p-PGC son los encargados de recibir la carga estructural. Los p-PGU se usan como cierre del sistema.</p>
                     </div>
-                    <div class="btn-content btn-c-right" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100"><a href="">+ info</a></div>
-                    <div class="btn-content-shop btn-shop-right" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100"><a href="https://pvcenter.mercadoshops.com.ar/">Dreyja Shop</a></div>
+                    <div class="btn-contentSf btn-c-right" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100"><a href="#muro-compuesto-img"><i class="bi bi-arrow-up-circle"></i> inicio</a></div>
+                    <!-- <div class="btn-content-shop btn-shop-right" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100"><a href="https://pvcenter.mercadoshops.com.ar/">Dreyja Shop</a></div> -->
     
-                    <div class="div derecha" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="50">Imagen8</div>
+                    <div class="div derecha" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="50" id="parte8"><img class="div" src="../scss/recursos/mallaSteel.png" alt=""></div>
                     <div class="titulo" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
                         <h5>8 - Malla</h5></div>
                     <div class="parrafo parrafo-fade-der" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
                         <p class="p-right">Esta malla es de refuerzo, de fibra de vidrio, que estabiliza la estructura, mejorando su resistencia y durabilidad. También contribuye a prevenir grietas.</p>
                     </div>
+                    <div class="btn-contentSf" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100"><a href="#muro-compuesto-img"><i class="bi bi-arrow-up-circle"></i> inicio</a></div>
                 </div>
             </div>
         </section>
@@ -388,7 +390,7 @@
             <div class="info">
 
                 <div class="imgBox">
-                    <img src="./scss/recursos/construirFuturo.jpe" alt="">
+                    <img src="../scss/recursos/logo-azul.jpeg" alt="">
                 </div>
 
                 <div class="rrss">
@@ -500,5 +502,6 @@
     <script src="../js/buscadorInterno.js"></script>
     <script src="../js/menuHamburguesa.js"></script>
     <script src="../js/aosSliderEffect.js"></script>
+    <script src="../js/conectionWall.js"></script>
 </body>
 </html>

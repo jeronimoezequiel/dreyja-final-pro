@@ -5,6 +5,10 @@ header{
         position: fixed;
         z-index: 889;
         margin-left: 10px;
+
+        @include monitor-27 {
+            display: none;
+        }
     }
     #bag-shop{
         @include tablet {
@@ -81,6 +85,25 @@ header{
         position: fixed;
         z-index: 999;
         width: 1350px;
+
+        @include monitor-27 {
+            background: red;
+            width: 1920px;
+            margin: 0 auto;
+        }
+
+        @include portatil-L {
+            // background-color: green;
+            // width: 1440px;
+            // margin: 0 auto;
+        }
+
+        @include portatil {
+            background-color: yellow;
+            width: 1024px;
+            height: 80px;
+            margin: 0 auto;
+        }
     
         @include tablet {
             position: fixed;
@@ -98,6 +121,18 @@ header{
             margin: 0 auto;
             max-width: 1200px;
             overflow: hidden;
+
+            @include monitor-27 {
+                background: blue;
+                max-width: 1650px;
+                margin: -0.65% 0 0 8%;
+            }
+
+            @include portatil {
+                background: orange;
+                max-width: 900px;
+                margin: -0.25% 0 0 6%;
+            }
     
             ul {
                 width: 100%;
@@ -107,6 +142,26 @@ header{
                 justify-content: space-between;
                 font-size: .9rem;
                 font-weight: 300;
+
+                @include monitor-27 {
+                    font-size: 1.1rem;
+                    display: flex;
+                    justify-content: space-between;
+                    // gap: 20px; // Espacio entre las pestañas del menú
+                    white-space: nowrap; // Evita el corte de palabras
+                    word-break: break-all; // Permite quiebres de palabras en cualquier parte
+                    margin-left: -1%;
+                }
+
+                @include portatil {
+                    font-size: .75rem;
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 11px; // Espacio entre las pestañas del menú
+                    white-space: nowrap; // Evita el corte de palabras
+                    word-break: break-all; // Permite quiebres de palabras en cualquier parte
+                    margin-left: -3%;
+                }
     
                 @include tablet {
                     display: flex;
@@ -125,6 +180,7 @@ header{
                     }
                     .logo {
                         margin-top: -7%;
+
                         @include tablet{
                             display: flex;
                             margin-left: 10px;
@@ -242,6 +298,18 @@ header{
                     width: 8.5rem;
                     height: 2.4rem;
                     margin-left: -10%;
+
+                    @include monitor-27 {
+                        width: 13rem;
+                        height: 3.3rem;
+                        margin: 0 0 0 -7%;
+                    }
+
+                    @include portatil {
+                        width: 7rem;
+                        height: 2rem;
+                        margin: 0 0 0 7%;
+                    }
                 }
     
                 li, a {
@@ -281,6 +349,10 @@ header{
                 padding: 10px;
                 outline: none;
                 font-size: 16px;
+
+                @include monitor-27 {
+                    margin: -2% 0 0 0;
+                }
             }
         .search-form::before{
             content: '\f002';
@@ -330,6 +402,10 @@ header{
             top: 7rem;
             left: 0;
             z-index: 777;
+
+            @include portatil {
+                margin: -8.65px 0 0 0;
+            }
             
             @include tablet {
                 display: none;
