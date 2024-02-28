@@ -774,8 +774,8 @@ main .home_1 {
         margin: -115px 0 0 -100px; } }
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
       main .home_1 .home_txt-fx .columns {
-        margin-left: 200px;
-        font-size: 4.2rem; } }
+        font-size: .8em;
+        margin: 8% 0 0 -33%; } }
     main .home_1 .home_txt-fx .columns h3 {
       font-family: "Poppins", sans-serif;
       font-weight: 500; }
@@ -789,9 +789,10 @@ main .home_1 {
       @media only screen and (min-width: 1600px) and (max-width: 1920px) {
         main .home_1 .home_txt-fx .columns p {
           font-family: "Poppins", sans-serif;
-          font-size: 1.6rem;
+          font-size: 1.2rem;
           font-weight: 400;
-          margin: 6px 0px 8px 120px;
+          margin: 6px 0px 8px -313px;
+          max-width: 1300px;
           color: #273238; } }
       @media only screen and (max-width: 1024px) {
         main .home_1 .home_txt-fx .columns p {
@@ -865,8 +866,8 @@ main #cards {
     opacity: 1; } }
       @media only screen and (min-width: 1600px) and (max-width: 1920px) {
         main #cards .home-container h2 {
-          font-size: 55px;
-          margin: -6% 0 0 29%;
+          font-size: 44px;
+          margin: -6% 0 0 31%;
           font-family: "Poppins", sans-serif;
           color: #273238; } }
       @media only screen and (max-width: 768px) {
@@ -1021,6 +1022,9 @@ main .slider {
     animation: scroll 40s linear infinite;
     -webkit-animation: scroll 40s linear infinite;
     width: calc(200px * 14); }
+    @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+      main .slider .slide-track {
+        margin-bottom: 3%; } }
     main .slider .slide-track .slide {
       width: 200px; }
       main .slider .slide-track .slide img {
@@ -1037,6 +1041,9 @@ main .slider {
 main .section-5 {
   height: 600px;
   background: #f1f1f1; }
+  @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+    main .section-5 {
+      background: #fff; } }
   main .section-5:after {
     content: "";
     position: absolute;
@@ -1047,32 +1054,12 @@ main .section-5 {
     border-style: solid;
     border-color: transparent transparent #88888821 transparent;
     z-index: 1; }
-  @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-    main .section-5 {
-      background-color: #fff; }
+    @media only screen and (max-width: 1024px) {
       main .section-5:after {
-        content: "";
-        position: absolute;
-        top: 126%;
-        left: 50%;
-        transform: translateX(-50%);
-        border-width: 0px 0vw 485px 99vw;
-        border-style: solid;
-        border-color: transparent transparent #88888821 transparent;
-        z-index: 1; } }
-  @media only screen and (max-width: 1024px) {
-    main .section-5 {
-      background: #fff; }
+        top: 237.5%; } }
+    @media only screen and (min-width: 1600px) and (max-width: 1920px) {
       main .section-5:after {
-        content: "";
-        position: absolute;
-        top: 237.5%;
-        left: 50%;
-        transform: translateX(-50%);
-        border-width: 0px 0vw 485px 99vw;
-        border-style: solid;
-        border-color: transparent transparent #88888821 transparent;
-        z-index: 1; } }
+        top: 176%; } }
   @media only screen and (max-width: 768px) {
     main .section-5 {
       width: 100%;
@@ -1109,7 +1096,7 @@ main .section-5 {
     opacity: 1; } }
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
       main .section-5 .subtitle-center {
-        font-size: 55px;
+        font-size: 44px;
         font-family: "Poppins", sans-serif;
         color: #273238; } }
     @media only screen and (max-width: 1024px) {
@@ -1175,6 +1162,9 @@ main .section-5 {
       main .section-5 .services .container .row {
         margin: 0 0 0 -76px;
         width: 1015px; } }
+    @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+      main .section-5 .services .container .row {
+        margin-top: -1%; } }
   main .section-5 .services .icon-box {
     text-align: center;
     border: none;

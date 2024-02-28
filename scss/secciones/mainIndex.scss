@@ -400,8 +400,6 @@ main {
 
                 .columns{
 
-                    
-
                     @include tablet {
                         // margin-top: -110px;
                     }
@@ -474,12 +472,10 @@ main {
                     }
 
                     @include monitor-27 {
-                        margin-left: 200px;
-                        font-size: 4.2rem;
+                        font-size: .8em;
+                        margin: 8% 0 0 -33%;
                     }
 
-                    
-                    
                     
                     h3{
                         font-family: $typo-poppins;
@@ -496,9 +492,10 @@ main {
 
                         @include monitor-27 {
                             font-family: $typo-poppins;
-                            font-size: 1.6rem;
+                            font-size: 1.2rem;
                             font-weight: 400;
-                            margin: 6px 0px 8px 120px;
+                            margin: 6px 0px 8px -313px;
+                            max-width: 1300px;
                             color: map-get($color--azul, dreyja);
                         }
 
@@ -589,8 +586,8 @@ main {
                 }
 
                 @include monitor-27 {
-                    font-size: 55px;
-                    margin: -6% 0 0 29%;
+                    font-size: 44px;
+                    margin: -6% 0 0 31%;
                     font-family: $typo-poppins;
                     color: map-get($color--azul, dreyja);
                 }
@@ -780,6 +777,11 @@ main {
             animation: scroll 40s linear infinite;
             -webkit-animation: scroll 40s linear infinite;
             width: calc(200px * 14);
+
+            @include monitor-27 {
+                margin-bottom: 3%;
+            }
+
             .slide {
                 width: 200px;
                 img {
@@ -805,6 +807,10 @@ main {
         height: 600px;
         background: #f1f1f1;
 
+        @include monitor-27 {
+            background: #fff;
+        }
+
         &:after {
             content: "";
             position: absolute;
@@ -815,37 +821,13 @@ main {
             border-style: solid;
             border-color: transparent transparent #88888821 transparent;
             z-index: 1;
-        }
 
-        @include monitor-27 {
-            background-color: #fff;
-            
-            &:after {
-                content: "";
-                position: absolute;
-                top: 126%;
-                left: 50%;
-                transform: translateX(-50%);
-                border-width: 0px 0vw 485px 99vw;
-                border-style: solid;
-                border-color: transparent transparent #88888821 transparent;
-                z-index: 1;
-            }
-        }
-
-        @include portatil {
-            background: #fff;
-
-            &:after {
-                content: "";
-                position: absolute;
+            @include portatil {
                 top: 237.5%;
-                left: 50%;
-                transform: translateX(-50%);
-                border-width: 0px 0vw 485px 99vw;
-                border-style: solid;
-                border-color: transparent transparent #88888821 transparent;
-                z-index: 1;
+            }
+
+            @include monitor-27 {
+                top: 176%;
             }
         }
         
@@ -855,7 +837,8 @@ main {
             font-size: 1.5rem;
             padding: 10px;
             background: map-get($color--azul, dreyja );
-            }
+        }
+
             .subtitle-center{
                 display: flex;
                 align-items: center;
@@ -889,7 +872,7 @@ main {
                 }
 
                 @include monitor-27 {
-                    font-size: 55px;
+                    font-size: 44px;
                     font-family: $typo-poppins;
                     color: map-get($color--azul, dreyja);
                 }
@@ -981,6 +964,10 @@ main {
                         @include portatil {
                             margin: 0 0 0 -76px;
                             width: 1015px;
+                        }
+
+                        @include monitor-27 {
+                            margin-top: -1%;
                         }
                     }
                 }
