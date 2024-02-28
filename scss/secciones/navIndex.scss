@@ -98,6 +98,7 @@ header{
             // max-width: 1920px;
             width: 1600px;
             margin: 0 auto;
+            height: 84px;
         }
 
         // @include portatil-L {
@@ -421,13 +422,17 @@ header{
             top: 7rem;
             left: 0;
             z-index: 777;
+            
+            @include tablet {
+                display: none;
+            }
 
             @include portatil {
                 margin: -8.65px 0 0 0;
             }
-            
-            @include tablet {
-                display: none;
+
+            @include monitor-27 {
+                top: 6.7rem;
             }
         }
         //Buscador de contenido

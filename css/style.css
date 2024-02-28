@@ -152,7 +152,8 @@ header nav {
   @media only screen and (min-width: 1600px) and (max-width: 1920px) {
     header nav {
       width: 1600px;
-      margin: 0 auto; } }
+      margin: 0 auto;
+      height: 84px; } }
   @media only screen and (max-width: 1024px) {
     header nav {
       background-color: yellow;
@@ -394,12 +395,15 @@ header nav {
     top: 7rem;
     left: 0;
     z-index: 777; }
-    @media only screen and (max-width: 1024px) {
-      header nav .bottom-line {
-        margin: -8.65px 0 0 0; } }
     @media only screen and (max-width: 768px) {
       header nav .bottom-line {
         display: none; } }
+    @media only screen and (max-width: 1024px) {
+      header nav .bottom-line {
+        margin: -8.65px 0 0 0; } }
+    @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+      header nav .bottom-line {
+        top: 6.7rem; } }
   header nav #box-search {
     display: none;
     position: fixed;
@@ -562,8 +566,8 @@ main #home {
             height: 556px; } }
         main #home .container .home-slider .homeBackgroundMonitor .homeItemMonitor img {
           display: flex;
-          width: 1920px;
-          margin: 0 0 0 -10px; }
+          width: 1600px;
+          height: 826px; }
           @media only screen and (max-width: 375px) {
             main #home .container .home-slider .homeBackgroundMonitor .homeItemMonitor img {
               width: 700px;
@@ -643,8 +647,7 @@ main #home {
         main #home .container .container-info {
           font-size: 64px;
           font-weight: 600;
-          padding: 4px 30px;
-          margin: -25.5% 0 0 4%; } }
+          padding: 4px 30px; } }
       main #home .container .container-info .subtitle-ppal {
         color: #fff;
         background-color: #273238;

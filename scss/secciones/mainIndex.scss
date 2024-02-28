@@ -152,8 +152,8 @@ main {
 
                         img {
                             display: flex;
-                            width: 1920px;
-                            margin: 0 0 0 -10px;
+                            width: 1600px;
+                            height: 826px;
 
                             @include mobile_l {
                                 width: 700px;
@@ -267,7 +267,7 @@ main {
                         font-size: 64px;
                         font-weight: 600;
                         padding: 4px 30px;
-                        margin: -25.5% 0 0 4%;
+                        // margin: -25.5% 0 0 4%;
                     }
 
                 .subtitle-ppal{
