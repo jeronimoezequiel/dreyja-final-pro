@@ -1,5 +1,11 @@
 main {
+    
     // background: #fafafa;
+
+    @include portatil {
+        overflow: hidden;
+        
+    }
     button {
         border: none;
         display: flex;
@@ -72,6 +78,10 @@ main {
             margin-left: 16%;
             margin-top: 29%;
 
+            @include portatil {
+                background-color: #fff;
+            }
+
             @include tablet {
                 width: 170px;
                 height: 60px;
@@ -111,6 +121,10 @@ main {
             margin: -3% 0 0 0;
         }
 
+        @include portatil {
+            background: #ffffff;
+        }
+
         @include tablet {
             width: 100%;
             height: 125px;
@@ -133,6 +147,12 @@ main {
             font-family: $typo-poppins;
             margin: 5% 0px 0px 7%;
             display: flex;
+
+            @include portatil {
+                font-family: $typo-poppins;
+                font-size: 2rem;
+                margin: 69px 0 0 91px
+            }
 
             @include tablet {
                 font-size: 1.1em;
@@ -245,6 +265,10 @@ main {
             border-top-right-radius: 40px;
             border-bottom-right-radius: 40px;
 
+            @include portatil {
+                margin: -550px 0 0 770px;
+            }
+
             @include tablet {
                 display: flex;
                 position: absolute;
@@ -321,6 +345,11 @@ main {
                         }
                     }
                 .question-2{
+
+                    @include portatil {
+                        margin: 36% 0 0 0;
+                    }
+
                     @include tablet {
                         display: none;
                     }
@@ -333,10 +362,19 @@ main {
                     position: absolute;
                     margin: 0px 0px 0px 0px;
                     padding: 20px;
+
                     .paragraph {
                         width: 65%;
+                        
                     @include tablet {
                         display: none;
+                        }
+                    }
+
+                    .paragraph2 {
+
+                        @include portatil {
+                            margin: 0% 0 0 0;
                         }
                     }
                 }
@@ -361,6 +399,12 @@ main {
                 height: 400px;
                 width: 400px;
 
+                @include portatil {
+                    height: 300px;
+                    width: 300px;
+                    margin: 172px 0 0 12px;
+                }
+
                 @include tablet {
                     height: 300px;
                     width: 300px;
@@ -370,6 +414,10 @@ main {
         }
 
         .muro-compuesto-referencias {
+
+            @include portatil {
+                font-size: .85rem;
+            }
 
             @include tablet {
                 display: flex;
@@ -552,12 +600,19 @@ main {
                 height: 1500px;
                 margin: -14% 0 0 0;
             }
+
             .container-partes {
                 display: flex;
                 justify-content: center;
                 width: 100%;
                 flex-direction: column;
                 margin-top: -55px;
+
+                
+                @include portatil {
+                    margin: 43px 0 0 -8px;
+                }
+
                 @include tablet {
                     display: none;
                 }
@@ -576,6 +631,10 @@ main {
                         margin: -9% 0 0 21%;
                     }
 
+                    @include portatil {
+                        margin: -15% 0 0 25%;
+                    }
+
                     @include tablet {
                         float: left;
                         margin: -107px 0 0 138px;
@@ -583,6 +642,11 @@ main {
                     }
                     
                     h5 {
+
+                        @include portatil {
+                            margin: -1% 0 0 0;
+                        }
+
                         @include tablet {
                             font-size: .9rem;
                         }
@@ -650,6 +714,11 @@ main {
                     }
 
                     .p-left{
+
+                        @include portatil {
+                            margin: 0 0 0 6%;
+                        }
+                        
                         @include tablet {
                             width: 100%;
                             height: 20px;
@@ -662,6 +731,10 @@ main {
                     }
                     
                     .p-right {
+                        @include portatil {
+                            margin: 3% 0 0 7%;
+                        }
+
                         @include tablet {
                             width: 100%;
                             position: relative;
@@ -695,6 +768,11 @@ main {
 
                     i {
                         font-size: 1.1rem;
+                    }
+                }
+                .btn-contentSf {
+                    @include portatil {
+                        margin: 0% 0 0 25%;
                     }
                 }
                 .btn-c-right, .btn-c-rightSf {
@@ -794,6 +872,13 @@ main {
             justify-content: center;
             align-items: center;
             top: 20%;
+
+            @include portatil {
+                font-size: 1.7rem;
+                max-width: 900px;
+                margin: 0 0 0 7%;
+            }
+
             @include tablet {
                 display: flex;
                 font-size: 1.2rem;
@@ -833,6 +918,10 @@ main {
         height: 500px;
         background: rgb(255,255,255);
         background: linear-gradient(0deg, rgba(255,255,255,1) 51%, rgba(217,217,217,1) 100%);
+
+        @include portatil {
+            height: 600px;
+        }
         
         @include tablet {
             display: flex;
@@ -855,13 +944,14 @@ main {
                     margin: 17% 0px 0px 5%;
                     -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
                     animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+
                 @include tablet {
                     position: static;
                     font-size: 1.1rem;
                     display: flex;
                     margin: 18px 0 42px 113px;
                     text-align: center;
-                }
+                    }
                 }
                 @-webkit-keyframes text-focus-in {
                     0% {

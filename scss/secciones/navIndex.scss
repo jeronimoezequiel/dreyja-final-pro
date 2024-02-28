@@ -11,16 +11,19 @@ header{
         }
     }
     #bag-shop{
+
         @include tablet {
-            display: flex;
+            display: none;
             color: #c0cad5;
             position: fixed;
             z-index: 991;
             font-size: 16px;
             font-weight: 100;
             margin: 12px 320px;
+            }
         }
-    }
+
+        
     #btn__menu{
         display: none;
     
@@ -48,7 +51,7 @@ header{
             margin-left: 670px;
         }
 
-        @include mobile-a54 {
+        @include mobile_l {
             position: fixed;
             margin-left: 0px;
             border-radius: 0px;
@@ -59,11 +62,15 @@ header{
             padding: 20px;
         }
     }
-    #btn__menu:hover {
-        @include tablet {
-            background: rgba(255, 255, 255, 0.2);
-        }
-    }
+    // #btn__menu:hover {
+    //     @include tablet {
+    //         background: rgba(255, 255, 255, 0.2);
+    //     }
+
+    //     @include mobile_l {
+    //         display: none;
+    //     }
+    // }
     #back_menu{
         
         @include tablet {
@@ -87,16 +94,17 @@ header{
         width: 1350px;
 
         @include monitor-27 {
-            background: red;
-            width: 1920px;
+            // background: red;
+            // max-width: 1920px;
+            width: 1600px;
             margin: 0 auto;
         }
 
-        @include portatil-L {
-            // background-color: green;
-            // width: 1440px;
-            // margin: 0 auto;
-        }
+        // @include portatil-L {
+        //     // background-color: green;
+        //     // width: 1440px;
+        //     // margin: 0 auto;
+        // }
 
         @include portatil {
             background-color: yellow;
@@ -115,6 +123,10 @@ header{
             display: flex;
             transition: all 300ms;
         }
+
+        @include mobile_l {
+            background-color: map-get($color--azul, dreyja);
+        }
     
         .menu {
             position: relative;
@@ -122,16 +134,19 @@ header{
             max-width: 1200px;
             overflow: hidden;
 
-            @include monitor-27 {
-                background: blue;
-                max-width: 1650px;
-                margin: -0.65% 0 0 8%;
+            @include mobile_l {
+                background: map-get($color--bordo, dreyja);
             }
 
             @include portatil {
                 background: orange;
                 max-width: 900px;
                 margin: -0.25% 0 0 6%;
+            }
+
+            @include monitor-27 {
+                max-width: 1400px;
+                margin: -0.65% 0 0 6%;
             }
     
             ul {
@@ -144,7 +159,6 @@ header{
                 font-weight: 300;
 
                 @include monitor-27 {
-                    font-size: 1.1rem;
                     display: flex;
                     justify-content: space-between;
                     // gap: 20px; // Espacio entre las pestañas del menú
@@ -300,10 +314,15 @@ header{
                     margin-left: -10%;
 
                     @include monitor-27 {
-                        width: 13rem;
+                        width: 12rem;
                         height: 3.3rem;
                         margin: 0 0 0 -7%;
                     }
+
+                    // @include acer-escritorio {
+                    //     width: 12rem;
+                    //     height: 3.3rem;
+                    // }
 
                     @include portatil {
                         width: 7rem;

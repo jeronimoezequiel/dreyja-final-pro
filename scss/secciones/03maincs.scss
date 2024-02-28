@@ -76,6 +76,10 @@ main {
             transform-origin: 100% 63%;
             margin: 29% 0 0 20%;
 
+            @include portatil {
+                margin: 39% 0 0 26%;
+            }
+
             @include tablet {
                 width: 170px;
                 height: 60px;
@@ -96,6 +100,10 @@ main {
                 color: rgb(12, 12, 12);
                 border-bottom: 6px solid rgb(102, 102, 102); 
                 padding-bottom: .1em;
+
+                @include portatil {
+                    margin: 41% 0 0 12%;
+                }
             
                 @include tablet {
                     font-family: 'Poppins';
@@ -136,6 +144,10 @@ main {
                 margin: 5% 0px 0px 7%;
                 display: flex;
                 font-size: .9rem;
+
+                @include acer-escritorio {
+                    margin: 7% 0 0 0;
+                }
     
                 @include tablet {
                     font-size: .9em;
@@ -181,6 +193,10 @@ main {
             display: flex; /* Utiliza flexbox para alinear elementos */
             align-items: center;
 
+            @include portatil {
+                max-width: 966px;
+            }
+
             @include tablet {
                 display: flex;
                 width: 98%;
@@ -194,6 +210,15 @@ main {
                 height: 248px; 
                 border-top-left-radius: 20px;
                 border-bottom-left-radius: 20px;
+
+                @include portatil {
+                    display: flex;
+                    max-width: 100%; 
+                    width: 296px;
+                    height: 206px; 
+                    margin: 0 0 0 -3px;
+                }
+
                 @include tablet {
                     display: flex;
                     max-width: 100%; 
@@ -317,7 +342,7 @@ main {
             margin: 250px 0 0 -950px;
             z-index: 4;
             position: relative;
-        
+
             ul {  
                 margin: 8.5% 0 0 0;
                 li {
@@ -339,6 +364,10 @@ main {
                         font-family: 'Poppins';
                         font-size: .9rem;
                         margin-bottom: 5px;
+
+                        @include portatil {
+                            margin: 0 0 0 11%;
+                        }
                     }
                     .inbox-img-cielorraso {
                         width: 40px;
@@ -375,6 +404,11 @@ main {
                 max-width: 450px;
                 overflow: hidden;
 
+                @include portatil {
+                    margin: 0% 0 0 31%;
+                    max-width: 600px;
+                }
+
                 ul {
                     width: 100%;
                     margin: 1.8% 0% 0% 0%;
@@ -383,6 +417,14 @@ main {
                     justify-content: space-between;
                     font-size: .9rem;
                     font-weight: 300;
+
+                    @include portatil {
+                        margin: 0% 0 0 27%;
+                        backdrop-filter: blur(20px);
+                        max-width: 353px;
+                        padding: 7px;
+                        border-radius: 20px;
+                    }
     
                 @include tablet {
                     display: flex;
@@ -399,6 +441,10 @@ main {
                             list-style: none;
                             text-decoration: none;
                             color: #fff;
+
+                            @include portatil {
+                                color: #000;
+                            }
                         }
     
                     @include tablet {
@@ -447,6 +493,11 @@ main {
             margin: -10.5% 0 0 20.5%;
             z-index: 333;
             position: relative;
+
+            @include portatil {
+                margin: -19% 0 0 22%;
+                max-width: 785px;
+            }
 
             .cielorraso-background-left-column {
                 background: map-get($color--azul, dreyja);
@@ -514,11 +565,20 @@ main {
                     align-items: flex-start;
                     justify-content: space-between;
 
+                    @include portatil {
+                        max-width: 300px;
+                        margin: 0 0 0 -19px;
+                    }
+
                         p {
                             font-family: 'Poppins';
                             font-size: .9rem;
                             color: #000;
                             max-width: 400px;
+
+                            @include portatil {
+                                font-size: .75rem;
+                            }
                         }
 
                         span {
@@ -538,6 +598,10 @@ main {
                     max-width: 300px; // Establecer el ancho máximo de la imagen
                     margin-left: auto; // Alinear a la derecha
                     position: relative;
+
+                    @include portatil {
+                        margin: 10% 0 0 14px;
+                    }
             
                         .owl-carousel {
                             .cielorraso-item {
@@ -568,6 +632,10 @@ main {
         width: 100%;
         margin: 0% 0 10% 0;
         z-index: 1;
+
+        @include portatil {
+            height: 600px;
+        }
 
         @include tablet {
             display: flex;
@@ -623,6 +691,10 @@ main {
             overflow-y: auto;
             overflow-x: hidden;
             margin: 15px 0 0 -420px;
+
+            @include portatil {
+                margin: 10% 0 0 -43%;
+            }
         
             ul {
                 li {
@@ -667,9 +739,10 @@ main {
             width: 160px;
             border-radius: 8px;
             cursor: pointer;
-            // a {
-            //     text-decoration: none;
-            // }
+
+            @include portatil {
+                display: none;
+            }
         }    
 
         .drywall-button:hover {
@@ -701,6 +774,11 @@ main {
                 margin: 60px 0 0 32.5%;
                 max-width: 900px;
                 overflow: hidden;
+
+                @include portatil {
+                    max-width: 647px;
+                    margin: 0 0 0 21%;
+                }
 
                 ul {
                     width: 100%;
@@ -773,6 +851,11 @@ main {
             align-items: center;
             margin: -10.5% 0 0 20.5%;
             z-index: 3;
+
+            @include portatil {
+                margin: -10% 0 0 23%;
+                max-width: 773px;
+            }
 
             .background-left-column {
                 background: linear-gradient(100deg, #243949, #517fa4);
@@ -890,6 +973,10 @@ main {
         width: 100%;
         padding: 1px;
         margin: 45% 0 0 0;
+
+        @include portatil {
+            margin: 5% 0 0 0;
+        }
 
         @include tablet {
             display: flex;

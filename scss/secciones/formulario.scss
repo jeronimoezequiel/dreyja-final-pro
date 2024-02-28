@@ -12,6 +12,10 @@
         background: map-get($color--azul, dreyja);
     }
 
+    @include portatil {
+        margin: -100px 0 0 0;
+    }
+
     @include tablet {
         height: 800px;
         // background: #1766a3;
@@ -223,6 +227,10 @@
                 height: 420px;
                 margin-bottom: 5%;
 
+                @include portatil {
+                    display: none;
+                }
+
                 @include tablet {
                     display: none;
                 }
@@ -265,6 +273,11 @@
             }
             //Redes Sociales
             .rrss {
+
+                @include portatil {
+                    margin: -10px 0 0 0;
+                }
+
                 @include tablet {
                     margin-top: -47%;
                 }

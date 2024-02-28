@@ -10,12 +10,6 @@
     }
 }
 
-@mixin tablet {
-    @media only screen and (max-width: 768px) {
-        @content;
-    }
-}
-
 @mixin tablet-medium {
     @media only screen and (max-width: 675px) {
         @content;
@@ -40,9 +34,17 @@
     }
 }
 
+
+
 //BREAKPOINTS
 @mixin monitor-27 {
-    @media only screen and (min-width: 1440px) and (max-width: 1920px) {
+    @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+        @content;
+    }
+}
+
+@mixin acer-escritorio {
+    @media only screen and (max-width: 1600px) {
         @content;
     }
 }
@@ -59,3 +61,14 @@
     }
 }
 
+@mixin tablet {
+    @media only screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mobile_l {
+    @media only screen and (max-width: 375px) {
+        @content;
+    }
+}
