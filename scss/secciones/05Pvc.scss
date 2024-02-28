@@ -447,7 +447,7 @@
                 max-width: 100%; 
                 width: 448px;
                 height: 448px; 
-                margin: 10% 0 0 10%;
+                margin: 10% 0 0 3%;
                 border-radius: 20px;
 
                 @include tablet {
@@ -473,7 +473,8 @@
                     font-weight: 700;
                     color: #383f47;
                     display: flex;
-                    margin: 55% 0 0 0;
+                    margin: 55% 0 0 -27%;
+                    text-align: center;
 
                     @include tablet {
                         display: flex;

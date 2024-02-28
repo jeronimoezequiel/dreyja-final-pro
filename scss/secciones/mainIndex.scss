@@ -467,13 +467,15 @@ main {
                         }
                     }
 
-                    @include portatil {
-                        margin: -115px 0 0 -100px;
-                    }
+                    // @include portatil {
+                    //     margin: -115px 0 0 -100px;
+                    // }
 
                     @include monitor-27 {
-                        font-size: .8em;
-                        margin: 8% 0 0 -33%;
+                        // background-color: greenyellow;
+                        margin-top: -3%;
+                        margin-left: -15%;
+                        max-width: 1200px;
                     }
 
                     
@@ -494,7 +496,7 @@ main {
                             font-family: $typo-poppins;
                             font-size: 1.2rem;
                             font-weight: 400;
-                            margin: 6px 0px 8px -313px;
+                            margin: 14px 0px 8px 40px;
                             max-width: 1300px;
                             color: map-get($color--azul, dreyja);
                         }
@@ -827,7 +829,7 @@ main {
             }
 
             @include monitor-27 {
-                top: 176%;
+                top: 146%;
             }
         }
         

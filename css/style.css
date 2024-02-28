@@ -769,13 +769,11 @@ main .home_1 {
           text-transform: uppercase;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent; } }
-    @media only screen and (max-width: 1024px) {
-      main .home_1 .home_txt-fx .columns {
-        margin: -115px 0 0 -100px; } }
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
       main .home_1 .home_txt-fx .columns {
-        font-size: .8em;
-        margin: 8% 0 0 -33%; } }
+        margin-top: -3%;
+        margin-left: -15%;
+        max-width: 1200px; } }
     main .home_1 .home_txt-fx .columns h3 {
       font-family: "Poppins", sans-serif;
       font-weight: 500; }
@@ -791,7 +789,7 @@ main .home_1 {
           font-family: "Poppins", sans-serif;
           font-size: 1.2rem;
           font-weight: 400;
-          margin: 6px 0px 8px -313px;
+          margin: 14px 0px 8px 40px;
           max-width: 1300px;
           color: #273238; } }
       @media only screen and (max-width: 1024px) {
@@ -1059,7 +1057,7 @@ main .section-5 {
         top: 237.5%; } }
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
       main .section-5:after {
-        top: 176%; } }
+        top: 146%; } }
   @media only screen and (max-width: 768px) {
     main .section-5 {
       width: 100%;
@@ -1797,7 +1795,7 @@ main .home-container {
   border-radius: 20px; }
   @media only screen and (min-width: 1600px) and (max-width: 1920px) {
     main .home-container {
-      margin: -3% 0 0 0; } }
+      margin: -5% 0 0 0; } }
   @media only screen and (max-width: 1024px) {
     main .home-container {
       background: #ffffff; } }
@@ -1820,15 +1818,19 @@ main .home-container {
     font-family: "Poppins", sans-serif;
     margin: 5% 0px 0px 7%;
     display: flex; }
+    @media only screen and (max-width: 768px) {
+      main .home-container h1 {
+        font-size: 1.1em;
+        margin-left: 42px; } }
     @media only screen and (max-width: 1024px) {
       main .home-container h1 {
         font-family: "Poppins", sans-serif;
         font-size: 2rem;
         margin: 69px 0 0 91px; } }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (min-width: 1600px) and (max-width: 1920px) {
       main .home-container h1 {
-        font-size: 1.1em;
-        margin-left: 42px; } }
+        z-index: 333;
+        position: relative; } }
     main .home-container h1 .home-lista {
       margin-left: 10px; }
       main .home-container h1 .home-lista .home-lista-item {
@@ -1897,6 +1899,10 @@ main .home-container-p {
 @media only screen and (max-width: 768px) {
   main .home-container-img {
     display: flex; } }
+
+@media only screen and (min-width: 1600px) and (max-width: 1920px) {
+  main .home-container-img {
+    margin: 10% 0 0 0; } }
 
 main .home-container-img .sf-img-container {
   display: flex;
@@ -5195,7 +5201,7 @@ main .disposicion .btn-redirect:hover {
       max-width: 100%;
       width: 448px;
       height: 448px;
-      margin: 10% 0 0 10%;
+      margin: 10% 0 0 3%;
       border-radius: 20px; }
       @media only screen and (max-width: 768px) {
         .main-pvc .detallePvc .strip-Pvc img {
@@ -5217,7 +5223,8 @@ main .disposicion .btn-redirect:hover {
         font-weight: 700;
         color: #383f47;
         display: flex;
-        margin: 55% 0 0 0; }
+        margin: 55% 0 0 -27%;
+        text-align: center; }
         @media only screen and (max-width: 768px) {
           .main-pvc .detallePvc .strip-Pvc .strip-content-Pvc h2 {
             display: flex;

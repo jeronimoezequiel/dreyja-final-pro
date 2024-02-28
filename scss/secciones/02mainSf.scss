@@ -118,7 +118,7 @@ main {
         border-radius: 20px;
 
         @include monitor-27 {
-            margin: -3% 0 0 0;
+            margin: -5% 0 0 0;
         }
 
         @include portatil {
@@ -147,16 +147,21 @@ main {
             font-family: $typo-poppins;
             margin: 5% 0px 0px 7%;
             display: flex;
+            
+            @include tablet {
+                font-size: 1.1em;
+                margin-left: 42px;
+            }
 
             @include portatil {
                 font-family: $typo-poppins;
                 font-size: 2rem;
                 margin: 69px 0 0 91px
             }
-
-            @include tablet {
-                font-size: 1.1em;
-                margin-left: 42px;
+            
+            @include monitor-27 {
+                z-index: 333;
+                position: relative;
             }
             
             .home-lista {
@@ -247,13 +252,14 @@ main {
 
     .home-container-img {
 
-        // @include monitor-27 {
-        //     margin: 10% 0 0 0;
-        // }
-
         @include tablet {
             display: flex;
         }
+
+        @include monitor-27 {
+            margin: 10% 0 0 0;
+        }
+        
         .sf-img-container {
             display: flex;
             height: 200px;
