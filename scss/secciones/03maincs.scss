@@ -779,7 +779,7 @@ main {
             height: 100%;
             overflow-y: auto;
             overflow-x: hidden;
-            margin: 15px 0 0 -420px;
+            margin: 210px 0 0 -397px;
 
             @include portatil {
                 margin: 10% 0 0 -43%;
@@ -873,7 +873,7 @@ main {
 
             .menu-drywall {
                 position: relative;
-                margin: 60px 0 0 32.5%;
+                margin: 60px 0 0 20%;
                 max-width: 900px;
                 overflow: hidden;
 
@@ -980,38 +980,38 @@ main {
                 background-color: #fff;
                 border-radius: 1rem;
                 box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
-                display: flex;
                 margin: 1.5rem;
                 overflow: hidden;
                 width: 58rem;
                 height: 23rem;
                 display: none;
-
+            
                 @include monitor-27 {
                     height: 500px;
                     width: 950px;
                     margin-top: -13%;
                     margin-left: 10%;
                 }
-
-                &.active-card {
+            
+                &.active {
+                    display: block;
                     border: 2px solid map-get($color--bordo, dreyja); // Borde para destacar la tarjeta activa
                     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); // Sombra para destacar la tarjeta activa
                     z-index: 4;
                 }
-
+            
                 h2 {
                     letter-spacing: .1rem;
                     margin: 1rem 0;
                     color: #000;
                 }
-
+            
                 h6 {
                     opacity: 0.6;
                     letter-spacing: .1rem;
                     text-transform: uppercase;
                 }
-
+            
                 .left-column {
                     color: #fff;
                     padding: 2rem;
@@ -1020,42 +1020,42 @@ main {
                     flex-direction: column;
                     align-items: center;
                     justify-content: space-between;
-
+            
                     h4 {
                         color: #fff;
                     }
-
+            
                     i {
                         font-size: 5rem;
                     }
                 }
-
+            
                 .right-column {
                     padding: 2rem;
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
                     justify-content: space-between;
-
-                        p {
-                            font-family: 'Poppins';
-                            font-size: .9rem;
-                            color: #000;
-                            max-width: 400px;
-                        }
-
-                        span {
-                            border-radius: 3rem;
-                            background: map-get($color--azul, dreyja );
-                            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
-                            color: #fff;
-                            font-size: 1.2rem;
-                            padding: .8rem 1.3rem;
-                            letter-spacing: .1rem;
-                            align-self: flex-end;
-                        }
+            
+                    p {
+                        font-family: 'Poppins';
+                        font-size: .9rem;
+                        color: #000;
+                        max-width: 400px;
+                    }
+            
+                    span {
+                        border-radius: 3rem;
+                        background: map-get($color--azul, dreyja );
+                        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+                        color: #fff;
+                        font-size: 1.2rem;
+                        padding: .8rem 1.3rem;
+                        letter-spacing: .1rem;
+                        align-self: flex-end;
+                    }
                 }
-
+            
                 .left-column-img {
                     width: 350px;
                     max-width: 300px; // Establecer el ancho máximo de la imagen
@@ -1071,15 +1071,36 @@ main {
                             }
                         }
                     }
-
-                    .carousel-selectors {
-                        .selector {
-                            i {
-                                color: #333;
-                                font-size: 30px;
-                            }
-                        }
+                }
+            }
+            
+            .carousel-selectors {
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+            
+                .selector {
+                    display: inline-block;
+                    margin: 0 5px;
+                    cursor: pointer;
+            
+                    i {
+                        color: #333;
+                        font-size: 30px;
                     }
+                }
+            }
+            
+            .carousel-selectorsDrywall {
+                display: inline-block;
+        
+                .selector {
+                    display: inline-block;
+                    margin: 0 5px;
+                    background-color: red;
+                    font-size: 1.6rem;
+                    cursor: pointer;
                 }
             }
         }

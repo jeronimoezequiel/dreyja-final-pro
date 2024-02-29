@@ -26,3 +26,4 @@ $(document).ready(function () {
         $(targetId + " .owl-carousel").trigger("to.owl.carousel", slideIndex);
     });
 });
+

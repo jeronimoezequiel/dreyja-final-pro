@@ -68,19 +68,8 @@ const productos = [
     },
     {
         id: "accesorios",
-        nombre:"Anclaje SA 23 BARBIERI",
-        imagen: "../scss/recursos/accesorios/BARBIERI-ANCLAJE-SA-23.jpg",
-        categoria: {
-            nombre: "Accesorios",
-            id: "accesorios",
-        },
-        marca: "BARBIERI",
-        detalle: "",
-    },
-    {
-        id: "accesorios",
         nombre:"Arandela p/anclaje BARBIERI",
-        imagen: "../scss/recursos/accesorios/BARBIERI-ARANDELA-PARA-ANCLAJE.jpg",
+        imagen: "../scss/recursos/accesorios/BARBIERI-ANCLAJE-SA-23 (2).jpg",
         categoria: {
             nombre: "Accesorios",
             id: "accesorios",
@@ -289,7 +278,7 @@ const productos = [
     {
         id: "tx",
         nombre:"Larguero 24mm",
-        imagen: "../scss/recursos/tx/BARBIERI-LARGUERO-TX-LP-(24 MM).jpg",
+        imagen: "../scss/recursos/tx/BARBIERI-LARGUERO-TX-LP-(24-MM)COPIA.jpg",
         categoria: {
             nombre: "Tx",
             id: "tx",
@@ -311,7 +300,7 @@ const productos = [
     {
         id: "tx",
         nombre:"Travesaño corto 24mm",
-        imagen: "../scss/recursos/tx/BARBIERI-TRAV-CORTO-TX-TP-1516(24 MM).jpg",
+        imagen: "../scss/recursos/tx/BARBIERI-TRAV-CORTO-TX-TP-1516(24-MM).jpg",
         categoria: {
             nombre: "Tx",
             id: "tx",

@@ -822,6 +822,7 @@ main {
             border-width: 0px 0vw 500px 98vw;
             border-style: solid;
             border-color: transparent transparent #88888821 transparent;
+            display: none;
             z-index: 1;
 
             @include portatil {
