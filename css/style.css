@@ -3839,7 +3839,7 @@ main .disposicion .btn-redirect {
     main .disposicion .btn-redirect {
       background: #273238;
       width: 300px;
-      height: 70px; } }
+      height: 60px; } }
   main .disposicion .btn-redirect a {
     font-size: 'Poppins';
     font-weight: 400;
@@ -4315,6 +4315,9 @@ main .disposicion .btn-redirect:hover {
       font-weight: 450;
       position: absolute;
       margin: 1% 0 0 -880px; }
+      @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+        #main-tya #aislaciones h3 {
+          margin-left: -66%; } }
     #main-tya #aislaciones .itemBtn {
       background-color: #273238;
       width: 325px;
@@ -4327,6 +4330,9 @@ main .disposicion .btn-redirect:hover {
       background-size: cover;
       display: inline-block;
       transition: 0.5s; }
+      @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+        #main-tya #aislaciones .itemBtn {
+          margin-left: 2%; } }
       #main-tya #aislaciones .itemBtn .contentBtn {
         position: relative;
         top: 28%;
@@ -4349,6 +4355,9 @@ main .disposicion .btn-redirect:hover {
     background: #f5f5f5;
     overflow-x: hidden;
     border-radius: 20px; }
+    @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+      #main-tya .ais-container {
+        margin-top: -103%; } }
     #main-tya .ais-container .ais-slide {
       /*aca n = 0,1,2,3....*/ }
       #main-tya .ais-container .ais-slide .item {
@@ -4512,15 +4521,29 @@ main .disposicion .btn-redirect:hover {
         #main-tya .banner-shop-tya .btn-e-shop-tya {
           display: flex;
           margin: 105px 0 0 92px; } }
+      @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+        #main-tya .banner-shop-tya .btn-e-shop-tya {
+          margin-left: 42%;
+          background: #273238;
+          width: 300px;
+          height: 60px; } }
       #main-tya .banner-shop-tya .btn-e-shop-tya a {
         text-decoration: none;
         color: #fff; }
+        @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+          #main-tya .banner-shop-tya .btn-e-shop-tya a {
+            color: #ffffff;
+            font-size: 1.5rem;
+            margin-left: 14px; } }
       #main-tya .banner-shop-tya .btn-e-shop-tya .btn-e-shop-tya:hover {
         cursor: pointer;
         transition: all .3s ease-in-out;
-        background-color: #9fc7e6;
-        border: 2px solid #cbebfb;
+        background-color: #d30809;
         color: #fff; }
+        @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+          #main-tya .banner-shop-tya .btn-e-shop-tya .btn-e-shop-tya:hover {
+            background-color: #d30809;
+            color: #fff; } }
   @media only screen and (max-width: 768px) {
     #main-tya .disposicion-tya {
       height: 556px;
@@ -4572,11 +4595,22 @@ main .disposicion .btn-redirect:hover {
       #main-tya .disposicion-tya .btn-redirect-tya {
         display: flex;
         margin: -75px 0 0 90px; } }
+    @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+      #main-tya .disposicion-tya .btn-redirect-tya {
+        margin-left: 42%;
+        background: #273238;
+        width: 300px;
+        height: 60px; } }
     #main-tya .disposicion-tya .btn-redirect-tya a {
       font-size: 'Poppins';
       font-weight: 400;
       text-decoration: none;
       color: #fff; }
+      @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+        #main-tya .disposicion-tya .btn-redirect-tya a {
+          color: #ffffff;
+          font-size: 1.5rem;
+          margin-left: 14px; } }
   #main-tya .disposicion-tya .btn-redirect-tya:hover {
     cursor: pointer;
     transition: all .3s ease-in-out;
@@ -4692,8 +4726,7 @@ main .disposicion .btn-redirect:hover {
           color: #ffffff; }
           @media only screen and (min-width: 1600px) and (max-width: 1920px) {
             .techos .navTechoAlveolar .menuTecho ul .nav__itemTecho, .techos .navTechoAlveolar .menuTecho ul .nav__itemTechoAlveolar, .techos .navTechoAlveolar .menuTechoAlveolar ul .nav__itemTecho, .techos .navTechoAlveolar .menuTechoAlveolar ul .nav__itemTechoAlveolar, .techos .navTecho .menuTecho ul .nav__itemTecho, .techos .navTecho .menuTecho ul .nav__itemTechoAlveolar, .techos .navTecho .menuTechoAlveolar ul .nav__itemTecho, .techos .navTecho .menuTechoAlveolar ul .nav__itemTechoAlveolar, .alveolar .navTechoAlveolar .menuTecho ul .nav__itemTecho, .alveolar .navTechoAlveolar .menuTecho ul .nav__itemTechoAlveolar, .alveolar .navTechoAlveolar .menuTechoAlveolar ul .nav__itemTecho, .alveolar .navTechoAlveolar .menuTechoAlveolar ul .nav__itemTechoAlveolar, .alveolar .navTecho .menuTecho ul .nav__itemTecho, .alveolar .navTecho .menuTecho ul .nav__itemTechoAlveolar, .alveolar .navTecho .menuTechoAlveolar ul .nav__itemTecho, .alveolar .navTecho .menuTechoAlveolar ul .nav__itemTechoAlveolar {
-              background-color: red;
-              margin: 10% 0 0 26%; } }
+              margin: 21% 0 0 26%; } }
           .techos .navTechoAlveolar .menuTecho ul .nav__itemTecho .nav__linkTecho, .techos .navTechoAlveolar .menuTecho ul .nav__itemTecho .nav__linkTechoAlveolar, .techos .navTechoAlveolar .menuTecho ul .nav__itemTechoAlveolar .nav__linkTecho, .techos .navTechoAlveolar .menuTecho ul .nav__itemTechoAlveolar .nav__linkTechoAlveolar, .techos .navTechoAlveolar .menuTechoAlveolar ul .nav__itemTecho .nav__linkTecho, .techos .navTechoAlveolar .menuTechoAlveolar ul .nav__itemTecho .nav__linkTechoAlveolar, .techos .navTechoAlveolar .menuTechoAlveolar ul .nav__itemTechoAlveolar .nav__linkTecho, .techos .navTechoAlveolar .menuTechoAlveolar ul .nav__itemTechoAlveolar .nav__linkTechoAlveolar, .techos .navTecho .menuTecho ul .nav__itemTecho .nav__linkTecho, .techos .navTecho .menuTecho ul .nav__itemTecho .nav__linkTechoAlveolar, .techos .navTecho .menuTecho ul .nav__itemTechoAlveolar .nav__linkTecho, .techos .navTecho .menuTecho ul .nav__itemTechoAlveolar .nav__linkTechoAlveolar, .techos .navTecho .menuTechoAlveolar ul .nav__itemTecho .nav__linkTecho, .techos .navTecho .menuTechoAlveolar ul .nav__itemTecho .nav__linkTechoAlveolar, .techos .navTecho .menuTechoAlveolar ul .nav__itemTechoAlveolar .nav__linkTecho, .techos .navTecho .menuTechoAlveolar ul .nav__itemTechoAlveolar .nav__linkTechoAlveolar, .alveolar .navTechoAlveolar .menuTecho ul .nav__itemTecho .nav__linkTecho, .alveolar .navTechoAlveolar .menuTecho ul .nav__itemTecho .nav__linkTechoAlveolar, .alveolar .navTechoAlveolar .menuTecho ul .nav__itemTechoAlveolar .nav__linkTecho, .alveolar .navTechoAlveolar .menuTecho ul .nav__itemTechoAlveolar .nav__linkTechoAlveolar, .alveolar .navTechoAlveolar .menuTechoAlveolar ul .nav__itemTecho .nav__linkTecho, .alveolar .navTechoAlveolar .menuTechoAlveolar ul .nav__itemTecho .nav__linkTechoAlveolar, .alveolar .navTechoAlveolar .menuTechoAlveolar ul .nav__itemTechoAlveolar .nav__linkTecho, .alveolar .navTechoAlveolar .menuTechoAlveolar ul .nav__itemTechoAlveolar .nav__linkTechoAlveolar, .alveolar .navTecho .menuTecho ul .nav__itemTecho .nav__linkTecho, .alveolar .navTecho .menuTecho ul .nav__itemTecho .nav__linkTechoAlveolar, .alveolar .navTecho .menuTecho ul .nav__itemTechoAlveolar .nav__linkTecho, .alveolar .navTecho .menuTecho ul .nav__itemTechoAlveolar .nav__linkTechoAlveolar, .alveolar .navTecho .menuTechoAlveolar ul .nav__itemTecho .nav__linkTecho, .alveolar .navTecho .menuTechoAlveolar ul .nav__itemTecho .nav__linkTechoAlveolar, .alveolar .navTecho .menuTechoAlveolar ul .nav__itemTechoAlveolar .nav__linkTecho, .alveolar .navTecho .menuTechoAlveolar ul .nav__itemTechoAlveolar .nav__linkTechoAlveolar {
             color: #273238;
             cursor: pointer;
@@ -4748,9 +4781,9 @@ main .disposicion .btn-redirect:hover {
     margin-top: 2%; }
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
       .techos .cardTecho, .techos .cardTechoAlveolar, .alveolar .cardTecho, .alveolar .cardTechoAlveolar {
-        height: 500px;
+        height: 400px;
         width: 1000px;
-        margin-top: 0%; } }
+        margin-top: 18%; } }
     .techos .cardTecho h2, .techos .cardTechoAlveolar h2, .alveolar .cardTecho h2, .alveolar .cardTechoAlveolar h2 {
       letter-spacing: .1rem;
       margin: 1rem 0;
@@ -4771,7 +4804,8 @@ main .disposicion .btn-redirect:hover {
       flex: 1; }
       @media only screen and (min-width: 1600px) and (max-width: 1920px) {
         .techos .cardTecho .techo-left-column, .techos .cardTecho .techoAlveolar-left-column, .techos .cardTechoAlveolar .techo-left-column, .techos .cardTechoAlveolar .techoAlveolar-left-column, .alveolar .cardTecho .techo-left-column, .alveolar .cardTecho .techoAlveolar-left-column, .alveolar .cardTechoAlveolar .techo-left-column, .alveolar .cardTechoAlveolar .techoAlveolar-left-column {
-          background: red; } }
+          background: red;
+          height: 55vh; } }
       .techos .cardTecho .techo-left-column h4, .techos .cardTecho .techoAlveolar-left-column h4, .techos .cardTechoAlveolar .techo-left-column h4, .techos .cardTechoAlveolar .techoAlveolar-left-column h4, .alveolar .cardTecho .techo-left-column h4, .alveolar .cardTecho .techoAlveolar-left-column h4, .alveolar .cardTechoAlveolar .techo-left-column h4, .alveolar .cardTechoAlveolar .techoAlveolar-left-column h4 {
         color: #fff;
         padding: 1rem; }
@@ -4785,6 +4819,9 @@ main .disposicion .btn-redirect:hover {
       justify-content: center;
       margin: -42% 0px 0 16%;
       max-width: 500px; }
+      @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+        .techos .cardTecho .techo-right-column, .techos .cardTechoAlveolar .techo-right-column, .alveolar .cardTecho .techo-right-column, .alveolar .cardTechoAlveolar .techo-right-column {
+          margin-top: -50%; } }
       .techos .cardTecho .techo-right-column p, .techos .cardTechoAlveolar .techo-right-column p, .alveolar .cardTecho .techo-right-column p, .alveolar .cardTechoAlveolar .techo-right-column p {
         font-family: 'Poppins';
         font-size: .9rem;
@@ -4936,12 +4973,18 @@ main .disposicion .btn-redirect:hover {
         .techosPolicarbonato .navChapaPolicarbonato .menuChapaPolicarbonato ul .nav__itemTChapaPolicarbonato {
           margin-top: .5%;
           color: #ffffff; }
+          @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+            .techosPolicarbonato .navChapaPolicarbonato .menuChapaPolicarbonato ul .nav__itemTChapaPolicarbonato {
+              margin: 39% 0 0 -32%; } }
           .techosPolicarbonato .navChapaPolicarbonato .menuChapaPolicarbonato ul .nav__itemTChapaPolicarbonato .nav__linkChapaPolicarbonato {
             color: #273238;
             cursor: pointer;
             list-style: none;
             text-decoration: none;
             position: relative; }
+            @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+              .techosPolicarbonato .navChapaPolicarbonato .menuChapaPolicarbonato ul .nav__itemTChapaPolicarbonato .nav__linkChapaPolicarbonato {
+                font-size: 1.1rem; } }
             .techosPolicarbonato .navChapaPolicarbonato .menuChapaPolicarbonato ul .nav__itemTChapaPolicarbonato .nav__linkChapaPolicarbonato:before {
               content: "";
               position: absolute;
@@ -4985,6 +5028,11 @@ main .disposicion .btn-redirect:hover {
       z-index: 444;
       position: relative;
       margin-top: 2%; }
+      @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+        .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato {
+          height: 400px;
+          width: 1000px;
+          margin-top: 18%; } }
       .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato h2 {
         letter-spacing: .1rem;
         margin: 1rem 0;
@@ -5003,6 +5051,9 @@ main .disposicion .btn-redirect:hover {
         align-items: center;
         justify-content: space-between;
         flex: 1; }
+        @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+          .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .ChapaPolicarbonato-left-column {
+            height: 400px; } }
         .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .ChapaPolicarbonato-left-column h4 {
           color: #fff;
           padding: 1rem; }
@@ -5053,7 +5104,6 @@ main .disposicion .btn-redirect:hover {
   background-color: #333; }
   @media only screen and (min-width: 1600px) and (max-width: 1920px) {
     .alveolar {
-      background-color: red;
       margin-top: 15%; } }
 
 .main-pvc #home-pvc {

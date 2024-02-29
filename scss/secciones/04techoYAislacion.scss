@@ -501,7 +501,6 @@
             font-weight: 450;
             position: absolute;
             margin: 20% 0 0 80px;
-            
         }
     }
 
@@ -583,6 +582,9 @@
             position: absolute;
             margin: 1% 0 0 -880px;
             
+            @include monitor-27 {
+                margin-left: -66%;
+            }
         }
 
         .itemBtn {
@@ -597,6 +599,10 @@
             background-size: cover;
             display: inline-block;
             transition: 0.5s;
+
+            @include monitor-27 {
+                margin-left: 2%;
+            }
 
                 .contentBtn {
                     position: relative;
@@ -631,6 +637,10 @@
         background: #f5f5f5;
         overflow-x: hidden;
         border-radius: 20px;
+
+        @include monitor-27 {
+            margin-top: -103%;
+        }
 
         .ais-slide {
 
@@ -852,16 +862,34 @@
                 display: flex;
                 margin: 105px 0 0 92px;
             }
+
+            @include monitor-27 {
+                margin-left: 42%;
+                background: map-get($color--azul, dreyja);
+                width: 300px; 
+                height: 60px;
+            }
+
             a {
                 text-decoration: none;
                 color: #fff;
+
+                @include monitor-27 {
+                    color: #ffffff;
+                    font-size: 1.5rem;
+                    margin-left: 14px;
+                    }
                 }
             .btn-e-shop-tya:hover{
                 cursor: pointer;
                 transition: all .3s ease-in-out;
-                background-color: #9fc7e6;
-                border: 2px solid #cbebfb;
+                background-color: map-get($color--bordo, dreyja);
                 color: #fff;
+
+                @include monitor-27 {
+                background-color: map-get($color--bordo, dreyja);
+                color: #fff;
+                }
                 }
             }
     }
@@ -925,11 +953,25 @@
                 display: flex;
                 margin: -75px 0 0 90px
             }
+
+            @include monitor-27 {
+                margin-left: 42%;
+                background: map-get($color--azul, dreyja);
+                width: 300px; 
+                height: 60px;
+            }
+
             a {
                 font-size: 'Poppins';
                 font-weight: 400;
                 text-decoration: none;
                 color: #fff;
+
+                @include monitor-27 {
+                    color: #ffffff;
+                    font-size: 1.5rem;
+                    margin-left: 14px;
+                }
             }
         }
         .btn-redirect-tya:hover{

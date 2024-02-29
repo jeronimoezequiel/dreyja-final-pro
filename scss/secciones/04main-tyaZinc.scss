@@ -131,8 +131,7 @@
                         color: #ffffff;
 
                         @include monitor-27 {
-                            background-color: red;
-                            margin: 10% 0 0 26%;
+                            margin: 21% 0 0 26%;
                         }
 
                         .nav__linkTecho, .nav__linkTechoAlveolar {
@@ -212,9 +211,9 @@
             margin-top: 2%;
 
             @include monitor-27 {
-                height: 500px;
+                height: 400px;
                 width: 1000px;
-                margin-top: 0%;
+                margin-top: 18%;
             }
         
             h2 {
@@ -242,6 +241,7 @@
 
                 @include monitor-27 {
                     background: red;
+                    height: 55vh;
                 }
         
                 h4 {
@@ -262,6 +262,10 @@
                 justify-content: center;
                 margin: -42% 0px 0 16%;
                 max-width: 500px;
+
+                @include monitor-27 {
+                    margin-top: -50%;
+                }
         
                 p {
                     font-family: 'Poppins';
@@ -473,12 +477,20 @@
                     margin-top: .5%;
                     color: #ffffff;
 
+                    @include monitor-27 {
+                        margin: 39% 0 0 -32%;
+                    }
+
                     .nav__linkChapaPolicarbonato {
                         color: map-get($color--azul, dreyja);
                         cursor: pointer;
                         list-style: none;
                         text-decoration: none;
                         position: relative;
+
+                        @include monitor-27 {
+                            font-size: 1.1rem;
+                        }
 
                         &:before {
                             content: "";
@@ -545,6 +557,12 @@
             position: relative;
             margin-top: 2%;
 
+            @include monitor-27 {
+                height: 400px;
+                width: 1000px;
+                margin-top: 18%;
+            }
+
             h2 {
                 letter-spacing: .1rem;
                 margin: 1rem 0;
@@ -567,6 +585,10 @@
                 align-items: center;
                 justify-content: space-between;
                 flex: 1;
+
+                @include monitor-27 {
+                    height: 400px;
+                }
         
                 h4 {
                     color: #fff;
@@ -640,7 +662,6 @@
     background-color: #333;
 
     @include monitor-27 {
-        background-color: red;
         margin-top: 15%;
     }
 }
