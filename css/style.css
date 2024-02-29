@@ -5108,7 +5108,7 @@ main .disposicion .btn-redirect:hover {
 .main-pvc #home-pvc {
   width: 100%;
   height: 520px;
-  background: url("http://maropor.com/wp-content/uploads/2012/07/cabecera-cielorraso-pvc.jpg");
+  background: url("https://lh3.googleusercontent.com/proxy/HG1DtAAuepFLQyBphmZQmVHlM5RsKiqKt7rLKCWea2jqG1dZGE73IUlgiOot8LTp-W49MYRAjzko7KuRCDgd2dVBIBwWSgv9SuNzmkXoN1T69eAkLK5Ke0cdznh22-fZ13I2YEeBGAyq51CyyJQ");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -5120,7 +5120,7 @@ main .disposicion .btn-redirect:hover {
       background-size: cover; } }
   @media only screen and (min-width: 1600px) and (max-width: 1920px) {
     .main-pvc #home-pvc {
-      background: url("http://maropor.com/wp-content/uploads/2012/07/cabecera-cielorraso-pvc.jpg");
+      background: url("https://lh3.googleusercontent.com/proxy/HG1DtAAuepFLQyBphmZQmVHlM5RsKiqKt7rLKCWea2jqG1dZGE73IUlgiOot8LTp-W49MYRAjzko7KuRCDgd2dVBIBwWSgv9SuNzmkXoN1T69eAkLK5Ke0cdznh22-fZ13I2YEeBGAyq51CyyJQ");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover; } }
@@ -5707,6 +5707,9 @@ main .disposicion .btn-redirect:hover {
     .disposicion-qs .disposicion-6-qs {
       height: 270px;
       margin: 170% 0 0 0; } }
+  @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+    .disposicion-qs .disposicion-6-qs {
+      margin-top: 10%; } }
 
 .disposicion-qs .disposicion-content-qs {
   display: flex; }

@@ -178,6 +178,10 @@
             height: 270px;
             margin: 170% 0 0 0;
         }
+
+        @include monitor-27 {
+            margin-top: 10%;
+        }
     }
     .disposicion-content-qs {
         display: flex;
