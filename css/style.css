@@ -3837,7 +3837,7 @@ main .disposicion .btn-redirect {
       margin: -75px 0 0 90px; } }
   @media only screen and (min-width: 1600px) and (max-width: 1920px) {
     main .disposicion .btn-redirect {
-      background: #273238;
+      background-color: #273238;
       width: 300px;
       height: 60px; } }
   main .disposicion .btn-redirect a {
@@ -3847,14 +3847,14 @@ main .disposicion .btn-redirect {
     color: #333; }
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
       main .disposicion .btn-redirect a {
-        color: #ffffff;
+        color: #273238;
         font-size: 1.5rem;
         margin-left: 14px; } }
 
 main .disposicion .btn-redirect:hover {
   cursor: pointer;
   transition: all .3s ease-in-out;
-  background-color: #d30809;
+  background-color: #273238;
   font-family: 'Poppins';
   font-weight: 500; }
 
@@ -5241,8 +5241,7 @@ main .disposicion .btn-redirect:hover {
   @media only screen and (min-width: 1600px) and (max-width: 1920px) {
     .main-pvc #cielorraso-desmontable {
       margin-top: -14%;
-      height: 77vh;
-      background-color: red; } }
+      height: 90vh; } }
   .main-pvc #cielorraso-desmontable::before {
     content: "";
     position: absolute;
@@ -5600,6 +5599,9 @@ main .disposicion .btn-redirect:hover {
   @media only screen and (max-width: 768px) {
     .section-2-quienes-somos {
       margin-top: 43%; } }
+  @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+    .section-2-quienes-somos {
+      height: 140vh; } }
   .section-2-quienes-somos .quienes-somos-content .introduction {
     display: flex;
     text-align: justify;
@@ -5672,6 +5674,9 @@ main .disposicion .btn-redirect:hover {
     @media only screen and (max-width: 768px) {
       .section-2-quienes-somos .quienes-somos-content .lista-principios {
         flex-direction: column; } }
+    @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+      .section-2-quienes-somos .quienes-somos-content .lista-principios {
+        margin-left: 7%; } }
     .section-2-quienes-somos .quienes-somos-content .lista-principios .ul-izquierda {
       display: flex;
       flex-direction: column;
@@ -5728,7 +5733,7 @@ main .disposicion .btn-redirect:hover {
   margin-top: -14%;
   margin-left: 40%;
   background: var(--section-cs);
-  border: 2px solid #fff;
+  border: 2px solid #273238;
   border-radius: 30px;
   padding: 10px 0px 10px 35px;
   width: 200px; }
@@ -5736,18 +5741,28 @@ main .disposicion .btn-redirect:hover {
     .disposicion-qs .btn-redirect-qs {
       display: flex;
       margin: -75px 0 0 90px; } }
+  @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+    .disposicion-qs .btn-redirect-qs {
+      background: #273238;
+      width: 300px;
+      height: 60px; } }
   .disposicion-qs .btn-redirect-qs a {
     font-size: 'Poppins';
     font-weight: 400;
     text-decoration: none;
     color: #333; }
+    @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+      .disposicion-qs .btn-redirect-qs a {
+        color: #ffffff;
+        font-size: 1.5rem;
+        margin-left: 14px; } }
 
 .disposicion-qs .btn-redirect-qs:hover {
   cursor: pointer;
   transition: all .3s ease-in-out;
-  background-color: #ffffff;
-  border: 2px solid #000000;
-  color: #333;
+  background-color: #d30809;
+  border: 2px solid #d30809;
+  color: #273238;
   font-family: 'Poppins';
   font-weight: 500; }
 
@@ -6026,6 +6041,9 @@ main .disposicion .btn-redirect:hover {
           margin: 51px 0 0 75px;
           width: 140px;
           height: 32px; } }
+      @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+        .section-3-contacto .g-maps .ayuda-link-link {
+          margin-top: 167px; } }
       @media only screen and (max-width: 768px) {
         .section-3-contacto .g-maps .ayuda-link-link a {
           font-size: 14px;

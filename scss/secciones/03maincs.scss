@@ -1487,7 +1487,7 @@ main {
             }
 
             @include monitor-27 {
-                background: map-get($color--azul, dreyja);
+                background-color: map-get($color--azul, dreyja);
                 width: 300px; 
                 height: 60px;
             }
@@ -1498,7 +1498,7 @@ main {
                 color: #333;
 
                 @include monitor-27 {
-                    color: #ffffff;
+                    color: map-get($color--azul, dreyja );
                     font-size: 1.5rem;
                     margin-left: 14px;
                 }
@@ -1507,7 +1507,7 @@ main {
         .btn-redirect:hover{
             cursor: pointer;
             transition: all .3s ease-in-out;
-            background-color: map-get($color--bordo, dreyja );
+            background-color: map-get($color--azul, dreyja );
             font-family: 'Poppins';
             font-weight: 500;
         } 

@@ -345,6 +345,10 @@
                     height: 32px
                 }
 
+                @include monitor-27 {
+                    margin-top: 167px;
+                }
+
                 a {
                     @include tablet {
                         font-size: 14px;
