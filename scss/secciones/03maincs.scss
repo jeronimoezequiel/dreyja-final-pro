@@ -76,15 +76,18 @@ main {
             transform-origin: 100% 63%;
             margin: 29% 0 0 20%;
 
-            @include portatil {
-                margin: 39% 0 0 26%;
-            }
-
             @include tablet {
                 width: 170px;
                 height: 60px;
                 background: #fafafa;
-                // margin: 120.5% 0 0 15%;
+            }
+
+            @include portatil {
+                margin: 39% 0 0 26%;
+            }
+
+            @include monitor-27 {
+                margin-top: 24.7%;
             }
         }
 
@@ -101,15 +104,21 @@ main {
                 border-bottom: 6px solid rgb(102, 102, 102); 
                 padding-bottom: .1em;
 
-                @include portatil {
-                    margin: 41% 0 0 12%;
-                }
-            
                 @include tablet {
                     font-family: 'Poppins';
                     font-size: .95rem;
                     margin: 33% 0 0 18%;
                     border-bottom: 3px solid rgb(102, 102, 102); padding-bottom: .1em;
+                }
+
+                @include portatil {
+                    margin: 41% 0 0 12%;
+                }
+
+                @include monitor-27 {
+                    margin-left: 170px;
+                    margin-top: 414px;
+                    font-size: 2.5rem;
                 }
             }
         }
@@ -193,10 +202,6 @@ main {
             display: flex; /* Utiliza flexbox para alinear elementos */
             align-items: center;
 
-            @include portatil {
-                max-width: 966px;
-            }
-
             @include tablet {
                 display: flex;
                 width: 98%;
@@ -204,6 +209,16 @@ main {
                 margin: -98% 0 385px 3px;
                 padding: 0 0 0 3px;
             }
+
+            @include portatil {
+                max-width: 966px;
+            }
+
+            @include monitor-27 {
+                max-width: 1540px;
+                background-color: #eee;
+            }
+
             img {
                 max-width: 100%; 
                 width: 410px;
@@ -254,6 +269,10 @@ main {
                         display: flex;
                         font-size: 1.1rem;
                     }
+
+                    @include monitor-27 {
+                        color: #000;
+                    }
                 }
                 p {
                     font-family: 'Poppins';
@@ -262,6 +281,10 @@ main {
 
                     @include tablet {
                         display: none;
+                    }
+
+                    @include monitor-27 {
+                        color: #333;
                     }
                 }
                 #btn-techos, #btn-techoZinc, #btn-techoAlveolar, #btn-techoPolicarbonato, #btn-Accesorios, #btn-Aislaciones {
@@ -308,6 +331,10 @@ main {
             display: flex;
             margin: -95% 0 0 0;
         }
+
+        @include monitor-27 {
+            height: 750px;
+        }
     
         &::before {
             content: "";
@@ -334,6 +361,11 @@ main {
             @include tablet {
                 font-size: 2.3rem;
             }
+
+            @include monitor-27 {
+                margin: 4% 0 0 4%;
+                font-size: 2.5rem;
+            }
         }
 
         .navegacion-cielorraso {
@@ -343,13 +375,22 @@ main {
             z-index: 4;
             position: relative;
 
+            @include monitor-27 {
+                width: 21%;
+                margin-left: 87px
+            }
+
             ul {  
                 margin: 8.5% 0 0 0;
+
+                @include monitor-27 {
+                    margin-top: 67%;
+                }
                 li {
                     list-style: none;
                     display: flex;
                     flex-direction: column;  
-                    align-items: center; 
+                    align-items: center;                     
                     .inbox-cielorraso {
                         width: 100%;
                         height: 70px;  /* Ajustar la altura según sea necesario */
@@ -367,6 +408,11 @@ main {
 
                         @include portatil {
                             margin: 0 0 0 11%;
+                        }
+
+                        @include monitor-27 {
+                            font-size: 1.3rem;
+                            margin-bottom: 14px 
                         }
                     }
                     .inbox-img-cielorraso {
@@ -396,6 +442,10 @@ main {
                 height: 120vh;
                 display: flex;
                 transition: all 300ms;
+            }
+
+            @include monitor-27 {
+                margin: -46% 0 4% 19%;
             }
 
             .menu-cielorraso {
@@ -444,6 +494,10 @@ main {
 
                             @include portatil {
                                 color: #000;
+                            }
+
+                            @include monitor-27 {
+                                font-size: 1.1rem;
                             }
                         }
     
@@ -499,6 +553,12 @@ main {
                 max-width: 785px;
             }
 
+            @include monitor-27 {
+                height: 400px;
+                width: 1000px;
+                margin: 2% 0 0 32%;
+            }
+
             .cielorraso-background-left-column {
                 background: map-get($color--azul, dreyja);
             }
@@ -522,6 +582,11 @@ main {
                 z-index: 444;
                 position: relative;
 
+                @include monitor-27 {
+                    height: 500px;
+                    width: 1200px;
+                }
+
                 &.active-card {
                     border: 2px solid map-get($color--bordo, dreyja); // Borde para destacar la tarjeta activa
                     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); // Sombra para destacar la tarjeta activa
@@ -538,6 +603,10 @@ main {
                     opacity: 0.6;
                     letter-spacing: .1rem;
                     text-transform: uppercase;
+
+                    @include monitor-27 {
+                        font-size: 1.4rem;
+                    }
                 }
 
                 .cielorraso-left-column {
@@ -549,8 +618,15 @@ main {
                     align-items: center;
                     justify-content: space-between;
 
+                    @include monitor-27 {
+                        max-width: 13rem;
+                    }
                     h4 {
                         color: #fff;
+                        
+                        @include monitor-27 {
+                            font-size: 1.7rem;
+                        }
                     }
 
                     i {
@@ -578,6 +654,10 @@ main {
 
                             @include portatil {
                                 font-size: .75rem;
+                            }
+
+                            @include monitor-27 {
+                                font-size: 1.1rem;
                             }
                         }
 
@@ -609,6 +689,10 @@ main {
                                     width: 100%; // La imagen ocupa el 100% del contenedor
                                     height: auto; // Altura automática para mantener la proporción
                                     margin: 0; // Eliminar el margen
+
+                                    @include monitor-27 {
+                                        margin-top: 44%;
+                                    }
                                 }
                             }
                         }
@@ -633,14 +717,14 @@ main {
         margin: 0% 0 10% 0;
         z-index: 1;
 
-        @include portatil {
-            height: 600px;
-        }
-
         @include tablet {
             display: flex;
             margin: -95% 0 0 0;
             height: 500px;
+        }
+
+        @include portatil {
+            height: 600px;
         }
     
         &::before {
@@ -667,6 +751,10 @@ main {
 
             @include tablet {
                 font-size: 2.3rem;
+            }
+
+            @include monitor-27 {
+                font-size: 2.5rem;
             }
         }
 
@@ -695,8 +783,15 @@ main {
             @include portatil {
                 margin: 10% 0 0 -43%;
             }
+            
+            @include monitor-27 {
+                width: 21%;
+                margin-left: 60px;
+                margin-top: 19%;
+            }
         
             ul {
+
                 li {
                     list-style: none;
                     display: flex;
@@ -716,11 +811,17 @@ main {
                         font-family: 'Poppins';
                         font-size: .9rem;
                         margin-bottom: 5px;
+
+                        @include monitor-27 {
+                            font-size: 1.3rem;
+                            margin-bottom: 14px 
+                        }
                     }
                     .inbox-img {
                         width: 40px;
                         height: 40px;
                         margin-bottom: 5px;  /* Agregar un espacio entre la imagen y el texto */
+                        
                     }
                 }
             }
@@ -804,6 +905,10 @@ main {
                             list-style: none;
                             text-decoration: none;
                             color: #000;
+
+                            @include monitor-27 {
+                                font-size: 1.1rem;
+                            }
                         }
     
                     @include tablet {
@@ -857,6 +962,11 @@ main {
                 max-width: 773px;
             }
 
+            @include monitor-27 {
+                height: 400px;
+                margin-top: 7%;
+            }
+
             .background-left-column {
                 background: linear-gradient(100deg, #243949, #517fa4);
             }
@@ -875,6 +985,13 @@ main {
                 width: 58rem;
                 height: 23rem;
                 display: none;
+
+                @include monitor-27 {
+                    height: 500px;
+                    width: 950px;
+                    margin-top: -7%;
+                    margin-left: 10%;
+                }
 
                 &.active-card {
                     border: 2px solid map-get($color--bordo, dreyja); // Borde para destacar la tarjeta activa
@@ -984,6 +1101,11 @@ main {
             width: 100%;
             margin: 0 0 40% 0;
         }
+
+        @include monitor-27 {
+            margin-top: 50%;
+        }
+
         h2 {
             font-family: 'Poppins';
             font-weight: 300;
@@ -996,10 +1118,16 @@ main {
             justify-content: center;
             align-items: center;
             top: 35%;
+
             @include tablet {
                 display: flex;
                 font-size: 1.2rem;
                 margin: -133px 0 0 0;
+            }
+
+            @include monitor-27 {
+                max-width: 1000px;
+                margin-left: 19%;
             }
         }
         // .btn-e-shop-cs{
@@ -1108,6 +1236,14 @@ main {
                 font-weight: 400;
                 font-size: 1.5rem;
                 padding: 2rem;
+
+                @include monitor-27 {
+                    margin-top: 40%;
+                    margin-left: 10px;
+                    font-weight: bold;
+                    font-size: 1.6rem;
+                    text-decoration: underline;
+                }
             }
             nav {
                 .menu-ul {
@@ -1127,6 +1263,10 @@ main {
                             font-size: .85rem;
                             padding: .8rem;
                             width: 100%;
+
+                            @include monitor-27 {
+                                font-size: 1.1rem;
+                            }
                         }
                         .boton-menu.active{
                             background-color: #eee;
@@ -1226,6 +1366,10 @@ main {
                         border-top-left-radius: 1rem;
                         border-bottom-left-radius: 0px;
                         border-bottom-right-radius: 0px;
+
+                        @include monitor-27 {
+                            width: 400px;
+                        }
                     }
                     .producto-detalles{
                         background-color: map-get($color--azul, dreyja);
@@ -1249,6 +1393,12 @@ main {
                         .producto-titulo{
                             font-size: 1rem;
                             text-align: center;
+
+                            @include monitor-27 {
+                                background-color: map-get($color--bordo, dreyja );
+                                font-size: 1.3rem;
+                                border-radius: 10px;
+                            }
                         }
                         .producto-consultar{
                             border: 0;
@@ -1294,6 +1444,7 @@ main {
         }
         .disposicion-content {
             display: flex;
+
             .disposicion-title {
                 font-family: 'Poppins';
                 font-weight: 300;
@@ -1312,6 +1463,10 @@ main {
                     font-size: 1.1rem;
                     margin: -80% 0 0 20px;
                 }
+
+                @include monitor-27 {
+                    font-size: 2.3rem;
+                }
             }
         }
         .btn-redirect{
@@ -1329,19 +1484,29 @@ main {
                 display: flex;
                 margin: -75px 0 0 90px
             }
+
+            @include monitor-27 {
+                background: map-get($color--azul, dreyja);
+                width: 300px; 
+                height: 70px;
+            }
             a {
                 font-size: 'Poppins';
                 font-weight: 400;
                 text-decoration: none;
                 color: #333;
+
+                @include monitor-27 {
+                    color: #ffffff;
+                    font-size: 1.5rem;
+                    margin-left: 14px;
+                }
             }
         }
         .btn-redirect:hover{
             cursor: pointer;
             transition: all .3s ease-in-out;
-            background-color: #ffffff;
-            border: 2px solid #000000;
-            color: #333;
+            background-color: map-get($color--bordo, dreyja );
             font-family: 'Poppins';
             font-weight: 500;
         } 

@@ -23,7 +23,10 @@
                 width: 170px;
                 height: 60px;
                 background: #fafafa;
-                // margin: 120.5% 0 0 15%;
+            }
+
+            @include monitor-27 {
+                margin-top: 24.7%;
             }
         }
 
@@ -45,6 +48,12 @@
                     font-size: .95rem;
                     margin: 33% 0 0 18%;
                     border-bottom: 3px solid rgb(102, 102, 102); padding-bottom: .1em;
+                }
+
+                @include monitor-27 {
+                    margin-left: 187px;
+                    margin-top: 414px;
+                    font-size: 2.5rem;
                 }
             }
         }
@@ -816,10 +825,16 @@
             justify-content: center;
             align-items: center;
             top: 20%;
+
             @include tablet {
                 display: flex;
                 font-size: 1.2rem;
                 margin: -133px 0 0 0;
+            }
+
+            @include monitor-27 {
+                max-width: 1000px;
+                margin-left: 19%;
             }
         }
         .btn-e-shop-tya{

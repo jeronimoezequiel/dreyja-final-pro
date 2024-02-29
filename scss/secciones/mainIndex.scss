@@ -1,7 +1,7 @@
 main {
 
     @include monitor-27 {
-        background: green;
+        background: #fff;
     }
 
     // @include tablet {
@@ -208,7 +208,7 @@ main {
                     li.active {
                         width: 30px;
                     }
-                }
+                    }
                 }
             // .capa {
             //     position: absolute;
@@ -688,7 +688,7 @@ main {
                         color: #fff;
                         }
                     }
-                .home-content{
+                    .home-content{
                     position: absolute;
                     right: 0;
                     width: calc(100% - 75px);

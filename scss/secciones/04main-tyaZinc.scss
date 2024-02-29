@@ -38,6 +38,11 @@
             @include tablet {
                 font-size: 2.3rem;
             }
+            
+            @include monitor-27 {
+                margin: 4% 0 0 4%;
+                font-size: 2.5rem;
+            }
         }
 
         .itemBtn {
@@ -53,6 +58,13 @@
             display: inline-block;
             transition: 0.5s;
 
+            @include monitor-27 {
+                margin-top: 3%;
+                height: 60px;
+                width: 320px;
+                margin-left: -3.4%;
+            }
+
                 .contentBtn {
                     position: relative;
                     top: 27%;
@@ -66,6 +78,11 @@
 
                         a {
                             color: #fff;
+
+                            @include monitor-27 {
+                                font-size: 1.4rem;
+                                margin-left: 22px
+                            }
                         }
                     }
                 }
@@ -83,12 +100,22 @@
             margin: -50% 0 0 8%;
             z-index: 555;
             color: #fff;
+
+            @include monitor-27 {
+                margin: -46% 0 4% 19%;
+            }
         
             .menuTecho, .menuTechoAlveolar {
                 position: relative;
                 margin: 70px 0 0 58%;
                 max-width: 450px;
                 overflow: hidden;
+
+                @include monitor-27 {
+                    margin: 0 0 0 128px;
+                    white-space: nowrap;
+                    max-width: 1000px;
+                }
 
                 ul {
                     width: 80%;
@@ -103,12 +130,21 @@
                         margin-top: .5%;
                         color: #ffffff;
 
+                        @include monitor-27 {
+                            background-color: red;
+                            margin: 10% 0 0 26%;
+                        }
+
                         .nav__linkTecho, .nav__linkTechoAlveolar {
                             color: map-get($color--azul, dreyja);
                             cursor: pointer;
                             list-style: none;
                             text-decoration: none;
                             position: relative;
+
+                            @include monitor-27 {
+                                font-size: 1.1rem;
+                            }
 
                             &:before {
                                 content: "";
@@ -171,10 +207,15 @@
             overflow: hidden;
             width: 58rem;
             height: 23rem;
-            // display: none;
             z-index: 444;
             position: relative;
             margin-top: 2%;
+
+            @include monitor-27 {
+                height: 500px;
+                width: 1000px;
+                margin-top: 0%;
+            }
         
             h2 {
                 letter-spacing: .1rem;
@@ -198,6 +239,10 @@
                 align-items: center;
                 justify-content: space-between;
                 flex: 1;
+
+                @include monitor-27 {
+                    background: red;
+                }
         
                 h4 {
                     color: #fff;
@@ -593,6 +638,11 @@
 
 .alveolar {
     background-color: #333;
+
+    @include monitor-27 {
+        background-color: red;
+        margin-top: 15%;
+    }
 }
 
 
