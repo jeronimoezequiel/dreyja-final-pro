@@ -585,6 +585,7 @@ main {
                 @include monitor-27 {
                     height: 500px;
                     width: 1200px;
+                    margin-top: -8.8%;
                 }
 
                 &.active-card {
@@ -989,7 +990,7 @@ main {
                 @include monitor-27 {
                     height: 500px;
                     width: 950px;
-                    margin-top: -7%;
+                    margin-top: -13%;
                     margin-left: 10%;
                 }
 

@@ -2196,7 +2196,8 @@ main .muro-compuesto {
           margin: 43px 0 0 -8px; } }
       @media only screen and (min-width: 1600px) and (max-width: 1920px) {
         main .muro-compuesto .muro-compuesto-detalle .container-partes {
-          height: 211vh; } }
+          height: 211vh;
+          margin-top: 7%; } }
       main .muro-compuesto .muro-compuesto-detalle .container-partes .titulo {
         position: relative;
         margin-left: 21%;
@@ -3162,7 +3163,8 @@ main #cielorraso {
       @media only screen and (min-width: 1600px) and (max-width: 1920px) {
         main #cielorraso .cielorraso-container .cielorraso-card {
           height: 500px;
-          width: 1200px; } }
+          width: 1200px;
+          margin-top: -8.8%; } }
       main #cielorraso .cielorraso-container .cielorraso-card.active-card {
         border: 2px solid #d30809;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -3467,7 +3469,7 @@ main .drywall {
         main .drywall .drywall-container .drywall-card {
           height: 500px;
           width: 950px;
-          margin-top: -7%;
+          margin-top: -13%;
           margin-left: 10%; } }
       main .drywall .drywall-container .drywall-card.active-card {
         border: 2px solid #d30809;
