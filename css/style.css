@@ -4804,7 +4804,6 @@ main .disposicion .btn-redirect:hover {
       flex: 1; }
       @media only screen and (min-width: 1600px) and (max-width: 1920px) {
         .techos .cardTecho .techo-left-column, .techos .cardTecho .techoAlveolar-left-column, .techos .cardTechoAlveolar .techo-left-column, .techos .cardTechoAlveolar .techoAlveolar-left-column, .alveolar .cardTecho .techo-left-column, .alveolar .cardTecho .techoAlveolar-left-column, .alveolar .cardTechoAlveolar .techo-left-column, .alveolar .cardTechoAlveolar .techoAlveolar-left-column {
-          background: red;
           height: 55vh; } }
       .techos .cardTecho .techo-left-column h4, .techos .cardTecho .techoAlveolar-left-column h4, .techos .cardTechoAlveolar .techo-left-column h4, .techos .cardTechoAlveolar .techoAlveolar-left-column h4, .alveolar .cardTecho .techo-left-column h4, .alveolar .cardTecho .techoAlveolar-left-column h4, .alveolar .cardTechoAlveolar .techo-left-column h4, .alveolar .cardTechoAlveolar .techoAlveolar-left-column h4 {
         color: #fff;
@@ -5119,6 +5118,12 @@ main .disposicion .btn-redirect:hover {
       background: url("https://www.aberturasleo.com.ar/assets/images/revestimiento-pared.jpeg");
       background-position: center;
       background-size: cover; } }
+  @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+    .main-pvc #home-pvc {
+      background: url("http://maropor.com/wp-content/uploads/2012/07/cabecera-cielorraso-pvc.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; } }
   .main-pvc #home-pvc .trapezoide-pvc {
     width: 340px;
     height: 130px;
@@ -5132,6 +5137,9 @@ main .disposicion .btn-redirect:hover {
         width: 170px;
         height: 60px;
         background: #fafafa; } }
+    @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+      .main-pvc #home-pvc .trapezoide-pvc {
+        margin: 25% 0 0 18%; } }
   .main-pvc #home-pvc #home-pvc-content p {
     font-family: 'Poppins';
     font-size: 2.5rem;
@@ -5149,6 +5157,10 @@ main .disposicion .btn-redirect:hover {
         margin: 33% 0 0 18%;
         border-bottom: 3px solid #666666;
         padding-bottom: .1em; } }
+    @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+      .main-pvc #home-pvc #home-pvc-content p {
+        margin: 27% 0 0 9%;
+        font-size: 2.56em; } }
   .main-pvc #home-pvc .home-container {
     margin: -3% 0px 0px 0px;
     width: 100%;
@@ -5226,6 +5238,11 @@ main .disposicion .btn-redirect:hover {
     .main-pvc #cielorraso-desmontable {
       display: flex;
       margin: -95% 0 0 0; } }
+  @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+    .main-pvc #cielorraso-desmontable {
+      margin-top: -14%;
+      height: 77vh;
+      background-color: red; } }
   .main-pvc #cielorraso-desmontable::before {
     content: "";
     position: absolute;
@@ -5297,6 +5314,10 @@ main .disposicion .btn-redirect:hover {
         height: 120vh;
         display: flex;
         transition: all 300ms; } }
+    @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+      .main-pvc #cielorraso-desmontable .nav-cielorraso-desmontable {
+        margin-top: -33%;
+        margin-left: -18%; } }
     .main-pvc #cielorraso-desmontable .nav-cielorraso-desmontable .menu-cielorraso-desmontable {
       position: relative;
       margin: 70px 0 0 58%;
@@ -5317,6 +5338,9 @@ main .disposicion .btn-redirect:hover {
             margin-top: 34px;
             margin-left: 0px;
             font-size: 1em; } }
+        @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+          .main-pvc #cielorraso-desmontable .nav-cielorraso-desmontable .menu-cielorraso-desmontable ul {
+            font-size: 1.1rem; } }
         .main-pvc #cielorraso-desmontable .nav-cielorraso-desmontable .menu-cielorraso-desmontable ul .nav__item-cielorraso-desmontable {
           margin-top: .5%; }
           .main-pvc #cielorraso-desmontable .nav-cielorraso-desmontable .menu-cielorraso-desmontable ul .nav__item-cielorraso-desmontable a {
@@ -5365,6 +5389,9 @@ main .disposicion .btn-redirect:hover {
       height: 23rem;
       z-index: 444;
       position: relative; }
+      @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+        .main-pvc #cielorraso-desmontable .cielorraso-container-desmontable .cielorraso-card-desmontable {
+          margin: 14%; } }
       .main-pvc #cielorraso-desmontable .cielorraso-container-desmontable .cielorraso-card-desmontable.active-card-cielorraso-desmontable {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         z-index: 4; }
@@ -5471,6 +5498,12 @@ main .disposicion .btn-redirect:hover {
           .main-pvc .detallePvc .strip-Pvc .strip-content-Pvc h2 {
             display: flex;
             font-size: 1.1rem; } }
+        @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+          .main-pvc .detallePvc .strip-Pvc .strip-content-Pvc h2 {
+            font-size: 2.2rem;
+            width: 500px;
+            margin-left: -10%;
+            margin-top: 38%; } }
       .main-pvc .detallePvc .strip-Pvc .strip-content-Pvc p {
         font-family: 'Poppins';
         font-size: 1rem;
