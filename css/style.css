@@ -4357,7 +4357,7 @@ main .disposicion .btn-redirect:hover {
     border-radius: 20px; }
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
       #main-tya .ais-container {
-        margin-top: -103%; } }
+        margin-top: -37%; } }
     #main-tya .ais-container .ais-slide {
       /*aca n = 0,1,2,3....*/ }
       #main-tya .ais-container .ais-slide .item {
@@ -4821,7 +4821,7 @@ main .disposicion .btn-redirect:hover {
       max-width: 500px; }
       @media only screen and (min-width: 1600px) and (max-width: 1920px) {
         .techos .cardTecho .techo-right-column, .techos .cardTechoAlveolar .techo-right-column, .alveolar .cardTecho .techo-right-column, .alveolar .cardTechoAlveolar .techo-right-column {
-          margin-top: -50%; } }
+          margin-top: -40%; } }
       .techos .cardTecho .techo-right-column p, .techos .cardTechoAlveolar .techo-right-column p, .alveolar .cardTecho .techo-right-column p, .alveolar .cardTechoAlveolar .techo-right-column p {
         font-family: 'Poppins';
         font-size: .9rem;
