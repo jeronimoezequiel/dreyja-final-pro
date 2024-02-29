@@ -445,6 +445,10 @@ header{
             z-index: 888;
             left: 50%;
             transform: translateX(-50%);
+
+            @include monitor-27 {
+                margin-top: 3%;
+            }
             li{
                 list-style: none;
                 text-decoration: none;

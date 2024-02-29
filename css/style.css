@@ -413,6 +413,9 @@ header nav {
     z-index: 888;
     left: 50%;
     transform: translateX(-50%); }
+    @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+      header nav #box-search {
+        margin-top: 3%; } }
     header nav #box-search li {
       list-style: none;
       text-decoration: none; }
@@ -1057,7 +1060,7 @@ main .section-5 {
         top: 237.5%; } }
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
       main .section-5:after {
-        top: 146%; } }
+        top: 178%; } }
   @media only screen and (max-width: 768px) {
     main .section-5 {
       width: 100%;
@@ -5108,7 +5111,7 @@ main .disposicion .btn-redirect:hover {
 .main-pvc #home-pvc {
   width: 100%;
   height: 520px;
-  background: url("https://lh3.googleusercontent.com/proxy/HG1DtAAuepFLQyBphmZQmVHlM5RsKiqKt7rLKCWea2jqG1dZGE73IUlgiOot8LTp-W49MYRAjzko7KuRCDgd2dVBIBwWSgv9SuNzmkXoN1T69eAkLK5Ke0cdznh22-fZ13I2YEeBGAyq51CyyJQ");
+  background: url("https://img.interempresas.net/FotosArtProductos/P213246.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -5120,7 +5123,7 @@ main .disposicion .btn-redirect:hover {
       background-size: cover; } }
   @media only screen and (min-width: 1600px) and (max-width: 1920px) {
     .main-pvc #home-pvc {
-      background: url("https://lh3.googleusercontent.com/proxy/HG1DtAAuepFLQyBphmZQmVHlM5RsKiqKt7rLKCWea2jqG1dZGE73IUlgiOot8LTp-W49MYRAjzko7KuRCDgd2dVBIBwWSgv9SuNzmkXoN1T69eAkLK5Ke0cdznh22-fZ13I2YEeBGAyq51CyyJQ");
+      background: url("https://img.interempresas.net/FotosArtProductos/P213246.jpg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover; } }
@@ -5709,7 +5712,7 @@ main .disposicion .btn-redirect:hover {
       margin: 170% 0 0 0; } }
   @media only screen and (min-width: 1600px) and (max-width: 1920px) {
     .disposicion-qs .disposicion-6-qs {
-      margin-top: 10%; } }
+      margin-top: 12%; } }
 
 .disposicion-qs .disposicion-content-qs {
   display: flex; }
