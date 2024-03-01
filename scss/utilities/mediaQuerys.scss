@@ -28,13 +28,6 @@
     }
 }
 
-@mixin mobile-a54 {
-    @media only screen and (max-width: 390px) {
-        @content;
-    }
-}
-
-
 
 //BREAKPOINTS
 @mixin monitor-27 {
@@ -67,8 +60,20 @@
     }
 }
 
+@mixin mobile-a54 {
+    @media only screen and (max-width: 390px) {
+        @content;
+    }
+}
+
+@mixin samsung-L {
+    @media only screen and (max-width: 385px) {
+        @content;
+    }
+}
+
 @mixin mobile_l {
-    @media only screen and (max-width: 375px) {
+    @media only screen and (max-width: 384px) {
         @content;
     }
 }

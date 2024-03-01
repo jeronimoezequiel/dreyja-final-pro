@@ -11,17 +11,20 @@ main {
     #home {
         height: 750px;
         position: relative;
-        
-        
 
-        @include tablet {
-            background: rgb(227,227,227);
-            background: linear-gradient(180deg, #e3e3e3 36%, #f3f3f3 75%, white 100%);
-            min-height: 530px;
-        }
+        // @include tablet {
+        //     background: rgb(227,227,227);
+        //     background: linear-gradient(180deg, #e3e3e3 36%, #f3f3f3 75%, white 100%);
+        //     min-height: 530px;
+        // }
 
         @include mobile_l {
             max-height: 330px;
+        }
+
+        @include samsung-L {
+            background-color: yellow;
+            height: 445px;
         }
 
         .container {
@@ -31,25 +34,30 @@ main {
             margin-top: -7px;
             padding: 0px;
 
-            @include mobile_l {
-                background: transparent;
-                max-height: 656px;
-            }
-            
-            @include tablet {
-                margin: -46% 0 0 0;
-                // background: #000;
-                // height: 800px;
+            @include monitor-27 {
+                background-color: rgba(102, 51, 153, 0.74);
+                max-width: 1920px;
+                height: 760px;
             }
 
             @include portatil {
                 margin: -22px 0 0 0;
             }
 
-            @include monitor-27 {
-                background-color: rgba(102, 51, 153, 0.74);
-                max-width: 1920px;
-                height: 760px;
+            @include tablet {
+                margin: -46% 0 0 0;
+                // background: #000;
+                // height: 800px;
+            }
+
+            @include samsung-L {
+                background-color: green;
+                margin: -51% 0 0 0%;
+            }
+
+            @include mobile_l {
+                background: transparent;
+                max-height: 656px;
             }
 
             .home-slider {
@@ -82,11 +90,6 @@ main {
                     display: flex;
                     transition: 1s;
 
-                    
-                    @include mobile_l {
-                        display: none;
-                    }
-
                     @include monitor-27 {
                         display: none;
                     }
@@ -94,6 +97,10 @@ main {
                     @include tablet {
                         display: flex;
                         // height: 650px;
+                    }
+
+                    @include samsung-L {
+                        display: none;
                     }
 
                     .home-item {
@@ -142,7 +149,6 @@ main {
                     .homeItemMonitor {
                         width: 1920px;
                         height: 760px;
-                        background-color: blue;
 
                         @include mobile_l {
                             background: transparent;
@@ -154,6 +160,12 @@ main {
                             display: flex;
                             width: 1600px;
                             height: 826px;
+
+                            @include samsung-L {
+                                margin: 8% 0 0 0%;
+                                width: 900px;
+                                height: 600px;
+                            }
 
                             @include mobile_l {
                                 width: 700px;
@@ -228,6 +240,10 @@ main {
             .container-info{
                 margin-top: 50px;
                 margin-left: 4%;
+
+                @include samsung-L {
+                    margin: -52% 0 0 -5%;
+                }
                 h1  {
                     margin: 0;
                     font-family: $typo-poppins;
@@ -245,18 +261,26 @@ main {
                     margin-top: -27%;
                     margin-left: 4%;
 
+                    @include samsung-L {
+                        height: 83px;
+                        padding: 15px;
+                        width: 94%;
+                        border-top-right-radius: 20px;
+                        font-size: 1.8rem;
+                    }
+
                     @include mobile-l {
                         display: none;
                         // max-width: 90%;
                         // padding: 0px 0px;
                     }
                     
-                    @include tablet {
-                        font-size: 1.8rem;
-                        margin-left: 6%;
-                        margin-top: -97%;
-                        }
-                    }
+                    // @include tablet {
+                    //     font-size: 1.8rem;
+                    //     margin-left: 6%;
+                    //     margin-top: -97%;
+                    //     }
+                    // }
 
                     @include portatil {
                         margin-top: -35%;
@@ -269,7 +293,7 @@ main {
                         padding: 4px 30px;
                         // margin: -25.5% 0 0 4%;
                     }
-
+                }
                 .subtitle-ppal{
                     color: #fff;
                     // text-shadow: 4px 4px map-get($color--azul, dreyja );
@@ -307,13 +331,21 @@ main {
                         }
                     }
 
-                    @include mobile-l {
-                        border-top-left-radius: 10px;
-                        border-bottom-left-radius: 10px;
-                        font-size: 18px;
-                        background: map-get($color--bordo, dreyja);
-                        position: relative;
+                    @include monitor-27 {
+                        padding: 4px 30px;
                     }
+
+                    @include portatil {
+                        margin: -281px 0 0 40px;
+                    }
+
+                    // @include mobile-l {
+                    //     border-top-left-radius: 10px;
+                    //     border-bottom-left-radius: 10px;
+                    //     font-size: 18px;
+                    //     background: map-get($color--bordo, dreyja);
+                    //     position: relative;
+                    // }
 
                     // @include tablet {
                     //     font-size: 1.3rem;
@@ -322,45 +354,16 @@ main {
                     //     width: 75%;
                     // }
 
-                    @include portatil {
-                        margin: -281px 0 0 40px;
+                    @include samsung-L {
+                        font-size: 1.1rem;
+                        margin: -48px 0 0 4%;
+                        max-width: 360px;
+                        border-top-right-radius: 0px;
+                        border-bottom-right-radius: 20px;
+                        letter-spacing: 3px;
+                        }
                     }
-
-                    @include monitor-27 {
-                        padding: 4px 30px;
-                    }
-                }
-                // video {
-                //     position: absolute;
-                //     top: -28px;
-                //     left: 0;
-                //     width: 100%;
-                //     height: 100%;
-                //     object-fit: cover;
-                //     background-attachment: fixed;
-                //     z-index: 111;
-                //     @include tablet {
-                //         width: 100%;
-                //         margin-top: -21%;
-                //         height: 490px;
-                //     }
-                // }
-                // .capa {
-                //     position: absolute;
-                //     top: -28px;
-                //     left: 0;
-                //     width: 100%;
-                //     height: 100%;
-                //     background: #1c1c1d;
-                //     opacity: 0.5;
-                //     mix-blend-mode: overlay;
-                //     @include tablet {
-                //         width: 100%;
-                //         margin-top: -21%;
-                //     }
-                // }
-                
-                }
+            }
         }
     }
 
@@ -372,15 +375,15 @@ main {
             margin-top: -12%;
             margin-bottom: 10%;
 
-            @include mobile_l {
-                background: yellow;
-                max-width: 119px;
-                margin: 7% 0 0 40%;
-            }
-
             @include monitor-27 {
                 margin: 12% 0 10% 0;
                 height: 275px;
+            }
+
+            
+            @include mobile_l {
+                max-width: 119px;
+                margin: 7% 0 0 40%;
             }
             
             .home_txt-fx{
@@ -392,7 +395,7 @@ main {
                 max-width: 1000px;
                 margin-left: 10.5em;
                 height: 280px;
-
+                
                 @include monitor-27 {
                     margin-top: -12%;
                     max-width: 1440px;
@@ -448,11 +451,7 @@ main {
                     -webkit-text-fill-color: transparent;
                     margin-left: 40px;
 
-                    @include mobile_l {
-                        max-width: 80%;
-                    }
-
-                    @include tablet {
+                        @include tablet {
                         font-family: $typo-poppins;
                         font-weight: 600;
                         margin-left: -74%;
@@ -464,6 +463,15 @@ main {
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
                         // background: orangered;
+                        }
+
+                        @include mobile_l {
+                            max-width: 80%;
+                        }
+
+                        @include samsung-L {
+                            margin-top: 170%;
+                            position: relative;
                         }
                     }
 
@@ -477,7 +485,6 @@ main {
                         margin-left: -15%;
                         max-width: 1200px;
                     }
-
                     
                     h3{
                         font-family: $typo-poppins;
@@ -506,18 +513,22 @@ main {
                             max-width: 675px;
                         }
 
-                        @include tablet {
-                            display: flex;
-                            align-items: center;
-                            width: 84%;
-                            margin: 6px 0px 8px -136px;
-                            position: absolute;
-                            font-size: .7em;
-                            text-align: justify;
-                            // background: green;
+                        // @include tablet {
+                        //     display: flex;
+                        //     align-items: center;
+                        //     width: 84%;
+                        //     margin: 6px 0px 8px -136px;
+                        //     position: absolute;
+                        //     font-size: .7em;
+                        //     text-align: justify;
+                        //     // background: green;
+                        // }
+
+                        @include samsung-L {
+                            margin-left: -71%;
+                            max-width: 360px
                         }
                     }
-                    
                 }
             }
         }
@@ -538,6 +549,11 @@ main {
             margin-top: -175px;
             background: #fff;
         }
+
+        @include samsung-L {
+            margin: 49% 0 0 0;
+        }
+
         .home-container{
             position: relative;
             width: 900px;
@@ -551,6 +567,10 @@ main {
                 margin-top: -110%;
                 border-radius: 0px;
                 background: #ffffff;
+            }
+
+            @include samsung-L {
+                margin: -86% 0 84% 0;
             }
 
             h2{
@@ -599,6 +619,16 @@ main {
                     margin-left: 28%;
                     margin-top: -7px
                 }
+
+                @include samsung-L {
+                    background-color: map-get($color--bordo, dreyja );
+                    padding: 3px;
+                    margin: -3% 0 10% 0%;
+                    width: 363px;
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 9px;
+                    color: #fff;
+                }
             }
             .info-links{
                 display: flex;
@@ -617,6 +647,11 @@ main {
                     margin-bottom: -7%;
                     display: flex;
                     flex-direction: row;
+                }
+
+                @include samsung-L {
+                    margin-bottom: -1%;
+                    margin-top: 5%;
                 }
                     a{
                         font-family: $typo-apple;
@@ -665,6 +700,11 @@ main {
                     background: #fff;
                 }
 
+                @include samsung-L {
+                    background-color: green;
+                    display: contents;
+                }
+
                 .home-imgBx{
                     position: absolute;
                     top: 0;
@@ -702,6 +742,10 @@ main {
                         position: relative;
                         width: 100%;
                         }
+                    
+                    @include samsung-L {
+                        text-align: center;
+                    }
                     }
                     h3 {
                         margin-bottom: 5px;
@@ -774,6 +818,10 @@ main {
             background: #fff;
             border: none;
         }
+
+        @include samsung-L {
+            margin-top: 70%;
+        }
         .slide-track{
             display: flex;
             animation: scroll 40s linear infinite;
@@ -809,10 +857,6 @@ main {
         height: 600px;
         background: #f1f1f1;
 
-        @include monitor-27 {
-            background: #fff;
-        }
-
         &:after {
             content: "";
             position: absolute;
@@ -831,6 +875,7 @@ main {
 
             @include monitor-27 {
                 top: 178%;
+                background-color: #fff;
             }
         }
         
@@ -840,6 +885,10 @@ main {
             font-size: 1.5rem;
             padding: 10px;
             background: map-get($color--azul, dreyja );
+        }
+
+        @include samsung-L {
+            height: 145vh;
         }
 
             .subtitle-center{
@@ -888,6 +937,15 @@ main {
                     padding-left: 0%;
                     font-size: 25px;
                     color: #ffffff;
+                }
+
+                @include samsung-L {
+                    background-color: map-get($color--bordo, dreyja);
+                    margin-left: -4%;
+                    max-width: 380px;
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    padding: 10px;
                 }
             }
             .info-links{
@@ -972,6 +1030,10 @@ main {
                         @include monitor-27 {
                             margin-top: -1%;
                         }
+
+                        @include samsung-L {
+                            margin: 0px 0 0 -27%;
+                        }
                     }
                 }
                 .icon-box{
@@ -992,6 +1054,11 @@ main {
 
                     @include tablet {
                         padding: 20px 22px;
+                    }
+
+                    @include samsung-L {
+                        width: 371px;
+                        height: 195px
                     }
                     h4 {
                         @include portatil {
@@ -1016,6 +1083,10 @@ main {
                         justify-content: center;
                         margin-bottom: 20px;
                         transform-style: preserve-3d;
+
+                        @include samsung-L{
+                            margin: 60px 0 0 0;
+                        }
                         .icon::before {
                             position: absolute;
                             content: '';
@@ -1038,6 +1109,15 @@ main {
                         margin-bottom: 15px;
                         font-size: 24px;
 
+                        @include samsung-L {
+                            background-color: map-get($color--azul, dreyja);
+                            margin: -34% 0 0 0;
+                            border-top-right-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            border-top-left-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            padding: 6px;
+                        }
                         
                         a {
                             color: map-get($color--azul, dreyja );
@@ -1058,6 +1138,14 @@ main {
 
                         @include tablet {
                             color: #afafaf;
+                        }
+
+                        @include samsung-L {
+                            margin-top: 8px;
+                            width: 246px;
+                            max-width: 246px;
+                            margin-left: 73px;
+                            color: #333;
                         }
                     }
                 }
@@ -1091,6 +1179,11 @@ main {
         @include tablet {
             height: 1826px;
         }
+
+        @include samsung-L {
+            height: 249vh;
+        }
+
         .grid-gallery{
             width: 100%;
             max-width: 1200px;

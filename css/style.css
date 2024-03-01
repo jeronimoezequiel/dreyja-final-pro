@@ -84,6 +84,11 @@ header .header-logo {
   @media only screen and (min-width: 1600px) and (max-width: 1920px) {
     header .header-logo {
       display: none; } }
+  @media only screen and (max-width: 385px) {
+    header .header-logo {
+      margin: 1% 0 0 5%;
+      width: 52px;
+      height: 50px; } }
 
 @media only screen and (max-width: 768px) {
   header #bag-shop {
@@ -116,10 +121,7 @@ header #btn__menu {
       transition: all 300ms;
       z-index: 888;
       position: absolute; } }
-  @media only screen and (max-width: 675px) {
-    header #btn__menu {
-      margin-left: 670px; } }
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 384px) {
     header #btn__menu {
       position: fixed;
       margin-left: 0px;
@@ -129,6 +131,13 @@ header #btn__menu {
       display: flex;
       justify-content: flex-end;
       padding: 20px; } }
+  @media only screen and (max-width: 385px) {
+    header #btn__menu {
+      background-color: #273238;
+      display: flex;
+      margin: 3% 0 0 83%;
+      font-size: 1.1rem;
+      position: fixed; } }
 
 @media only screen and (max-width: 768px) {
   header #back_menu {
@@ -170,26 +179,23 @@ header nav {
       height: 120vh;
       display: flex;
       transition: all 300ms; } }
-  @media only screen and (max-width: 375px) {
-    header nav {
-      background-color: #273238; } }
   header nav .menu {
     position: relative;
     margin: 0 auto;
     max-width: 1200px;
     overflow: hidden; }
-    @media only screen and (max-width: 375px) {
-      header nav .menu {
-        background: #d30809; } }
-    @media only screen and (max-width: 1024px) {
-      header nav .menu {
-        background: orange;
-        max-width: 900px;
-        margin: -0.25% 0 0 6%; } }
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
       header nav .menu {
         max-width: 1400px;
         margin: -0.65% 0 0 6%; } }
+    @media only screen and (max-width: 1024px) {
+      header nav .menu {
+        background: transparent;
+        max-width: 900px;
+        margin: -0.25% 0 0 6%; } }
+    @media only screen and (max-width: 384px) {
+      header nav .menu {
+        background: #d30809; } }
     header nav .menu ul {
       width: 100%;
       margin: 1.8% 0% 0% 0%;
@@ -265,6 +271,10 @@ header nav {
               font-weight: 600;
               text-decoration: none;
               text-underline-offset: 24px; } }
+          @media only screen and (max-width: 385px) {
+            header nav .menu ul .nav__item .active {
+              font-weight: bold;
+              font-size: 1.3rem; } }
         header nav .menu ul .nav__item .nav__link::after {
           content: '';
           opacity: 0;
@@ -464,42 +474,45 @@ header .btn-wsp {
 main #home {
   height: 750px;
   position: relative; }
-  @media only screen and (max-width: 768px) {
-    main #home {
-      background: #e3e3e3;
-      background: linear-gradient(180deg, #e3e3e3 36%, #f3f3f3 75%, white 100%);
-      min-height: 530px; } }
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 384px) {
     main #home {
       max-height: 330px; } }
+  @media only screen and (max-width: 385px) {
+    main #home {
+      background-color: yellow;
+      height: 445px; } }
   main #home .container {
     position: relative;
     height: 560px;
     max-width: 1350px;
     margin-top: -7px;
     padding: 0px; }
-    @media only screen and (max-width: 375px) {
-      main #home .container {
-        background: transparent;
-        max-height: 656px; } }
-    @media only screen and (max-width: 768px) {
-      main #home .container {
-        margin: -46% 0 0 0; } }
-    @media only screen and (max-width: 1024px) {
-      main #home .container {
-        margin: -22px 0 0 0; } }
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
       main #home .container {
         background-color: rgba(102, 51, 153, 0.74);
         max-width: 1920px;
         height: 760px; } }
+    @media only screen and (max-width: 1024px) {
+      main #home .container {
+        margin: -22px 0 0 0; } }
+    @media only screen and (max-width: 768px) {
+      main #home .container {
+        margin: -46% 0 0 0; } }
+    @media only screen and (max-width: 385px) {
+      main #home .container {
+        background-color: green;
+        margin: -51% 0 0 0%; } }
+    @media only screen and (max-width: 384px) {
+      main #home .container {
+        background: transparent;
+        max-height: 656px; } }
     main #home .container .home-slider {
       width: 100%;
       height: 500px;
       margin: auto;
       position: relative;
       overflow: hidden; }
-      @media only screen and (max-width: 375px) {
+      @media only screen and (max-width: 384px) {
         main #home .container .home-slider {
           max-height: 656px;
           background-color: red; } }
@@ -519,16 +532,16 @@ main #home {
         top: 0;
         display: flex;
         transition: 1s; }
-        @media only screen and (max-width: 375px) {
-          main #home .container .home-slider .home-list {
-            display: none; } }
         @media only screen and (min-width: 1600px) and (max-width: 1920px) {
           main #home .container .home-slider .home-list {
             display: none; } }
         @media only screen and (max-width: 768px) {
           main #home .container .home-slider .home-list {
             display: flex; } }
-        @media only screen and (max-width: 375px) {
+        @media only screen and (max-width: 385px) {
+          main #home .container .home-slider .home-list {
+            display: none; } }
+        @media only screen and (max-width: 384px) {
           main #home .container .home-slider .home-list .home-item {
             display: none; } }
         main #home .container .home-slider .home-list .home-item img {
@@ -542,7 +555,7 @@ main #home {
             main #home .container .home-slider .home-list .home-item img {
               display: flex;
               margin: 29% 0 0 0; } }
-          @media only screen and (max-width: 375px) {
+          @media only screen and (max-width: 384px) {
             main #home .container .home-slider .home-list .home-item img {
               max-height: 20vw; } }
         main #home .container .home-slider .home-list .home-item::after {
@@ -555,15 +568,14 @@ main #home {
           background: linear-gradient(to top, rgba(39, 50, 56, 0.08), rgba(39, 50, 56, 0));
           z-index: 10;
           pointer-events: none; }
-      @media only screen and (max-width: 375px) {
+      @media only screen and (max-width: 384px) {
         main #home .container .home-slider .homeBackgroundMonitor {
           display: flex;
           max-height: 556px; } }
       main #home .container .home-slider .homeBackgroundMonitor .homeItemMonitor {
         width: 1920px;
-        height: 760px;
-        background-color: blue; }
-        @media only screen and (max-width: 375px) {
+        height: 760px; }
+        @media only screen and (max-width: 384px) {
           main #home .container .home-slider .homeBackgroundMonitor .homeItemMonitor {
             background: transparent;
             height: 556px; } }
@@ -571,7 +583,12 @@ main #home {
           display: flex;
           width: 1600px;
           height: 826px; }
-          @media only screen and (max-width: 375px) {
+          @media only screen and (max-width: 385px) {
+            main #home .container .home-slider .homeBackgroundMonitor .homeItemMonitor img {
+              margin: 8% 0 0 0%;
+              width: 900px;
+              height: 600px; } }
+          @media only screen and (max-width: 384px) {
             main #home .container .home-slider .homeBackgroundMonitor .homeItemMonitor img {
               width: 700px;
               height: 556px;
@@ -619,6 +636,9 @@ main #home {
     main #home .container .container-info {
       margin-top: 50px;
       margin-left: 4%; }
+      @media only screen and (max-width: 385px) {
+        main #home .container .container-info {
+          margin: -52% 0 0 -5%; } }
       main #home .container .container-info h1 {
         margin: 0;
         font-family: "Poppins", sans-serif;
@@ -634,23 +654,25 @@ main #home {
         z-index: 333;
         margin-top: -27%;
         margin-left: 4%; }
-        @media only screen and (max-width: 375px) {
+        @media only screen and (max-width: 385px) {
+          main #home .container .container-info h1 {
+            height: 83px;
+            padding: 15px;
+            width: 94%;
+            border-top-right-radius: 20px;
+            font-size: 1.8rem; } }
+        @media only screen and (max-width: 384px) {
           main #home .container .container-info h1 {
             display: none; } }
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: 1024px) {
           main #home .container .container-info h1 {
-            font-size: 1.8rem;
-            margin-left: 6%;
-            margin-top: -97%; } }
-      @media only screen and (max-width: 1024px) {
-        main #home .container .container-info {
-          margin-top: -35%;
-          margin-left: 4%; } }
-      @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-        main #home .container .container-info {
-          font-size: 64px;
-          font-weight: 600;
-          padding: 4px 30px; } }
+            margin-top: -35%;
+            margin-left: 4%; } }
+        @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+          main #home .container .container-info h1 {
+            font-size: 64px;
+            font-weight: 600;
+            padding: 4px 30px; } }
       main #home .container .container-info .subtitle-ppal {
         color: #fff;
         background-color: #273238;
@@ -681,19 +703,20 @@ main #home {
     -webkit-filter: blur(0px);
     filter: blur(0px);
     opacity: 1; } }
-        @media only screen and (max-width: 375px) {
-          main #home .container .container-info .subtitle-ppal {
-            border-top-left-radius: 10px;
-            border-bottom-left-radius: 10px;
-            font-size: 18px;
-            background: #d30809;
-            position: relative; } }
-        @media only screen and (max-width: 1024px) {
-          main #home .container .container-info .subtitle-ppal {
-            margin: -281px 0 0 40px; } }
         @media only screen and (min-width: 1600px) and (max-width: 1920px) {
           main #home .container .container-info .subtitle-ppal {
             padding: 4px 30px; } }
+        @media only screen and (max-width: 1024px) {
+          main #home .container .container-info .subtitle-ppal {
+            margin: -281px 0 0 40px; } }
+        @media only screen and (max-width: 385px) {
+          main #home .container .container-info .subtitle-ppal {
+            font-size: 1.1rem;
+            margin: -48px 0 0 4%;
+            max-width: 360px;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 20px;
+            letter-spacing: 3px; } }
 
 main .home_1 {
   font-family: "Poppins", sans-serif;
@@ -702,15 +725,14 @@ main .home_1 {
   height: 235px;
   margin-top: -12%;
   margin-bottom: 10%; }
-  @media only screen and (max-width: 375px) {
-    main .home_1 {
-      background: yellow;
-      max-width: 119px;
-      margin: 7% 0 0 40%; } }
   @media only screen and (min-width: 1600px) and (max-width: 1920px) {
     main .home_1 {
       margin: 12% 0 10% 0;
       height: 275px; } }
+  @media only screen and (max-width: 384px) {
+    main .home_1 {
+      max-width: 119px;
+      margin: 7% 0 0 40%; } }
   main .home_1 .home_txt-fx {
     display: flex;
     flex-direction: column;
@@ -757,9 +779,6 @@ main .home_1 {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       margin-left: 40px; }
-      @media only screen and (max-width: 375px) {
-        main .home_1 .home_txt-fx .columns .futuro {
-          max-width: 80%; } }
       @media only screen and (max-width: 768px) {
         main .home_1 .home_txt-fx .columns .futuro {
           font-family: "Poppins", sans-serif;
@@ -772,6 +791,13 @@ main .home_1 {
           text-transform: uppercase;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent; } }
+      @media only screen and (max-width: 384px) {
+        main .home_1 .home_txt-fx .columns .futuro {
+          max-width: 80%; } }
+      @media only screen and (max-width: 385px) {
+        main .home_1 .home_txt-fx .columns .futuro {
+          margin-top: 170%;
+          position: relative; } }
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
       main .home_1 .home_txt-fx .columns {
         margin-top: -3%;
@@ -799,15 +825,10 @@ main .home_1 {
         main .home_1 .home_txt-fx .columns p {
           margin: 0 0 0 -131px;
           max-width: 675px; } }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 385px) {
         main .home_1 .home_txt-fx .columns p {
-          display: flex;
-          align-items: center;
-          width: 84%;
-          margin: 6px 0px 8px -136px;
-          position: absolute;
-          font-size: .7em;
-          text-align: justify; } }
+          margin-left: -71%;
+          max-width: 360px; } }
 
 main #cards {
   display: flex;
@@ -823,6 +844,9 @@ main #cards {
     main #cards {
       margin-top: -175px;
       background: #fff; } }
+  @media only screen and (max-width: 385px) {
+    main #cards {
+      margin: 49% 0 0 0; } }
   main #cards .home-container {
     position: relative;
     width: 900px;
@@ -836,6 +860,9 @@ main #cards {
         margin-top: -110%;
         border-radius: 0px;
         background: #ffffff; } }
+    @media only screen and (max-width: 385px) {
+      main #cards .home-container {
+        margin: -86% 0 84% 0; } }
     main #cards .home-container h2 {
       display: flex;
       position: absolute;
@@ -876,6 +903,15 @@ main #cards {
           font-size: 1.6rem;
           margin-left: 28%;
           margin-top: -7px; } }
+      @media only screen and (max-width: 385px) {
+        main #cards .home-container h2 {
+          background-color: #d30809;
+          padding: 3px;
+          margin: -3% 0 10% 0%;
+          width: 363px;
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 9px;
+          color: #fff; } }
     main #cards .home-container .info-links {
       display: flex;
       margin-top: -1%;
@@ -892,6 +928,10 @@ main #cards {
           margin-bottom: -7%;
           display: flex;
           flex-direction: row; } }
+      @media only screen and (max-width: 385px) {
+        main #cards .home-container .info-links {
+          margin-bottom: -1%;
+          margin-top: 5%; } }
       main #cards .home-container .info-links a {
         font-family: "Source Sans 3", sans-serif;
         font-size: 20px; }
@@ -930,6 +970,10 @@ main #cards {
           height: auto;
           margin-left: 12%;
           background: #fff; } }
+      @media only screen and (max-width: 385px) {
+        main #cards .home-container .home-card {
+          background-color: green;
+          display: contents; } }
       main #cards .home-container .home-card .home-imgBx {
         position: absolute;
         top: 0;
@@ -962,6 +1006,9 @@ main #cards {
           main #cards .home-container .home-card .home-content {
             position: relative;
             width: 100%; } }
+        @media only screen and (max-width: 385px) {
+          main #cards .home-container .home-card .home-content {
+            text-align: center; } }
       main #cards .home-container .home-card h3 {
         margin-bottom: 5px;
         font-size: 24px; }
@@ -1018,6 +1065,9 @@ main .slider {
       margin-top: 235px;
       background: #fff;
       border: none; } }
+  @media only screen and (max-width: 385px) {
+    main .slider {
+      margin-top: 70%; } }
   main .slider .slide-track {
     display: flex;
     animation: scroll 40s linear infinite;
@@ -1042,9 +1092,6 @@ main .slider {
 main .section-5 {
   height: 600px;
   background: #f1f1f1; }
-  @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-    main .section-5 {
-      background: #fff; } }
   main .section-5:after {
     content: "";
     position: absolute;
@@ -1061,7 +1108,8 @@ main .section-5 {
         top: 237.5%; } }
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
       main .section-5:after {
-        top: 178%; } }
+        top: 178%;
+        background-color: #fff; } }
   @media only screen and (max-width: 768px) {
     main .section-5 {
       width: 100%;
@@ -1069,6 +1117,9 @@ main .section-5 {
       font-size: 1.5rem;
       padding: 10px;
       background: #273238; } }
+  @media only screen and (max-width: 385px) {
+    main .section-5 {
+      height: 145vh; } }
   main .section-5 .subtitle-center {
     display: flex;
     align-items: center;
@@ -1109,6 +1160,14 @@ main .section-5 {
         padding-left: 0%;
         font-size: 25px;
         color: #ffffff; } }
+    @media only screen and (max-width: 385px) {
+      main .section-5 .subtitle-center {
+        background-color: #d30809;
+        margin-left: -4%;
+        max-width: 380px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 10px; } }
   main .section-5 .info-links {
     display: flex;
     margin-top: -1%;
@@ -1141,7 +1200,7 @@ main .section-5 {
     main .section-5 .services {
       width: 94%;
       margin-bottom: 70%; } }
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 384px) {
     main .section-5 .services .container {
       height: 100px; } }
   @media only screen and (max-width: 1024px) {
@@ -1167,6 +1226,9 @@ main .section-5 {
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
       main .section-5 .services .container .row {
         margin-top: -1%; } }
+    @media only screen and (max-width: 385px) {
+      main .section-5 .services .container .row {
+        margin: 0px 0 0 -27%; } }
   main .section-5 .services .icon-box {
     text-align: center;
     border: none;
@@ -1183,6 +1245,10 @@ main .section-5 {
     @media only screen and (max-width: 768px) {
       main .section-5 .services .icon-box {
         padding: 20px 22px; } }
+    @media only screen and (max-width: 385px) {
+      main .section-5 .services .icon-box {
+        width: 371px;
+        height: 195px; } }
     @media only screen and (max-width: 1024px) {
       main .section-5 .services .icon-box h4 {
         margin: 0 0 0 10%; } }
@@ -1202,6 +1268,9 @@ main .section-5 {
       justify-content: center;
       margin-bottom: 20px;
       transform-style: preserve-3d; }
+      @media only screen and (max-width: 385px) {
+        main .section-5 .services .icon-box .icon {
+          margin: 60px 0 0 0; } }
       main .section-5 .services .icon-box .icon .icon::before {
         position: absolute;
         content: '';
@@ -1220,6 +1289,15 @@ main .section-5 {
       font-weight: 700;
       margin-bottom: 15px;
       font-size: 24px; }
+      @media only screen and (max-width: 385px) {
+        main .section-5 .services .icon-box h4 {
+          background-color: #273238;
+          margin: -34% 0 0 0;
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+          padding: 6px; } }
       main .section-5 .services .icon-box h4 a {
         color: #273238; }
         @media only screen and (max-width: 768px) {
@@ -1236,6 +1314,13 @@ main .section-5 {
       @media only screen and (max-width: 768px) {
         main .section-5 .services .icon-box p {
           color: #afafaf; } }
+      @media only screen and (max-width: 385px) {
+        main .section-5 .services .icon-box p {
+          margin-top: 8px;
+          width: 246px;
+          max-width: 246px;
+          margin-left: 73px;
+          color: #333; } }
   main .section-5 .services .icon-box:hover {
     background: #273238;
     border-color: none;
@@ -1257,6 +1342,10 @@ main .section-5 {
 @media only screen and (max-width: 768px) {
   main .grid {
     height: 1826px; } }
+
+@media only screen and (max-width: 385px) {
+  main .grid {
+    height: 249vh; } }
 
 main .grid .grid-gallery {
   width: 100%;
@@ -1339,6 +1428,9 @@ main .grid .grid-gallery {
       margin-left: 0px;
       margin-top: -60%;
       background: #0f4c81; } }
+  @media only screen and (max-width: 385px) {
+    .section-form {
+      display: none; } }
   .section-form .contactForm {
     position: relative;
     display: grid;

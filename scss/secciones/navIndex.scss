@@ -9,6 +9,12 @@ header{
         @include monitor-27 {
             display: none;
         }
+
+        @include samsung-L {
+            margin: 1% 0 0 5%;
+            width: 52px;
+            height: 50px;
+        }
     }
     #bag-shop{
 
@@ -22,11 +28,10 @@ header{
             margin: 12px 320px;
             }
         }
-
         
     #btn__menu{
         display: none;
-    
+        
         @include tablet {
             display: flex;
             align-items: center;
@@ -47,10 +52,6 @@ header{
             position: absolute;
         }
 
-        @include tablet-medium {
-            margin-left: 670px;
-        }
-
         @include mobile_l {
             position: fixed;
             margin-left: 0px;
@@ -60,6 +61,14 @@ header{
             display: flex;
             justify-content: flex-end;
             padding: 20px;
+        }
+
+        @include samsung-L {
+            background-color: map-get($color--azul, dreyja);
+            display: flex;
+            margin: 3% 0 0 83%;
+            font-size: 1.1rem;
+            position: fixed;
         }
     }
     // #btn__menu:hover {
@@ -71,6 +80,7 @@ header{
     //         display: none;
     //     }
     // }
+    
     #back_menu{
         
         @include tablet {
@@ -94,8 +104,6 @@ header{
         width: 1350px;
 
         @include monitor-27 {
-            // background: red;
-            // max-width: 1920px;
             width: 1600px;
             margin: 0 auto;
             height: 84px;
@@ -124,10 +132,6 @@ header{
             display: flex;
             transition: all 300ms;
         }
-
-        @include mobile_l {
-            background-color: map-get($color--azul, dreyja);
-        }
     
         .menu {
             position: relative;
@@ -135,21 +139,25 @@ header{
             max-width: 1200px;
             overflow: hidden;
 
-            @include mobile_l {
-                background: map-get($color--bordo, dreyja);
-            }
-
-            @include portatil {
-                background: orange;
-                max-width: 900px;
-                margin: -0.25% 0 0 6%;
-            }
-
+            
             @include monitor-27 {
                 max-width: 1400px;
                 margin: -0.65% 0 0 6%;
             }
-    
+
+            @include portatil {
+                background: transparent;
+                max-width: 900px;
+                margin: -0.25% 0 0 6%;
+            }
+
+            @include mobile_l {
+                background: map-get($color--bordo, dreyja);
+            }
+
+            // @include samsung-L {
+            //     background: blue;
+            // }
             ul {
                 width: 100%;
                 margin: 1.8% 0% 0% 0%;
@@ -239,6 +247,11 @@ header{
                             font-weight: 600;
                             text-decoration: none;
                             text-underline-offset: 24px; 
+                        }
+
+                        @include samsung-L {
+                            font-weight: bold;
+                            font-size: 1.3rem;
                         }
                     }
                     

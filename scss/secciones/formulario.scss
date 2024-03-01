@@ -46,7 +46,9 @@
         // background: linear-gradient(to top right, #1867a3, #0c426c);
     }
 
-    
+    @include samsung-L {
+        display: none;
+    }
 
     .contactForm{
         position: relative;
