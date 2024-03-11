@@ -361,9 +361,7 @@ main {
                 color: #333;
                 display: flex;
                 flex-direction: column; 
-                max-width: 1000px;
-                margin: 0 0 0 8%;
-                // padding: 5%;
+                margin: 0 0 0 21%;
 
                 h2 {
                     font-family: 'Poppins';
@@ -371,7 +369,7 @@ main {
                     font-weight: 700;
                     color: #383f47;
                     display: flex;
-                    margin: 55% 0 0 -27%;
+                    margin: 50% 0 0 -27%;
                     text-align: center;
 
                     @include tablet {

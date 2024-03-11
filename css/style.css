@@ -3081,15 +3081,14 @@ main .detallePvc {
       color: #333;
       display: flex;
       flex-direction: column;
-      max-width: 1000px;
-      margin: 0 0 0 8%; }
+      margin: 0 0 0 21%; }
       main .detallePvc .strip-Pvc .strip-content-Pvc h2 {
         font-family: 'Poppins';
         font-size: 1.8rem;
         font-weight: 700;
         color: #383f47;
         display: flex;
-        margin: 55% 0 0 -27%;
+        margin: 50% 0 0 -27%;
         text-align: center; }
         @media only screen and (max-width: 768px) {
           main .detallePvc .strip-Pvc .strip-content-Pvc h2 {
@@ -5687,15 +5686,14 @@ main .disposicion .btn-redirect:hover {
       color: #333;
       display: flex;
       flex-direction: column;
-      max-width: 1000px;
-      margin: 0 0 0 8%; }
+      margin: 0 0 0 21%; }
       .main-pvc .detallePvc .strip-Pvc .strip-content-Pvc h2 {
         font-family: 'Poppins';
         font-size: 1.8rem;
         font-weight: 700;
         color: #383f47;
         display: flex;
-        margin: 55% 0 0 -27%;
+        margin: 50% 0 0 -27%;
         text-align: center; }
         @media only screen and (max-width: 768px) {
           .main-pvc .detallePvc .strip-Pvc .strip-content-Pvc h2 {
