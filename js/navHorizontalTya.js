@@ -272,3 +272,57 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+
+//NAV DE ESPUMA ALUMINIZADA
+document.addEventListener('DOMContentLoaded', function () {
+    const navLinksChapaPolicarbonato = document.querySelectorAll('.nav__linkEspumas');
+    const cardsChapaPolicarbonato = document.querySelectorAll('.cardEspumas');
+
+    // Mostrar la tarjeta correspondiente al primer enlace al cargar la página
+    showCardChapaPolicarbonato('Espumas-card-1');
+    activateLinkChapaPolicarbonato(0); // Activar el primer enlace al cargar la página
+
+    navLinksChapaPolicarbonato.forEach((link, index) => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetCardId = this.getAttribute('data-target');
+            showCardChapaPolicarbonato(targetCardId);
+            activateLinkChapaPolicarbonato(index);
+        });
+        link.addEventListener('mouseover', function () {
+            this.style.color = '#d30809'; // Cambiar color al pasar el mouse
+            // this.style.textDecoration = 'underline'; // Subrayar al pasar el mouse
+        });
+        link.addEventListener('mouseout', function () {
+            if (!this.classList.contains('active-cardEspumas')) {
+                this.style.color = ''; // Restaurar color al salir del hover
+                this.style.textDecoration = ''; // Eliminar subrayado al salir del hover
+            }
+        });
+    });
+
+    function showCardChapaPolicarbonato(cardId) {
+        cardsChapaPolicarbonato.forEach(card => {
+            card.style.display = 'none'; // Ocultar todas las tarjetas
+            card.classList.remove('active-cardEspumas');
+        });
+    
+        const targetCard = document.getElementById(cardId);
+        if (targetCard) {
+            targetCard.style.display = 'block'; // Mostrar la tarjeta seleccionada
+            targetCard.classList.add('active-cardEspumas');
+        }
+    }
+    
+
+    function activateLinkChapaPolicarbonato(index) {
+        navLinksChapaPolicarbonato.forEach(link => {
+            link.classList.remove('active-cardPolicarbonato');
+            link.style.color = ''; // Restaurar el color del texto
+            link.style.textDecoration = ''; // Restaurar el subrayado
+        });
+        navLinksChapaPolicarbonato[index].classList.add('active-cardPolicarbonato');
+        navLinksChapaPolicarbonato[index].style.color = '#d30809'; // Establecer el color activo
+    }
+});
+

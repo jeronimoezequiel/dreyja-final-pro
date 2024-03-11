@@ -45,7 +45,7 @@
             }
         }
 
-        .itemBtn {
+        .itemBtn, .itemBtnEspuma {
             background-color: map-get($color--azul, dreyja);
             width: 220px;
             height: 44px;
@@ -65,7 +65,7 @@
                 margin-left: -3.4%;
             }
 
-                .contentBtn {
+                .contentBtn, .contentBtnEspuma {
                     position: relative;
                     top: 27%;
                     width: 300px;
@@ -88,7 +88,7 @@
                 }
         }
 
-        .itemBtn:hover {
+        .itemBtn:hover, .itemBtnEspuma:hover {
             background-color: map-get($color--bordo, dreyja );
         }
 
@@ -448,7 +448,7 @@
         }
     }
 
-    .navChapaPolicarbonato {
+    .navChapaPolicarbonato, .navEspumas {
         font-family: $typo-apple-actually;
         height: 90px;
         position: relative;
@@ -457,7 +457,7 @@
         z-index: 555;
         color: #fff;
 
-        .menuChapaPolicarbonato {
+        .menuChapaPolicarbonato, .menuEspumas {
             position: relative;
             margin: 70px 0 0 58%;
             max-width: 450px;
@@ -472,7 +472,7 @@
                 font-size: .9rem;
                 font-weight: bold;
 
-                .nav__itemTChapaPolicarbonato {
+                .nav__itemTChapaPolicarbonato, .nav__itemEspumas {
                     margin-top: .5%;
                     color: #ffffff;
 
@@ -480,7 +480,7 @@
                         margin: 39% 0 0 -32%;
                     }
 
-                    .nav__linkChapaPolicarbonato {
+                    .nav__linkChapaPolicarbonato, .nav__linkEspumas {
                         color: map-get($color--azul, dreyja);
                         cursor: pointer;
                         list-style: none;
@@ -502,7 +502,7 @@
                             transition: width 0.3s ease;
                         }
 
-                        &.active-cardPolicarbonato {
+                        &.active-cardEspumas {
                             color: #d30809; // Color para la pestaña activa
                             font-weight: bold;
 
@@ -521,7 +521,7 @@
         }
     }
 
-    .containerChapaPolicarbonato {
+    .containerChapaPolicarbonato, .containerEspuma {
         display: flex;
         justify-content: center;
         height: 100vh;
@@ -529,6 +529,10 @@
         margin: -10.5% 0 0 20.5%;
         z-index: 333;
         position: relative;
+
+        @include acer-escritorio {
+            
+        }
 
         .techo-background-left-column {
             background: map-get($color--azul, dreyja);
@@ -542,7 +546,7 @@
             background:  #ffffff;
         }
 
-        .cardChapaPolicarbonato {
+        .cardChapaPolicarbonato, .cardEspumas {
             background-color: #fff;
             border-radius: 1rem;
             box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
@@ -574,7 +578,7 @@
                 text-transform: uppercase;
             }
 
-            .ChapaPolicarbonato-left-column {
+            .ChapaPolicarbonato-left-column, .espumas-left-column {
                 color: #fff;
                 padding: 2rem;
                 height: 23rem;
@@ -599,7 +603,7 @@
                 }
             }
 
-            .ChapaPolicarbonato-right-column {
+            .ChapaPolicarbonato-right-column, .espumas-right-column {
                 padding: 2rem;
                 display: flex;
                 flex-direction: column;
@@ -627,7 +631,11 @@
                 }
             }
 
-            .chapaPolicarbonato-left-column-img {
+            .espumas-right-column {
+                margin-top: -37%;
+            }
+
+            .chapaPolicarbonato-left-column-img, .espumas-left-column-img {
                 width: 350px;
                 max-width: 300px;  /*Establecer el ancho máximo de la imagen*/
                 margin-left: auto;  /*Alinear a la derecha*/
@@ -635,11 +643,11 @@
                 margin: -35% 0 0 68%;
         
                 .owl-carousel {
-                    .chapaPolicarbonato-item {
+                    .chapaPolicarbonato-item, .espuma-item {
+
                         img {
                             width: 100%;  /*La imagen ocupa el 100% del contenedor*/
                             height: auto;  /*Altura automática para mantener la proporción*/
-                            margin: 0;  /*Eliminar el margen*/
                         }
                     }
                 }

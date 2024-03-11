@@ -552,6 +552,10 @@
         background-image: url("https://www.cadena3.com/admin/playerswf/fotos/ARCHI_871695.jpg");
         background-repeat: no-repeat;
         background-size: cover;
+
+        @include acer-escritorio {
+            margin-top: 10%;
+        }
     
         &::before {
             content: "";
@@ -629,7 +633,7 @@
 
     .ais-container {
         position: absolute;
-        top: 668.5%;
+        top: 812.5%;
         left: 65%;
         transform: translate(-50%, 50%);
         width: 920px;
@@ -639,8 +643,12 @@
         border-radius: 20px;
 
         @include monitor-27 {
-            margin-top: -37%;
+            margin-top: -127%;
         }
+
+        // @include acer-escritorio {
+        //     margin-top: -120%;
+        // }
 
         .ais-slide {
 
