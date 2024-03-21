@@ -344,7 +344,7 @@ main {
 
             @include samsung-L {
                 height: 30vh;
-                margin: 0% 0 37% 0;
+                margin: 10% 0 37% 0;
             }
 
             @include monitor-27 {
@@ -494,15 +494,15 @@ main {
         min-height: 800px;
         margin-top: -130px;
 
+        @include samsung-L {
+            background-color: #FFF;
+            height: 109vh;
+            margin: -50% 0 95% 0;
+        }
+
         @include monitor-27 {
             margin-top: -190px;
         }
-
-        // @include tablet{
-        //     margin-top: -175px;
-        //     background: #fff;
-        // }
-
 
         .home-container{
             position: relative;
@@ -513,14 +513,10 @@ main {
             margin-top: -340px;
             background: #f1f1f1;
 
-            // @include tablet {
-            //     margin-top: -110%;
-            //     border-radius: 0px;
-            //     background: #ffffff;
-            // }
-
             @include samsung-L {
                 margin: -86% 0 84% 0;
+                display: flex;
+                background-color: transparent;
             }
 
             h2{
@@ -564,20 +560,15 @@ main {
                     color: map-get($color--azul, dreyja);
                 }
 
-                // @include tablet {
-                //     font-size: 1.6rem;
-                //     margin-left: 28%;
-                //     margin-top: -7px
-                // }
-
                 @include samsung-L {
                     background-color: map-get($color--bordo, dreyja );
-                    padding: 3px;
-                    margin: -3% 0 10% 0%;
-                    width: 363px;
-                    border-top-right-radius: 10px;
-                    border-bottom-right-radius: 9px;
+                    padding: 12px;
+                    width: 270px;
+                    border-radius: 10px;
                     color: #fff;
+                    margin: 2% 15%;
+                    font-size: 1.9rem;
+                    justify-content: center;
                 }
             }
             .info-links{
@@ -587,38 +578,20 @@ main {
                 gap: 35px;
                 padding: 5px;
 
+                @include samsung-L {
+                    display: none;
+                }
+
                 @include monitor-27 {
                     display: none;
                 }
-                
-                // @include tablet {
-                //     margin-left: 15%;
-                //     margin-top: 10px;
-                //     margin-bottom: -7%;
-                //     display: flex;
-                //     flex-direction: row;
-                // }
 
-                @include samsung-L {
-                    margin-bottom: -1%;
-                    margin-top: 5%;
-                }
                     a{
                         font-family: $typo-apple;
                         font-size: 20px;
-
-                        // @include tablet {
-                        //     font-size: 18px;
-                        //     display: flex;
-                        //     margin: 8px;
-                        // }
                     }
                     i {
                         font-size: 16px;
-                        // @include tablet {
-                        //     font-size: 13px;
-                        //     margin-top: 7px;
-                        // }
                     }
                 }
 
@@ -641,18 +614,12 @@ main {
                     height: 280px;
                     margin: 35px 0;
                 }
-
-                // @include tablet {
-                //     max-width: 300px;
-                //     flex-direction: column;
-                //     height: auto;
-                //     margin-left: 12%;
-                //     background: #fff;
-                // }
-
+                
                 @include samsung-L {
-                    background-color: green;
-                    display: contents;
+                    display: block;
+                    width: 100%;
+                    margin: 26% 0 -75px 0;
+                    box-shadow: none;
                 }
 
                 .home-imgBx{
@@ -668,11 +635,6 @@ main {
                     align-items: center;
                     overflow: hidden;
                     transition: 0.5s ease-in-out;
-
-                    // @include tablet {
-                    //     position: relative;
-                    //     transition: 0.5s ease-in-out;
-                    // }
                     
                     .home-icon{
                         color: #fff;
@@ -688,19 +650,25 @@ main {
                     justify-content: center;
                     align-items: center;
                     
-                    // @include tablet {
-                    //     position: relative;
-                    //     width: 100%;
-                    //     }
-                    
                     @include samsung-L {
                         text-align: center;
-                    }
+                        }
                     }
                     h3 {
                         margin-bottom: 5px;
                         font-size: 24px;
+
+                        @include samsung-L {
+                            font-size: 1.7rem;
+                        }
                     }
+
+                    p {
+                        @include samsung-L {
+                            font-size: 1.2rem;
+                        }
+                    }
+
                     a {
                         display: inline-block;
                         margin-top: 10px;
@@ -718,6 +686,12 @@ main {
                 top: calc(50% -75px);
                 transition: 0.5s ease-in-out;
                 background: map-get($color--bordo, dreyja );
+
+                @include samsung-L {
+                    left: -25px;
+                    width: 120px;
+                    height: 120px;
+                }
                 img{
                     max-width: 100px;
                     transition: 0.5s ease-in-out;
@@ -735,6 +709,7 @@ main {
                 //     max-width: 100px;
                 //     }
                 }
+
             .home-card .home-imgBx:before {
                 content: attr(data-text);
                 position: absolute;
@@ -746,9 +721,9 @@ main {
                 color: rgba(255, 255, 255, 0.233);
                 font-weight: 700;
 
-                // @include tablet {
-                //     font-size: 4.5em;
-                // }
+                @include samsung-L {
+                    font-size: 5rem;
+                }
             }
             .home-card:hover .home-imgBx img {
                 max-width: 75px;
@@ -828,17 +803,10 @@ main {
                 background-color: #fff;
             }
         }
-        
-        // @include tablet{
-        //     width: 100%;
-        //     height: 1450px;
-        //     font-size: 1.5rem;
-        //     padding: 10px;
-        //     background: map-get($color--azul, dreyja );
-        // }
 
         @include samsung-L {
-            height: 145vh;
+            height: 142vh;
+            background-color: #fff;
         }
 
             .subtitle-center{
@@ -873,6 +841,17 @@ main {
                     }
                 }
 
+                @include samsung-L {
+                    background-color: #d30809;
+                    padding: 12px;
+                    width: 339px;
+                    border-radius: 10px;
+                    color: #fff;
+                    margin: 12% 6%;
+                    font-size: 1.5rem;
+                    justify-content: center;
+                }
+
                 @include monitor-27 {
                     font-size: 44px;
                     font-family: $typo-poppins;
@@ -889,14 +868,7 @@ main {
                 //     color: #ffffff;
                 // }
 
-                @include samsung-L {
-                    background-color: map-get($color--bordo, dreyja);
-                    margin-left: -4%;
-                    max-width: 380px;
-                    border-top-right-radius: 10px;
-                    border-bottom-right-radius: 10px;
-                    padding: 10px;
-                }
+                
             }
             .info-links{
                 display: flex;
@@ -904,18 +876,14 @@ main {
                 margin-left: 36%;
                 gap: 35px;
                 padding: 5px;
+
+                @include samsung-L {
+                    display: none;
+                }
                 
                 @include monitor-27 {
                     display: none;
                 }
-                // @include tablet {
-                //     display: flex;
-                //     position: relative;
-                //     font-size: 13px;
-                //     align-items: center;
-                //     margin-left: 8%;
-                //     gap: 21px;
-                // }
     
                 a{
                     font-family: $typo-apple;
@@ -992,22 +960,25 @@ main {
                     padding: 80px 20px;
                     transition: all ease-in-out 0.3s;
 
-                    @include monitor-27 {
-                        background-color: #dadada2b;
+                    @include samsung-L {
+                        width: 367px;
+                        height: 193px;
+                        background: #f0f0f0;
+                        margin-left: 21px;
+                        margin-bottom: -13px;
                     }
 
                     @include portatil {
                         margin-right: -63px;
                     }
-
-                    // @include tablet {
-                    //     padding: 20px 22px;
-                    // }
-
-                    @include samsung-L {
-                        width: 371px;
-                        height: 195px
+                    
+                    @include monitor-27 {
+                        background-color: #dadada2b;
                     }
+
+
+
+                    
                     h4 {
                         @include portatil {
                             margin: 0 0 0 10%;
@@ -1033,7 +1004,9 @@ main {
                         transform-style: preserve-3d;
 
                         @include samsung-L{
-                            margin: 60px 0 0 0;
+                            margin: -20px 0 0 0;
+                            width: 50px;
+                            height: 50px
                         }
                         .icon::before {
                             position: absolute;
@@ -1058,8 +1031,7 @@ main {
                         font-size: 24px;
 
                         @include samsung-L {
-                            background-color: map-get($color--azul, dreyja);
-                            margin: -34% 0 0 0;
+                            margin: -32% 0 0 58px;
                             border-top-right-radius: 10px;
                             border-bottom-right-radius: 10px;
                             border-top-left-radius: 10px;

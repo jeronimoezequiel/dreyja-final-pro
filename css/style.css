@@ -452,6 +452,10 @@ header .btn-wsp {
   font-size: 30px;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
   z-index: 222; }
+  @media only screen and (max-width: 384px) {
+    header .btn-wsp {
+      position: fixed;
+      z-index: 777; } }
   header .btn-wsp .btn-wsp:hover {
     text-decoration: none;
     color: #0df053;
@@ -681,7 +685,7 @@ main .home_1 {
   @media only screen and (max-width: 384px) {
     main .home_1 {
       height: 30vh;
-      margin: 0% 0 37% 0; } }
+      margin: 10% 0 37% 0; } }
   @media only screen and (min-width: 1600px) and (max-width: 1920px) {
     main .home_1 {
       margin: 12% 0 10% 0;
@@ -771,6 +775,11 @@ main #cards {
   background: #f1f1f1;
   min-height: 800px;
   margin-top: -130px; }
+  @media only screen and (max-width: 384px) {
+    main #cards {
+      background-color: #FFF;
+      height: 109vh;
+      margin: -50% 0 95% 0; } }
   @media only screen and (min-width: 1600px) and (max-width: 1920px) {
     main #cards {
       margin-top: -190px; } }
@@ -784,7 +793,9 @@ main #cards {
     background: #f1f1f1; }
     @media only screen and (max-width: 384px) {
       main #cards .home-container {
-        margin: -86% 0 84% 0; } }
+        margin: -86% 0 84% 0;
+        display: flex;
+        background-color: transparent; } }
     main #cards .home-container h2 {
       display: flex;
       position: absolute;
@@ -823,25 +834,25 @@ main #cards {
       @media only screen and (max-width: 384px) {
         main #cards .home-container h2 {
           background-color: #d30809;
-          padding: 3px;
-          margin: -3% 0 10% 0%;
-          width: 363px;
-          border-top-right-radius: 10px;
-          border-bottom-right-radius: 9px;
-          color: #fff; } }
+          padding: 12px;
+          width: 270px;
+          border-radius: 10px;
+          color: #fff;
+          margin: 2% 15%;
+          font-size: 1.9rem;
+          justify-content: center; } }
     main #cards .home-container .info-links {
       display: flex;
       margin-top: -1%;
       margin-left: 35.5%;
       gap: 35px;
       padding: 5px; }
+      @media only screen and (max-width: 384px) {
+        main #cards .home-container .info-links {
+          display: none; } }
       @media only screen and (min-width: 1600px) and (max-width: 1920px) {
         main #cards .home-container .info-links {
           display: none; } }
-      @media only screen and (max-width: 384px) {
-        main #cards .home-container .info-links {
-          margin-bottom: -1%;
-          margin-top: 5%; } }
       main #cards .home-container .info-links a {
         font-family: "Source Sans 3", sans-serif;
         font-size: 20px; }
@@ -866,8 +877,10 @@ main #cards {
           margin: 35px 0; } }
       @media only screen and (max-width: 384px) {
         main #cards .home-container .home-card {
-          background-color: green;
-          display: contents; } }
+          display: block;
+          width: 100%;
+          margin: 26% 0 -75px 0;
+          box-shadow: none; } }
       main #cards .home-container .home-card .home-imgBx {
         position: absolute;
         top: 0;
@@ -898,6 +911,12 @@ main #cards {
       main #cards .home-container .home-card h3 {
         margin-bottom: 5px;
         font-size: 24px; }
+        @media only screen and (max-width: 384px) {
+          main #cards .home-container .home-card h3 {
+            font-size: 1.7rem; } }
+      @media only screen and (max-width: 384px) {
+        main #cards .home-container .home-card p {
+          font-size: 1.2rem; } }
       main #cards .home-container .home-card a {
         display: inline-block;
         margin-top: 10px;
@@ -912,6 +931,11 @@ main #cards {
     top: calc(50% -75px);
     transition: 0.5s ease-in-out;
     background: #d30809; }
+    @media only screen and (max-width: 384px) {
+      main #cards .home-card:hover .home-imgBx {
+        left: -25px;
+        width: 120px;
+        height: 120px; } }
     main #cards .home-card:hover .home-imgBx img {
       max-width: 100px;
       transition: 0.5s ease-in-out; }
@@ -925,6 +949,9 @@ main #cards {
     font-size: 6em;
     color: rgba(255, 255, 255, 0.233);
     font-weight: 700; }
+    @media only screen and (max-width: 384px) {
+      main #cards .home-card .home-imgBx:before {
+        font-size: 5rem; } }
   main #cards .home-card:hover .home-imgBx img {
     max-width: 75px; }
 
@@ -982,7 +1009,8 @@ main .section-5 {
         background-color: #fff; } }
   @media only screen and (max-width: 384px) {
     main .section-5 {
-      height: 145vh; } }
+      height: 142vh;
+      background-color: #fff; } }
   main .section-5 .subtitle-center {
     display: flex;
     align-items: center;
@@ -1010,6 +1038,16 @@ main .section-5 {
     -webkit-filter: blur(0px);
     filter: blur(0px);
     opacity: 1; } }
+    @media only screen and (max-width: 384px) {
+      main .section-5 .subtitle-center {
+        background-color: #d30809;
+        padding: 12px;
+        width: 339px;
+        border-radius: 10px;
+        color: #fff;
+        margin: 12% 6%;
+        font-size: 1.5rem;
+        justify-content: center; } }
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
       main .section-5 .subtitle-center {
         font-size: 44px;
@@ -1018,20 +1056,15 @@ main .section-5 {
     @media only screen and (max-width: 1024px) {
       main .section-5 .subtitle-center {
         margin: 10px 0 0px 35px; } }
-    @media only screen and (max-width: 384px) {
-      main .section-5 .subtitle-center {
-        background-color: #d30809;
-        margin-left: -4%;
-        max-width: 380px;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-        padding: 10px; } }
   main .section-5 .info-links {
     display: flex;
     margin-top: -1%;
     margin-left: 36%;
     gap: 35px;
     padding: 5px; }
+    @media only screen and (max-width: 384px) {
+      main .section-5 .info-links {
+        display: none; } }
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
       main .section-5 .info-links {
         display: none; } }
@@ -1076,16 +1109,19 @@ main .section-5 {
     background: #fff;
     padding: 80px 20px;
     transition: all ease-in-out 0.3s; }
-    @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+    @media only screen and (max-width: 384px) {
       main .section-5 .services .icon-box {
-        background-color: #dadada2b; } }
+        width: 367px;
+        height: 193px;
+        background: #f0f0f0;
+        margin-left: 21px;
+        margin-bottom: -13px; } }
     @media only screen and (max-width: 1024px) {
       main .section-5 .services .icon-box {
         margin-right: -63px; } }
-    @media only screen and (max-width: 384px) {
+    @media only screen and (min-width: 1600px) and (max-width: 1920px) {
       main .section-5 .services .icon-box {
-        width: 371px;
-        height: 195px; } }
+        background-color: #dadada2b; } }
     @media only screen and (max-width: 1024px) {
       main .section-5 .services .icon-box h4 {
         margin: 0 0 0 10%; } }
@@ -1107,7 +1143,9 @@ main .section-5 {
       transform-style: preserve-3d; }
       @media only screen and (max-width: 384px) {
         main .section-5 .services .icon-box .icon {
-          margin: 60px 0 0 0; } }
+          margin: -20px 0 0 0;
+          width: 50px;
+          height: 50px; } }
       main .section-5 .services .icon-box .icon .icon::before {
         position: absolute;
         content: '';
@@ -1128,8 +1166,7 @@ main .section-5 {
       font-size: 24px; }
       @media only screen and (max-width: 384px) {
         main .section-5 .services .icon-box h4 {
-          background-color: #273238;
-          margin: -34% 0 0 0;
+          margin: -32% 0 0 58px;
           border-top-right-radius: 10px;
           border-bottom-right-radius: 10px;
           border-top-left-radius: 10px;
