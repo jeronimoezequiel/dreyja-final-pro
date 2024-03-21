@@ -474,13 +474,6 @@ header .btn-wsp {
 main #home {
   height: 750px;
   position: relative; }
-  @media only screen and (max-width: 384px) {
-    main #home {
-      max-height: 330px; } }
-  @media only screen and (max-width: 384px) {
-    main #home {
-      background-color: yellow;
-      height: 445px; } }
   main #home .container {
     position: relative;
     height: 560px;
@@ -495,9 +488,6 @@ main #home {
     @media only screen and (max-width: 1024px) {
       main #home .container {
         margin: -22px 0 0 0; } }
-    @media only screen and (max-width: 768px) {
-      main #home .container {
-        margin: -46% 0 0 0; } }
     @media only screen and (max-width: 384px) {
       main #home .container {
         background-color: green;
@@ -514,16 +504,12 @@ main #home {
       overflow: hidden; }
       @media only screen and (max-width: 384px) {
         main #home .container .home-slider {
-          max-height: 656px;
-          background-color: red; } }
+          height: 100vh;
+          background-color: #1977cc; } }
       @media only screen and (min-width: 1600px) and (max-width: 1920px) {
         main #home .container .home-slider {
           display: flex;
           height: 760px; } }
-      @media only screen and (max-width: 768px) {
-        main #home .container .home-slider {
-          display: flex;
-          height: 800px; } }
       main #home .container .home-slider .home-list {
         position: absolute;
         width: max-content;
@@ -535,9 +521,6 @@ main #home {
         @media only screen and (min-width: 1600px) and (max-width: 1920px) {
           main #home .container .home-slider .home-list {
             display: none; } }
-        @media only screen and (max-width: 768px) {
-          main #home .container .home-slider .home-list {
-            display: flex; } }
         @media only screen and (max-width: 384px) {
           main #home .container .home-slider .home-list {
             display: none; } }
@@ -551,10 +534,6 @@ main #home {
           object-fit: cover;
           z-index: 990;
           filter: brightness(0.7); }
-          @media only screen and (max-width: 768px) {
-            main #home .container .home-slider .home-list .home-item img {
-              display: flex;
-              margin: 29% 0 0 0; } }
           @media only screen and (max-width: 384px) {
             main #home .container .home-slider .home-list .home-item img {
               max-height: 20vw; } }
@@ -568,31 +547,17 @@ main #home {
           background: linear-gradient(to top, rgba(39, 50, 56, 0.08), rgba(39, 50, 56, 0));
           z-index: 10;
           pointer-events: none; }
-      @media only screen and (max-width: 384px) {
-        main #home .container .home-slider .homeBackgroundMonitor {
-          display: flex;
-          max-height: 556px; } }
       main #home .container .home-slider .homeBackgroundMonitor .homeItemMonitor {
         width: 1920px;
         height: 760px; }
-        @media only screen and (max-width: 384px) {
-          main #home .container .home-slider .homeBackgroundMonitor .homeItemMonitor {
-            background: transparent;
-            height: 556px; } }
         main #home .container .home-slider .homeBackgroundMonitor .homeItemMonitor img {
           display: flex;
           width: 1600px;
           height: 826px; }
           @media only screen and (max-width: 384px) {
             main #home .container .home-slider .homeBackgroundMonitor .homeItemMonitor img {
-              margin: 8% 0 0 0%;
-              width: 900px;
-              height: 600px; } }
-          @media only screen and (max-width: 384px) {
-            main #home .container .home-slider .homeBackgroundMonitor .homeItemMonitor img {
-              width: 700px;
-              height: 556px;
-              margin-left: 15px; } }
+              width: 1000px;
+              height: 100vh; } }
       main #home .container .home-slider .home-buttons {
         position: absolute;
         top: 46.5%;
@@ -779,18 +744,6 @@ main .home_1 {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       margin-left: 40px; }
-      @media only screen and (max-width: 768px) {
-        main .home_1 .home_txt-fx .columns .futuro {
-          font-family: "Poppins", sans-serif;
-          font-weight: 600;
-          margin-left: -74%;
-          font-size: 35px;
-          margin-top: -150px;
-          background: #7ca0b4;
-          background: linear-gradient(90deg, #718b99 40%, #d30809 60%);
-          text-transform: uppercase;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent; } }
       @media only screen and (max-width: 384px) {
         main .home_1 .home_txt-fx .columns .futuro {
           max-width: 80%; } }
@@ -806,11 +759,6 @@ main .home_1 {
     main .home_1 .home_txt-fx .columns h3 {
       font-family: "Poppins", sans-serif;
       font-weight: 500; }
-      @media only screen and (max-width: 768px) {
-        main .home_1 .home_txt-fx .columns h3 {
-          margin-left: -76%;
-          font-size: 1.1rem;
-          margin-top: -1%; } }
     main .home_1 .home_txt-fx .columns p {
       font-family: "Poppins", sans-serif; }
       @media only screen and (min-width: 1600px) and (max-width: 1920px) {
@@ -840,10 +788,6 @@ main #cards {
   @media only screen and (min-width: 1600px) and (max-width: 1920px) {
     main #cards {
       margin-top: -190px; } }
-  @media only screen and (max-width: 768px) {
-    main #cards {
-      margin-top: -175px;
-      background: #fff; } }
   @media only screen and (max-width: 384px) {
     main #cards {
       margin: 49% 0 0 0; } }
@@ -855,11 +799,6 @@ main #cards {
     flex-wrap: wrap;
     margin-top: -340px;
     background: #f1f1f1; }
-    @media only screen and (max-width: 768px) {
-      main #cards .home-container {
-        margin-top: -110%;
-        border-radius: 0px;
-        background: #ffffff; } }
     @media only screen and (max-width: 384px) {
       main #cards .home-container {
         margin: -86% 0 84% 0; } }
@@ -898,11 +837,6 @@ main #cards {
           margin: -6% 0 0 31%;
           font-family: "Poppins", sans-serif;
           color: #273238; } }
-      @media only screen and (max-width: 768px) {
-        main #cards .home-container h2 {
-          font-size: 1.6rem;
-          margin-left: 28%;
-          margin-top: -7px; } }
       @media only screen and (max-width: 384px) {
         main #cards .home-container h2 {
           background-color: #d30809;
@@ -921,13 +855,6 @@ main #cards {
       @media only screen and (min-width: 1600px) and (max-width: 1920px) {
         main #cards .home-container .info-links {
           display: none; } }
-      @media only screen and (max-width: 768px) {
-        main #cards .home-container .info-links {
-          margin-left: 15%;
-          margin-top: 10px;
-          margin-bottom: -7%;
-          display: flex;
-          flex-direction: row; } }
       @media only screen and (max-width: 384px) {
         main #cards .home-container .info-links {
           margin-bottom: -1%;
@@ -935,17 +862,8 @@ main #cards {
       main #cards .home-container .info-links a {
         font-family: "Source Sans 3", sans-serif;
         font-size: 20px; }
-        @media only screen and (max-width: 768px) {
-          main #cards .home-container .info-links a {
-            font-size: 18px;
-            display: flex;
-            margin: 8px; } }
       main #cards .home-container .info-links i {
         font-size: 16px; }
-        @media only screen and (max-width: 768px) {
-          main #cards .home-container .info-links i {
-            font-size: 13px;
-            margin-top: 7px; } }
     main #cards .home-container .home-card {
       position: relative;
       height: 250px;
@@ -963,13 +881,6 @@ main #cards {
           width: 49%;
           height: 280px;
           margin: 35px 0; } }
-      @media only screen and (max-width: 768px) {
-        main #cards .home-container .home-card {
-          max-width: 300px;
-          flex-direction: column;
-          height: auto;
-          margin-left: 12%;
-          background: #fff; } }
       @media only screen and (max-width: 384px) {
         main #cards .home-container .home-card {
           background-color: green;
@@ -987,10 +898,6 @@ main #cards {
         align-items: center;
         overflow: hidden;
         transition: 0.5s ease-in-out; }
-        @media only screen and (max-width: 768px) {
-          main #cards .home-container .home-card .home-imgBx {
-            position: relative;
-            transition: 0.5s ease-in-out; } }
         main #cards .home-container .home-card .home-imgBx .home-icon {
           color: #fff; }
       main #cards .home-container .home-card .home-content {
@@ -1002,10 +909,6 @@ main #cards {
         display: flex;
         justify-content: center;
         align-items: center; }
-        @media only screen and (max-width: 768px) {
-          main #cards .home-container .home-card .home-content {
-            position: relative;
-            width: 100%; } }
         @media only screen and (max-width: 384px) {
           main #cards .home-container .home-card .home-content {
             text-align: center; } }
@@ -1029,14 +932,6 @@ main #cards {
     main #cards .home-card:hover .home-imgBx img {
       max-width: 100px;
       transition: 0.5s ease-in-out; }
-  @media only screen and (max-width: 768px) {
-    main #cards .home-imgBx, main #cards .home-card:hover .home-imgBx {
-      width: 100%;
-      height: 200px;
-      left: 0; } }
-  @media only screen and (max-width: 768px) {
-    main #cards .home-imgBx img, main #cards .home-card:hover .home-imgBx img {
-      max-width: 100px; } }
   main #cards .home-card .home-imgBx:before {
     content: attr(data-text);
     position: absolute;
@@ -1047,9 +942,6 @@ main #cards {
     font-size: 6em;
     color: rgba(255, 255, 255, 0.233);
     font-weight: 700; }
-    @media only screen and (max-width: 768px) {
-      main #cards .home-card .home-imgBx:before {
-        font-size: 4.5em; } }
   main #cards .home-card:hover .home-imgBx img {
     max-width: 75px; }
 
@@ -1060,11 +952,6 @@ main .slider {
   margin: auto;
   overflow: hidden;
   background: #fff; }
-  @media only screen and (max-width: 768px) {
-    main .slider {
-      margin-top: 235px;
-      background: #fff;
-      border: none; } }
   @media only screen and (max-width: 384px) {
     main .slider {
       margin-top: 70%; } }
@@ -1110,13 +997,6 @@ main .section-5 {
       main .section-5:after {
         top: 178%;
         background-color: #fff; } }
-  @media only screen and (max-width: 768px) {
-    main .section-5 {
-      width: 100%;
-      height: 1450px;
-      font-size: 1.5rem;
-      padding: 10px;
-      background: #273238; } }
   @media only screen and (max-width: 384px) {
     main .section-5 {
       height: 145vh; } }
@@ -1155,11 +1035,6 @@ main .section-5 {
     @media only screen and (max-width: 1024px) {
       main .section-5 .subtitle-center {
         margin: 10px 0 0px 35px; } }
-    @media only screen and (max-width: 768px) {
-      main .section-5 .subtitle-center {
-        padding-left: 0%;
-        font-size: 25px;
-        color: #ffffff; } }
     @media only screen and (max-width: 384px) {
       main .section-5 .subtitle-center {
         background-color: #d30809;
@@ -1177,29 +1052,14 @@ main .section-5 {
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
       main .section-5 .info-links {
         display: none; } }
-    @media only screen and (max-width: 768px) {
-      main .section-5 .info-links {
-        display: flex;
-        position: relative;
-        font-size: 13px;
-        align-items: center;
-        margin-left: 8%;
-        gap: 21px; } }
     main .section-5 .info-links a {
       font-family: "Source Sans 3", sans-serif;
       font-size: 20px; }
-      @media only screen and (max-width: 768px) {
-        main .section-5 .info-links a {
-          font-size: 17px; } }
     main .section-5 .info-links i {
       font-size: 16px; }
   @media only screen and (min-width: 1600px) and (max-width: 1920px) {
     main .section-5 .services {
       margin: 2% 0 0 0; } }
-  @media only screen and (max-width: 768px) {
-    main .section-5 .services {
-      width: 94%;
-      margin-bottom: 70%; } }
   @media only screen and (max-width: 384px) {
     main .section-5 .services .container {
       height: 100px; } }
@@ -1211,9 +1071,6 @@ main .section-5 {
     justify-content: center;
     text-align: center;
     font-family: "Poppins", sans-serif; }
-    @media only screen and (max-width: 768px) {
-      main .section-5 .services .container .section-title {
-        display: none; } }
     main .section-5 .services .container .section-title p {
       display: none; }
   main .section-5 .services .container .row {
@@ -1242,9 +1099,6 @@ main .section-5 {
     @media only screen and (max-width: 1024px) {
       main .section-5 .services .icon-box {
         margin-right: -63px; } }
-    @media only screen and (max-width: 768px) {
-      main .section-5 .services .icon-box {
-        padding: 20px 22px; } }
     @media only screen and (max-width: 384px) {
       main .section-5 .services .icon-box {
         width: 371px;
@@ -1300,9 +1154,6 @@ main .section-5 {
           padding: 6px; } }
       main .section-5 .services .icon-box h4 a {
         color: #273238; }
-        @media only screen and (max-width: 768px) {
-          main .section-5 .services .icon-box h4 a {
-            color: #ffffff; } }
     main .section-5 .services .icon-box p {
       line-height: 24px;
       font-size: 14px;
@@ -1311,9 +1162,6 @@ main .section-5 {
         main .section-5 .services .icon-box p {
           color: #273238;
           font-size: 18px; } }
-      @media only screen and (max-width: 768px) {
-        main .section-5 .services .icon-box p {
-          color: #afafaf; } }
       @media only screen and (max-width: 384px) {
         main .section-5 .services .icon-box p {
           margin-top: 8px;
@@ -1339,10 +1187,6 @@ main .section-5 {
     background-color: #fff;
     margin: -1% 0 -1% 0; } }
 
-@media only screen and (max-width: 768px) {
-  main .grid {
-    height: 1826px; } }
-
 @media only screen and (max-width: 384px) {
   main .grid {
     height: 249vh; } }
@@ -1357,11 +1201,6 @@ main .grid .grid-gallery {
   grid-auto-rows: 250px;
   grid-auto-flow: dense;
   grid-gap: 20px; }
-  @media only screen and (max-width: 768px) {
-    main .grid .grid-gallery {
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      grid-auto-rows: 250px;
-      background: #ffffff; } }
   main .grid .grid-gallery .grid-item {
     position: relative;
     background-color: #efefef;
@@ -1378,16 +1217,6 @@ main .grid .grid-gallery {
   main .grid .grid-gallery .grid-item:nth-child(3n - 2) {
     grid-column: span 2;
     grid-row: span 2; }
-    @media only screen and (max-width: 768px) {
-      main .grid .grid-gallery .grid-item:nth-child(3n - 2) {
-        grid-column: unset;
-        grid-row: unset; } }
-
-@media only screen and (max-width: 768px) {
-  .seccion-b {
-    height: 50vh;
-    margin-top: 10%;
-    background-color: red; } }
 
 .blur {
   filter: blur(5px);
