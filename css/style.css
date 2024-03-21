@@ -123,16 +123,6 @@ header #btn__menu {
       position: absolute; } }
   @media only screen and (max-width: 384px) {
     header #btn__menu {
-      position: fixed;
-      margin-left: 0px;
-      border-radius: 0px;
-      width: 100%;
-      margin-top: 0px;
-      display: flex;
-      justify-content: flex-end;
-      padding: 20px; } }
-  @media only screen and (max-width: 384px) {
-    header #btn__menu {
       background-color: #273238;
       display: flex;
       margin: 3% 0 0 83%;
@@ -504,7 +494,7 @@ main #home {
       overflow: hidden; }
       @media only screen and (max-width: 384px) {
         main #home .container .home-slider {
-          height: 100vh;
+          height: 95vh;
           background-color: #1977cc; } }
       @media only screen and (min-width: 1600px) and (max-width: 1920px) {
         main #home .container .home-slider {
@@ -557,7 +547,7 @@ main #home {
           @media only screen and (max-width: 384px) {
             main #home .container .home-slider .homeBackgroundMonitor .homeItemMonitor img {
               width: 1000px;
-              height: 100vh; } }
+              height: 95vh; } }
       main #home .container .home-slider .home-buttons {
         position: absolute;
         top: 46.5%;
@@ -621,14 +611,12 @@ main #home {
         margin-left: 4%; }
         @media only screen and (max-width: 384px) {
           main #home .container .container-info h1 {
+            display: flex;
             height: 83px;
             padding: 15px;
             width: 94%;
             border-top-right-radius: 20px;
             font-size: 1.8rem; } }
-        @media only screen and (max-width: 384px) {
-          main #home .container .container-info h1 {
-            display: none; } }
         @media only screen and (max-width: 1024px) {
           main #home .container .container-info h1 {
             margin-top: -35%;
@@ -690,14 +678,14 @@ main .home_1 {
   height: 235px;
   margin-top: -12%;
   margin-bottom: 10%; }
+  @media only screen and (max-width: 384px) {
+    main .home_1 {
+      height: 30vh;
+      margin: -25% 0 37% 0; } }
   @media only screen and (min-width: 1600px) and (max-width: 1920px) {
     main .home_1 {
       margin: 12% 0 10% 0;
       height: 275px; } }
-  @media only screen and (max-width: 384px) {
-    main .home_1 {
-      max-width: 119px;
-      margin: 7% 0 0 40%; } }
   main .home_1 .home_txt-fx {
     display: flex;
     flex-direction: column;
@@ -746,11 +734,9 @@ main .home_1 {
       margin-left: 40px; }
       @media only screen and (max-width: 384px) {
         main .home_1 .home_txt-fx .columns .futuro {
-          max-width: 80%; } }
-      @media only screen and (max-width: 384px) {
-        main .home_1 .home_txt-fx .columns .futuro {
-          margin-top: 170%;
-          position: relative; } }
+          background-color: yellow;
+          margin: -39% 0 0 -77%;
+          font-size: 2.1rem; } }
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
       main .home_1 .home_txt-fx .columns {
         margin-top: -3%;
@@ -788,9 +774,6 @@ main #cards {
   @media only screen and (min-width: 1600px) and (max-width: 1920px) {
     main #cards {
       margin-top: -190px; } }
-  @media only screen and (max-width: 384px) {
-    main #cards {
-      margin: 49% 0 0 0; } }
   main #cards .home-container {
     position: relative;
     width: 900px;

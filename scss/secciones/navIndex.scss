@@ -52,17 +52,6 @@ header{
             position: absolute;
         }
 
-        @include mobile_l {
-            position: fixed;
-            margin-left: 0px;
-            border-radius: 0px;
-            width: 100%;
-            margin-top: 0px;
-            display: flex;
-            justify-content: flex-end;
-            padding: 20px;
-        }
-
         @include samsung-L {
             background-color: map-get($color--azul, dreyja);
             display: flex;
