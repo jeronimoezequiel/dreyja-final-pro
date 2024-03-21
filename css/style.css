@@ -81,14 +81,19 @@ header .header-logo {
   position: fixed;
   z-index: 889;
   margin-left: 10px; }
-  @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-    header .header-logo {
-      display: none; } }
   @media only screen and (max-width: 384px) {
     header .header-logo {
       margin: 1% 0 0 5%;
       width: 52px;
       height: 50px; } }
+  @media only screen and (max-width: 390px) and (max-width: 844px) {
+    header .header-logo {
+      margin: 3% 0 0 5%;
+      width: 52px;
+      height: 50px; } }
+  @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+    header .header-logo {
+      display: none; } }
 
 @media only screen and (max-width: 768px) {
   header #bag-shop {
@@ -169,6 +174,9 @@ header nav {
       height: 120vh;
       display: flex;
       transition: all 300ms; } }
+  @media only screen and (max-width: 384px) {
+    header nav {
+      background-color: #000; } }
   header nav .menu {
     position: relative;
     margin: 0 auto;
@@ -185,7 +193,7 @@ header nav {
         margin: -0.25% 0 0 6%; } }
     @media only screen and (max-width: 384px) {
       header nav .menu {
-        background: #d30809; } }
+        background: #000; } }
     header nav .menu ul {
       width: 100%;
       margin: 1.8% 0% 0% 0%;
@@ -217,6 +225,11 @@ header nav {
           margin-top: 34px;
           margin-left: 0px;
           font-size: 1em; } }
+      @media only screen and (max-width: 384px) {
+        header nav .menu ul {
+          height: 78vh;
+          margin: 43px 0 0 -23px;
+          font-size: 1.15rem; } }
       header nav .menu ul .nav__item {
         margin-top: .5%; }
         @media only screen and (max-width: 768px) {
@@ -230,6 +243,10 @@ header nav {
               display: flex;
               margin-left: 10px;
               margin-bottom: 23px; } }
+          @media only screen and (max-width: 384px) {
+            header nav .menu ul .nav__item .logo {
+              width: 160px;
+              height: 49px; } }
         header nav .menu ul .nav__item .isotipo {
           display: none; }
           @media only screen and (max-width: 768px) {
@@ -1178,17 +1195,18 @@ main .section-5 {
       line-height: 24px;
       font-size: 14px;
       margin-bottom: 0; }
-      @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-        main .section-5 .services .icon-box p {
-          color: #273238;
-          font-size: 18px; } }
       @media only screen and (max-width: 384px) {
         main .section-5 .services .icon-box p {
           margin-top: 8px;
           width: 246px;
           max-width: 246px;
           margin-left: 73px;
-          color: #333; } }
+          color: #333;
+          font-size: 1.05rem; } }
+      @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+        main .section-5 .services .icon-box p {
+          color: #273238;
+          font-size: 18px; } }
   main .section-5 .services .icon-box:hover {
     background: #273238;
     border-color: none;
@@ -1202,14 +1220,14 @@ main .section-5 {
   main .section-5 .services .icon-box:hover h4 a, main .section-5 .services .icon-box:hover p {
     color: #fff; }
 
+@media only screen and (max-width: 384px) {
+  main .grid {
+    height: 217vh; } }
+
 @media only screen and (min-width: 1600px) and (max-width: 1920px) {
   main .grid {
     background-color: #fff;
     margin: -1% 0 -1% 0; } }
-
-@media only screen and (max-width: 384px) {
-  main .grid {
-    height: 249vh; } }
 
 main .grid .grid-gallery {
   width: 100%;
@@ -1221,6 +1239,10 @@ main .grid .grid-gallery {
   grid-auto-rows: 250px;
   grid-auto-flow: dense;
   grid-gap: 20px; }
+  @media only screen and (max-width: 384px) {
+    main .grid .grid-gallery {
+      background-color: #273238;
+      margin: -60% 0 0 0; } }
   main .grid .grid-gallery .grid-item {
     position: relative;
     background-color: #efefef;
@@ -1252,34 +1274,11 @@ main .grid .grid-gallery {
   @media only screen and (min-width: 1600px) and (max-width: 1920px) {
     .section-form {
       background: #273238; } }
-  @media only screen and (max-width: 1024px) {
-    .section-form {
-      margin: -100px 0 0 0; } }
-  @media only screen and (max-width: 768px) {
-    .section-form {
-      height: 800px; } }
-  @media only screen and (max-width: 675px) {
-    .section-form {
-      width: 660px;
-      height: 800px;
-      background: #1766a3;
-      background: linear-gradient(to top right, #1867a3, #0c426c); } }
-  @media only screen and (max-width: 430px) {
-    .section-form {
-      width: 390px;
-      margin-left: -8px;
-      background: #1766a3;
-      background: linear-gradient(to top right, #1867a3, #0c426c); } }
-  @media only screen and (max-width: 390px) {
-    .section-form {
-      width: 390px;
-      height: 800px;
-      margin-left: 0px;
-      margin-top: -60%;
-      background: #0f4c81; } }
   @media only screen and (max-width: 384px) {
     .section-form {
-      display: none; } }
+      display: flex;
+      margin: -60% 0 60% 0;
+      background-color: #fff; } }
   .section-form .contactForm {
     position: relative;
     display: grid;
@@ -1295,27 +1294,9 @@ main .grid .grid-gallery {
       .section-form .contactForm {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         background: #fff; } }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 384px) {
       .section-form .contactForm {
-        width: 650px;
-        height: 114vh;
-        margin: -2px 0px 0px 8px; } }
-    @media only screen and (max-width: 675px) {
-      .section-form .contactForm {
-        width: 610px;
-        height: 114vh;
-        margin: -2px 0px 0px 8px; } }
-    @media only screen and (max-width: 430px) {
-      .section-form .contactForm {
-        width: 630px;
-        margin-left: 2px;
-        height: 120vh; } }
-    @media only screen and (max-width: 390px) {
-      .section-form .contactForm {
-        width: 355px;
-        margin-left: 0px;
-        margin-top: -5px;
-        height: 765px; } }
+        margin: auto; } }
     .section-form .contactForm .form {
       position: relative;
       display: flex;
@@ -1324,36 +1305,36 @@ main .grid .grid-gallery {
       flex-direction: column;
       width: 85%;
       margin-left: 30px; }
-      @media only screen and (max-width: 390px) {
+      @media only screen and (max-width: 384px) {
         .section-form .contactForm .form {
-          margin-left: 8px;
-          width: 75%; } }
+          display: flex;
+          margin: 0 0 0 -6%;
+          width: 65%;
+          height: 70%; } }
       .section-form .contactForm .form .texto h2 {
         font-family: 'Poppins';
         color: #1766a3;
         font-size: 2em;
         margin-bottom: 10px; }
-        @media only screen and (max-width: 390px) {
+        @media only screen and (max-width: 384px) {
           .section-form .contactForm .form .texto h2 {
-            margin-left: -55px;
-            width: 320px;
-            font-size: 1.8em; } }
+            font-size: 1.65rem;
+            margin: 84px 0 -44px 10px;
+            text-align: center; } }
       .section-form .contactForm .form .texto p {
         font-family: 'Poppins';
         color: #0b426c;
         font-size: 1.5em;
         margin-bottom: 20px; }
-        @media only screen and (max-width: 390px) {
+        @media only screen and (max-width: 384px) {
           .section-form .contactForm .form .texto p {
-            margin-left: -44px;
-            font-size: 22px;
-            width: 320px; } }
+            font-size: 1.1rem;
+            margin-top: 54px;
+            margin-left: 5px;
+            width: 100%;
+            text-align: center; } }
     .section-form .contactForm form {
       width: 100%; }
-      @media only screen and (max-width: 390px) {
-        .section-form .contactForm form {
-          width: 90%;
-          margin-right: 36px; } }
       .section-form .contactForm form input[type="submit"] {
         background: #1766a3;
         display: inline-block;
@@ -1367,21 +1348,22 @@ main .grid .grid-gallery {
         cursor: pointer;
         box-shadow: 1px 9px 20px -5px rgba(0, 0, 0, 0.59);
         transition: 0.3s; }
+        @media only screen and (max-width: 384px) {
+          .section-form .contactForm form input[type="submit"] {
+            width: 100%; } }
       .section-form .contactForm form input[type="submit"]:hover {
-        background: #0b426c; }
+        background: #d30809; }
       .section-form .contactForm form .inputBox {
         display: flex;
         flex-direction: column;
         margin-bottom: 15px; }
-        @media only screen and (max-width: 390px) {
-          .section-form .contactForm form .inputBox {
-            margin-right: 200px; } }
         .section-form .contactForm form .inputBox label {
           color: #1766a3;
           font-weight: 700; }
-          @media only screen and (max-width: 390px) {
+          @media only screen and (max-width: 384px) {
             .section-form .contactForm form .inputBox label {
-              margin-left: -30px; } }
+              font-size: 1.2rem;
+              margin-left: 10px; } }
         .section-form .contactForm form .inputBox input[type="text"],
         .section-form .contactForm form .inputBox input[type="email"],
         .section-form .contactForm form .inputBox textarea {
@@ -1391,15 +1373,6 @@ main .grid .grid-gallery {
           border-radius: 10px;
           color: #fff;
           resize: none; }
-        @media only screen and (max-width: 390px) {
-          .section-form .contactForm form .inputBox input[type="text"],
-          .section-form .contactForm form .inputBox input[type="email"] {
-            width: 318px;
-            margin-left: -30px; } }
-        @media only screen and (max-width: 390px) {
-          .section-form .contactForm form .inputBox textarea {
-            width: 318px;
-            margin-left: -30px; } }
         .section-form .contactForm form .inputBox input[type="text"]:focus,
         .section-form .contactForm form .inputBox input[type="email"]:focus,
         .section-form .contactForm form .inputBox textarea:focus {
@@ -1409,73 +1382,63 @@ main .grid .grid-gallery {
       justify-content: center;
       align-items: center;
       flex-direction: column; }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 384px) {
         .section-form .contactForm .info {
-          height: 300px;
-          padding: 30px; } }
-      @media only screen and (max-width: 390px) {
-        .section-form .contactForm .info {
-          margin-right: 117px;
-          margin-top: -88px;
-          font-size: .75em; } }
-      .section-form .contactForm .info .imgBox {
-        position: relative;
-        width: 420px;
-        height: 420px;
-        margin-bottom: 5%; }
-        @media only screen and (max-width: 1024px) {
-          .section-form .contactForm .info .imgBox {
-            display: none; } }
-        @media only screen and (max-width: 768px) {
-          .section-form .contactForm .info .imgBox {
-            display: none; } }
-        .section-form .contactForm .info .imgBox img {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          border-radius: 20px; }
-          @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-            .section-form .contactForm .info .imgBox img {
-              border-radius: 20px; } }
-      .section-form .contactForm .info .textBox {
+          display: flex;
+          width: 55%;
+          margin: -8% 0 0 0; } }
+    .section-form .contactForm .imgBox {
+      position: relative;
+      width: 420px;
+      height: 420px;
+      margin-bottom: 5%; }
+      @media only screen and (max-width: 1024px) {
+        .section-form .contactForm .imgBox {
+          display: none; } }
+      .section-form .contactForm .imgBox img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px; }
+        @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+          .section-form .contactForm .imgBox img {
+            border-radius: 20px; } }
+    .section-form .contactForm .textBox {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column; }
+      .section-form .contactForm .textBox .infoContact {
         display: flex;
         justify-content: center;
         align-items: flex-start;
-        flex-direction: column; }
-        .section-form .contactForm .info .textBox .infoContact {
-          display: flex;
-          justify-content: center;
-          align-items: flex-start;
-          margin-bottom: 10px; }
-          .section-form .contactForm .info .textBox .infoContact p {
-            color: #0b426c; }
-          .section-form .contactForm .info .textBox .infoContact ion-icon {
-            font-size: 2em;
-            margin-right: 10px;
-            color: #0b426c; }
-      @media only screen and (max-width: 1024px) {
-        .section-form .contactForm .info .rrss {
-          margin: -10px 0 0 0; } }
-      @media only screen and (max-width: 768px) {
-        .section-form .contactForm .info .rrss {
-          margin-top: -47%; } }
-      @media only screen and (max-width: 430px) {
-        .section-form .contactForm .info .rrss {
-          display: flex; } }
-      @media only screen and (max-width: 390px) {
-        .section-form .contactForm .info .rrss {
-          display: flex;
-          margin-top: -40%; } }
-      .section-form .contactForm .info .rrss a {
-        padding: 20px;
-        font-size: 2em;
-        color: #1766a3;
-        transition: 0.3s; }
-      .section-form .contactForm .info .rrss a:hover {
-        color: #0b426c; }
+        margin-bottom: 10px; }
+        .section-form .contactForm .textBox .infoContact p {
+          color: #0b426c; }
+        .section-form .contactForm .textBox .infoContact ion-icon {
+          font-size: 2em;
+          margin-right: 10px;
+          color: #0b426c; }
+    @media only screen and (max-width: 384px) {
+      .section-form .contactForm .rrss {
+        font-size: 11px;
+        color: #252525;
+        margin-top: -53%;
+        width: 110%; } }
+    .section-form .contactForm .rrss a {
+      padding: 20px;
+      font-size: 2em;
+      color: #1766a3;
+      transition: 0.3s; }
+      @media only screen and (max-width: 384px) {
+        .section-form .contactForm .rrss a {
+          padding: 14px;
+          font-size: 2.5em; } }
+    .section-form .contactForm .rrss a:hover {
+      color: #0b426c; }
 
 #dreyja-email {
   opacity: 0; }
@@ -1485,15 +1448,12 @@ main .grid .grid-gallery {
   padding: 0 0 30px 0;
   color: #555555;
   font-size: 14px; }
-  @media only screen and (max-width: 390px) {
+  @media only screen and (max-width: 384px) {
     #footer {
-      margin-left: -17px; } }
+      margin-top: -60%; } }
   #footer .footer-top {
     background: #f6f6f6;
     padding: 60px 0 30px 0; }
-    @media only screen and (max-width: 390px) {
-      #footer .footer-top {
-        width: 400px; } }
     #footer .footer-top .footer-info {
       margin-bottom: 30px; }
       @media only screen and (max-width: 768px) {
@@ -2631,10 +2591,6 @@ main .ventajas {
     @media only screen and (max-width: 768px) {
       main .ventajas .card:hover .content .product-image .box-image {
         display: none; } }
-
-@media only screen and (max-width: 768px) {
-  .section-form {
-    margin: -40% 0 0 0; } }
 
 main button {
   border: none;

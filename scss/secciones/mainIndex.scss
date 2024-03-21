@@ -971,13 +971,10 @@ main {
                     @include portatil {
                         margin-right: -63px;
                     }
-                    
+
                     @include monitor-27 {
                         background-color: #dadada2b;
                     }
-
-
-
                     
                     h4 {
                         @include portatil {
@@ -1052,21 +1049,18 @@ main {
                         font-size: 14px;
                         margin-bottom: 0;
 
-                        @include monitor-27 {
-                            color: map-get($color--azul, dreyja);
-                            font-size: 18px;
-                        }
-
-                        // @include tablet {
-                        //     color: #afafaf;
-                        // }
-
                         @include samsung-L {
                             margin-top: 8px;
                             width: 246px;
                             max-width: 246px;
                             margin-left: 73px;
                             color: #333;
+                            font-size: 1.05rem;
+                        }
+
+                        @include monitor-27 {
+                            color: map-get($color--azul, dreyja);
+                            font-size: 18px;
                         }
                     }
                 }
@@ -1092,17 +1086,13 @@ main {
 
     .grid {
 
+        @include samsung-L {
+            height: 217vh;
+        }
+
         @include monitor-27 {
             background-color: #fff;
             margin: -1% 0 -1% 0;
-        }
-
-        // @include tablet {
-        //     height: 1826px;
-        // }
-
-        @include samsung-L {
-            height: 249vh;
         }
 
         .grid-gallery{
@@ -1116,11 +1106,11 @@ main {
             grid-auto-flow: dense;
             grid-gap: 20px;
 
-            // @include tablet {
-            //     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            //     grid-auto-rows: 250px;
-            //     background: #ffffff;
-            // }
+            @include samsung-L {
+                background-color: map-get($color--azul, dreyja);
+                margin: -60% 0 0 0;
+            }
+
             .grid-item{
                 position: relative;
                 background-color: #efefef;

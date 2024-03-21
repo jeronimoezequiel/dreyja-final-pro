@@ -12,42 +12,44 @@
         background: map-get($color--azul, dreyja);
     }
 
-    @include portatil {
-        margin: -100px 0 0 0;
-    }
+    // @include portatil {
+    //     margin: -100px 0 0 0;
+    // }
 
-    @include tablet {
-        height: 800px;
-        // background: #1766a3;
-        // background: linear-gradient(to top right, #1867a3, #0c426c);
-    }
+    // @include tablet {
+    //     height: 800px;
+    //     // background: #1766a3;
+    //     // background: linear-gradient(to top right, #1867a3, #0c426c);
+    // }
 
-    @include tablet-medium {
-        width: 660px;
-        height: 800px;
-        background: #1766a3;
-        background: linear-gradient(to top right, #1867a3, #0c426c);
-    }
+    // @include tablet-medium {
+    //     width: 660px;
+    //     height: 800px;
+    //     background: #1766a3;
+    //     background: linear-gradient(to top right, #1867a3, #0c426c);
+    // }
 
-    @include mobile-L-14promax {
-        width: 390px;
-        margin-left: -8px;
-        background: #1766a3;
-        background: linear-gradient(to top right, #1867a3, #0c426c);
-    }
+    // @include mobile-L-14promax {
+    //     width: 390px;
+    //     margin-left: -8px;
+    //     background: #1766a3;
+    //     background: linear-gradient(to top right, #1867a3, #0c426c);
+    // }
 
-    @include mobile-a54 {
-        width: 390px;
-        height: 800px;
-        margin-left: 0px;
-        margin-top: -60%;
-        background: #0f4c81;
-        // background: #1766a3;
-        // background: linear-gradient(to top right, #1867a3, #0c426c);
-    }
+    // @include mobile-a54 {
+    //     width: 390px;
+    //     height: 800px;
+    //     margin-left: 0px;
+    //     margin-top: -60%;
+    //     background: #0f4c81;
+    //     // background: #1766a3;
+    //     // background: linear-gradient(to top right, #1867a3, #0c426c);
+    // }
 
     @include samsung-L {
-        display: none;
+        display: flex;
+        margin: -60% 0 60% 0;
+        background-color: #fff;
     }
 
     .contactForm{
@@ -67,29 +69,26 @@
             background: #fff;
         }
 
-        @include tablet {
-            width: 650px;
-            height: 114vh;
-            margin: -2px 0px 0px 8px
-        }
+        // @include tablet {
+        //     width: 650px;
+        //     height: 114vh;
+        //     margin: -2px 0px 0px 8px
+        // }
 
-        @include tablet-medium {
-            width: 610px;
-            height: 114vh;
-            margin: -2px 0px 0px 8px
-        }
+        // @include tablet-medium {
+        //     width: 610px;
+        //     height: 114vh;
+        //     margin: -2px 0px 0px 8px
+        // }
 
-        @include mobile-L-14promax {
-            width: 630px;
-            margin-left: 2px;
-            height: 120vh
-        }
+        // @include mobile-L-14promax {
+        //     width: 630px;
+        //     margin-left: 2px;
+        //     height: 120vh
+        // }
 
-        @include mobile-a54 {
-            width: 355px;
-            margin-left: 0px;
-            margin-top: -5px;
-            height: 765px;
+        @include samsung-L {
+            margin: auto;
         }
 
         .form{
@@ -101,9 +100,16 @@
             width: 85%;
             margin-left: 30px;
 
-            @include mobile-a54 {
-                margin-left: 8px;
-                width: 75%;
+            // @include mobile-a54 {
+            //     margin-left: 8px;
+            //     width: 75%;
+            // }
+
+            @include samsung-L {
+                display: flex;
+                margin: 0 0 0 -6%;
+                width: 65%;
+                height: 70%;
             }
 
             .texto{
@@ -113,22 +119,25 @@
                     font-size: 2em;
                     margin-bottom: 10px;
 
-                    @include mobile-a54 {
-                        margin-left: -55px;
-                        width: 320px;
-                        font-size: 1.8em;
+                    @include samsung-L {
+                        font-size: 1.65rem;
+                        margin: 84px 0 -44px 10px;
+                        text-align: center;
                     }
                 }
+
                 p{
                     font-family: 'Poppins';    
                     color: #0b426c;
                     font-size: 1.5em;
                     margin-bottom: 20px;
 
-                    @include mobile-a54 {
-                        margin-left: -44px;
-                        font-size: 22px;
-                        width: 320px;
+                    @include samsung-L {
+                        font-size: 1.1rem;
+                        margin-top: 54px;
+                        margin-left: 5px;
+                        width: 100%;
+                        text-align: center;
                     }
                 }
             } 
@@ -136,10 +145,6 @@
         form{
             width: 100%;
             
-            @include mobile-a54 {
-                width: 90%;
-                margin-right: 36px;
-            }
             input[type="submit"] {
                 background: #1766a3;
                 display: inline-block;
@@ -153,9 +158,13 @@
                 cursor: pointer;
                 box-shadow: 1px 9px 20px -5px rgba(0, 0, 0, 0.59);
                 transition: 0.3s;
+
+                @include samsung-L {
+                    width: 100%;
+                }
             }
             input[type="submit"]:hover{
-                background: #0b426c;
+                background: map-get($color--bordo, dreyja);
             }
             //Cajas de texto
             .inputBox{
@@ -163,15 +172,14 @@
                 flex-direction: column;
                 margin-bottom: 15px;
 
-                @include mobile-a54 {
-                    margin-right: 200px;
-                }
                 //Etiquetas e inputs
                 label{
                     color: #1766a3;
                     font-weight: 700;
-                    @include mobile-a54 {
-                        margin-left: -30px;
+
+                    @include samsung-L {
+                        font-size: 1.2rem;
+                    margin-left: 10px
                     }
                 }
                 input[type="text"],
@@ -183,19 +191,6 @@
                     border-radius: 10px;
                     color: #fff;
                     resize: none;
-                }
-                input[type="text"],
-                input[type="email"]{
-                    @include mobile-a54 {
-                        width: 318px;
-                        margin-left: -30px;
-                    }
-                }
-                textarea{
-                    @include mobile-a54 {
-                        width: 318px;
-                        margin-left: -30px;
-                    }
                 }
                 input[type="text"]:focus,
                 input[type="email"]:focus,
@@ -211,15 +206,16 @@
             align-items: center;
             flex-direction: column;
 
-            @include tablet {
-                height: 300px;
-                padding: 30px;
-            }
+            // @include tablet {
+            //     height: 300px;
+            //     padding: 30px;
+            // }
 
-            @include mobile-a54 {
-                margin-right: 117px;
-                margin-top: -88px;
-                font-size: .75em;
+            @include samsung-L {
+                display: flex;
+                width: 55%;
+                margin: -8% 0 0 0;
+}
             }
 
             //Imagen de box 
@@ -233,9 +229,9 @@
                     display: none;
                 }
 
-                @include tablet {
-                    display: none;
-                }
+                // @include tablet {
+                //     display: none;
+                // }
 
                 img {
                     position: absolute;
@@ -276,21 +272,23 @@
             //Redes Sociales
             .rrss {
 
-                @include portatil {
-                    margin: -10px 0 0 0;
-                }
+                // @include portatil {
+                //     margin: -10px 0 0 0;
+                // }
 
-                @include tablet {
-                    margin-top: -47%;
-                }
+                // @include tablet {
+                //     margin-top: -47%;
+                // }
 
-                @include mobile-L-14promax {
-                    display: flex;
-                }
+                // @include mobile-L-14promax {
+                //     display: flex;
+                // }
 
-                @include mobile-a54 {
-                    display: flex;
-                    margin-top: -40%;
+                @include samsung-L {
+                    font-size: 11px;
+                    color: #252525;
+                    margin-top: -53%;
+                    width: 110%;
                 }
 
                 a{
@@ -298,6 +296,11 @@
                     font-size: 2em;
                     color: #1766a3;
                     transition: 0.3s;
+
+                    @include samsung-L {
+                        padding: 14px;
+                        font-size: 2.5em;
+                    }
                 }
                 a:hover {
                     color: #0b426c;
@@ -306,7 +309,7 @@
             
         }
     }
-}
+
 #dreyja-email{
     opacity: 0;
 }

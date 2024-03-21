@@ -6,15 +6,22 @@ header{
         z-index: 889;
         margin-left: 10px;
 
-        @include monitor-27 {
-            display: none;
-        }
-
         @include samsung-L {
             margin: 1% 0 0 5%;
             width: 52px;
             height: 50px;
         }
+
+        @include iphone-12-Pro {
+            margin: 3% 0 0 5%;
+            width: 52px;
+            height: 50px;
+        }
+
+        @include monitor-27 {
+            display: none;
+        }
+
     }
     #bag-shop{
 
@@ -60,15 +67,6 @@ header{
             position: fixed;
         }
     }
-    // #btn__menu:hover {
-    //     @include tablet {
-    //         background: rgba(255, 255, 255, 0.2);
-    //     }
-
-    //     @include mobile_l {
-    //         display: none;
-    //     }
-    // }
     
     #back_menu{
         
@@ -98,12 +96,6 @@ header{
             height: 84px;
         }
 
-        // @include portatil-L {
-        //     // background-color: green;
-        //     // width: 1440px;
-        //     // margin: 0 auto;
-        // }
-
         @include portatil {
             background-color: yellow;
             width: 1024px;
@@ -120,6 +112,10 @@ header{
             height: 120vh;
             display: flex;
             transition: all 300ms;
+        }
+
+        @include samsung-L {
+            background-color: #000;
         }
     
         .menu {
@@ -140,13 +136,10 @@ header{
                 margin: -0.25% 0 0 6%;
             }
 
-            @include mobile_l {
-                background: map-get($color--bordo, dreyja);
+            @include samsung-L {
+                background: #000;
             }
 
-            // @include samsung-L {
-            //     background: blue;
-            // }
             ul {
                 width: 100%;
                 margin: 1.8% 0% 0% 0%;
@@ -182,14 +175,21 @@ header{
                     margin-left: 0px;
                     font-size: 1em;
                 }
+
+                @include samsung-L {
+                    height: 78vh;
+                    margin: 43px 0 0 -23px;
+                    font-size: 1.15rem;
+                }
     
                 .nav__item{
                     margin-top: .5%;
-    
+                    
                     @include tablet {
                         margin-top: -6%;
                         margin-left: 1px;
                     }
+    
                     .logo {
                         margin-top: -7%;
 
@@ -197,6 +197,11 @@ header{
                             display: flex;
                             margin-left: 10px;
                             margin-bottom: 23px;
+                        }
+
+                        @include samsung-L {
+                            width: 160px;
+                            height: 49px
                         }
                     }
     
@@ -500,6 +505,7 @@ header{
             position: fixed;
             z-index: 777;
         }
+
         .btn-wsp:hover{
             text-decoration: none;
             color: #0df053;

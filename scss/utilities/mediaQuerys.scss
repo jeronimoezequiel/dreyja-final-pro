@@ -22,11 +22,7 @@
     }
 }
 
-@mixin mobile-L-14promax {
-    @media only screen and (max-width: 430px) {
-        @content;
-    }
-}
+
 
 
 //BREAKPOINTS
@@ -60,8 +56,14 @@
     }
 }
 
-@mixin mobile-a54 {
-    @media only screen and (max-width: 390px) {
+@mixin iphone-14_15-Pro {
+    @media only screen and (min-width: 393px) and (max-width: 852px) {
+        @content;
+    }
+}
+
+@mixin iphone-12-Pro {
+    @media only screen and (max-width: 390px) and (max-width: 844px) {
         @content;
     }
 }
@@ -71,6 +73,22 @@
         @content;
     }
 }
+
+
+
+//Mixins para eliminar
+
+@mixin mobile-L-14promax {
+    @media only screen and (max-width: 430px) {
+        @content;
+    }
+}
+
+@mixin mobile-a54 {
+    @media only screen and (max-width: 390px) {
+        @content;
+    }
+} 
 
 @mixin mobile_l {
     @media only screen and (max-width: 384px) {
