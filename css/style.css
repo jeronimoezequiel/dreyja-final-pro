@@ -88,9 +88,14 @@ header .header-logo {
       height: 50px; } }
   @media only screen and (max-width: 390px) and (max-width: 844px) {
     header .header-logo {
-      margin: 3% 0 0 5%;
-      width: 52px;
-      height: 50px; } }
+      margin: 5% 0 0 5%;
+      height: 60px;
+      width: 60px; } }
+  @media only screen and (min-width: 393px) and (max-width: 852px) {
+    header .header-logo {
+      margin: 5% 0 0 5%;
+      height: 60px;
+      width: 60px; } }
   @media only screen and (min-width: 1600px) and (max-width: 1920px) {
     header .header-logo {
       display: none; } }
@@ -107,30 +112,43 @@ header .header-logo {
 
 header #btn__menu {
   display: none; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (min-width: 393px) and (max-width: 852px) {
     header #btn__menu {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 40px;
-      height: 40px;
-      background: rgba(0, 0, 0, 0.404);
-      backdrop-filter: blur(10px);
+      width: 50px;
+      height: 50px;
+      background: #273238;
       color: #f7f7f7;
-      margin-top: 35px;
-      margin-bottom: -60px;
-      margin-left: 90%;
+      margin: 27px 0 -60px 80%;
       font-size: 20px;
       border-radius: 50px;
       cursor: pointer;
       transition: all 300ms;
       z-index: 888;
-      position: absolute; } }
+      position: fixed; } }
+  @media only screen and (max-width: 390px) and (max-width: 844px) {
+    header #btn__menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      background: #273238;
+      color: #f7f7f7;
+      margin: 27px 0 -60px 80%;
+      font-size: 20px;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 300ms;
+      z-index: 888;
+      position: fixed; } }
   @media only screen and (max-width: 384px) {
     header #btn__menu {
       background-color: #273238;
       display: flex;
-      margin: 3% 0 0 83%;
+      margin: 6% 0 0 83%;
       font-size: 1.1rem;
       position: fixed; } }
 
@@ -174,6 +192,12 @@ header nav {
       height: 120vh;
       display: flex;
       transition: all 300ms; } }
+  @media only screen and (min-width: 393px) and (max-width: 852px) {
+    header nav {
+      background-color: #000; } }
+  @media only screen and (max-width: 390px) and (max-width: 844px) {
+    header nav {
+      background-color: #000; } }
   @media only screen and (max-width: 384px) {
     header nav {
       background-color: #000; } }
@@ -225,6 +249,16 @@ header nav {
           margin-top: 34px;
           margin-left: 0px;
           font-size: 1em; } }
+      @media only screen and (min-width: 393px) and (max-width: 852px) {
+        header nav .menu ul {
+          height: 78vh;
+          margin: 43px 0 0 -23px;
+          font-size: 1.15rem; } }
+      @media only screen and (max-width: 390px) and (max-width: 844px) {
+        header nav .menu ul {
+          height: 78vh;
+          margin: 43px 0 0 -23px;
+          font-size: 1.15rem; } }
       @media only screen and (max-width: 384px) {
         header nav .menu ul {
           height: 78vh;
@@ -243,6 +277,14 @@ header nav {
               display: flex;
               margin-left: 10px;
               margin-bottom: 23px; } }
+          @media only screen and (min-width: 393px) and (max-width: 852px) {
+            header nav .menu ul .nav__item .logo {
+              width: 160px;
+              height: 49px; } }
+          @media only screen and (max-width: 390px) and (max-width: 844px) {
+            header nav .menu ul .nav__item .logo {
+              width: 160px;
+              height: 49px; } }
           @media only screen and (max-width: 384px) {
             header nav .menu ul .nav__item .logo {
               width: 160px;
@@ -278,6 +320,14 @@ header nav {
               font-weight: 600;
               text-decoration: none;
               text-underline-offset: 24px; } }
+          @media only screen and (min-width: 393px) and (max-width: 852px) {
+            header nav .menu ul .nav__item .active {
+              font-weight: bold;
+              font-size: 1.4rem; } }
+          @media only screen and (max-width: 390px) and (max-width: 844px) {
+            header nav .menu ul .nav__item .active {
+              font-weight: bold;
+              font-size: 1.4rem; } }
           @media only screen and (max-width: 384px) {
             header nav .menu ul .nav__item .active {
               font-weight: bold;
@@ -473,6 +523,14 @@ header .btn-wsp {
     header .btn-wsp {
       position: fixed;
       z-index: 777; } }
+  @media only screen and (max-width: 390px) and (max-width: 844px) {
+    header .btn-wsp {
+      position: fixed;
+      z-index: 777; } }
+  @media only screen and (min-width: 393px) and (max-width: 852px) {
+    header .btn-wsp {
+      position: fixed;
+      z-index: 777; } }
   header .btn-wsp .btn-wsp:hover {
     text-decoration: none;
     color: #0df053;
@@ -499,14 +557,15 @@ main #home {
     @media only screen and (max-width: 1024px) {
       main #home .container {
         margin: -22px 0 0 0; } }
-    @media only screen and (max-width: 384px) {
+    @media only screen and (min-width: 393px) and (max-width: 852px) {
       main #home .container {
-        background-color: green;
+        margin: -51% 0 0 0%; } }
+    @media only screen and (max-width: 390px) and (max-width: 844px) {
+      main #home .container {
         margin: -51% 0 0 0%; } }
     @media only screen and (max-width: 384px) {
       main #home .container {
-        background: transparent;
-        max-height: 656px; } }
+        margin: -51% 0 0 0%; } }
     main #home .container .home-slider {
       width: 100%;
       height: 500px;
@@ -517,6 +576,12 @@ main #home {
         main #home .container .home-slider {
           height: 95vh;
           background-color: #1977cc; } }
+      @media only screen and (max-width: 390px) and (max-width: 844px) {
+        main #home .container .home-slider {
+          height: 95vh; } }
+      @media only screen and (min-width: 393px) and (max-width: 852px) {
+        main #home .container .home-slider {
+          height: 95vh; } }
       @media only screen and (min-width: 1600px) and (max-width: 1920px) {
         main #home .container .home-slider {
           display: flex;
@@ -530,6 +595,12 @@ main #home {
         display: flex;
         transition: 1s; }
         @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+          main #home .container .home-slider .home-list {
+            display: none; } }
+        @media only screen and (min-width: 393px) and (max-width: 852px) {
+          main #home .container .home-slider .home-list {
+            display: none; } }
+        @media only screen and (max-width: 390px) and (max-width: 844px) {
           main #home .container .home-slider .home-list {
             display: none; } }
         @media only screen and (max-width: 384px) {
@@ -566,6 +637,14 @@ main #home {
           width: 1600px;
           height: 826px; }
           @media only screen and (max-width: 384px) {
+            main #home .container .home-slider .homeBackgroundMonitor .homeItemMonitor img {
+              width: 1000px;
+              height: 95vh; } }
+          @media only screen and (max-width: 390px) and (max-width: 844px) {
+            main #home .container .home-slider .homeBackgroundMonitor .homeItemMonitor img {
+              width: 1000px;
+              height: 95vh; } }
+          @media only screen and (min-width: 393px) and (max-width: 852px) {
             main #home .container .home-slider .homeBackgroundMonitor .homeItemMonitor img {
               width: 1000px;
               height: 95vh; } }
@@ -615,6 +694,12 @@ main #home {
       @media only screen and (max-width: 384px) {
         main #home .container .container-info {
           margin: -52% 0 0 -5%; } }
+      @media only screen and (max-width: 390px) and (max-width: 844px) {
+        main #home .container .container-info {
+          margin: -52% 0 0 -5%; } }
+      @media only screen and (min-width: 393px) and (max-width: 852px) {
+        main #home .container .container-info {
+          margin: -52% 0 0 -5%; } }
       main #home .container .container-info h1 {
         margin: 0;
         font-family: "Poppins", sans-serif;
@@ -631,6 +716,22 @@ main #home {
         margin-top: -27%;
         margin-left: 4%; }
         @media only screen and (max-width: 384px) {
+          main #home .container .container-info h1 {
+            display: flex;
+            height: 83px;
+            padding: 15px;
+            width: 94%;
+            border-top-right-radius: 20px;
+            font-size: 1.8rem; } }
+        @media only screen and (max-width: 390px) and (max-width: 844px) {
+          main #home .container .container-info h1 {
+            display: flex;
+            height: 83px;
+            padding: 15px;
+            width: 94%;
+            border-top-right-radius: 20px;
+            font-size: 1.8rem; } }
+        @media only screen and (min-width: 393px) and (max-width: 852px) {
           main #home .container .container-info h1 {
             display: flex;
             height: 83px;
@@ -683,6 +784,22 @@ main #home {
         @media only screen and (max-width: 1024px) {
           main #home .container .container-info .subtitle-ppal {
             margin: -281px 0 0 40px; } }
+        @media only screen and (min-width: 393px) and (max-width: 852px) {
+          main #home .container .container-info .subtitle-ppal {
+            font-size: 1.3rem;
+            margin: -61px 0 0 4%;
+            height: 66px;
+            max-width: 400px;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 20px; } }
+        @media only screen and (max-width: 390px) and (max-width: 844px) {
+          main #home .container .container-info .subtitle-ppal {
+            font-size: 1.1rem;
+            margin: -48px 0 0 4%;
+            max-width: 360px;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 20px;
+            letter-spacing: 3px; } }
         @media only screen and (max-width: 384px) {
           main #home .container .container-info .subtitle-ppal {
             font-size: 1.1rem;
@@ -703,6 +820,14 @@ main .home_1 {
     main .home_1 {
       height: 30vh;
       margin: 10% 0 37% 0; } }
+  @media only screen and (max-width: 390px) and (max-width: 844px) {
+    main .home_1 {
+      height: 30vh;
+      margin: 10% 0 37% 0; } }
+  @media only screen and (min-width: 393px) and (max-width: 852px) {
+    main .home_1 {
+      height: 30vh;
+      margin: 14% 0 14% 12%; } }
   @media only screen and (min-width: 1600px) and (max-width: 1920px) {
     main .home_1 {
       margin: 12% 0 10% 0;
@@ -755,9 +880,17 @@ main .home_1 {
       margin-left: 40px; }
       @media only screen and (max-width: 384px) {
         main .home_1 .home_txt-fx .columns .futuro {
-          background-color: yellow;
           margin: -39% 0 0 -77%;
           font-size: 2.1rem; } }
+      @media only screen and (max-width: 390px) and (max-width: 844px) {
+        main .home_1 .home_txt-fx .columns .futuro {
+          margin: 0% 0 0 -77%;
+          font-size: 2.1rem; } }
+      @media only screen and (min-width: 393px) and (max-width: 852px) {
+        main .home_1 .home_txt-fx .columns .futuro {
+          margin: 70% 0 0 -103%;
+          font-size: 2.1rem;
+          background-color: red; } }
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
       main .home_1 .home_txt-fx .columns {
         margin-top: -3%;
@@ -780,6 +913,14 @@ main .home_1 {
         main .home_1 .home_txt-fx .columns p {
           margin: 0 0 0 -131px;
           max-width: 675px; } }
+      @media only screen and (min-width: 393px) and (max-width: 852px) {
+        main .home_1 .home_txt-fx .columns p {
+          margin-left: -71%;
+          max-width: 360px; } }
+      @media only screen and (max-width: 390px) and (max-width: 844px) {
+        main .home_1 .home_txt-fx .columns p {
+          margin-left: -71%;
+          max-width: 360px; } }
       @media only screen and (max-width: 384px) {
         main .home_1 .home_txt-fx .columns p {
           margin-left: -71%;
@@ -793,6 +934,16 @@ main #cards {
   min-height: 800px;
   margin-top: -130px; }
   @media only screen and (max-width: 384px) {
+    main #cards {
+      background-color: #FFF;
+      height: 109vh;
+      margin: -50% 0 95% 0; } }
+  @media only screen and (max-width: 390px) and (max-width: 844px) {
+    main #cards {
+      background-color: #FFF;
+      height: 109vh;
+      margin: -50% 0 95% 0; } }
+  @media only screen and (min-width: 393px) and (max-width: 852px) {
     main #cards {
       background-color: #FFF;
       height: 109vh;
@@ -813,6 +964,16 @@ main #cards {
         margin: -86% 0 84% 0;
         display: flex;
         background-color: transparent; } }
+    @media only screen and (max-width: 390px) and (max-width: 844px) {
+      main #cards .home-container {
+        margin: -86% 0 84% 0;
+        display: flex;
+        background-color: transparent; } }
+    @media only screen and (min-width: 393px) and (max-width: 852px) {
+      main #cards .home-container {
+        background-color: transparent;
+        margin: -86% 0 84% 0;
+        display: flex; } }
     main #cards .home-container h2 {
       display: flex;
       position: absolute;
@@ -848,6 +1009,26 @@ main #cards {
           margin: -6% 0 0 31%;
           font-family: "Poppins", sans-serif;
           color: #273238; } }
+      @media only screen and (min-width: 393px) and (max-width: 852px) {
+        main #cards .home-container h2 {
+          background-color: #d30809;
+          padding: 12px;
+          width: 270px;
+          border-radius: 10px;
+          color: #fff;
+          margin: 2% 20%;
+          font-size: 1.9rem;
+          justify-content: center; } }
+      @media only screen and (max-width: 390px) and (max-width: 844px) {
+        main #cards .home-container h2 {
+          background-color: #d30809;
+          padding: 12px;
+          width: 270px;
+          border-radius: 10px;
+          color: #fff;
+          margin: 2% 15%;
+          font-size: 1.9rem;
+          justify-content: center; } }
       @media only screen and (max-width: 384px) {
         main #cards .home-container h2 {
           background-color: #d30809;
@@ -865,6 +1046,12 @@ main #cards {
       gap: 35px;
       padding: 5px; }
       @media only screen and (max-width: 384px) {
+        main #cards .home-container .info-links {
+          display: none; } }
+      @media only screen and (max-width: 390px) and (max-width: 844px) {
+        main #cards .home-container .info-links {
+          display: none; } }
+      @media only screen and (min-width: 393px) and (max-width: 852px) {
         main #cards .home-container .info-links {
           display: none; } }
       @media only screen and (min-width: 1600px) and (max-width: 1920px) {
@@ -892,6 +1079,18 @@ main #cards {
           width: 49%;
           height: 280px;
           margin: 35px 0; } }
+      @media only screen and (min-width: 393px) and (max-width: 852px) {
+        main #cards .home-container .home-card {
+          display: block;
+          width: 100%;
+          margin: 26% 0 -75px 0;
+          box-shadow: none; } }
+      @media only screen and (max-width: 390px) and (max-width: 844px) {
+        main #cards .home-container .home-card {
+          display: block;
+          width: 100%;
+          margin: 26% 0 -75px 0;
+          box-shadow: none; } }
       @media only screen and (max-width: 384px) {
         main #cards .home-container .home-card {
           display: block;
@@ -925,15 +1124,33 @@ main #cards {
         @media only screen and (max-width: 384px) {
           main #cards .home-container .home-card .home-content {
             text-align: center; } }
+      @media only screen and (max-width: 390px) and (max-width: 844px) {
+        main #cards .home-container .home-card {
+          text-align: center; } }
+      @media only screen and (min-width: 393px) and (max-width: 852px) {
+        main #cards .home-container .home-card {
+          text-align: center; } }
       main #cards .home-container .home-card h3 {
         margin-bottom: 5px;
         font-size: 24px; }
         @media only screen and (max-width: 384px) {
           main #cards .home-container .home-card h3 {
             font-size: 1.7rem; } }
+        @media only screen and (max-width: 390px) and (max-width: 844px) {
+          main #cards .home-container .home-card h3 {
+            font-size: 1.7rem; } }
+        @media only screen and (min-width: 393px) and (max-width: 852px) {
+          main #cards .home-container .home-card h3 {
+            font-size: 1.9rem; } }
       @media only screen and (max-width: 384px) {
         main #cards .home-container .home-card p {
           font-size: 1.2rem; } }
+      @media only screen and (max-width: 390px) and (max-width: 844px) {
+        main #cards .home-container .home-card p {
+          font-size: 1.2rem; } }
+      @media only screen and (min-width: 393px) and (max-width: 852px) {
+        main #cards .home-container .home-card p {
+          font-size: 1.5rem; } }
       main #cards .home-container .home-card a {
         display: inline-block;
         margin-top: 10px;
@@ -949,6 +1166,16 @@ main #cards {
     transition: 0.5s ease-in-out;
     background: #d30809; }
     @media only screen and (max-width: 384px) {
+      main #cards .home-card:hover .home-imgBx {
+        left: -25px;
+        width: 120px;
+        height: 120px; } }
+    @media only screen and (max-width: 390px) and (max-width: 844px) {
+      main #cards .home-card:hover .home-imgBx {
+        left: -25px;
+        width: 120px;
+        height: 120px; } }
+    @media only screen and (min-width: 393px) and (max-width: 852px) {
       main #cards .home-card:hover .home-imgBx {
         left: -25px;
         width: 120px;
@@ -969,6 +1196,12 @@ main #cards {
     @media only screen and (max-width: 384px) {
       main #cards .home-card .home-imgBx:before {
         font-size: 5rem; } }
+    @media only screen and (max-width: 390px) and (max-width: 844px) {
+      main #cards .home-card .home-imgBx:before {
+        font-size: 5rem; } }
+    @media only screen and (min-width: 393px) and (max-width: 852px) {
+      main #cards .home-card .home-imgBx:before {
+        font-size: 5.5rem; } }
   main #cards .home-card:hover .home-imgBx img {
     max-width: 75px; }
 
@@ -980,6 +1213,12 @@ main .slider {
   overflow: hidden;
   background: #fff; }
   @media only screen and (max-width: 384px) {
+    main .slider {
+      margin-top: 70%; } }
+  @media only screen and (max-width: 390px) and (max-width: 844px) {
+    main .slider {
+      margin-top: 70%; } }
+  @media only screen and (min-width: 393px) and (max-width: 852px) {
     main .slider {
       margin-top: 70%; } }
   main .slider .slide-track {
@@ -1028,6 +1267,14 @@ main .section-5 {
     main .section-5 {
       height: 142vh;
       background-color: #fff; } }
+  @media only screen and (max-width: 390px) and (max-width: 844px) {
+    main .section-5 {
+      height: 142vh;
+      background-color: #fff; } }
+  @media only screen and (min-width: 393px) and (max-width: 852px) {
+    main .section-5 {
+      height: 142vh;
+      background-color: #fff; } }
   main .section-5 .subtitle-center {
     display: flex;
     align-items: center;
@@ -1065,14 +1312,31 @@ main .section-5 {
         margin: 12% 6%;
         font-size: 1.5rem;
         justify-content: center; } }
+    @media only screen and (max-width: 390px) and (max-width: 844px) {
+      main .section-5 .subtitle-center {
+        background-color: #d30809;
+        padding: 12px;
+        width: 339px;
+        border-radius: 10px;
+        color: #fff;
+        margin: 12% 6%;
+        font-size: 1.5rem;
+        justify-content: center; } }
+    @media only screen and (min-width: 393px) and (max-width: 852px) {
+      main .section-5 .subtitle-center {
+        background-color: #d30809;
+        padding: 12px;
+        width: 339px;
+        border-radius: 10px;
+        color: #fff;
+        margin: 12% 11%;
+        font-size: 1.5rem;
+        justify-content: center; } }
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
       main .section-5 .subtitle-center {
         font-size: 44px;
         font-family: "Poppins", sans-serif;
         color: #273238; } }
-    @media only screen and (max-width: 1024px) {
-      main .section-5 .subtitle-center {
-        margin: 10px 0 0px 35px; } }
   main .section-5 .info-links {
     display: flex;
     margin-top: -1%;
@@ -1080,6 +1344,12 @@ main .section-5 {
     gap: 35px;
     padding: 5px; }
     @media only screen and (max-width: 384px) {
+      main .section-5 .info-links {
+        display: none; } }
+    @media only screen and (max-width: 390px) and (max-width: 844px) {
+      main .section-5 .info-links {
+        display: none; } }
+    @media only screen and (min-width: 393px) and (max-width: 852px) {
       main .section-5 .info-links {
         display: none; } }
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
@@ -1098,7 +1368,7 @@ main .section-5 {
       height: 100px; } }
   @media only screen and (max-width: 1024px) {
     main .section-5 .services .container {
-      margin: 0 0 0 10px; } }
+      margin: 0 0 0 16px; } }
   main .section-5 .services .container .section-title {
     display: flex;
     justify-content: center;
@@ -1116,6 +1386,12 @@ main .section-5 {
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
       main .section-5 .services .container .row {
         margin-top: -1%; } }
+    @media only screen and (min-width: 393px) and (max-width: 852px) {
+      main .section-5 .services .container .row {
+        margin: 0px 0 0 -27%; } }
+    @media only screen and (max-width: 390px) and (max-width: 844px) {
+      main .section-5 .services .container .row {
+        margin: 0px 0 0 -27%; } }
     @media only screen and (max-width: 384px) {
       main .section-5 .services .container .row {
         margin: 0px 0 0 -27%; } }
@@ -1132,6 +1408,20 @@ main .section-5 {
         height: 193px;
         background: #f0f0f0;
         margin-left: 21px;
+        margin-bottom: -13px; } }
+    @media only screen and (max-width: 390px) and (max-width: 844px) {
+      main .section-5 .services .icon-box {
+        width: 367px;
+        height: 193px;
+        background: #f0f0f0;
+        margin-left: 21px;
+        margin-bottom: -13px; } }
+    @media only screen and (min-width: 393px) and (max-width: 852px) {
+      main .section-5 .services .icon-box {
+        width: 400px;
+        height: 193px;
+        background: #f0f0f0;
+        margin-left: 35px;
         margin-bottom: -13px; } }
     @media only screen and (max-width: 1024px) {
       main .section-5 .services .icon-box {
@@ -1163,6 +1453,16 @@ main .section-5 {
           margin: -20px 0 0 0;
           width: 50px;
           height: 50px; } }
+      @media only screen and (max-width: 390px) and (max-width: 844px) {
+        main .section-5 .services .icon-box .icon {
+          margin: -20px 0 0 0;
+          width: 50px;
+          height: 50px; } }
+      @media only screen and (min-width: 393px) and (max-width: 852px) {
+        main .section-5 .services .icon-box .icon {
+          margin: -20px 0 0 0;
+          width: 50px;
+          height: 50px; } }
       main .section-5 .services .icon-box .icon .icon::before {
         position: absolute;
         content: '';
@@ -1189,6 +1489,22 @@ main .section-5 {
           border-top-left-radius: 10px;
           border-bottom-left-radius: 10px;
           padding: 6px; } }
+      @media only screen and (max-width: 390px) and (max-width: 844px) {
+        main .section-5 .services .icon-box h4 {
+          margin: -32% 0 0 58px;
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+          padding: 6px; } }
+      @media only screen and (min-width: 393px) and (max-width: 852px) {
+        main .section-5 .services .icon-box h4 {
+          margin: -31% 0 0 58px;
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+          padding: 6px; } }
       main .section-5 .services .icon-box h4 a {
         color: #273238; }
     main .section-5 .services .icon-box p {
@@ -1203,6 +1519,22 @@ main .section-5 {
           margin-left: 73px;
           color: #333;
           font-size: 1.05rem; } }
+      @media only screen and (max-width: 390px) and (max-width: 844px) {
+        main .section-5 .services .icon-box p {
+          margin-top: 8px;
+          width: 246px;
+          max-width: 246px;
+          margin-left: 73px;
+          color: #333;
+          font-size: 1.05rem; } }
+      @media only screen and (min-width: 393px) and (max-width: 852px) {
+        main .section-5 .services .icon-box p {
+          margin-top: 8px;
+          width: 246px;
+          max-width: 246px;
+          margin-left: 73px;
+          color: #333;
+          font-size: 1.1rem; } }
       @media only screen and (min-width: 1600px) and (max-width: 1920px) {
         main .section-5 .services .icon-box p {
           color: #273238;
@@ -1224,6 +1556,14 @@ main .section-5 {
   main .grid {
     height: 217vh; } }
 
+@media only screen and (max-width: 390px) and (max-width: 844px) {
+  main .grid {
+    height: 202vh; } }
+
+@media only screen and (min-width: 393px) and (max-width: 852px) {
+  main .grid {
+    height: 180vh; } }
+
 @media only screen and (min-width: 1600px) and (max-width: 1920px) {
   main .grid {
     background-color: #fff;
@@ -1239,10 +1579,18 @@ main .grid .grid-gallery {
   grid-auto-rows: 250px;
   grid-auto-flow: dense;
   grid-gap: 20px; }
+  @media only screen and (min-width: 393px) and (max-width: 852px) {
+    main .grid .grid-gallery {
+      background-color: #273238;
+      margin: -90% 0 0 0; } }
+  @media only screen and (max-width: 390px) and (max-width: 844px) {
+    main .grid .grid-gallery {
+      background-color: #273238;
+      margin: -70% 0 0 0; } }
   @media only screen and (max-width: 384px) {
     main .grid .grid-gallery {
       background-color: #273238;
-      margin: -60% 0 0 0; } }
+      margin: -50% 0 0 0; } }
   main .grid .grid-gallery .grid-item {
     position: relative;
     background-color: #efefef;
@@ -1274,6 +1622,16 @@ main .grid .grid-gallery {
   @media only screen and (min-width: 1600px) and (max-width: 1920px) {
     .section-form {
       background: #273238; } }
+  @media only screen and (min-width: 393px) and (max-width: 852px) {
+    .section-form {
+      display: flex;
+      margin: -93% 0 0% 0;
+      background-color: #fff; } }
+  @media only screen and (max-width: 390px) and (max-width: 844px) {
+    .section-form {
+      display: flex;
+      margin: -84% 0 0% 0;
+      background-color: #fff; } }
   @media only screen and (max-width: 384px) {
     .section-form {
       display: flex;
@@ -1294,6 +1652,12 @@ main .grid .grid-gallery {
       .section-form .contactForm {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         background: #fff; } }
+    @media only screen and (min-width: 393px) and (max-width: 852px) {
+      .section-form .contactForm {
+        margin: 23px; } }
+    @media only screen and (max-width: 390px) and (max-width: 844px) {
+      .section-form .contactForm {
+        margin: auto; } }
     @media only screen and (max-width: 384px) {
       .section-form .contactForm {
         margin: auto; } }
@@ -1305,6 +1669,18 @@ main .grid .grid-gallery {
       flex-direction: column;
       width: 85%;
       margin-left: 30px; }
+      @media only screen and (min-width: 393px) and (max-width: 852px) {
+        .section-form .contactForm .form {
+          display: flex;
+          margin: 0 0 0 -6%;
+          width: 65%;
+          height: 70%; } }
+      @media only screen and (max-width: 390px) and (max-width: 844px) {
+        .section-form .contactForm .form {
+          display: flex;
+          margin: 0 0 0 -6%;
+          width: 65%;
+          height: 70%; } }
       @media only screen and (max-width: 384px) {
         .section-form .contactForm .form {
           display: flex;
@@ -1321,12 +1697,36 @@ main .grid .grid-gallery {
             font-size: 1.65rem;
             margin: 84px 0 -44px 10px;
             text-align: center; } }
+        @media only screen and (max-width: 390px) and (max-width: 844px) {
+          .section-form .contactForm .form .texto h2 {
+            font-size: 1.65rem;
+            margin: 84px 0 -44px 10px;
+            text-align: center; } }
+        @media only screen and (min-width: 393px) and (max-width: 852px) {
+          .section-form .contactForm .form .texto h2 {
+            font-size: 1.65rem;
+            margin: 84px 0 -44px 10px;
+            text-align: center; } }
       .section-form .contactForm .form .texto p {
         font-family: 'Poppins';
         color: #0b426c;
         font-size: 1.5em;
         margin-bottom: 20px; }
         @media only screen and (max-width: 384px) {
+          .section-form .contactForm .form .texto p {
+            font-size: 1.1rem;
+            margin-top: 54px;
+            margin-left: 5px;
+            width: 100%;
+            text-align: center; } }
+        @media only screen and (max-width: 390px) and (max-width: 844px) {
+          .section-form .contactForm .form .texto p {
+            font-size: 1.1rem;
+            margin-top: 54px;
+            margin-left: 5px;
+            width: 100%;
+            text-align: center; } }
+        @media only screen and (min-width: 393px) and (max-width: 852px) {
           .section-form .contactForm .form .texto p {
             font-size: 1.1rem;
             margin-top: 54px;
@@ -1348,6 +1748,12 @@ main .grid .grid-gallery {
         cursor: pointer;
         box-shadow: 1px 9px 20px -5px rgba(0, 0, 0, 0.59);
         transition: 0.3s; }
+        @media only screen and (min-width: 393px) and (max-width: 852px) {
+          .section-form .contactForm form input[type="submit"] {
+            width: 111%; } }
+        @media only screen and (max-width: 390px) and (max-width: 844px) {
+          .section-form .contactForm form input[type="submit"] {
+            width: 100%; } }
         @media only screen and (max-width: 384px) {
           .section-form .contactForm form input[type="submit"] {
             width: 100%; } }
@@ -1360,6 +1766,14 @@ main .grid .grid-gallery {
         .section-form .contactForm form .inputBox label {
           color: #1766a3;
           font-weight: 700; }
+          @media only screen and (min-width: 393px) and (max-width: 852px) {
+            .section-form .contactForm form .inputBox label {
+              font-size: 1.35rem;
+              margin-left: 10px; } }
+          @media only screen and (max-width: 390px) and (max-width: 844px) {
+            .section-form .contactForm form .inputBox label {
+              font-size: 1.2rem;
+              margin-left: 10px; } }
           @media only screen and (max-width: 384px) {
             .section-form .contactForm form .inputBox label {
               font-size: 1.2rem;
@@ -1373,6 +1787,11 @@ main .grid .grid-gallery {
           border-radius: 10px;
           color: #fff;
           resize: none; }
+          @media only screen and (min-width: 393px) and (max-width: 852px) {
+            .section-form .contactForm form .inputBox input[type="text"],
+            .section-form .contactForm form .inputBox input[type="email"],
+            .section-form .contactForm form .inputBox textarea {
+              width: 111%; } }
         .section-form .contactForm form .inputBox input[type="text"]:focus,
         .section-form .contactForm form .inputBox input[type="email"]:focus,
         .section-form .contactForm form .inputBox textarea:focus {
@@ -1382,6 +1801,16 @@ main .grid .grid-gallery {
       justify-content: center;
       align-items: center;
       flex-direction: column; }
+      @media only screen and (min-width: 393px) and (max-width: 852px) {
+        .section-form .contactForm .info {
+          display: flex;
+          width: 55%;
+          margin: -8% 0 0 0; } }
+      @media only screen and (max-width: 390px) and (max-width: 844px) {
+        .section-form .contactForm .info {
+          display: flex;
+          width: 55%;
+          margin: -8% 0 0 0; } }
       @media only screen and (max-width: 384px) {
         .section-form .contactForm .info {
           display: flex;
@@ -1422,6 +1851,18 @@ main .grid .grid-gallery {
           font-size: 2em;
           margin-right: 10px;
           color: #0b426c; }
+    @media only screen and (min-width: 393px) and (max-width: 852px) {
+      .section-form .contactForm .rrss {
+        font-size: 10px;
+        color: #252525;
+        margin-top: -53%;
+        width: 102%; } }
+    @media only screen and (max-width: 390px) and (max-width: 844px) {
+      .section-form .contactForm .rrss {
+        font-size: 11px;
+        color: #252525;
+        margin-top: -53%;
+        width: 110%; } }
     @media only screen and (max-width: 384px) {
       .section-form .contactForm .rrss {
         font-size: 11px;
@@ -1433,6 +1874,14 @@ main .grid .grid-gallery {
       font-size: 2em;
       color: #1766a3;
       transition: 0.3s; }
+      @media only screen and (min-width: 393px) and (max-width: 852px) {
+        .section-form .contactForm .rrss a {
+          padding: 14px;
+          font-size: 2.5em; } }
+      @media only screen and (max-width: 390px) and (max-width: 844px) {
+        .section-form .contactForm .rrss a {
+          padding: 14px;
+          font-size: 2.5em; } }
       @media only screen and (max-width: 384px) {
         .section-form .contactForm .rrss a {
           padding: 14px;
@@ -1674,6 +2123,9 @@ main #home-sf {
         width: 170px;
         height: 60px;
         background: #fafafa; } }
+  @media only screen and (max-width: 384px) {
+    main #home-sf .home-sf-content {
+      margin-left: -1%; } }
   main #home-sf .home-sf-content p {
     font-family: 'Poppins';
     font-size: 2.7rem;
@@ -1714,6 +2166,9 @@ main .home-container {
     main .home-container {
       width: 100%;
       height: 125px; } }
+  @media only screen and (max-width: 384px) {
+    main .home-container {
+      margin-top: -14%; } }
 
 @keyframes roll {
   0% {
@@ -1729,20 +2184,24 @@ main .home-container {
     font-family: "Poppins", sans-serif;
     margin: 5% 0px 0px 7%;
     display: flex; }
-    @media only screen and (max-width: 768px) {
-      main .home-container h1 {
-        font-size: 1.1em;
-        margin-left: 42px; } }
-    @media only screen and (max-width: 1024px) {
-      main .home-container h1 {
-        font-family: "Poppins", sans-serif;
-        font-size: 2rem;
-        margin: 69px 0 0 91px; } }
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
       main .home-container h1 {
         z-index: 333;
         position: relative;
         margin-top: 7%; } }
+    @media only screen and (max-width: 1024px) {
+      main .home-container h1 {
+        font-family: "Poppins", sans-serif;
+        font-size: 2rem;
+        margin: 69px 0 0 91px; } }
+    @media only screen and (max-width: 768px) {
+      main .home-container h1 {
+        font-size: 1.1em;
+        margin-left: 42px; } }
+    @media only screen and (max-width: 384px) {
+      main .home-container h1 {
+        font-size: 1.2rem;
+        margin-left: 3%; } }
     main .home-container h1 .home-lista {
       margin-left: 10px; }
       main .home-container h1 .home-lista .home-lista-item {
@@ -2086,6 +2545,9 @@ main .muro-compuesto {
         display: flex;
         height: 1500px;
         margin: -14% 0 0 0; } }
+    @media only screen and (max-width: 384px) {
+      main .muro-compuesto .muro-compuesto-detalle {
+        margin-top: -5%; } }
     main .muro-compuesto .muro-compuesto-detalle .container-partes {
       display: flex;
       justify-content: center;
@@ -2136,6 +2598,10 @@ main .muro-compuesto {
         color: white;
         margin: 15px 0;
         border-radius: 7px; }
+        @media only screen and (max-width: 384px) {
+          main .muro-compuesto .muro-compuesto-detalle .container-partes .div {
+            margin: -17% 0 0 0;
+            background-image: none; } }
         @media only screen and (max-width: 768px) {
           main .muro-compuesto .muro-compuesto-detalle .container-partes .div {
             display: flex;
@@ -2145,6 +2611,9 @@ main .muro-compuesto {
         margin: 6% 0 0 5%;
         float: left; }
         @media only screen and (max-width: 768px) {
+          main .muro-compuesto .muro-compuesto-detalle .container-partes .izquierda {
+            margin: -26px 0 0 17px; } }
+        @media only screen and (max-width: 384px) {
           main .muro-compuesto .muro-compuesto-detalle .container-partes .izquierda {
             margin: -26px 0 0 17px; } }
       main .muro-compuesto .muro-compuesto-detalle .container-partes .derecha {
@@ -2163,6 +2632,9 @@ main .muro-compuesto {
             display: flex;
             font-size: .7rem;
             margin: -27% 0 0 20px; } }
+        @media only screen and (max-width: 384px) {
+          main .muro-compuesto .muro-compuesto-detalle .container-partes .titulo-fade-der {
+            margin: -26% 0 0 20px; } }
       main .muro-compuesto .muro-compuesto-detalle .container-partes .parrafo {
         position: relative;
         margin-left: 21%;
@@ -2211,6 +2683,9 @@ main .muro-compuesto {
         font-size: 14px;
         letter-spacing: 1px;
         border-radius: 10px; }
+        @media only screen and (max-width: 384px) {
+          main .muro-compuesto .muro-compuesto-detalle .container-partes .btn-content, main .muro-compuesto .muro-compuesto-detalle .container-partes .btn-contentSf {
+            display: none; } }
         @media only screen and (max-width: 768px) {
           main .muro-compuesto .muro-compuesto-detalle .container-partes .btn-content, main .muro-compuesto .muro-compuesto-detalle .container-partes .btn-contentSf {
             display: flex;
@@ -2219,9 +2694,15 @@ main .muro-compuesto {
             width: 62px; } }
         main .muro-compuesto .muro-compuesto-detalle .container-partes .btn-content i, main .muro-compuesto .muro-compuesto-detalle .container-partes .btn-contentSf i {
           font-size: 1.1rem; }
+          @media only screen and (max-width: 384px) {
+            main .muro-compuesto .muro-compuesto-detalle .container-partes .btn-content i, main .muro-compuesto .muro-compuesto-detalle .container-partes .btn-contentSf i {
+              display: none; } }
       @media only screen and (max-width: 1024px) {
         main .muro-compuesto .muro-compuesto-detalle .container-partes .btn-contentSf {
           margin: 0% 0 0 25%; } }
+      @media only screen and (max-width: 384px) {
+        main .muro-compuesto .muro-compuesto-detalle .container-partes .btn-contentSf {
+          display: none; } }
       @media only screen and (max-width: 768px) {
         main .muro-compuesto .muro-compuesto-detalle .container-partes .btn-c-right, main .muro-compuesto .muro-compuesto-detalle .container-partes .btn-c-rightSf {
           font-family: 'Poppins';
@@ -2238,6 +2719,9 @@ main .muro-compuesto {
           font-size: 14px;
           letter-spacing: 1px;
           border-radius: 10px; } }
+      @media only screen and (max-width: 384px) {
+        main .muro-compuesto .muro-compuesto-detalle .container-partes .btn-c-right, main .muro-compuesto .muro-compuesto-detalle .container-partes .btn-c-rightSf {
+          display: none; } }
       main .muro-compuesto .muro-compuesto-detalle .container-partes .btn-content:hover, main .muro-compuesto .muro-compuesto-detalle .container-partes .btn-contentSf:hover {
         cursor: pointer;
         transition: all .3s ease-in-out;

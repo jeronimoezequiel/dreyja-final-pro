@@ -13,9 +13,15 @@ header{
         }
 
         @include iphone-12-Pro {
-            margin: 3% 0 0 5%;
-            width: 52px;
-            height: 50px;
+            margin: 5% 0 0 5%;
+            height: 60px;
+            width: 60px;
+        }
+
+        @include iphone-14_15-Pro {
+            margin: 5% 0 0 5%;
+            height: 60px;
+            width: 60px;
         }
 
         @include monitor-27 {
@@ -38,31 +44,45 @@ header{
         
     #btn__menu{
         display: none;
-        
-        @include tablet {
+
+        @include iphone-14_15-Pro {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 40px;
-            height: 40px;
-            background: rgba(0, 0, 0, 0.404);
-            backdrop-filter: blur(10px);
-            color: #f7f7f7;            
-            margin-top: 35px;
-            margin-bottom: -60px;
-            margin-left: 90%;
+            width: 50px;
+            height: 50px;
+            background: map-get($color--azul, dreyja);
+            color: #f7f7f7; 
+            margin: 27px 0 -60px 80%;
             font-size: 20px;
             border-radius: 50px;
             cursor: pointer;
             transition: all 300ms;
             z-index: 888;
-            position: absolute;
+            position: fixed;
+        }
+        
+        @include iphone-12-Pro {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: map-get($color--azul, dreyja);
+            color: #f7f7f7; 
+            margin: 27px 0 -60px 80%;
+            font-size: 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 300ms;
+            z-index: 888;
+            position: fixed;
         }
 
         @include samsung-L {
             background-color: map-get($color--azul, dreyja);
             display: flex;
-            margin: 3% 0 0 83%;
+            margin: 6% 0 0 83%;
             font-size: 1.1rem;
             position: fixed;
         }
@@ -112,6 +132,14 @@ header{
             height: 120vh;
             display: flex;
             transition: all 300ms;
+        }
+
+        @include iphone-14_15-Pro {
+            background-color: #000;
+        }
+
+        @include iphone-12-Pro {
+            background-color: #000;
         }
 
         @include samsung-L {
@@ -176,6 +204,18 @@ header{
                     font-size: 1em;
                 }
 
+                @include iphone-14_15-Pro {
+                    height: 78vh;
+                    margin: 43px 0 0 -23px;
+                    font-size: 1.15rem;
+                }
+
+                @include iphone-12-Pro {
+                    height: 78vh;
+                    margin: 43px 0 0 -23px;
+                    font-size: 1.15rem;
+                }
+
                 @include samsung-L {
                     height: 78vh;
                     margin: 43px 0 0 -23px;
@@ -197,6 +237,16 @@ header{
                             display: flex;
                             margin-left: 10px;
                             margin-bottom: 23px;
+                        }
+
+                        @include iphone-14_15-Pro {
+                            width: 160px;
+                            height: 49px
+                        }
+
+                        @include iphone-12-Pro {
+                            width: 160px;
+                            height: 49px
                         }
 
                         @include samsung-L {
@@ -241,6 +291,16 @@ header{
                             font-weight: 600;
                             text-decoration: none;
                             text-underline-offset: 24px; 
+                        }
+
+                        @include iphone-14_15-Pro {
+                            font-weight: bold;
+                            font-size: 1.4rem;
+                        }
+
+                        @include iphone-12-Pro {
+                            font-weight: bold;
+                            font-size: 1.4rem;
                         }
 
                         @include samsung-L {
@@ -502,6 +562,16 @@ header{
         z-index: 222;
 
         @include samsung-L {
+            position: fixed;
+            z-index: 777;
+        }
+
+        @include iphone-12-Pro {
+            position: fixed;
+            z-index: 777;
+        }
+
+        @include iphone-14_15-Pro {
             position: fixed;
             z-index: 777;
         }

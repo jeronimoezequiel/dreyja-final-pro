@@ -41,14 +41,16 @@ main {
             //     // height: 800px;
             // }
 
-            @include samsung-L {
-                background-color: green;
+            @include iphone-14_15-Pro {
                 margin: -51% 0 0 0%;
             }
 
-            @include mobile_l {
-                background: transparent;
-                max-height: 656px;
+            @include iphone-12-Pro {
+                margin: -51% 0 0 0%;
+            }
+
+            @include samsung-L {
+                margin: -51% 0 0 0%;
             }
 
             .home-slider {
@@ -61,6 +63,14 @@ main {
                 @include samsung-L {
                     height: 95vh;
                     background-color: #1977cc;
+                }
+
+                @include iphone-12-Pro {
+                    height: 95vh;
+                }
+
+                @include iphone-14_15-Pro {
+                    height: 95vh;
                 }
 
                 @include monitor-27 {
@@ -89,6 +99,14 @@ main {
                     //     display: flex;
                     //     // height: 650px;
                     // }
+
+                    @include iphone-14_15-Pro {
+                        display: none;
+                    }
+
+                    @include iphone-12-Pro {
+                        display: none;
+                    }
 
                     @include samsung-L {
                         display: none;
@@ -150,6 +168,16 @@ main {
                             @include samsung-L {
                                 width: 1000px;
                                 height: 95vh
+                            }
+
+                            @include iphone-12-Pro {
+                                width: 1000px;
+                                height: 95vh;
+                            }
+
+                            @include iphone-14_15-Pro {
+                                width: 1000px;
+                                height: 95vh;
                             }
                         }
                     }
@@ -223,6 +251,15 @@ main {
                 @include samsung-L {
                     margin: -52% 0 0 -5%;
                 }
+
+                @include iphone-12-Pro {
+                    margin: -52% 0 0 -5%;
+                }
+
+                @include iphone-14_15-Pro {
+                    margin: -52% 0 0 -5%;
+                }
+
                 h1  {
                     margin: 0;
                     font-family: $typo-poppins;
@@ -241,6 +278,24 @@ main {
                     margin-left: 4%;
 
                     @include samsung-L {
+                        display: flex;
+                        height: 83px;
+                        padding: 15px;
+                        width: 94%;
+                        border-top-right-radius: 20px;
+                        font-size: 1.8rem;
+                    }
+
+                    @include iphone-12-Pro {
+                        display: flex;
+                        height: 83px;
+                        padding: 15px;
+                        width: 94%;
+                        border-top-right-radius: 20px;
+                        font-size: 1.8rem;
+                    }
+
+                    @include iphone-14_15-Pro {
                         display: flex;
                         height: 83px;
                         padding: 15px;
@@ -321,6 +376,24 @@ main {
                     //     width: 75%;
                     // }
 
+                    @include iphone-14_15-Pro {
+                        font-size: 1.3rem;
+                        margin: -61px 0 0 4%;
+                        height: 66px;
+                        max-width: 400px;
+                        border-top-right-radius: 0px;
+                        border-bottom-right-radius: 20px;
+                    }
+
+                    @include iphone-12-Pro {
+                        font-size: 1.1rem;
+                        margin: -48px 0 0 4%;
+                        max-width: 360px;
+                        border-top-right-radius: 0px;
+                        border-bottom-right-radius: 20px;
+                        letter-spacing: 3px;
+                    }
+
                     @include samsung-L {
                         font-size: 1.1rem;
                         margin: -48px 0 0 4%;
@@ -345,6 +418,16 @@ main {
             @include samsung-L {
                 height: 30vh;
                 margin: 10% 0 37% 0;
+            }
+
+            @include iphone-12-Pro {
+                height: 30vh;
+                margin: 10% 0 37% 0;
+            }
+
+            @include iphone-14_15-Pro {
+                height: 30vh;
+                margin: 14% 0 14% 12%;
             }
 
             @include monitor-27 {
@@ -432,9 +515,19 @@ main {
                         // }
 
                         @include samsung-L {
-                            background-color: yellow;
                             margin: -39% 0 0 -77%;
                             font-size: 2.1rem;
+                        }
+
+                        @include iphone-12-Pro {
+                            margin: 0% 0 0 -77%;
+                            font-size: 2.1rem;
+                        }
+
+                        @include iphone-14_15-Pro {
+                            margin: 70% 0 0 -103%;
+                            font-size: 2.1rem;
+                            background-color: red;
                         }
                     }
 
@@ -477,6 +570,16 @@ main {
                         //     // background: green;
                         // }
 
+                        @include iphone-14_15-Pro {
+                            margin-left: -71%;
+                            max-width: 360px;
+                        }
+
+                        @include iphone-12-Pro {
+                            margin-left: -71%;
+                            max-width: 360px;
+                        }
+
                         @include samsung-L {
                             margin-left: -71%;
                             max-width: 360px;
@@ -500,6 +603,18 @@ main {
             margin: -50% 0 95% 0;
         }
 
+        @include iphone-12-Pro {
+            background-color: #FFF;
+            height: 109vh;
+            margin: -50% 0 95% 0;
+        }
+
+        @include iphone-14_15-Pro {
+            background-color: #FFF;
+            height: 109vh;
+            margin: -50% 0 95% 0;
+        }
+
         @include monitor-27 {
             margin-top: -190px;
         }
@@ -517,6 +632,18 @@ main {
                 margin: -86% 0 84% 0;
                 display: flex;
                 background-color: transparent;
+            }
+
+            @include iphone-12-Pro {
+                margin: -86% 0 84% 0;
+                display: flex;
+                background-color: transparent;
+            }
+
+            @include iphone-14_15-Pro {
+                background-color: transparent;
+                margin: -86% 0 84% 0;
+                display: flex;
             }
 
             h2{
@@ -560,6 +687,28 @@ main {
                     color: map-get($color--azul, dreyja);
                 }
 
+                @include iphone-14_15-Pro {
+                    background-color: map-get($color--bordo, dreyja );
+                    padding: 12px;
+                    width: 270px;
+                    border-radius: 10px;
+                    color: #fff;
+                    margin: 2% 20%;
+                    font-size: 1.9rem;
+                    justify-content: center;
+                }
+
+                @include iphone-12-Pro {
+                    background-color: map-get($color--bordo, dreyja );
+                    padding: 12px;
+                    width: 270px;
+                    border-radius: 10px;
+                    color: #fff;
+                    margin: 2% 15%;
+                    font-size: 1.9rem;
+                    justify-content: center;
+                }
+
                 @include samsung-L {
                     background-color: map-get($color--bordo, dreyja );
                     padding: 12px;
@@ -579,6 +728,14 @@ main {
                 padding: 5px;
 
                 @include samsung-L {
+                    display: none;
+                }
+
+                @include iphone-12-Pro {
+                    display: none;
+                }
+
+                @include iphone-14_15-Pro {
                     display: none;
                 }
 
@@ -613,6 +770,20 @@ main {
                     width: 49%;
                     height: 280px;
                     margin: 35px 0;
+                }
+
+                @include iphone-14_15-Pro {
+                    display: block;
+                    width: 100%;
+                    margin: 26% 0 -75px 0;
+                    box-shadow: none;
+                }
+
+                @include iphone-12-Pro {
+                    display: block;
+                    width: 100%;
+                    margin: 26% 0 -75px 0;
+                    box-shadow: none;
                 }
                 
                 @include samsung-L {
@@ -654,6 +825,15 @@ main {
                         text-align: center;
                         }
                     }
+
+                    @include iphone-12-Pro {
+                        text-align: center;
+                    }
+
+                    @include iphone-14_15-Pro {
+                        text-align: center;
+                    }
+
                     h3 {
                         margin-bottom: 5px;
                         font-size: 24px;
@@ -661,11 +841,27 @@ main {
                         @include samsung-L {
                             font-size: 1.7rem;
                         }
+
+                        @include iphone-12-Pro {
+                            font-size: 1.7rem;
+                        }
+
+                        @include iphone-14_15-Pro {
+                            font-size: 1.9rem;
+                        }
                     }
 
                     p {
                         @include samsung-L {
                             font-size: 1.2rem;
+                        }
+
+                        @include iphone-12-Pro {
+                            font-size: 1.2rem;
+                        }
+
+                        @include iphone-14_15-Pro {
+                            font-size: 1.5rem;
                         }
                     }
 
@@ -692,6 +888,19 @@ main {
                     width: 120px;
                     height: 120px;
                 }
+
+                @include iphone-12-Pro {
+                    left: -25px;
+                    width: 120px;
+                    height: 120px;
+                }
+
+                @include iphone-14_15-Pro {
+                    left: -25px;
+                    width: 120px;
+                    height: 120px;
+                }
+
                 img{
                     max-width: 100px;
                     transition: 0.5s ease-in-out;
@@ -724,6 +933,14 @@ main {
                 @include samsung-L {
                     font-size: 5rem;
                 }
+
+                @include iphone-12-Pro {
+                    font-size: 5rem;
+                }
+                
+                @include iphone-14_15-Pro {
+                    font-size: 5.5rem;
+                }
             }
             .home-card:hover .home-imgBx img {
                 max-width: 75px;
@@ -747,6 +964,15 @@ main {
         @include samsung-L {
             margin-top: 70%;
         }
+
+        @include iphone-12-Pro {
+            margin-top: 70%;
+        }
+
+        @include iphone-14_15-Pro {
+            margin-top: 70%;
+        }
+
         .slide-track{
             display: flex;
             animation: scroll 40s linear infinite;
@@ -809,6 +1035,16 @@ main {
             background-color: #fff;
         }
 
+        @include iphone-12-Pro {
+            height: 142vh;
+            background-color: #fff;
+        }
+
+        @include iphone-14_15-Pro {
+            height: 142vh;
+            background-color: #fff;
+        }
+
             .subtitle-center{
                 display: flex;
                 align-items: center;
@@ -852,14 +1088,32 @@ main {
                     justify-content: center;
                 }
 
+                @include iphone-12-Pro {
+                    background-color: #d30809;
+                    padding: 12px;
+                    width: 339px;
+                    border-radius: 10px;
+                    color: #fff;
+                    margin: 12% 6%;
+                    font-size: 1.5rem;
+                    justify-content: center;
+                }
+
+                @include iphone-14_15-Pro {
+                    background-color: #d30809;
+                    padding: 12px;
+                    width: 339px;
+                    border-radius: 10px;
+                    color: #fff;
+                    margin: 12% 11%;
+                    font-size: 1.5rem;
+                    justify-content: center;
+                }
+
                 @include monitor-27 {
                     font-size: 44px;
                     font-family: $typo-poppins;
                     color: map-get($color--azul, dreyja);
-                }
-
-                @include portatil {
-                    margin: 10px 0 0px 35px;
                 }
     
                 // @include tablet {
@@ -878,6 +1132,14 @@ main {
                 padding: 5px;
 
                 @include samsung-L {
+                    display: none;
+                }
+
+                @include iphone-12-Pro {
+                    display: none;
+                }
+
+                @include iphone-14_15-Pro {
                     display: none;
                 }
                 
@@ -914,7 +1176,7 @@ main {
                     }
 
                     @include portatil {
-                        margin: 0 0 0 10px;
+                        margin: 0 0 0 16px;
                     }
 
                     // @include tablet {
@@ -947,6 +1209,14 @@ main {
                             margin-top: -1%;
                         }
 
+                        @include iphone-14_15-Pro {
+                            margin: 0px 0 0 -27%;
+                        }
+
+                        @include iphone-12-Pro {
+                            margin: 0px 0 0 -27%;
+                        }
+
                         @include samsung-L {
                             margin: 0px 0 0 -27%;
                         }
@@ -965,6 +1235,22 @@ main {
                         height: 193px;
                         background: #f0f0f0;
                         margin-left: 21px;
+                        margin-bottom: -13px;
+                    }
+
+                    @include iphone-12-Pro {
+                        width: 367px;
+                        height: 193px;
+                        background: #f0f0f0;
+                        margin-left: 21px;
+                        margin-bottom: -13px;
+                    }
+
+                    @include iphone-14_15-Pro {
+                        width: 400px;
+                        height: 193px;
+                        background: #f0f0f0;
+                        margin-left: 35px;
                         margin-bottom: -13px;
                     }
 
@@ -1003,8 +1289,21 @@ main {
                         @include samsung-L{
                             margin: -20px 0 0 0;
                             width: 50px;
-                            height: 50px
+                            height: 50px;
                         }
+
+                        @include iphone-12-Pro {
+                            margin: -20px 0 0 0;
+                            width: 50px;
+                            height: 50px;
+                        }
+
+                        @include iphone-14_15-Pro {
+                            margin: -20px 0 0 0;
+                            width: 50px;
+                            height: 50px;
+                        }
+
                         .icon::before {
                             position: absolute;
                             content: '';
@@ -1035,6 +1334,24 @@ main {
                             border-bottom-left-radius: 10px;
                             padding: 6px;
                         }
+
+                        @include iphone-12-Pro {
+                            margin: -32% 0 0 58px;
+                            border-top-right-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            border-top-left-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            padding: 6px;
+                        }
+
+                        @include iphone-14_15-Pro {
+                            margin: -31% 0 0 58px;
+                            border-top-right-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            border-top-left-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            padding: 6px;
+                        }
                         
                         a {
                             color: map-get($color--azul, dreyja);
@@ -1056,6 +1373,24 @@ main {
                             margin-left: 73px;
                             color: #333;
                             font-size: 1.05rem;
+                        }
+
+                        @include iphone-12-Pro {
+                            margin-top: 8px;
+                            width: 246px;
+                            max-width: 246px;
+                            margin-left: 73px;
+                            color: #333;
+                            font-size: 1.05rem;
+                        }
+
+                        @include iphone-14_15-Pro {
+                            margin-top: 8px;
+                            width: 246px;
+                            max-width: 246px;
+                            margin-left: 73px;
+                            color: #333;
+                            font-size: 1.1rem;
                         }
 
                         @include monitor-27 {
@@ -1090,6 +1425,14 @@ main {
             height: 217vh;
         }
 
+        @include iphone-12-Pro {
+            height: 202vh;
+        }
+
+        @include iphone-14_15-Pro {
+            height: 180vh;
+        }
+
         @include monitor-27 {
             background-color: #fff;
             margin: -1% 0 -1% 0;
@@ -1106,9 +1449,19 @@ main {
             grid-auto-flow: dense;
             grid-gap: 20px;
 
+            @include iphone-14_15-Pro {
+                background-color: map-get($color--azul, dreyja);
+                margin: -90% 0 0 0;
+            }
+
+            @include iphone-12-Pro {
+                background-color: map-get($color--azul, dreyja);
+                margin: -70% 0 0 0;
+            }
+
             @include samsung-L {
                 background-color: map-get($color--azul, dreyja);
-                margin: -60% 0 0 0;
+                margin: -50% 0 0 0;
             }
 
             .grid-item{
