@@ -89,6 +89,11 @@ main {
             @include monitor-27 {
                 margin-top: 24.7%;
             }
+
+            @include samsung-L {
+                background-color: #fff;
+                margin: 29% 0 0 14%;
+            }
         }
 
         .home-cs-content {
@@ -119,6 +124,10 @@ main {
                     margin-left: 170px;
                     margin-top: 414px;
                     font-size: 2.5rem;
+                }
+
+                @include samsung-L {
+                    margin: 33% 0 0 12%;
                 }
             }
         }
@@ -241,6 +250,10 @@ main {
                     height: 168px; 
                     margin: 0 0 0 -3px;
                 }
+
+                @include samsung-L {
+                    width: 110%;
+                }
             }
             .strip-content {
                 font-family: 'Poppins';
@@ -341,6 +354,12 @@ main {
                 margin: -98% 0 385px 3px;
                 padding: 0 0 0 3px;
             }
+
+            @include samsung-L {
+                display: block;
+                position: relative;
+            }
+
             img {
                 max-width: 100%; 
                 width: 448px;
@@ -348,13 +367,17 @@ main {
                 margin: 10% 0 0 3%;
                 border-radius: 20px;
 
-                @include tablet {
-                    display: flex;
-                    max-width: 100%; 
-                    width: 225px;
-                    height: 168px; 
-                    margin: 0 0 0 -3px;
+                @include samsung-L {
+                    margin: 22% 0 10px 0;
                 }
+
+                // @include tablet {
+                //     display: flex;
+                //     max-width: 100%; 
+                //     width: 225px;
+                //     height: 168px; 
+                //     margin: 0 0 0 -3px;
+                // }
             }
             .strip-content-Pvc {
                 font-family: 'Poppins';
@@ -362,6 +385,12 @@ main {
                 display: flex;
                 flex-direction: column; 
                 margin: 0 0 0 21%;
+
+                @include samsung-L {
+                    position: absolute; 
+                    top: -110px;
+                    left: 14%;
+                }
 
                 h2 {
                     font-family: 'Poppins';
@@ -433,13 +462,18 @@ main {
         z-index: 1;
         margin: -15% 0 -5% 0;
 
+        @include monitor-27 {
+            height: 750px;
+        }
+
         @include tablet {
             display: flex;
             margin: -95% 0 0 0;
         }
 
-        @include monitor-27 {
-            height: 750px;
+        @include samsung-L {
+            display: flex;
+            margin: 10% 0 0 0;
         }
     
         &::before {
@@ -471,6 +505,10 @@ main {
             @include monitor-27 {
                 margin: 4% 0 0 4%;
                 font-size: 2.5rem;
+            }
+
+            @include samsung-L {
+                font-size: 1.6rem;
             }
         }
 
@@ -554,6 +592,17 @@ main {
                 margin: -46% 0 4% 19%;
             }
 
+            @include samsung-L {
+                z-index: 999;
+                height: 90px;
+                position: fixed;
+                top: 350px;
+                left: 0;
+                width: 100%;
+                background: transparent;
+                color: #fff;
+            }
+
             .menu-cielorraso {
                 position: relative;
                 margin: 70px 0 0 58%;
@@ -563,6 +612,16 @@ main {
                 @include portatil {
                     margin: 0% 0 0 31%;
                     max-width: 600px;
+                }
+
+                @include samsung-L {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px 20px;
+                    width: 383px;
+                    margin: -252px 0 0 -38px;
+                    list-style: none;
                 }
 
                 ul {
@@ -582,16 +641,24 @@ main {
                         border-radius: 20px;
                     }
     
-                @include tablet {
-                    display: flex;
-                    flex-direction: column;
-                    margin-top: 34px;
-                    margin-left: 0px;
-                    font-size: 1em;
+                    // @include tablet {
+                    //     display: flex;
+                    //     flex-direction: column;
+                    //     margin-top: 34px;
+                    //     margin-left: 0px;
+                    //     font-size: 1em;
+                    //     }
+                    
+                    @include samsung-L {
+                        display: contents;
                     }
 
                     .nav__item-cielorraso{
                         margin-top: .5%;
+                        
+                        @include samsung-L {
+                            margin-right: 20px; /* Espacio entre elementos */
+                        }
 
                         a{
                             list-style: none;
@@ -665,8 +732,23 @@ main {
                 margin: 2% 0 0 32%;
             }
 
+            
+            @include samsung-L {
+                margin: 29% 0 0 229%;
+                width: 401px;
+                height: 700px;
+                display: block;
+            }
+
             .cielorraso-background-left-column {
                 background: map-get($color--azul, dreyja);
+
+                @include samsung-L {
+                    position: absolute; /* Posicionar absolutamente */
+                    top: 0;
+                    left: 0;
+                    width: 100%; /* Ocupar todo el ancho del contenedor padre */
+                }
             }
             .cielorraso-background2-left-column {
                 background: map-get($color--azul, dreyja);
@@ -692,6 +774,16 @@ main {
                     height: 500px;
                     width: 1200px;
                     margin-top: -8.8%;
+                }
+
+                @include samsung-L {
+                    position: relative; /* Establecer el contenedor padre como relativo */
+                    display: flex; /* Utilizar flexbox para alinear elementos */
+                    flex-direction: column; /* Establecer dirección de columna */
+                    justify-content: space-between; /* Espacio entre elementos */
+                    width: 113%;
+                    margin: 13% 0 0 -19%;
+                    height: 83%;
                 }
 
                 &.active-card {
@@ -728,6 +820,16 @@ main {
                     @include monitor-27 {
                         max-width: 13rem;
                     }
+
+                    @include samsung-L {
+                        flex-grow: 1; /* Ocupar todo el espacio disponible */
+                        order: 1; /* Colocar a la izquierda (por defecto) */
+                        max-width: 347.5px;
+                        max-height: 100px;
+                        margin: 50% 0 0 0;
+                        z-index: 1;
+                    }
+
                     h4 {
                         color: #fff;
                         
@@ -738,6 +840,10 @@ main {
 
                     i {
                         font-size: 5rem;
+
+                        @include samsung-L {
+                            display: none;
+                        }
                     }
                 }
 
@@ -751,6 +857,11 @@ main {
                     @include portatil {
                         max-width: 300px;
                         margin: 0 0 0 -19px;
+                    }
+
+                    @include samsung-L {
+                        max-width: 100%;
+                        order: 2;
                     }
 
                         p {
@@ -789,6 +900,12 @@ main {
                     @include portatil {
                         margin: 10% 0 0 14px;
                     }
+
+                    @include samsung-L {
+                        order: 0;
+                        margin: 0 0 0 15%;
+                        z-index: 0;
+                    }
             
                         .owl-carousel {
                             .cielorraso-item {
@@ -799,6 +916,11 @@ main {
 
                                     @include monitor-27 {
                                         margin-top: 44%;
+                                    }
+
+                                    @include samsung-L {
+                                        width: 230px;
+                                        height: 230px;
                                     }
                                 }
                             }
@@ -824,16 +946,20 @@ main {
         margin: 0% 0 10% 0;
         z-index: 1;
 
+        @include portatil {
+            height: 600px;
+        }
+
         @include tablet {
             display: flex;
             margin: -95% 0 0 0;
             height: 500px;
         }
-
-        @include portatil {
-            height: 600px;
-        }
     
+        @include samsung-L {
+            display: none;
+        }
+
         &::before {
             content: "";
             position: absolute;

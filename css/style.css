@@ -3151,6 +3151,10 @@ main #home-cs {
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
       main #home-cs .trapezoide-cs {
         margin-top: 24.7%; } }
+    @media only screen and (max-width: 384px) {
+      main #home-cs .trapezoide-cs {
+        background-color: #fff;
+        margin: 29% 0 0 14%; } }
   main #home-cs .home-cs-content p {
     font-family: 'Poppins';
     font-size: 2.5rem;
@@ -3176,6 +3180,9 @@ main #home-cs {
         margin-left: 170px;
         margin-top: 414px;
         font-size: 2.5rem; } }
+    @media only screen and (max-width: 384px) {
+      main #home-cs .home-cs-content p {
+        margin: 33% 0 0 12%; } }
   main #home-cs .home-container {
     margin: -3% 0px 0px 0px;
     width: 100%;
@@ -3271,6 +3278,9 @@ main .tiposDeMuros .strip {
         width: 225px;
         height: 168px;
         margin: 0 0 0 -3px; } }
+    @media only screen and (max-width: 384px) {
+      main .tiposDeMuros .strip img {
+        width: 110%; } }
   main .tiposDeMuros .strip .strip-content {
     font-family: 'Poppins';
     color: #333;
@@ -3352,25 +3362,30 @@ main .detallePvc {
         height: 170px;
         margin: -98% 0 385px 3px;
         padding: 0 0 0 3px; } }
+    @media only screen and (max-width: 384px) {
+      main .detallePvc .strip-Pvc {
+        display: block;
+        position: relative; } }
     main .detallePvc .strip-Pvc img {
       max-width: 100%;
       width: 448px;
       height: 448px;
       margin: 10% 0 0 3%;
       border-radius: 20px; }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 384px) {
         main .detallePvc .strip-Pvc img {
-          display: flex;
-          max-width: 100%;
-          width: 225px;
-          height: 168px;
-          margin: 0 0 0 -3px; } }
+          margin: 22% 0 10px 0; } }
     main .detallePvc .strip-Pvc .strip-content-Pvc {
       font-family: 'Poppins';
       color: #333;
       display: flex;
       flex-direction: column;
       margin: 0 0 0 21%; }
+      @media only screen and (max-width: 384px) {
+        main .detallePvc .strip-Pvc .strip-content-Pvc {
+          position: absolute;
+          top: -110px;
+          left: 14%; } }
       main .detallePvc .strip-Pvc .strip-content-Pvc h2 {
         font-family: 'Poppins';
         font-size: 1.8rem;
@@ -3427,13 +3442,17 @@ main #cielorraso {
   background-color: #4b4b4b;
   z-index: 1;
   margin: -15% 0 -5% 0; }
+  @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+    main #cielorraso {
+      height: 750px; } }
   @media only screen and (max-width: 768px) {
     main #cielorraso {
       display: flex;
       margin: -95% 0 0 0; } }
-  @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+  @media only screen and (max-width: 384px) {
     main #cielorraso {
-      height: 750px; } }
+      display: flex;
+      margin: 10% 0 0 0; } }
   main #cielorraso::before {
     content: "";
     position: absolute;
@@ -3460,6 +3479,9 @@ main #cielorraso {
       main #cielorraso h2 {
         margin: 4% 0 0 4%;
         font-size: 2.5rem; } }
+    @media only screen and (max-width: 384px) {
+      main #cielorraso h2 {
+        font-size: 1.6rem; } }
   main #cielorraso .navegacion-cielorraso {
     height: 100%;
     overflow: hidden;
@@ -3531,6 +3553,16 @@ main #cielorraso {
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
       main #cielorraso .nav-cielorraso {
         margin: -46% 0 4% 19%; } }
+    @media only screen and (max-width: 384px) {
+      main #cielorraso .nav-cielorraso {
+        z-index: 999;
+        height: 90px;
+        position: fixed;
+        top: 350px;
+        left: 0;
+        width: 100%;
+        background: transparent;
+        color: #fff; } }
     main #cielorraso .nav-cielorraso .menu-cielorraso {
       position: relative;
       margin: 70px 0 0 58%;
@@ -3540,6 +3572,15 @@ main #cielorraso {
         main #cielorraso .nav-cielorraso .menu-cielorraso {
           margin: 0% 0 0 31%;
           max-width: 600px; } }
+      @media only screen and (max-width: 384px) {
+        main #cielorraso .nav-cielorraso .menu-cielorraso {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 20px;
+          width: 383px;
+          margin: -252px 0 0 -38px;
+          list-style: none; } }
       main #cielorraso .nav-cielorraso .menu-cielorraso ul {
         width: 100%;
         margin: 1.8% 0% 0% 0%;
@@ -3555,15 +3596,15 @@ main #cielorraso {
             max-width: 353px;
             padding: 7px;
             border-radius: 20px; } }
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: 384px) {
           main #cielorraso .nav-cielorraso .menu-cielorraso ul {
-            display: flex;
-            flex-direction: column;
-            margin-top: 34px;
-            margin-left: 0px;
-            font-size: 1em; } }
+            display: contents; } }
         main #cielorraso .nav-cielorraso .menu-cielorraso ul .nav__item-cielorraso {
           margin-top: .5%; }
+          @media only screen and (max-width: 384px) {
+            main #cielorraso .nav-cielorraso .menu-cielorraso ul .nav__item-cielorraso {
+              margin-right: 20px;
+              /* Espacio entre elementos */ } }
           main #cielorraso .nav-cielorraso .menu-cielorraso ul .nav__item-cielorraso a {
             list-style: none;
             text-decoration: none;
@@ -3615,8 +3656,22 @@ main #cielorraso {
         height: 400px;
         width: 1000px;
         margin: 2% 0 0 32%; } }
+    @media only screen and (max-width: 384px) {
+      main #cielorraso .cielorraso-container {
+        margin: 29% 0 0 229%;
+        width: 401px;
+        height: 700px;
+        display: block; } }
     main #cielorraso .cielorraso-container .cielorraso-background-left-column {
       background: #273238; }
+      @media only screen and (max-width: 384px) {
+        main #cielorraso .cielorraso-container .cielorraso-background-left-column {
+          position: absolute;
+          /* Posicionar absolutamente */
+          top: 0;
+          left: 0;
+          width: 100%;
+          /* Ocupar todo el ancho del contenedor padre */ } }
     main #cielorraso .cielorraso-container .cielorraso-background2-left-column {
       background: #273238; }
     main #cielorraso .cielorraso-container .cielorraso-background3-left-column {
@@ -3637,6 +3692,19 @@ main #cielorraso {
           height: 500px;
           width: 1200px;
           margin-top: -8.8%; } }
+      @media only screen and (max-width: 384px) {
+        main #cielorraso .cielorraso-container .cielorraso-card {
+          position: relative;
+          /* Establecer el contenedor padre como relativo */
+          display: flex;
+          /* Utilizar flexbox para alinear elementos */
+          flex-direction: column;
+          /* Establecer dirección de columna */
+          justify-content: space-between;
+          /* Espacio entre elementos */
+          width: 113%;
+          margin: 13% 0 0 -19%;
+          height: 83%; } }
       main #cielorraso .cielorraso-container .cielorraso-card.active-card {
         border: 2px solid #d30809;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -3663,6 +3731,16 @@ main #cielorraso {
         @media only screen and (min-width: 1600px) and (max-width: 1920px) {
           main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column {
             max-width: 13rem; } }
+        @media only screen and (max-width: 384px) {
+          main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column {
+            flex-grow: 1;
+            /* Ocupar todo el espacio disponible */
+            order: 1;
+            /* Colocar a la izquierda (por defecto) */
+            max-width: 347.5px;
+            max-height: 100px;
+            margin: 50% 0 0 0;
+            z-index: 1; } }
         main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column h4 {
           color: #fff; }
           @media only screen and (min-width: 1600px) and (max-width: 1920px) {
@@ -3670,6 +3748,9 @@ main #cielorraso {
               font-size: 1.7rem; } }
         main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column i {
           font-size: 5rem; }
+          @media only screen and (max-width: 384px) {
+            main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column i {
+              display: none; } }
       main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-right-column {
         padding: 2rem;
         display: flex;
@@ -3680,6 +3761,10 @@ main #cielorraso {
           main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-right-column {
             max-width: 300px;
             margin: 0 0 0 -19px; } }
+        @media only screen and (max-width: 384px) {
+          main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-right-column {
+            max-width: 100%;
+            order: 2; } }
         main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-right-column p {
           font-family: 'Poppins';
           font-size: .9rem;
@@ -3708,6 +3793,11 @@ main #cielorraso {
         @media only screen and (max-width: 1024px) {
           main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column-img {
             margin: 10% 0 0 14px; } }
+        @media only screen and (max-width: 384px) {
+          main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column-img {
+            order: 0;
+            margin: 0 0 0 15%;
+            z-index: 0; } }
         main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column-img .owl-carousel .cielorraso-item img {
           width: 100%;
           height: auto;
@@ -3715,6 +3805,10 @@ main #cielorraso {
           @media only screen and (min-width: 1600px) and (max-width: 1920px) {
             main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column-img .owl-carousel .cielorraso-item img {
               margin-top: 44%; } }
+          @media only screen and (max-width: 384px) {
+            main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column-img .owl-carousel .cielorraso-item img {
+              width: 230px;
+              height: 230px; } }
         main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column-img .carousel-selectors .selector i {
           color: #333;
           font-size: 30px; }
@@ -3725,14 +3819,17 @@ main .drywall {
   width: 100%;
   margin: 0% 0 10% 0;
   z-index: 1; }
+  @media only screen and (max-width: 1024px) {
+    main .drywall {
+      height: 600px; } }
   @media only screen and (max-width: 768px) {
     main .drywall {
       display: flex;
       margin: -95% 0 0 0;
       height: 500px; } }
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 384px) {
     main .drywall {
-      height: 600px; } }
+      display: none; } }
   main .drywall::before {
     content: "";
     position: absolute;
@@ -5963,6 +6060,9 @@ main .disposicion .btn-redirect:hover {
       height: 448px;
       margin: 10% 0 0 3%;
       border-radius: 20px; }
+      @media only screen and (max-width: 384px) {
+        .main-pvc .detallePvc .strip-Pvc img {
+          display: none; } }
       @media only screen and (max-width: 768px) {
         .main-pvc .detallePvc .strip-Pvc img {
           display: flex;
