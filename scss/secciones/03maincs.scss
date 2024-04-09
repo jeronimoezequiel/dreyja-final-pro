@@ -474,6 +474,8 @@ main {
         @include samsung-L {
             display: flex;
             margin: 10% 0 0 0;
+            background-color: black;
+            height: 760px;
         }
     
         &::before {
@@ -577,17 +579,6 @@ main {
             z-index: 555;
             color: #fff;
 
-            @include tablet {
-                position: fixed;
-                top: 0;
-                right: -250px;
-                background: #000;
-                width: 250px;
-                height: 120vh;
-                display: flex;
-                transition: all 300ms;
-            }
-
             @include monitor-27 {
                 margin: -46% 0 4% 19%;
             }
@@ -595,13 +586,14 @@ main {
             @include samsung-L {
                 z-index: 999;
                 height: 90px;
-                position: fixed;
-                top: 350px;
+                position: absolute;
+                top: 362px;
                 left: 0;
                 width: 100%;
-                background: transparent;
                 color: #fff;
             }
+
+            
 
             .menu-cielorraso {
                 position: relative;
@@ -620,7 +612,7 @@ main {
                     align-items: center;
                     padding: 10px 20px;
                     width: 383px;
-                    margin: -252px 0 0 -38px;
+                    margin: -95px 0 0 -38px;
                     list-style: none;
                 }
 
@@ -640,15 +632,7 @@ main {
                         padding: 7px;
                         border-radius: 20px;
                     }
-    
-                    // @include tablet {
-                    //     display: flex;
-                    //     flex-direction: column;
-                    //     margin-top: 34px;
-                    //     margin-left: 0px;
-                    //     font-size: 1em;
-                    //     }
-                    
+
                     @include samsung-L {
                         display: contents;
                     }
@@ -657,7 +641,10 @@ main {
                         margin-top: .5%;
                         
                         @include samsung-L {
-                            margin-right: 20px; /* Espacio entre elementos */
+                            margin-right: 20px; 
+                            margin-top: -13px;
+                            margin-left: -2px;
+                            }
                         }
 
                         a{
@@ -672,11 +659,6 @@ main {
                             @include monitor-27 {
                                 font-size: 1.1rem;
                             }
-                        }
-    
-                    @include tablet {
-                        margin-top: -6%;
-                        margin-left: 1px;
                         }
                     
                         .nav__link-cielorraso {
@@ -822,11 +804,11 @@ main {
                     }
 
                     @include samsung-L {
-                        flex-grow: 1; /* Ocupar todo el espacio disponible */
+                        // flex-grow: 1; /* Ocupar todo el espacio disponible */
                         order: 1; /* Colocar a la izquierda (por defecto) */
                         max-width: 347.5px;
                         max-height: 100px;
-                        margin: 50% 0 0 0;
+                        // margin: 50% 0 0 0;
                         z-index: 1;
                     }
 
@@ -1765,4 +1747,4 @@ main {
             font-weight: 500;
         } 
     }
-}
+

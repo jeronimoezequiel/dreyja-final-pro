@@ -3452,7 +3452,9 @@ main #cielorraso {
   @media only screen and (max-width: 384px) {
     main #cielorraso {
       display: flex;
-      margin: 10% 0 0 0; } }
+      margin: 10% 0 0 0;
+      background-color: black;
+      height: 760px; } }
   main #cielorraso::before {
     content: "";
     position: absolute;
@@ -3540,16 +3542,6 @@ main #cielorraso {
     margin: -39% 0 0 8%;
     z-index: 555;
     color: #fff; }
-    @media only screen and (max-width: 768px) {
-      main #cielorraso .nav-cielorraso {
-        position: fixed;
-        top: 0;
-        right: -250px;
-        background: #000;
-        width: 250px;
-        height: 120vh;
-        display: flex;
-        transition: all 300ms; } }
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
       main #cielorraso .nav-cielorraso {
         margin: -46% 0 4% 19%; } }
@@ -3557,11 +3549,10 @@ main #cielorraso {
       main #cielorraso .nav-cielorraso {
         z-index: 999;
         height: 90px;
-        position: fixed;
-        top: 350px;
+        position: absolute;
+        top: 362px;
         left: 0;
         width: 100%;
-        background: transparent;
         color: #fff; } }
     main #cielorraso .nav-cielorraso .menu-cielorraso {
       position: relative;
@@ -3579,7 +3570,7 @@ main #cielorraso {
           align-items: center;
           padding: 10px 20px;
           width: 383px;
-          margin: -252px 0 0 -38px;
+          margin: -95px 0 0 -38px;
           list-style: none; } }
       main #cielorraso .nav-cielorraso .menu-cielorraso ul {
         width: 100%;
@@ -3604,233 +3595,228 @@ main #cielorraso {
           @media only screen and (max-width: 384px) {
             main #cielorraso .nav-cielorraso .menu-cielorraso ul .nav__item-cielorraso {
               margin-right: 20px;
-              /* Espacio entre elementos */ } }
-          main #cielorraso .nav-cielorraso .menu-cielorraso ul .nav__item-cielorraso a {
-            list-style: none;
-            text-decoration: none;
-            color: #fff; }
-            @media only screen and (max-width: 1024px) {
-              main #cielorraso .nav-cielorraso .menu-cielorraso ul .nav__item-cielorraso a {
-                color: #000; } }
-            @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-              main #cielorraso .nav-cielorraso .menu-cielorraso ul .nav__item-cielorraso a {
-                font-size: 1.1rem; } }
-          @media only screen and (max-width: 768px) {
-            main #cielorraso .nav-cielorraso .menu-cielorraso ul .nav__item-cielorraso {
-              margin-top: -6%;
-              margin-left: 1px; } }
-          main #cielorraso .nav-cielorraso .menu-cielorraso ul .nav__item-cielorraso .nav__link-cielorraso {
-            position: relative;
-            transition: color 0.3s; }
-            @media only screen and (max-width: 768px) {
-              main #cielorraso .nav-cielorraso .menu-cielorraso ul .nav__item-cielorraso .nav__link-cielorraso {
-                color: #fff; } }
-            main #cielorraso .nav-cielorraso .menu-cielorraso ul .nav__item-cielorraso .nav__link-cielorraso:before {
-              content: "";
-              position: absolute;
-              bottom: -2px;
-              left: 0;
-              width: 0;
-              height: 2px;
-              background-color: #d30809;
-              transition: width 0.3s ease; }
-            main #cielorraso .nav-cielorraso .menu-cielorraso ul .nav__item-cielorraso .nav__link-cielorraso.active-card-cielorraso {
-              color: #d30809;
-              font-weight: bold; }
-              main #cielorraso .nav-cielorraso .menu-cielorraso ul .nav__item-cielorraso .nav__link-cielorraso.active-card-cielorraso:before {
-                width: 100%; }
-  main #cielorraso .cielorraso-container {
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    align-items: center;
-    margin: -10.5% 0 0 20.5%;
-    z-index: 333;
-    position: relative; }
-    @media only screen and (max-width: 1024px) {
-      main #cielorraso .cielorraso-container {
-        margin: -19% 0 0 22%;
-        max-width: 785px; } }
-    @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-      main #cielorraso .cielorraso-container {
-        height: 400px;
-        width: 1000px;
-        margin: 2% 0 0 32%; } }
-    @media only screen and (max-width: 384px) {
-      main #cielorraso .cielorraso-container {
-        margin: 29% 0 0 229%;
-        width: 401px;
-        height: 700px;
-        display: block; } }
-    main #cielorraso .cielorraso-container .cielorraso-background-left-column {
-      background: #273238; }
-      @media only screen and (max-width: 384px) {
-        main #cielorraso .cielorraso-container .cielorraso-background-left-column {
-          position: absolute;
-          /* Posicionar absolutamente */
-          top: 0;
-          left: 0;
-          width: 100%;
-          /* Ocupar todo el ancho del contenedor padre */ } }
-    main #cielorraso .cielorraso-container .cielorraso-background2-left-column {
-      background: #273238; }
-    main #cielorraso .cielorraso-container .cielorraso-background3-left-column {
-      background: #273238; }
-    main #cielorraso .cielorraso-container .cielorraso-card {
-      background-color: #fff;
-      border-radius: 1rem;
-      box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
-      display: flex;
-      margin: 1.5rem;
-      overflow: hidden;
-      width: 58rem;
-      height: 23rem;
-      z-index: 444;
-      position: relative; }
-      @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-        main #cielorraso .cielorraso-container .cielorraso-card {
-          height: 500px;
-          width: 1200px;
-          margin-top: -8.8%; } }
-      @media only screen and (max-width: 384px) {
-        main #cielorraso .cielorraso-container .cielorraso-card {
-          position: relative;
-          /* Establecer el contenedor padre como relativo */
-          display: flex;
-          /* Utilizar flexbox para alinear elementos */
-          flex-direction: column;
-          /* Establecer dirección de columna */
-          justify-content: space-between;
-          /* Espacio entre elementos */
-          width: 113%;
-          margin: 13% 0 0 -19%;
-          height: 83%; } }
-      main #cielorraso .cielorraso-container .cielorraso-card.active-card {
-        border: 2px solid #d30809;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-        z-index: 4; }
-      main #cielorraso .cielorraso-container .cielorraso-card h2 {
-        letter-spacing: .1rem;
-        margin: 1rem 0;
-        color: #000; }
-      main #cielorraso .cielorraso-container .cielorraso-card h6 {
-        opacity: 0.6;
-        letter-spacing: .1rem;
-        text-transform: uppercase; }
-        @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-          main #cielorraso .cielorraso-container .cielorraso-card h6 {
-            font-size: 1.4rem; } }
-      main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column {
-        color: #fff;
-        padding: 2rem;
-        max-width: 10rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between; }
-        @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-          main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column {
-            max-width: 13rem; } }
-        @media only screen and (max-width: 384px) {
-          main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column {
-            flex-grow: 1;
-            /* Ocupar todo el espacio disponible */
-            order: 1;
-            /* Colocar a la izquierda (por defecto) */
-            max-width: 347.5px;
-            max-height: 100px;
-            margin: 50% 0 0 0;
-            z-index: 1; } }
-        main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column h4 {
+              margin-top: -13px;
+              margin-left: -2px; } }
+        main #cielorraso .nav-cielorraso .menu-cielorraso ul a {
+          list-style: none;
+          text-decoration: none;
           color: #fff; }
-          @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-            main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column h4 {
-              font-size: 1.7rem; } }
-        main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column i {
-          font-size: 5rem; }
-          @media only screen and (max-width: 384px) {
-            main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column i {
-              display: none; } }
-      main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-right-column {
-        padding: 2rem;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between; }
-        @media only screen and (max-width: 1024px) {
-          main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-right-column {
-            max-width: 300px;
-            margin: 0 0 0 -19px; } }
-        @media only screen and (max-width: 384px) {
-          main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-right-column {
-            max-width: 100%;
-            order: 2; } }
-        main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-right-column p {
-          font-family: 'Poppins';
-          font-size: .9rem;
-          color: #000;
-          max-width: 400px; }
           @media only screen and (max-width: 1024px) {
-            main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-right-column p {
-              font-size: .75rem; } }
+            main #cielorraso .nav-cielorraso .menu-cielorraso ul a {
+              color: #000; } }
           @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-            main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-right-column p {
+            main #cielorraso .nav-cielorraso .menu-cielorraso ul a {
               font-size: 1.1rem; } }
-        main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-right-column span {
-          border-radius: 3rem;
-          background: #273238;
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-          color: #fff;
-          font-size: 1.2rem;
-          padding: .8rem 1.3rem;
-          letter-spacing: .1rem;
-          align-self: flex-end; }
-      main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column-img {
-        width: 350px;
-        max-width: 300px;
-        margin-left: auto;
-        position: relative; }
-        @media only screen and (max-width: 1024px) {
-          main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column-img {
-            margin: 10% 0 0 14px; } }
-        @media only screen and (max-width: 384px) {
-          main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column-img {
-            order: 0;
-            margin: 0 0 0 15%;
-            z-index: 0; } }
-        main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column-img .owl-carousel .cielorraso-item img {
-          width: 100%;
-          height: auto;
-          margin: 0; }
-          @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-            main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column-img .owl-carousel .cielorraso-item img {
-              margin-top: 44%; } }
-          @media only screen and (max-width: 384px) {
-            main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column-img .owl-carousel .cielorraso-item img {
-              width: 230px;
-              height: 230px; } }
-        main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column-img .carousel-selectors .selector i {
-          color: #333;
-          font-size: 30px; }
+        main #cielorraso .nav-cielorraso .menu-cielorraso ul .nav__link-cielorraso {
+          position: relative;
+          transition: color 0.3s; }
+          @media only screen and (max-width: 768px) {
+            main #cielorraso .nav-cielorraso .menu-cielorraso ul .nav__link-cielorraso {
+              color: #fff; } }
+          main #cielorraso .nav-cielorraso .menu-cielorraso ul .nav__link-cielorraso:before {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #d30809;
+            transition: width 0.3s ease; }
+          main #cielorraso .nav-cielorraso .menu-cielorraso ul .nav__link-cielorraso.active-card-cielorraso {
+            color: #d30809;
+            font-weight: bold; }
+            main #cielorraso .nav-cielorraso .menu-cielorraso ul .nav__link-cielorraso.active-card-cielorraso:before {
+              width: 100%; }
 
-main .drywall {
+main .cielorraso-container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  margin: -10.5% 0 0 20.5%;
+  z-index: 333;
+  position: relative; }
+  @media only screen and (max-width: 1024px) {
+    main .cielorraso-container {
+      margin: -19% 0 0 22%;
+      max-width: 785px; } }
+  @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+    main .cielorraso-container {
+      height: 400px;
+      width: 1000px;
+      margin: 2% 0 0 32%; } }
+  @media only screen and (max-width: 384px) {
+    main .cielorraso-container {
+      margin: 29% 0 0 229%;
+      width: 401px;
+      height: 700px;
+      display: block; } }
+  main .cielorraso-container .cielorraso-background-left-column {
+    background: #273238; }
+    @media only screen and (max-width: 384px) {
+      main .cielorraso-container .cielorraso-background-left-column {
+        position: absolute;
+        /* Posicionar absolutamente */
+        top: 0;
+        left: 0;
+        width: 100%;
+        /* Ocupar todo el ancho del contenedor padre */ } }
+  main .cielorraso-container .cielorraso-background2-left-column {
+    background: #273238; }
+  main .cielorraso-container .cielorraso-background3-left-column {
+    background: #273238; }
+  main .cielorraso-container .cielorraso-card {
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    margin: 1.5rem;
+    overflow: hidden;
+    width: 58rem;
+    height: 23rem;
+    z-index: 444;
+    position: relative; }
+    @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+      main .cielorraso-container .cielorraso-card {
+        height: 500px;
+        width: 1200px;
+        margin-top: -8.8%; } }
+    @media only screen and (max-width: 384px) {
+      main .cielorraso-container .cielorraso-card {
+        position: relative;
+        /* Establecer el contenedor padre como relativo */
+        display: flex;
+        /* Utilizar flexbox para alinear elementos */
+        flex-direction: column;
+        /* Establecer dirección de columna */
+        justify-content: space-between;
+        /* Espacio entre elementos */
+        width: 113%;
+        margin: 13% 0 0 -19%;
+        height: 83%; } }
+    main .cielorraso-container .cielorraso-card.active-card {
+      border: 2px solid #d30809;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 4; }
+    main .cielorraso-container .cielorraso-card h2 {
+      letter-spacing: .1rem;
+      margin: 1rem 0;
+      color: #000; }
+    main .cielorraso-container .cielorraso-card h6 {
+      opacity: 0.6;
+      letter-spacing: .1rem;
+      text-transform: uppercase; }
+      @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+        main .cielorraso-container .cielorraso-card h6 {
+          font-size: 1.4rem; } }
+    main .cielorraso-container .cielorraso-card .cielorraso-left-column {
+      color: #fff;
+      padding: 2rem;
+      max-width: 10rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between; }
+      @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+        main .cielorraso-container .cielorraso-card .cielorraso-left-column {
+          max-width: 13rem; } }
+      @media only screen and (max-width: 384px) {
+        main .cielorraso-container .cielorraso-card .cielorraso-left-column {
+          order: 1;
+          /* Colocar a la izquierda (por defecto) */
+          max-width: 347.5px;
+          max-height: 100px;
+          z-index: 1; } }
+      main .cielorraso-container .cielorraso-card .cielorraso-left-column h4 {
+        color: #fff; }
+        @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+          main .cielorraso-container .cielorraso-card .cielorraso-left-column h4 {
+            font-size: 1.7rem; } }
+      main .cielorraso-container .cielorraso-card .cielorraso-left-column i {
+        font-size: 5rem; }
+        @media only screen and (max-width: 384px) {
+          main .cielorraso-container .cielorraso-card .cielorraso-left-column i {
+            display: none; } }
+    main .cielorraso-container .cielorraso-card .cielorraso-right-column {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between; }
+      @media only screen and (max-width: 1024px) {
+        main .cielorraso-container .cielorraso-card .cielorraso-right-column {
+          max-width: 300px;
+          margin: 0 0 0 -19px; } }
+      @media only screen and (max-width: 384px) {
+        main .cielorraso-container .cielorraso-card .cielorraso-right-column {
+          max-width: 100%;
+          order: 2; } }
+      main .cielorraso-container .cielorraso-card .cielorraso-right-column p {
+        font-family: 'Poppins';
+        font-size: .9rem;
+        color: #000;
+        max-width: 400px; }
+        @media only screen and (max-width: 1024px) {
+          main .cielorraso-container .cielorraso-card .cielorraso-right-column p {
+            font-size: .75rem; } }
+        @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+          main .cielorraso-container .cielorraso-card .cielorraso-right-column p {
+            font-size: 1.1rem; } }
+      main .cielorraso-container .cielorraso-card .cielorraso-right-column span {
+        border-radius: 3rem;
+        background: #273238;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+        color: #fff;
+        font-size: 1.2rem;
+        padding: .8rem 1.3rem;
+        letter-spacing: .1rem;
+        align-self: flex-end; }
+    main .cielorraso-container .cielorraso-card .cielorraso-left-column-img {
+      width: 350px;
+      max-width: 300px;
+      margin-left: auto;
+      position: relative; }
+      @media only screen and (max-width: 1024px) {
+        main .cielorraso-container .cielorraso-card .cielorraso-left-column-img {
+          margin: 10% 0 0 14px; } }
+      @media only screen and (max-width: 384px) {
+        main .cielorraso-container .cielorraso-card .cielorraso-left-column-img {
+          order: 0;
+          margin: 0 0 0 15%;
+          z-index: 0; } }
+      main .cielorraso-container .cielorraso-card .cielorraso-left-column-img .owl-carousel .cielorraso-item img {
+        width: 100%;
+        height: auto;
+        margin: 0; }
+        @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+          main .cielorraso-container .cielorraso-card .cielorraso-left-column-img .owl-carousel .cielorraso-item img {
+            margin-top: 44%; } }
+        @media only screen and (max-width: 384px) {
+          main .cielorraso-container .cielorraso-card .cielorraso-left-column-img .owl-carousel .cielorraso-item img {
+            width: 230px;
+            height: 230px; } }
+      main .cielorraso-container .cielorraso-card .cielorraso-left-column-img .carousel-selectors .selector i {
+        color: #333;
+        font-size: 30px; }
+
+.drywall {
   position: absolute;
   height: 500px;
   width: 100%;
   margin: 0% 0 10% 0;
   z-index: 1; }
   @media only screen and (max-width: 1024px) {
-    main .drywall {
+    .drywall {
       height: 600px; } }
   @media only screen and (max-width: 768px) {
-    main .drywall {
+    .drywall {
       display: flex;
       margin: -95% 0 0 0;
       height: 500px; } }
   @media only screen and (max-width: 384px) {
-    main .drywall {
+    .drywall {
       display: none; } }
-  main .drywall::before {
+  .drywall::before {
     content: "";
     position: absolute;
     top: 0;
@@ -3839,7 +3825,7 @@ main .drywall {
     height: 100%;
     background: inherit;
     filter: brightness(40%) contrast(120%) saturate(80%) grayscale(10%); }
-  main .drywall h2 {
+  .drywall h2 {
     color: #fff;
     font-size: 2.2rem;
     font-family: "Poppins", sans-serif;
@@ -3850,12 +3836,12 @@ main .drywall {
     background-color: #d30809;
     padding: 10px 50px; }
     @media only screen and (max-width: 768px) {
-      main .drywall h2 {
+      .drywall h2 {
         font-size: 2.3rem; } }
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-      main .drywall h2 {
+      .drywall h2 {
         font-size: 2.5rem; } }
-  main .drywall h3 {
+  .drywall h3 {
     color: #fff;
     font-size: 1.5rem;
     font-family: "Poppins", sans-serif;
@@ -3865,28 +3851,28 @@ main .drywall {
     background-color: #273238;
     padding: 10px 50px; }
     @media only screen and (max-width: 768px) {
-      main .drywall h3 {
+      .drywall h3 {
         font-size: 2.3rem;
         margin: 100px 0 0 47px; } }
-  main .drywall .navegacion {
+  .drywall .navegacion {
     height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
     margin: 210px 0 0 -397px; }
     @media only screen and (max-width: 1024px) {
-      main .drywall .navegacion {
+      .drywall .navegacion {
         margin: 10% 0 0 -43%; } }
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-      main .drywall .navegacion {
+      .drywall .navegacion {
         width: 21%;
         margin-left: 60px;
         margin-top: 19%; } }
-    main .drywall .navegacion ul li {
+    .drywall .navegacion ul li {
       list-style: none;
       display: flex;
       flex-direction: column;
       align-items: center; }
-      main .drywall .navegacion ul li a {
+      .drywall .navegacion ul li a {
         width: 100%;
         height: 70px;
         /* Ajustar la altura según sea necesario */
@@ -3905,15 +3891,15 @@ main .drywall {
         font-size: .9rem;
         margin-bottom: 5px; }
         @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-          main .drywall .navegacion ul li a {
+          .drywall .navegacion ul li a {
             font-size: 1.3rem;
             margin-bottom: 14px; } }
-      main .drywall .navegacion ul li .inbox-img {
+      .drywall .navegacion ul li .inbox-img {
         width: 40px;
         height: 40px;
         margin-bottom: 5px;
         /* Agregar un espacio entre la imagen y el texto */ }
-  main .drywall .drywall-button {
+  .drywall .drywall-button {
     display: flex;
     color: #fff;
     align-items: center;
@@ -3927,11 +3913,11 @@ main .drywall {
     border-radius: 8px;
     cursor: pointer; }
     @media only screen and (max-width: 1024px) {
-      main .drywall .drywall-button {
+      .drywall .drywall-button {
         display: none; } }
-  main .drywall .drywall-button:hover {
+  .drywall .drywall-button:hover {
     cursor: pointer; }
-  main .drywall nav {
+  .drywall nav {
     font-family: "Inter", sans-serif;
     height: 90px;
     position: relative;
@@ -3939,7 +3925,7 @@ main .drywall {
     margin: 10.5% 0 0 8%;
     z-index: 2; }
     @media only screen and (max-width: 768px) {
-      main .drywall nav {
+      .drywall nav {
         position: fixed;
         top: 0;
         right: -250px;
@@ -3948,16 +3934,16 @@ main .drywall {
         height: 120vh;
         display: flex;
         transition: all 300ms; } }
-    main .drywall nav .menu-drywall {
+    .drywall nav .menu-drywall {
       position: relative;
       margin: 60px 0 0 20%;
       max-width: 900px;
       overflow: hidden; }
       @media only screen and (max-width: 1024px) {
-        main .drywall nav .menu-drywall {
+        .drywall nav .menu-drywall {
           max-width: 647px;
           margin: 0 0 0 21%; } }
-      main .drywall nav .menu-drywall ul {
+      .drywall nav .menu-drywall ul {
         width: 100%;
         margin: 1.8% 0% 0% 0%;
         padding-right: 0;
@@ -3966,32 +3952,32 @@ main .drywall {
         font-size: .9rem;
         font-weight: 300; }
         @media only screen and (max-width: 768px) {
-          main .drywall nav .menu-drywall ul {
+          .drywall nav .menu-drywall ul {
             display: flex;
             flex-direction: column;
             margin-top: 34px;
             margin-left: 0px;
             font-size: 1em; } }
-        main .drywall nav .menu-drywall ul .nav__item-drywall {
+        .drywall nav .menu-drywall ul .nav__item-drywall {
           margin-top: .5%; }
-          main .drywall nav .menu-drywall ul .nav__item-drywall a {
+          .drywall nav .menu-drywall ul .nav__item-drywall a {
             list-style: none;
             text-decoration: none;
             color: #000; }
             @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-              main .drywall nav .menu-drywall ul .nav__item-drywall a {
+              .drywall nav .menu-drywall ul .nav__item-drywall a {
                 font-size: 1.1rem; } }
           @media only screen and (max-width: 768px) {
-            main .drywall nav .menu-drywall ul .nav__item-drywall {
+            .drywall nav .menu-drywall ul .nav__item-drywall {
               margin-top: -6%;
               margin-left: 1px; } }
-          main .drywall nav .menu-drywall ul .nav__item-drywall .nav__link-drywall {
+          .drywall nav .menu-drywall ul .nav__item-drywall .nav__link-drywall {
             position: relative;
             transition: color 0.3s; }
             @media only screen and (max-width: 768px) {
-              main .drywall nav .menu-drywall ul .nav__item-drywall .nav__link-drywall {
+              .drywall nav .menu-drywall ul .nav__item-drywall .nav__link-drywall {
                 color: #fff; } }
-            main .drywall nav .menu-drywall ul .nav__item-drywall .nav__link-drywall:before {
+            .drywall nav .menu-drywall ul .nav__item-drywall .nav__link-drywall:before {
               content: "";
               position: absolute;
               bottom: -2px;
@@ -4000,12 +3986,12 @@ main .drywall {
               height: 2px;
               background-color: #d30809;
               transition: width 0.3s ease; }
-            main .drywall nav .menu-drywall ul .nav__item-drywall .nav__link-drywall.active-card {
+            .drywall nav .menu-drywall ul .nav__item-drywall .nav__link-drywall.active-card {
               color: #d30809;
               font-weight: bold; }
-              main .drywall nav .menu-drywall ul .nav__item-drywall .nav__link-drywall.active-card:before {
+              .drywall nav .menu-drywall ul .nav__item-drywall .nav__link-drywall.active-card:before {
                 width: 100%; }
-  main .drywall .drywall-container {
+  .drywall .drywall-container {
     display: flex;
     justify-content: center;
     height: 100vh;
@@ -4013,18 +3999,18 @@ main .drywall {
     margin: -10.5% 0 0 20.5%;
     z-index: 3; }
     @media only screen and (max-width: 1024px) {
-      main .drywall .drywall-container {
+      .drywall .drywall-container {
         margin: -10% 0 0 23%;
         max-width: 773px; } }
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-      main .drywall .drywall-container {
+      .drywall .drywall-container {
         height: 400px;
         margin-top: 7%; } }
-    main .drywall .drywall-container .background-left-column {
+    .drywall .drywall-container .background-left-column {
       background: linear-gradient(100deg, #243949, #517fa4); }
-    main .drywall .drywall-container .background2-left-column {
+    .drywall .drywall-container .background2-left-column {
       background: linear-gradient(100deg, #517fa4, #5786ad); }
-    main .drywall .drywall-container .drywall-card {
+    .drywall .drywall-container .drywall-card {
       background-color: #fff;
       border-radius: 1rem;
       box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
@@ -4034,25 +4020,25 @@ main .drywall {
       height: 23rem;
       display: none; }
       @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-        main .drywall .drywall-container .drywall-card {
+        .drywall .drywall-container .drywall-card {
           height: 500px;
           width: 950px;
           margin-top: -13%;
           margin-left: 10%; } }
-      main .drywall .drywall-container .drywall-card.active {
+      .drywall .drywall-container .drywall-card.active {
         display: block;
         border: 2px solid #d30809;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         z-index: 4; }
-      main .drywall .drywall-container .drywall-card h2 {
+      .drywall .drywall-container .drywall-card h2 {
         letter-spacing: .1rem;
         margin: 1rem 0;
         color: #000; }
-      main .drywall .drywall-container .drywall-card h6 {
+      .drywall .drywall-container .drywall-card h6 {
         opacity: 0.6;
         letter-spacing: .1rem;
         text-transform: uppercase; }
-      main .drywall .drywall-container .drywall-card .left-column {
+      .drywall .drywall-container .drywall-card .left-column {
         color: #fff;
         padding: 2rem;
         max-width: 10rem;
@@ -4060,22 +4046,22 @@ main .drywall {
         flex-direction: column;
         align-items: center;
         justify-content: space-between; }
-        main .drywall .drywall-container .drywall-card .left-column h4 {
+        .drywall .drywall-container .drywall-card .left-column h4 {
           color: #fff; }
-        main .drywall .drywall-container .drywall-card .left-column i {
+        .drywall .drywall-container .drywall-card .left-column i {
           font-size: 5rem; }
-      main .drywall .drywall-container .drywall-card .right-column {
+      .drywall .drywall-container .drywall-card .right-column {
         padding: 2rem;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-between; }
-        main .drywall .drywall-container .drywall-card .right-column p {
+        .drywall .drywall-container .drywall-card .right-column p {
           font-family: 'Poppins';
           font-size: .9rem;
           color: #000;
           max-width: 400px; }
-        main .drywall .drywall-container .drywall-card .right-column span {
+        .drywall .drywall-container .drywall-card .right-column span {
           border-radius: 3rem;
           background: #273238;
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
@@ -4084,55 +4070,55 @@ main .drywall {
           padding: .8rem 1.3rem;
           letter-spacing: .1rem;
           align-self: flex-end; }
-      main .drywall .drywall-container .drywall-card .left-column-img {
+      .drywall .drywall-container .drywall-card .left-column-img {
         width: 350px;
         max-width: 300px;
         margin-left: auto;
         position: relative; }
-        main .drywall .drywall-container .drywall-card .left-column-img .owl-carousel .item img {
+        .drywall .drywall-container .drywall-card .left-column-img .owl-carousel .item img {
           width: 100%;
           height: auto;
           margin: 0; }
-    main .drywall .drywall-container .carousel-selectors {
+    .drywall .drywall-container .carousel-selectors {
       position: absolute;
       bottom: 10px;
       left: 50%;
       transform: translateX(-50%); }
-      main .drywall .drywall-container .carousel-selectors .selector {
+      .drywall .drywall-container .carousel-selectors .selector {
         display: inline-block;
         margin: 0 5px;
         cursor: pointer; }
-        main .drywall .drywall-container .carousel-selectors .selector i {
+        .drywall .drywall-container .carousel-selectors .selector i {
           color: #333;
           font-size: 30px; }
-    main .drywall .drywall-container .carousel-selectorsDrywall {
+    .drywall .drywall-container .carousel-selectorsDrywall {
       display: inline-block; }
-      main .drywall .drywall-container .carousel-selectorsDrywall .selector {
+      .drywall .drywall-container .carousel-selectorsDrywall .selector {
         display: inline-block;
         margin: 0 5px;
         background-color: red;
         font-size: 1.6rem;
         cursor: pointer; }
 
-main .banner-shop-cs {
+.banner-shop-cs {
   background-color: #8baac0;
   height: 245px;
   width: 100%;
   padding: 1px;
   margin: 45% 0 0 0; }
   @media only screen and (max-width: 1024px) {
-    main .banner-shop-cs {
+    .banner-shop-cs {
       margin: 5% 0 0 0; } }
   @media only screen and (max-width: 768px) {
-    main .banner-shop-cs {
+    .banner-shop-cs {
       display: flex;
       height: 180px;
       width: 100%;
       margin: 0 0 40% 0; } }
   @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-    main .banner-shop-cs {
+    .banner-shop-cs {
       margin-top: 50%; } }
-  main .banner-shop-cs h2 {
+  .banner-shop-cs h2 {
     font-family: 'Poppins';
     font-weight: 300;
     font-size: 2rem;
@@ -4145,54 +4131,54 @@ main .banner-shop-cs {
     align-items: center;
     top: 35%; }
     @media only screen and (max-width: 768px) {
-      main .banner-shop-cs h2 {
+      .banner-shop-cs h2 {
         display: flex;
         font-size: 1.2rem;
         margin: -133px 0 0 0; } }
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-      main .banner-shop-cs h2 {
+      .banner-shop-cs h2 {
         max-width: 1000px;
         margin-left: 19%; } }
 
-main .wrapper {
+.wrapper {
   display: grid;
   grid-template-columns: 1fr 4fr;
   background-color: #ffffff;
   margin: 0 0 0px 0; }
   @media only screen and (max-width: 768px) {
-    main .wrapper {
+    .wrapper {
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       margin: -40% 0 0 0;
       background: #e3e3e3;
       padding: 0.5rem; } }
-  main .wrapper .header-mobile {
+  .wrapper .header-mobile {
     display: none; }
     @media only screen and (max-width: 768px) {
-      main .wrapper .header-mobile {
+      .wrapper .header-mobile {
         display: flex;
         padding: 1rem;
         justify-content: space-between;
         align-items: center; } }
     @media only screen and (max-width: 768px) {
-      main .wrapper .header-mobile .shop-logo {
+      .wrapper .header-mobile .shop-logo {
         margin: 0 0 0 3px; } }
     @media only screen and (max-width: 768px) {
-      main .wrapper .header-mobile .shop-logo img {
+      .wrapper .header-mobile .shop-logo img {
         width: 155px;
         height: 45px; } }
-    main .wrapper .header-mobile .open-menu-header {
+    .wrapper .header-mobile .open-menu-header {
       display: none; }
       @media only screen and (max-width: 768px) {
-        main .wrapper .header-mobile .open-menu-header {
+        .wrapper .header-mobile .open-menu-header {
           display: flex;
           background: transparent;
           color: #333;
           border: 0;
           font-size: 1.3rem;
           cursor: pointer; } }
-  main .wrapper aside {
+  .wrapper aside {
     padding: -1rem;
     padding-right: 0;
     color: #273238;
@@ -4204,7 +4190,7 @@ main .wrapper {
     justify-content: space-between;
     margin: 0 0 10% 0; }
     @media only screen and (max-width: 768px) {
-      main .wrapper aside {
+      .wrapper aside {
         position: fixed;
         z-index: 999;
         background: #fff;
@@ -4214,23 +4200,23 @@ main .wrapper {
         opacity: 0;
         visibility: hidden;
         transition: .2s; } }
-    main .wrapper aside .shop-logo {
+    .wrapper aside .shop-logo {
       font-family: 'Poppins';
       font-weight: 400;
       font-size: 1.5rem;
       padding: 2rem; }
       @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-        main .wrapper aside .shop-logo {
+        .wrapper aside .shop-logo {
           margin-top: 40%;
           margin-left: 10px;
           font-weight: bold;
           font-size: 1.6rem;
           text-decoration: underline; } }
-    main .wrapper aside nav .menu-ul {
+    .wrapper aside nav .menu-ul {
       display: flex;
       flex-direction: column;
       gap: .5rem; }
-      main .wrapper aside nav .menu-ul li .boton-menu {
+      .wrapper aside nav .menu-ul li .boton-menu {
         background-color: transparent;
         border: 0;
         color: #000000;
@@ -4243,37 +4229,37 @@ main .wrapper {
         padding: .8rem;
         width: 100%; }
         @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-          main .wrapper aside nav .menu-ul li .boton-menu {
+          .wrapper aside nav .menu-ul li .boton-menu {
             font-size: 1.1rem; } }
-      main .wrapper aside nav .menu-ul li .boton-menu.active {
+      .wrapper aside nav .menu-ul li .boton-menu.active {
         background-color: #eee;
         color: #000000;
         border-top-left-radius: 1rem;
         border-bottom-left-radius: 1rem;
         position: relative; }
-      main .wrapper aside nav .menu-ul li .bi-arrow-up-square-fill,
-      main .wrapper aside nav .menu-ul li .bi-arrow-up-square {
+      .wrapper aside nav .menu-ul li .bi-arrow-up-square-fill,
+      .wrapper aside nav .menu-ul li .bi-arrow-up-square {
         transform: rotateZ(90deg); }
-      main .wrapper aside nav .menu-ul li .boton-carrito {
+      .wrapper aside nav .menu-ul li .boton-carrito {
         margin-top: 2rem; }
-    main .wrapper aside .footer-shop .texto-footer {
+    .wrapper aside .footer-shop .texto-footer {
       font-family: 'Poppins';
       color: #9e9e9e;
       font-size: .85rem;
       margin-left: 15%; }
-  main .wrapper .aside-visible {
+  .wrapper .aside-visible {
     transform: translateX(0);
     opacity: 1;
     visibility: visible; }
     @media only screen and (max-width: 768px) {
-      main .wrapper .aside-visible {
+      .wrapper .aside-visible {
         transform: translateX(0);
         opacity: 1;
         visibility: visible; } }
-    main .wrapper .aside-visible .close-menu-header {
+    .wrapper .aside-visible .close-menu-header {
       display: none; }
       @media only screen and (max-width: 768px) {
-        main .wrapper .aside-visible .close-menu-header {
+        .wrapper .aside-visible .close-menu-header {
           display: flex;
           position: absolute;
           top: 1.9rem;
@@ -4283,49 +4269,49 @@ main .wrapper {
           border: 0;
           font-size: 1.3rem;
           cursor: pointer; } }
-  main .wrapper .main-eshop {
+  .wrapper .main-eshop {
     background-color: #f1f1f1;
     margin: 1rem;
     margin-left: 0;
     border-radius: 2rem;
     padding: 2rem; }
     @media only screen and (max-width: 768px) {
-      main .wrapper .main-eshop {
+      .wrapper .main-eshop {
         margin: 1rem;
         padding: 2rem;
         margin: 0 0 170px 0; } }
-    main .wrapper .main-eshop .titulo-principal {
+    .wrapper .main-eshop .titulo-principal {
       color: #273238;
       margin-bottom: 2rem; }
-    main .wrapper .main-eshop .contenedor-productos {
+    .wrapper .main-eshop .contenedor-productos {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 3rem; }
       @media only screen and (max-width: 998px) {
-        main .wrapper .main-eshop .contenedor-productos {
+        .wrapper .main-eshop .contenedor-productos {
           grid-template-columns: repeat(3, 1fr); } }
       @media only screen and (max-width: 675px) {
-        main .wrapper .main-eshop .contenedor-productos {
+        .wrapper .main-eshop .contenedor-productos {
           grid-template-columns: repeat(2, 1fr); } }
       @media only screen and (max-width: 768px) {
-        main .wrapper .main-eshop .contenedor-productos {
+        .wrapper .main-eshop .contenedor-productos {
           grid-template-columns: repeat(2, 1fr); } }
       @media only screen and (max-width: 430px) {
-        main .wrapper .main-eshop .contenedor-productos {
+        .wrapper .main-eshop .contenedor-productos {
           grid-template-columns: 1fr; } }
       @media only screen and (max-width: 390px) {
-        main .wrapper .main-eshop .contenedor-productos {
+        .wrapper .main-eshop .contenedor-productos {
           grid-template-columns: 1fr; } }
-      main .wrapper .main-eshop .contenedor-productos .producto .producto-imagen {
+      .wrapper .main-eshop .contenedor-productos .producto .producto-imagen {
         max-width: 100%;
         border-top-right-radius: 1rem;
         border-top-left-radius: 1rem;
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px; }
         @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-          main .wrapper .main-eshop .contenedor-productos .producto .producto-imagen {
+          .wrapper .main-eshop .contenedor-productos .producto .producto-imagen {
             width: 400px; } }
-      main .wrapper .main-eshop .contenedor-productos .producto .producto-detalles {
+      .wrapper .main-eshop .contenedor-productos .producto .producto-detalles {
         background-color: #273238;
         color: #fff;
         padding: .5rem;
@@ -4341,17 +4327,17 @@ main .wrapper {
         border-bottom-left-radius: 1rem;
         border-bottom-right-radius: 1rem; }
         @media only screen and (max-width: 768px) {
-          main .wrapper .main-eshop .contenedor-productos .producto .producto-detalles {
+          .wrapper .main-eshop .contenedor-productos .producto .producto-detalles {
             width: 300px; } }
-        main .wrapper .main-eshop .contenedor-productos .producto .producto-detalles .producto-titulo {
+        .wrapper .main-eshop .contenedor-productos .producto .producto-detalles .producto-titulo {
           font-size: 1rem;
           text-align: center; }
           @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-            main .wrapper .main-eshop .contenedor-productos .producto .producto-detalles .producto-titulo {
+            .wrapper .main-eshop .contenedor-productos .producto .producto-detalles .producto-titulo {
               background-color: #d30809;
               font-size: 1.3rem;
               border-radius: 10px; } }
-        main .wrapper .main-eshop .contenedor-productos .producto .producto-detalles .producto-consultar {
+        .wrapper .main-eshop .contenedor-productos .producto .producto-detalles .producto-consultar {
           border: 0;
           background-color: #fff;
           color: #273238;
@@ -4361,18 +4347,18 @@ main .wrapper {
           cursor: pointer;
           border: 2px solid #fff;
           transition: background-color .2s, color .2s; }
-        main .wrapper .main-eshop .contenedor-productos .producto .producto-detalles .producto-consultar:hover {
+        .wrapper .main-eshop .contenedor-productos .producto .producto-detalles .producto-consultar:hover {
           background-color: #8baac0;
           color: #fff; }
 
 @media only screen and (max-width: 768px) {
-  main .disposicion {
+  .disposicion {
     height: 556px;
     margin-bottom: -73.5%;
     margin-top: -40%;
     background: #fff; } }
 
-main .disposicion .disposicion-6-cs {
+.disposicion .disposicion-6-cs {
   height: 70vh;
   background-image: url(https://i.pinimg.com/564x/09/dc/24/09dc24e77ec05440710cbc536e6426b5.jpg);
   filter: opacity(25%);
@@ -4381,12 +4367,12 @@ main .disposicion .disposicion-6-cs {
   background-size: cover;
   width: 100%; }
   @media only screen and (max-width: 768px) {
-    main .disposicion .disposicion-6-cs {
+    .disposicion .disposicion-6-cs {
       height: 270px; } }
 
-main .disposicion .disposicion-content {
+.disposicion .disposicion-content {
   display: flex; }
-  main .disposicion .disposicion-content .disposicion-title {
+  .disposicion .disposicion-content .disposicion-title {
     font-family: 'Poppins';
     font-weight: 300;
     font-size: 2rem;
@@ -4399,15 +4385,15 @@ main .disposicion .disposicion-content {
     align-items: center;
     margin-top: -38%; }
     @media only screen and (max-width: 768px) {
-      main .disposicion .disposicion-content .disposicion-title {
+      .disposicion .disposicion-content .disposicion-title {
         width: 90%;
         font-size: 1.1rem;
         margin: -80% 0 0 20px; } }
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-      main .disposicion .disposicion-content .disposicion-title {
+      .disposicion .disposicion-content .disposicion-title {
         font-size: 2.3rem; } }
 
-main .disposicion .btn-redirect {
+.disposicion .btn-redirect {
   display: flex;
   position: absolute;
   margin-top: -14%;
@@ -4418,26 +4404,26 @@ main .disposicion .btn-redirect {
   padding: 10px 0px 10px 35px;
   width: 200px; }
   @media only screen and (max-width: 768px) {
-    main .disposicion .btn-redirect {
+    .disposicion .btn-redirect {
       display: flex;
       margin: -75px 0 0 90px; } }
   @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-    main .disposicion .btn-redirect {
+    .disposicion .btn-redirect {
       background-color: #273238;
       width: 300px;
       height: 60px; } }
-  main .disposicion .btn-redirect a {
+  .disposicion .btn-redirect a {
     font-size: 'Poppins';
     font-weight: 400;
     text-decoration: none;
     color: #333; }
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-      main .disposicion .btn-redirect a {
+      .disposicion .btn-redirect a {
         color: #273238;
         font-size: 1.5rem;
         margin-left: 14px; } }
 
-main .disposicion .btn-redirect:hover {
+.disposicion .btn-redirect:hover {
   cursor: pointer;
   transition: all .3s ease-in-out;
   background-color: #273238;
