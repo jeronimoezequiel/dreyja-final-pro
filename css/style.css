@@ -148,7 +148,6 @@ header #btn__menu {
     header #btn__menu {
       background-color: #273238;
       display: flex;
-      margin: 6% 0 0 83%;
       font-size: 1.1rem;
       position: fixed; } }
 
@@ -3248,9 +3247,8 @@ main .tiposDeMuros .strip {
     main .tiposDeMuros .strip {
       display: flex;
       width: 98%;
-      height: 170px;
-      margin: -98% 0 385px 3px;
-      padding: 0 0 0 3px; } }
+      height: 115px;
+      margin: -98% 0 385px 3px; } }
   @media only screen and (max-width: 1024px) {
     main .tiposDeMuros .strip {
       max-width: 966px; } }
@@ -3280,7 +3278,9 @@ main .tiposDeMuros .strip {
         margin: 0 0 0 -3px; } }
     @media only screen and (max-width: 384px) {
       main .tiposDeMuros .strip img {
-        width: 110%; } }
+        width: 34%;
+        height: 86%;
+        margin-left: 10px; } }
   main .tiposDeMuros .strip .strip-content {
     font-family: 'Poppins';
     color: #333;
@@ -3646,8 +3646,7 @@ main #cielorraso {
         margin: 2% 0 0 32%; } }
     @media only screen and (max-width: 384px) {
       main #cielorraso .cielorraso-container {
-        margin: 29% 0 0 229%;
-        width: 401px;
+        margin: 29% 0 0 234%;
         height: 700px;
         display: block; } }
     main #cielorraso .cielorraso-container .cielorraso-background-left-column {
@@ -3751,7 +3750,7 @@ main #cielorraso {
           main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-right-column {
             max-width: 100%;
             order: 2;
-            margin: -18% 0 0 -19px;
+            margin: -18% 0 0 0px;
             z-index: 999; } }
         main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-right-column p {
           font-family: 'Poppins';
@@ -3860,7 +3859,7 @@ main .drywall {
     height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
-    margin: 210px 0 0 -397px; }
+    margin: 210px 0 0 -970px; }
     @media only screen and (max-width: 1024px) {
       main .drywall .navegacion {
         margin: 10% 0 0 -43%; } }
@@ -3922,7 +3921,7 @@ main .drywall {
         display: none; } }
   main .drywall .drywall-button:hover {
     cursor: pointer; }
-  main .drywall nav {
+  main .drywall #nav {
     font-family: "Inter", sans-serif;
     height: 90px;
     position: relative;
@@ -3930,7 +3929,7 @@ main .drywall {
     margin: 10.5% 0 0 8%;
     z-index: 2; }
     @media only screen and (max-width: 384px) {
-      main .drywall nav {
+      main .drywall #nav {
         z-index: 999;
         height: 90px;
         position: absolute;
@@ -3938,17 +3937,17 @@ main .drywall {
         left: 0;
         width: 100%;
         color: #fff; } }
-    main .drywall nav .menu-drywall {
+    main .drywall #nav .menu-drywall {
       position: relative;
       margin: 60px 0 0 20%;
       max-width: 900px;
       overflow: hidden; }
       @media only screen and (max-width: 1024px) {
-        main .drywall nav .menu-drywall {
+        main .drywall #nav .menu-drywall {
           max-width: 647px;
           margin: 0 0 0 21%; } }
       @media only screen and (max-width: 384px) {
-        main .drywall nav .menu-drywall {
+        main .drywall #nav .menu-drywall {
           display: flex;
           justify-content: space-between;
           align-items: center;
@@ -3956,7 +3955,7 @@ main .drywall {
           width: 383px;
           margin: -95px 0 0 -38px;
           list-style: none; } }
-      main .drywall nav .menu-drywall ul {
+      main .drywall #nav .menu-drywall ul {
         width: 100%;
         margin: 1.8% 0% 0% 0%;
         padding-right: 0;
@@ -3965,33 +3964,33 @@ main .drywall {
         font-size: .9rem;
         font-weight: 300; }
         @media only screen and (max-width: 384px) {
-          main .drywall nav .menu-drywall ul {
+          main .drywall #nav .menu-drywall ul {
             display: ruby; } }
-        main .drywall nav .menu-drywall ul .nav__item-drywall {
+        main .drywall #nav .menu-drywall ul .nav__item-drywall {
           margin-top: .5%; }
           @media only screen and (max-width: 384px) {
-            main .drywall nav .menu-drywall ul .nav__item-drywall {
+            main .drywall #nav .menu-drywall ul .nav__item-drywall {
               margin-right: 20px;
               margin-top: -13px;
               margin-left: -2px; } }
-          main .drywall nav .menu-drywall ul .nav__item-drywall a {
+          main .drywall #nav .menu-drywall ul .nav__item-drywall a {
             list-style: none;
             text-decoration: none;
             color: #000; }
             @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-              main .drywall nav .menu-drywall ul .nav__item-drywall a {
+              main .drywall #nav .menu-drywall ul .nav__item-drywall a {
                 font-size: 1.1rem; } }
           @media only screen and (max-width: 768px) {
-            main .drywall nav .menu-drywall ul .nav__item-drywall {
+            main .drywall #nav .menu-drywall ul .nav__item-drywall {
               margin-top: -6%;
               margin-left: 1px; } }
-          main .drywall nav .menu-drywall ul .nav__item-drywall .nav__link-drywall {
+          main .drywall #nav .menu-drywall ul .nav__item-drywall .nav__link-drywall {
             position: relative;
             transition: color 0.3s; }
             @media only screen and (max-width: 768px) {
-              main .drywall nav .menu-drywall ul .nav__item-drywall .nav__link-drywall {
+              main .drywall #nav .menu-drywall ul .nav__item-drywall .nav__link-drywall {
                 color: #0e0e0e; } }
-            main .drywall nav .menu-drywall ul .nav__item-drywall .nav__link-drywall:before {
+            main .drywall #nav .menu-drywall ul .nav__item-drywall .nav__link-drywall:before {
               content: "";
               position: absolute;
               bottom: -2px;
@@ -4000,10 +3999,10 @@ main .drywall {
               height: 2px;
               background-color: #d30809;
               transition: width 0.3s ease; }
-            main .drywall nav .menu-drywall ul .nav__item-drywall .nav__link-drywall.active-card {
+            main .drywall #nav .menu-drywall ul .nav__item-drywall .nav__link-drywall.active-card {
               color: #d30809;
               font-weight: bold; }
-              main .drywall nav .menu-drywall ul .nav__item-drywall .nav__link-drywall.active-card:before {
+              main .drywall #nav .menu-drywall ul .nav__item-drywall .nav__link-drywall.active-card:before {
                 width: 100%; }
   main .drywall .drywall-container {
     display: flex;
@@ -4023,7 +4022,6 @@ main .drywall {
     @media only screen and (max-width: 384px) {
       main .drywall .drywall-container {
         margin: 31% 0 0 21%;
-        width: 401px;
         height: 836px;
         display: block; } }
     main .drywall .drywall-container .background-left-column {
@@ -4166,28 +4164,28 @@ main .drywall {
         font-size: 1.6rem;
         cursor: pointer; }
 
-.banner-shop-cs {
+main .banner-shop-cs {
   background-color: #8baac0;
   height: 245px;
   width: 100%;
   padding: 1px;
   margin: 45% 0 0 0; }
   @media only screen and (max-width: 1024px) {
-    .banner-shop-cs {
+    main .banner-shop-cs {
       margin: 5% 0 0 0; } }
   @media only screen and (max-width: 768px) {
-    .banner-shop-cs {
+    main .banner-shop-cs {
       display: flex;
       height: 180px;
       width: 100%;
       margin: 0 0 40% 0; } }
   @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-    .banner-shop-cs {
+    main .banner-shop-cs {
       margin-top: 50%; } }
   @media only screen and (max-width: 384px) {
-    .banner-shop-cs {
+    main .banner-shop-cs {
       margin-top: 213%; } }
-  .banner-shop-cs h2 {
+  main .banner-shop-cs h2 {
     font-family: 'Poppins';
     font-weight: 300;
     font-size: 2rem;
@@ -4200,53 +4198,53 @@ main .drywall {
     align-items: center;
     top: 35%; }
     @media only screen and (max-width: 768px) {
-      .banner-shop-cs h2 {
+      main .banner-shop-cs h2 {
         display: flex;
         font-size: 1.2rem;
         margin: -133px 0 0 0; } }
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-      .banner-shop-cs h2 {
+      main .banner-shop-cs h2 {
         max-width: 1000px;
         margin-left: 19%; } }
 
-.wrapper {
+main .wrapper {
   display: grid;
   grid-template-columns: 1fr 4fr;
   background-color: #ffffff;
   margin: 0 0 0px 0; }
   @media only screen and (max-width: 768px) {
-    .wrapper {
+    main .wrapper {
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       margin: -40% 0 0 0;
       padding: 0.5rem; } }
-  .wrapper .header-mobile {
+  main .wrapper .header-mobile {
     display: none; }
     @media only screen and (max-width: 768px) {
-      .wrapper .header-mobile {
+      main .wrapper .header-mobile {
         display: flex;
         padding: 1rem;
         justify-content: space-between;
         align-items: center; } }
     @media only screen and (max-width: 768px) {
-      .wrapper .header-mobile .shop-logo {
+      main .wrapper .header-mobile .shop-logo {
         margin: 0 0 0 3px; } }
     @media only screen and (max-width: 768px) {
-      .wrapper .header-mobile .shop-logo img {
+      main .wrapper .header-mobile .shop-logo img {
         width: 155px;
         height: 45px; } }
-    .wrapper .header-mobile .open-menu-header {
+    main .wrapper .header-mobile .open-menu-header {
       display: none; }
       @media only screen and (max-width: 768px) {
-        .wrapper .header-mobile .open-menu-header {
+        main .wrapper .header-mobile .open-menu-header {
           display: flex;
           background: transparent;
           color: #333;
           border: 0;
           font-size: 1.3rem;
           cursor: pointer; } }
-  .wrapper aside {
+  main .wrapper aside {
     padding: -1rem;
     padding-right: 0;
     color: #273238;
@@ -4258,7 +4256,7 @@ main .drywall {
     justify-content: space-between;
     margin: 0 0 10% 0; }
     @media only screen and (max-width: 768px) {
-      .wrapper aside {
+      main .wrapper aside {
         position: fixed;
         z-index: 999;
         background: #fff;
@@ -4268,23 +4266,23 @@ main .drywall {
         opacity: 0;
         visibility: hidden;
         transition: .2s; } }
-    .wrapper aside .shop-logo {
+    main .wrapper aside .shop-logo {
       font-family: 'Poppins';
       font-weight: 400;
       font-size: 1.5rem;
       padding: 2rem; }
       @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-        .wrapper aside .shop-logo {
+        main .wrapper aside .shop-logo {
           margin-top: 40%;
           margin-left: 10px;
           font-weight: bold;
           font-size: 1.6rem;
           text-decoration: underline; } }
-    .wrapper aside nav .menu-ul {
+    main .wrapper aside nav .menu-ul {
       display: flex;
       flex-direction: column;
       gap: .5rem; }
-      .wrapper aside nav .menu-ul li .boton-menu {
+      main .wrapper aside nav .menu-ul li .boton-menu {
         background-color: transparent;
         border: 0;
         color: #000000;
@@ -4297,37 +4295,37 @@ main .drywall {
         padding: .8rem;
         width: 100%; }
         @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-          .wrapper aside nav .menu-ul li .boton-menu {
+          main .wrapper aside nav .menu-ul li .boton-menu {
             font-size: 1.1rem; } }
-      .wrapper aside nav .menu-ul li .boton-menu.active {
+      main .wrapper aside nav .menu-ul li .boton-menu.active {
         background-color: #eee;
         color: #000000;
         border-top-left-radius: 1rem;
         border-bottom-left-radius: 1rem;
         position: relative; }
-      .wrapper aside nav .menu-ul li .bi-arrow-up-square-fill,
-      .wrapper aside nav .menu-ul li .bi-arrow-up-square {
+      main .wrapper aside nav .menu-ul li .bi-arrow-up-square-fill,
+      main .wrapper aside nav .menu-ul li .bi-arrow-up-square {
         transform: rotateZ(90deg); }
-      .wrapper aside nav .menu-ul li .boton-carrito {
+      main .wrapper aside nav .menu-ul li .boton-carrito {
         margin-top: 2rem; }
-    .wrapper aside .footer-shop .texto-footer {
+    main .wrapper aside .footer-shop .texto-footer {
       font-family: 'Poppins';
       color: #9e9e9e;
       font-size: .85rem;
       margin-left: 15%; }
-  .wrapper .aside-visible {
+  main .wrapper .aside-visible {
     transform: translateX(0);
     opacity: 1;
     visibility: visible; }
     @media only screen and (max-width: 768px) {
-      .wrapper .aside-visible {
+      main .wrapper .aside-visible {
         transform: translateX(0);
         opacity: 1;
         visibility: visible; } }
-    .wrapper .aside-visible .close-menu-header {
+    main .wrapper .aside-visible .close-menu-header {
       display: none; }
       @media only screen and (max-width: 768px) {
-        .wrapper .aside-visible .close-menu-header {
+        main .wrapper .aside-visible .close-menu-header {
           display: flex;
           position: absolute;
           top: 1.9rem;
@@ -4337,49 +4335,49 @@ main .drywall {
           border: 0;
           font-size: 1.3rem;
           cursor: pointer; } }
-  .wrapper .main-eshop {
+  main .wrapper .main-eshop {
     background-color: #f1f1f1;
     margin: 1rem;
     margin-left: 0;
     border-radius: 2rem;
     padding: 2rem; }
     @media only screen and (max-width: 768px) {
-      .wrapper .main-eshop {
+      main .wrapper .main-eshop {
         margin: 1rem;
         padding: 2rem;
         margin: 0 0 170px 0; } }
-    .wrapper .main-eshop .titulo-principal {
+    main .wrapper .main-eshop .titulo-principal {
       color: #273238;
       margin-bottom: 2rem; }
-    .wrapper .main-eshop .contenedor-productos {
+    main .wrapper .main-eshop .contenedor-productos {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 3rem; }
       @media only screen and (max-width: 998px) {
-        .wrapper .main-eshop .contenedor-productos {
+        main .wrapper .main-eshop .contenedor-productos {
           grid-template-columns: repeat(3, 1fr); } }
       @media only screen and (max-width: 675px) {
-        .wrapper .main-eshop .contenedor-productos {
+        main .wrapper .main-eshop .contenedor-productos {
           grid-template-columns: repeat(2, 1fr); } }
       @media only screen and (max-width: 768px) {
-        .wrapper .main-eshop .contenedor-productos {
+        main .wrapper .main-eshop .contenedor-productos {
           grid-template-columns: repeat(2, 1fr); } }
       @media only screen and (max-width: 430px) {
-        .wrapper .main-eshop .contenedor-productos {
+        main .wrapper .main-eshop .contenedor-productos {
           grid-template-columns: 1fr; } }
       @media only screen and (max-width: 390px) {
-        .wrapper .main-eshop .contenedor-productos {
+        main .wrapper .main-eshop .contenedor-productos {
           grid-template-columns: 1fr; } }
-      .wrapper .main-eshop .contenedor-productos .producto .producto-imagen {
+      main .wrapper .main-eshop .contenedor-productos .producto .producto-imagen {
         max-width: 100%;
         border-top-right-radius: 1rem;
         border-top-left-radius: 1rem;
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px; }
         @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-          .wrapper .main-eshop .contenedor-productos .producto .producto-imagen {
+          main .wrapper .main-eshop .contenedor-productos .producto .producto-imagen {
             width: 400px; } }
-      .wrapper .main-eshop .contenedor-productos .producto .producto-detalles {
+      main .wrapper .main-eshop .contenedor-productos .producto .producto-detalles {
         background-color: #273238;
         color: #fff;
         padding: .5rem;
@@ -4395,17 +4393,17 @@ main .drywall {
         border-bottom-left-radius: 1rem;
         border-bottom-right-radius: 1rem; }
         @media only screen and (max-width: 768px) {
-          .wrapper .main-eshop .contenedor-productos .producto .producto-detalles {
+          main .wrapper .main-eshop .contenedor-productos .producto .producto-detalles {
             width: 300px; } }
-        .wrapper .main-eshop .contenedor-productos .producto .producto-detalles .producto-titulo {
+        main .wrapper .main-eshop .contenedor-productos .producto .producto-detalles .producto-titulo {
           font-size: 1rem;
           text-align: center; }
           @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-            .wrapper .main-eshop .contenedor-productos .producto .producto-detalles .producto-titulo {
+            main .wrapper .main-eshop .contenedor-productos .producto .producto-detalles .producto-titulo {
               background-color: #d30809;
               font-size: 1.3rem;
               border-radius: 10px; } }
-        .wrapper .main-eshop .contenedor-productos .producto .producto-detalles .producto-consultar {
+        main .wrapper .main-eshop .contenedor-productos .producto .producto-detalles .producto-consultar {
           border: 0;
           background-color: #fff;
           color: #273238;
@@ -4415,15 +4413,15 @@ main .drywall {
           cursor: pointer;
           border: 2px solid #fff;
           transition: background-color .2s, color .2s; }
-        .wrapper .main-eshop .contenedor-productos .producto .producto-detalles .producto-consultar:hover {
+        main .wrapper .main-eshop .contenedor-productos .producto .producto-detalles .producto-consultar:hover {
           background-color: #8baac0;
           color: #fff; }
 
 @media only screen and (max-width: 384px) {
-  .disposicion {
+  main .disposicion {
     margin: -42% 0 60% 0; } }
 
-.disposicion .disposicion-6-cs {
+main .disposicion .disposicion-6-cs {
   height: 70vh;
   background-image: url(https://i.pinimg.com/564x/09/dc/24/09dc24e77ec05440710cbc536e6426b5.jpg);
   filter: opacity(25%);
@@ -4432,12 +4430,12 @@ main .drywall {
   background-size: cover;
   width: 100%; }
   @media only screen and (max-width: 768px) {
-    .disposicion .disposicion-6-cs {
+    main .disposicion .disposicion-6-cs {
       height: 270px; } }
 
-.disposicion .disposicion-content {
+main .disposicion .disposicion-content {
   display: flex; }
-  .disposicion .disposicion-content .disposicion-title {
+  main .disposicion .disposicion-content .disposicion-title {
     font-family: 'Poppins';
     font-weight: 300;
     font-size: 2rem;
@@ -4450,15 +4448,15 @@ main .drywall {
     align-items: center;
     margin-top: -38%; }
     @media only screen and (max-width: 768px) {
-      .disposicion .disposicion-content .disposicion-title {
+      main .disposicion .disposicion-content .disposicion-title {
         width: 90%;
         font-size: 1.1rem;
         margin: -80% 0 0 20px; } }
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-      .disposicion .disposicion-content .disposicion-title {
+      main .disposicion .disposicion-content .disposicion-title {
         font-size: 2.3rem; } }
 
-.disposicion .btn-redirect {
+main .disposicion .btn-redirect {
   display: flex;
   position: absolute;
   margin-top: -14%;
@@ -4469,26 +4467,26 @@ main .drywall {
   padding: 10px 0px 10px 35px;
   width: 200px; }
   @media only screen and (max-width: 768px) {
-    .disposicion .btn-redirect {
+    main .disposicion .btn-redirect {
       display: flex;
       margin: -75px 0 0 90px; } }
   @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-    .disposicion .btn-redirect {
+    main .disposicion .btn-redirect {
       background-color: #273238;
       width: 300px;
       height: 60px; } }
-  .disposicion .btn-redirect a {
+  main .disposicion .btn-redirect a {
     font-size: 'Poppins';
     font-weight: 400;
     text-decoration: none;
     color: #333; }
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-      .disposicion .btn-redirect a {
+      main .disposicion .btn-redirect a {
         color: #273238;
         font-size: 1.5rem;
         margin-left: 14px; } }
 
-.disposicion .btn-redirect:hover {
+main .disposicion .btn-redirect:hover {
   cursor: pointer;
   transition: all .3s ease-in-out;
   background-color: #273238;

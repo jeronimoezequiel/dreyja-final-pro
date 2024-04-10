@@ -82,7 +82,7 @@ header{
         @include samsung-L {
             background-color: map-get($color--azul, dreyja);
             display: flex;
-            margin: 6% 0 0 83%;
+            // margin: 6% 0 0 83%;
             font-size: 1.1rem;
             position: fixed;
         }
