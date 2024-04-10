@@ -4184,6 +4184,9 @@ main .drywall {
   @media only screen and (min-width: 1600px) and (max-width: 1920px) {
     .banner-shop-cs {
       margin-top: 50%; } }
+  @media only screen and (max-width: 384px) {
+    .banner-shop-cs {
+      margin-top: 213%; } }
   .banner-shop-cs h2 {
     font-family: 'Poppins';
     font-weight: 300;
@@ -4217,7 +4220,6 @@ main .drywall {
       display: flex;
       flex-direction: column;
       margin: -40% 0 0 0;
-      background: #e3e3e3;
       padding: 0.5rem; } }
   .wrapper .header-mobile {
     display: none; }
@@ -4417,12 +4419,9 @@ main .drywall {
           background-color: #8baac0;
           color: #fff; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 384px) {
   .disposicion {
-    height: 556px;
-    margin-bottom: -73.5%;
-    margin-top: -40%;
-    background: #fff; } }
+    margin: -42% 0 60% 0; } }
 
 .disposicion .disposicion-6-cs {
   height: 70vh;

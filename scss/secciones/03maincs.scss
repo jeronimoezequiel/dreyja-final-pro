@@ -1421,8 +1421,6 @@ main {
         }
     }
 
-
-
     .banner-shop-cs {
         background-color: #8baac0;
         height: 245px;
@@ -1443,6 +1441,10 @@ main {
 
         @include monitor-27 {
             margin-top: 50%;
+        }
+
+        @include samsung-L {
+            margin-top: 213%;
         }
 
         h2 {
@@ -1508,7 +1510,7 @@ main {
             display: flex;
             flex-direction: column;
             margin: -40% 0 0 0;
-            background: #e3e3e3;
+            // background: #e3e3e3;
             padding: 0.5rem;
         }
 
@@ -1762,11 +1764,15 @@ main {
 
     .disposicion {
 
-        @include tablet {
-            height: 556px;
-            margin-bottom: -73.5%;
-            margin-top: -40%;
-            background: #fff;
+        // @include tablet {
+        //     height: 556px;
+        //     margin-bottom: -73.5%;
+        //     margin-top: -40%;
+        //     background: #fff;
+        // }
+
+        @include samsung-L {
+            margin: -42% 0 60% 0;
         }
         .disposicion-6-cs{
             height: 70vh;
