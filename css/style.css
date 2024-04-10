@@ -3454,7 +3454,7 @@ main #cielorraso {
       display: flex;
       margin: 10% 0 0 0;
       background-color: black;
-      height: 760px; } }
+      height: 700px; } }
   main #cielorraso::before {
     content: "";
     position: absolute;
@@ -3627,196 +3627,192 @@ main #cielorraso {
             font-weight: bold; }
             main #cielorraso .nav-cielorraso .menu-cielorraso ul .nav__link-cielorraso.active-card-cielorraso:before {
               width: 100%; }
-
-main .cielorraso-container {
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-  align-items: center;
-  margin: -10.5% 0 0 20.5%;
-  z-index: 333;
-  position: relative; }
-  @media only screen and (max-width: 1024px) {
-    main .cielorraso-container {
-      margin: -19% 0 0 22%;
-      max-width: 785px; } }
-  @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-    main .cielorraso-container {
-      height: 400px;
-      width: 1000px;
-      margin: 2% 0 0 32%; } }
-  @media only screen and (max-width: 384px) {
-    main .cielorraso-container {
-      margin: 29% 0 0 229%;
-      width: 401px;
-      height: 700px;
-      display: block; } }
-  main .cielorraso-container .cielorraso-background-left-column {
-    background: #273238; }
-    @media only screen and (max-width: 384px) {
-      main .cielorraso-container .cielorraso-background-left-column {
-        position: absolute;
-        /* Posicionar absolutamente */
-        top: 0;
-        left: 0;
-        width: 100%;
-        /* Ocupar todo el ancho del contenedor padre */ } }
-  main .cielorraso-container .cielorraso-background2-left-column {
-    background: #273238; }
-  main .cielorraso-container .cielorraso-background3-left-column {
-    background: #273238; }
-  main .cielorraso-container .cielorraso-card {
-    background-color: #fff;
-    border-radius: 1rem;
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+  main #cielorraso .cielorraso-container {
     display: flex;
-    margin: 1.5rem;
-    overflow: hidden;
-    width: 58rem;
-    height: 23rem;
-    z-index: 444;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    margin: -10.5% 0 0 20.5%;
+    z-index: 333;
     position: relative; }
+    @media only screen and (max-width: 1024px) {
+      main #cielorraso .cielorraso-container {
+        margin: -19% 0 0 22%;
+        max-width: 785px; } }
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-      main .cielorraso-container .cielorraso-card {
-        height: 500px;
-        width: 1200px;
-        margin-top: -8.8%; } }
+      main #cielorraso .cielorraso-container {
+        height: 400px;
+        width: 1000px;
+        margin: 2% 0 0 32%; } }
     @media only screen and (max-width: 384px) {
-      main .cielorraso-container .cielorraso-card {
-        position: relative;
-        /* Establecer el contenedor padre como relativo */
-        display: flex;
-        /* Utilizar flexbox para alinear elementos */
-        flex-direction: column;
-        /* Establecer dirección de columna */
-        justify-content: space-between;
-        /* Espacio entre elementos */
-        width: 113%;
-        margin: 13% 0 0 -19%;
-        height: 83%; } }
-    main .cielorraso-container .cielorraso-card.active-card {
-      border: 2px solid #d30809;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-      z-index: 4; }
-    main .cielorraso-container .cielorraso-card h2 {
-      letter-spacing: .1rem;
-      margin: 1rem 0;
-      color: #000; }
-    main .cielorraso-container .cielorraso-card h6 {
-      opacity: 0.6;
-      letter-spacing: .1rem;
-      text-transform: uppercase; }
-      @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-        main .cielorraso-container .cielorraso-card h6 {
-          font-size: 1.4rem; } }
-    main .cielorraso-container .cielorraso-card .cielorraso-left-column {
-      color: #fff;
-      padding: 2rem;
-      max-width: 10rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between; }
-      @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-        main .cielorraso-container .cielorraso-card .cielorraso-left-column {
-          max-width: 13rem; } }
+      main #cielorraso .cielorraso-container {
+        margin: 29% 0 0 229%;
+        width: 401px;
+        height: 700px;
+        display: block; } }
+    main #cielorraso .cielorraso-container .cielorraso-background-left-column {
+      background: #273238; }
       @media only screen and (max-width: 384px) {
-        main .cielorraso-container .cielorraso-card .cielorraso-left-column {
-          order: 1;
-          /* Colocar a la izquierda (por defecto) */
-          max-width: 347.5px;
-          max-height: 100px;
-          z-index: 1; } }
-      main .cielorraso-container .cielorraso-card .cielorraso-left-column h4 {
-        color: #fff; }
-        @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-          main .cielorraso-container .cielorraso-card .cielorraso-left-column h4 {
-            font-size: 1.7rem; } }
-      main .cielorraso-container .cielorraso-card .cielorraso-left-column i {
-        font-size: 5rem; }
-        @media only screen and (max-width: 384px) {
-          main .cielorraso-container .cielorraso-card .cielorraso-left-column i {
-            display: none; } }
-    main .cielorraso-container .cielorraso-card .cielorraso-right-column {
-      padding: 2rem;
+        main #cielorraso .cielorraso-container .cielorraso-background-left-column {
+          position: absolute;
+          /* Posicionar absolutamente */
+          top: 0;
+          left: 0;
+          width: 100%;
+          /* Ocupar todo el ancho del contenedor padre */ } }
+    main #cielorraso .cielorraso-container .cielorraso-background2-left-column {
+      background: #273238; }
+    main #cielorraso .cielorraso-container .cielorraso-background3-left-column {
+      background: #273238; }
+    main #cielorraso .cielorraso-container .cielorraso-card {
+      background-color: #fff;
+      border-radius: 1rem;
+      box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
       display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: space-between; }
-      @media only screen and (max-width: 1024px) {
-        main .cielorraso-container .cielorraso-card .cielorraso-right-column {
-          max-width: 300px;
-          margin: 0 0 0 -19px; } }
-      @media only screen and (max-width: 384px) {
-        main .cielorraso-container .cielorraso-card .cielorraso-right-column {
-          max-width: 100%;
-          order: 2; } }
-      main .cielorraso-container .cielorraso-card .cielorraso-right-column p {
-        font-family: 'Poppins';
-        font-size: .9rem;
-        color: #000;
-        max-width: 400px; }
-        @media only screen and (max-width: 1024px) {
-          main .cielorraso-container .cielorraso-card .cielorraso-right-column p {
-            font-size: .75rem; } }
-        @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-          main .cielorraso-container .cielorraso-card .cielorraso-right-column p {
-            font-size: 1.1rem; } }
-      main .cielorraso-container .cielorraso-card .cielorraso-right-column span {
-        border-radius: 3rem;
-        background: #273238;
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-        color: #fff;
-        font-size: 1.2rem;
-        padding: .8rem 1.3rem;
-        letter-spacing: .1rem;
-        align-self: flex-end; }
-    main .cielorraso-container .cielorraso-card .cielorraso-left-column-img {
-      width: 350px;
-      max-width: 300px;
-      margin-left: auto;
+      margin: 1.5rem;
+      overflow: hidden;
+      width: 58rem;
+      height: 23rem;
+      z-index: 444;
       position: relative; }
-      @media only screen and (max-width: 1024px) {
-        main .cielorraso-container .cielorraso-card .cielorraso-left-column-img {
-          margin: 10% 0 0 14px; } }
+      @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+        main #cielorraso .cielorraso-container .cielorraso-card {
+          height: 500px;
+          width: 1200px;
+          margin-top: -8.8%; } }
       @media only screen and (max-width: 384px) {
-        main .cielorraso-container .cielorraso-card .cielorraso-left-column-img {
-          order: 0;
-          margin: 0 0 0 15%;
-          z-index: 0; } }
-      main .cielorraso-container .cielorraso-card .cielorraso-left-column-img .owl-carousel .cielorraso-item img {
-        width: 100%;
-        height: auto;
-        margin: 0; }
+        main #cielorraso .cielorraso-container .cielorraso-card {
+          position: relative;
+          /* Establecer el contenedor padre como relativo */
+          display: flex;
+          /* Utilizar flexbox para alinear elementos */
+          flex-direction: column;
+          /* Establecer dirección de columna */
+          justify-content: space-between;
+          /* Espacio entre elementos */
+          width: 113%;
+          margin: 13% 0 0 -19%;
+          height: 73%; } }
+      main #cielorraso .cielorraso-container .cielorraso-card.active-card {
+        border: 2px solid #d30809;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        z-index: 4; }
+      main #cielorraso .cielorraso-container .cielorraso-card h2 {
+        letter-spacing: .1rem;
+        margin: 1rem 0;
+        color: #000; }
+      main #cielorraso .cielorraso-container .cielorraso-card h6 {
+        opacity: 0.6;
+        letter-spacing: .1rem;
+        text-transform: uppercase; }
         @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-          main .cielorraso-container .cielorraso-card .cielorraso-left-column-img .owl-carousel .cielorraso-item img {
-            margin-top: 44%; } }
+          main #cielorraso .cielorraso-container .cielorraso-card h6 {
+            font-size: 1.4rem; } }
+      main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column {
+        color: #fff;
+        padding: 2rem;
+        max-width: 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between; }
+        @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+          main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column {
+            max-width: 13rem; } }
         @media only screen and (max-width: 384px) {
-          main .cielorraso-container .cielorraso-card .cielorraso-left-column-img .owl-carousel .cielorraso-item img {
-            width: 230px;
-            height: 230px; } }
-      main .cielorraso-container .cielorraso-card .cielorraso-left-column-img .carousel-selectors .selector i {
-        color: #333;
-        font-size: 30px; }
+          main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column {
+            display: none;
+            order: 1;
+            /* Colocar a la izquierda (por defecto) */
+            max-width: 347.5px;
+            max-height: 100px;
+            z-index: 1; } }
+        main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column h4 {
+          color: #fff; }
+          @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+            main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column h4 {
+              font-size: 1.7rem; } }
+        main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column i {
+          font-size: 5rem; }
+          @media only screen and (max-width: 384px) {
+            main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column i {
+              display: none; } }
+      main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-right-column {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between; }
+        @media only screen and (max-width: 1024px) {
+          main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-right-column {
+            max-width: 300px;
+            margin: 0 0 0 -19px; } }
+        @media only screen and (max-width: 384px) {
+          main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-right-column {
+            max-width: 100%;
+            order: 2;
+            margin: -18% 0 0 -19px;
+            z-index: 999; } }
+        main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-right-column p {
+          font-family: 'Poppins';
+          font-size: .9rem;
+          color: #000;
+          max-width: 400px; }
+          @media only screen and (max-width: 1024px) {
+            main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-right-column p {
+              font-size: .75rem; } }
+          @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+            main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-right-column p {
+              font-size: 1.1rem; } }
+        main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-right-column span {
+          border-radius: 3rem;
+          background: #273238;
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+          color: #fff;
+          font-size: 1.2rem;
+          padding: .8rem 1.3rem;
+          letter-spacing: .1rem;
+          align-self: flex-end; }
+      main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column-img {
+        width: 350px;
+        max-width: 300px;
+        margin-left: auto;
+        position: relative; }
+        @media only screen and (max-width: 1024px) {
+          main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column-img {
+            margin: 10% 0 0 14px; } }
+        @media only screen and (max-width: 384px) {
+          main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column-img {
+            order: 0;
+            margin: 0 0 0 15%;
+            z-index: 0; } }
+        main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column-img .owl-carousel .cielorraso-item img {
+          width: 100%;
+          height: auto;
+          margin: 0; }
+          @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+            main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column-img .owl-carousel .cielorraso-item img {
+              margin-top: 44%; } }
+          @media only screen and (max-width: 384px) {
+            main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column-img .owl-carousel .cielorraso-item img {
+              width: 230px;
+              height: 230px; } }
+        main #cielorraso .cielorraso-container .cielorraso-card .cielorraso-left-column-img .carousel-selectors .selector i {
+          color: #333;
+          font-size: 30px; }
 
-.drywall {
+main .drywall {
   position: absolute;
   height: 500px;
   width: 100%;
   margin: 0% 0 10% 0;
   z-index: 1; }
-  @media only screen and (max-width: 1024px) {
-    .drywall {
-      height: 600px; } }
-  @media only screen and (max-width: 768px) {
-    .drywall {
-      display: flex;
-      margin: -95% 0 0 0;
-      height: 500px; } }
   @media only screen and (max-width: 384px) {
-    .drywall {
-      display: none; } }
-  .drywall::before {
+    main .drywall {
+      display: flex;
+      background-color: #fff;
+      height: 815px; } }
+  main .drywall::before {
     content: "";
     position: absolute;
     top: 0;
@@ -3825,7 +3821,10 @@ main .cielorraso-container {
     height: 100%;
     background: inherit;
     filter: brightness(40%) contrast(120%) saturate(80%) grayscale(10%); }
-  .drywall h2 {
+    @media only screen and (max-width: 384px) {
+      main .drywall::before {
+        filter: none; } }
+  main .drywall h2 {
     color: #fff;
     font-size: 2.2rem;
     font-family: "Poppins", sans-serif;
@@ -3835,13 +3834,16 @@ main .cielorraso-container {
     z-index: 10;
     background-color: #d30809;
     padding: 10px 50px; }
-    @media only screen and (max-width: 768px) {
-      .drywall h2 {
-        font-size: 2.3rem; } }
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-      .drywall h2 {
+      main .drywall h2 {
         font-size: 2.5rem; } }
-  .drywall h3 {
+    @media only screen and (max-width: 768px) {
+      main .drywall h2 {
+        font-size: 2.3rem; } }
+    @media only screen and (max-width: 384px) {
+      main .drywall h2 {
+        font-size: 1.6rem; } }
+  main .drywall h3 {
     color: #fff;
     font-size: 1.5rem;
     font-family: "Poppins", sans-serif;
@@ -3851,28 +3853,31 @@ main .cielorraso-container {
     background-color: #273238;
     padding: 10px 50px; }
     @media only screen and (max-width: 768px) {
-      .drywall h3 {
+      main .drywall h3 {
         font-size: 2.3rem;
         margin: 100px 0 0 47px; } }
-  .drywall .navegacion {
+  main .drywall .navegacion {
     height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
     margin: 210px 0 0 -397px; }
     @media only screen and (max-width: 1024px) {
-      .drywall .navegacion {
+      main .drywall .navegacion {
         margin: 10% 0 0 -43%; } }
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-      .drywall .navegacion {
+      main .drywall .navegacion {
         width: 21%;
         margin-left: 60px;
         margin-top: 19%; } }
-    .drywall .navegacion ul li {
+    @media only screen and (max-width: 384px) {
+      main .drywall .navegacion {
+        display: none; } }
+    main .drywall .navegacion ul li {
       list-style: none;
       display: flex;
       flex-direction: column;
       align-items: center; }
-      .drywall .navegacion ul li a {
+      main .drywall .navegacion ul li a {
         width: 100%;
         height: 70px;
         /* Ajustar la altura según sea necesario */
@@ -3891,15 +3896,15 @@ main .cielorraso-container {
         font-size: .9rem;
         margin-bottom: 5px; }
         @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-          .drywall .navegacion ul li a {
+          main .drywall .navegacion ul li a {
             font-size: 1.3rem;
             margin-bottom: 14px; } }
-      .drywall .navegacion ul li .inbox-img {
+      main .drywall .navegacion ul li .inbox-img {
         width: 40px;
         height: 40px;
         margin-bottom: 5px;
         /* Agregar un espacio entre la imagen y el texto */ }
-  .drywall .drywall-button {
+  main .drywall .drywall-button {
     display: flex;
     color: #fff;
     align-items: center;
@@ -3913,37 +3918,45 @@ main .cielorraso-container {
     border-radius: 8px;
     cursor: pointer; }
     @media only screen and (max-width: 1024px) {
-      .drywall .drywall-button {
+      main .drywall .drywall-button {
         display: none; } }
-  .drywall .drywall-button:hover {
+  main .drywall .drywall-button:hover {
     cursor: pointer; }
-  .drywall nav {
+  main .drywall nav {
     font-family: "Inter", sans-serif;
     height: 90px;
     position: relative;
     width: 1160px;
     margin: 10.5% 0 0 8%;
     z-index: 2; }
-    @media only screen and (max-width: 768px) {
-      .drywall nav {
-        position: fixed;
-        top: 0;
-        right: -250px;
-        background: #000;
-        width: 250px;
-        height: 120vh;
-        display: flex;
-        transition: all 300ms; } }
-    .drywall nav .menu-drywall {
+    @media only screen and (max-width: 384px) {
+      main .drywall nav {
+        z-index: 999;
+        height: 90px;
+        position: absolute;
+        top: 150px;
+        left: 0;
+        width: 100%;
+        color: #fff; } }
+    main .drywall nav .menu-drywall {
       position: relative;
       margin: 60px 0 0 20%;
       max-width: 900px;
       overflow: hidden; }
       @media only screen and (max-width: 1024px) {
-        .drywall nav .menu-drywall {
+        main .drywall nav .menu-drywall {
           max-width: 647px;
           margin: 0 0 0 21%; } }
-      .drywall nav .menu-drywall ul {
+      @media only screen and (max-width: 384px) {
+        main .drywall nav .menu-drywall {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 20px;
+          width: 383px;
+          margin: -95px 0 0 -38px;
+          list-style: none; } }
+      main .drywall nav .menu-drywall ul {
         width: 100%;
         margin: 1.8% 0% 0% 0%;
         padding-right: 0;
@@ -3951,33 +3964,34 @@ main .cielorraso-container {
         justify-content: space-between;
         font-size: .9rem;
         font-weight: 300; }
-        @media only screen and (max-width: 768px) {
-          .drywall nav .menu-drywall ul {
-            display: flex;
-            flex-direction: column;
-            margin-top: 34px;
-            margin-left: 0px;
-            font-size: 1em; } }
-        .drywall nav .menu-drywall ul .nav__item-drywall {
+        @media only screen and (max-width: 384px) {
+          main .drywall nav .menu-drywall ul {
+            display: ruby; } }
+        main .drywall nav .menu-drywall ul .nav__item-drywall {
           margin-top: .5%; }
-          .drywall nav .menu-drywall ul .nav__item-drywall a {
+          @media only screen and (max-width: 384px) {
+            main .drywall nav .menu-drywall ul .nav__item-drywall {
+              margin-right: 20px;
+              margin-top: -13px;
+              margin-left: -2px; } }
+          main .drywall nav .menu-drywall ul .nav__item-drywall a {
             list-style: none;
             text-decoration: none;
             color: #000; }
             @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-              .drywall nav .menu-drywall ul .nav__item-drywall a {
+              main .drywall nav .menu-drywall ul .nav__item-drywall a {
                 font-size: 1.1rem; } }
           @media only screen and (max-width: 768px) {
-            .drywall nav .menu-drywall ul .nav__item-drywall {
+            main .drywall nav .menu-drywall ul .nav__item-drywall {
               margin-top: -6%;
               margin-left: 1px; } }
-          .drywall nav .menu-drywall ul .nav__item-drywall .nav__link-drywall {
+          main .drywall nav .menu-drywall ul .nav__item-drywall .nav__link-drywall {
             position: relative;
             transition: color 0.3s; }
             @media only screen and (max-width: 768px) {
-              .drywall nav .menu-drywall ul .nav__item-drywall .nav__link-drywall {
-                color: #fff; } }
-            .drywall nav .menu-drywall ul .nav__item-drywall .nav__link-drywall:before {
+              main .drywall nav .menu-drywall ul .nav__item-drywall .nav__link-drywall {
+                color: #0e0e0e; } }
+            main .drywall nav .menu-drywall ul .nav__item-drywall .nav__link-drywall:before {
               content: "";
               position: absolute;
               bottom: -2px;
@@ -3986,12 +4000,12 @@ main .cielorraso-container {
               height: 2px;
               background-color: #d30809;
               transition: width 0.3s ease; }
-            .drywall nav .menu-drywall ul .nav__item-drywall .nav__link-drywall.active-card {
+            main .drywall nav .menu-drywall ul .nav__item-drywall .nav__link-drywall.active-card {
               color: #d30809;
               font-weight: bold; }
-              .drywall nav .menu-drywall ul .nav__item-drywall .nav__link-drywall.active-card:before {
+              main .drywall nav .menu-drywall ul .nav__item-drywall .nav__link-drywall.active-card:before {
                 width: 100%; }
-  .drywall .drywall-container {
+  main .drywall .drywall-container {
     display: flex;
     justify-content: center;
     height: 100vh;
@@ -3999,46 +4013,72 @@ main .cielorraso-container {
     margin: -10.5% 0 0 20.5%;
     z-index: 3; }
     @media only screen and (max-width: 1024px) {
-      .drywall .drywall-container {
+      main .drywall .drywall-container {
         margin: -10% 0 0 23%;
         max-width: 773px; } }
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-      .drywall .drywall-container {
+      main .drywall .drywall-container {
         height: 400px;
         margin-top: 7%; } }
-    .drywall .drywall-container .background-left-column {
+    @media only screen and (max-width: 384px) {
+      main .drywall .drywall-container {
+        margin: 31% 0 0 21%;
+        width: 401px;
+        height: 836px;
+        display: block; } }
+    main .drywall .drywall-container .background-left-column {
       background: linear-gradient(100deg, #243949, #517fa4); }
-    .drywall .drywall-container .background2-left-column {
+      @media only screen and (max-width: 384px) {
+        main .drywall .drywall-container .background-left-column {
+          position: absolute;
+          /* Posicionar absolutamente */
+          top: 0;
+          left: 0;
+          width: 100%;
+          /* Ocupar todo el ancho del contenedor padre */ } }
+    main .drywall .drywall-container .background2-left-column {
       background: linear-gradient(100deg, #517fa4, #5786ad); }
-    .drywall .drywall-container .drywall-card {
+    main .drywall .drywall-container .drywall-card {
       background-color: #fff;
       border-radius: 1rem;
       box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
       margin: 1.5rem;
       overflow: hidden;
       width: 58rem;
-      height: 23rem;
-      display: none; }
+      height: 23rem; }
       @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-        .drywall .drywall-container .drywall-card {
+        main .drywall .drywall-container .drywall-card {
           height: 500px;
           width: 950px;
           margin-top: -13%;
           margin-left: 10%; } }
-      .drywall .drywall-container .drywall-card.active {
+      @media only screen and (max-width: 384px) {
+        main .drywall .drywall-container .drywall-card {
+          position: relative;
+          /* Establecer el contenedor padre como relativo */
+          display: flex;
+          /* Utilizar flexbox para alinear elementos */
+          flex-direction: column;
+          /* Establecer dirección de columna */
+          justify-content: space-between;
+          /* Espacio entre elementos */
+          width: 113%;
+          margin: 13% 0 0 -19%;
+          height: 73%; } }
+      main .drywall .drywall-container .drywall-card.active {
         display: block;
         border: 2px solid #d30809;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         z-index: 4; }
-      .drywall .drywall-container .drywall-card h2 {
+      main .drywall .drywall-container .drywall-card h2 {
         letter-spacing: .1rem;
         margin: 1rem 0;
         color: #000; }
-      .drywall .drywall-container .drywall-card h6 {
+      main .drywall .drywall-container .drywall-card h6 {
         opacity: 0.6;
         letter-spacing: .1rem;
         text-transform: uppercase; }
-      .drywall .drywall-container .drywall-card .left-column {
+      main .drywall .drywall-container .drywall-card .left-column {
         color: #fff;
         padding: 2rem;
         max-width: 10rem;
@@ -4046,22 +4086,39 @@ main .cielorraso-container {
         flex-direction: column;
         align-items: center;
         justify-content: space-between; }
-        .drywall .drywall-container .drywall-card .left-column h4 {
+        @media only screen and (max-width: 384px) {
+          main .drywall .drywall-container .drywall-card .left-column {
+            display: none;
+            order: 1;
+            /* Colocar a la izquierda (por defecto) */
+            max-width: 347.5px;
+            max-height: 100px;
+            z-index: 1; } }
+        main .drywall .drywall-container .drywall-card .left-column h4 {
           color: #fff; }
-        .drywall .drywall-container .drywall-card .left-column i {
+        main .drywall .drywall-container .drywall-card .left-column i {
           font-size: 5rem; }
-      .drywall .drywall-container .drywall-card .right-column {
+          @media only screen and (max-width: 384px) {
+            main .drywall .drywall-container .drywall-card .left-column i {
+              display: none; } }
+      main .drywall .drywall-container .drywall-card .right-column {
         padding: 2rem;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-between; }
-        .drywall .drywall-container .drywall-card .right-column p {
+        @media only screen and (max-width: 384px) {
+          main .drywall .drywall-container .drywall-card .right-column {
+            max-width: 100%;
+            order: 2;
+            margin: -18% 0 0 -19px;
+            z-index: 999; } }
+        main .drywall .drywall-container .drywall-card .right-column p {
           font-family: 'Poppins';
           font-size: .9rem;
           color: #000;
           max-width: 400px; }
-        .drywall .drywall-container .drywall-card .right-column span {
+        main .drywall .drywall-container .drywall-card .right-column span {
           border-radius: 3rem;
           background: #273238;
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
@@ -4070,30 +4127,39 @@ main .cielorraso-container {
           padding: .8rem 1.3rem;
           letter-spacing: .1rem;
           align-self: flex-end; }
-      .drywall .drywall-container .drywall-card .left-column-img {
+      main .drywall .drywall-container .drywall-card .left-column-img {
         width: 350px;
         max-width: 300px;
         margin-left: auto;
         position: relative; }
-        .drywall .drywall-container .drywall-card .left-column-img .owl-carousel .item img {
+        @media only screen and (max-width: 384px) {
+          main .drywall .drywall-container .drywall-card .left-column-img {
+            order: 0;
+            margin: 0 0 0 15%;
+            z-index: 0; } }
+        main .drywall .drywall-container .drywall-card .left-column-img .owl-carousel .item img {
           width: 100%;
           height: auto;
           margin: 0; }
-    .drywall .drywall-container .carousel-selectors {
+          @media only screen and (max-width: 384px) {
+            main .drywall .drywall-container .drywall-card .left-column-img .owl-carousel .item img {
+              width: 230px;
+              height: 230px; } }
+    main .drywall .drywall-container .carousel-selectors {
       position: absolute;
       bottom: 10px;
       left: 50%;
       transform: translateX(-50%); }
-      .drywall .drywall-container .carousel-selectors .selector {
+      main .drywall .drywall-container .carousel-selectors .selector {
         display: inline-block;
         margin: 0 5px;
         cursor: pointer; }
-        .drywall .drywall-container .carousel-selectors .selector i {
+        main .drywall .drywall-container .carousel-selectors .selector i {
           color: #333;
           font-size: 30px; }
-    .drywall .drywall-container .carousel-selectorsDrywall {
+    main .drywall .drywall-container .carousel-selectorsDrywall {
       display: inline-block; }
-      .drywall .drywall-container .carousel-selectorsDrywall .selector {
+      main .drywall .drywall-container .carousel-selectorsDrywall .selector {
         display: inline-block;
         margin: 0 5px;
         background-color: red;
