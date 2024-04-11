@@ -4981,7 +4981,7 @@ main .disposicion .btn-redirect:hover {
       @media only screen and (max-width: 384px) {
         #main-tya #aislaciones h2 {
           font-size: 1.6rem;
-          margin: 20% 0 0 -35%; } }
+          margin: -144% 0 0 -35%; } }
     #main-tya #aislaciones h3 {
       color: #fff;
       font-size: 2.5rem;
@@ -4994,7 +4994,7 @@ main .disposicion .btn-redirect:hover {
           margin-left: -66%; } }
       @media only screen and (max-width: 384px) {
         #main-tya #aislaciones h3 {
-          margin: 40% 0 0 37%;
+          margin: -127% 0 0 37%;
           font-size: 1rem;
           transform: translateX(-50%);
           max-width: 63%; } }
@@ -5046,7 +5046,7 @@ main .disposicion .btn-redirect:hover {
         margin-top: -127%; } }
     @media only screen and (max-width: 384px) {
       #main-tya .ais-container {
-        margin: -350% 0 0 -15%;
+        margin: -400% 0 0 -15%;
         width: 98%; } }
     #main-tya .ais-container .ais-slide {
       /*aca n = 0,1,2,3....*/ }
