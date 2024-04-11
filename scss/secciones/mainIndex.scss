@@ -450,6 +450,10 @@ main {
                     max-width: 1440px;
                 }
 
+                @include samsung-L {
+                    margin: -12% 0 0 43%;
+                }
+
                 .columns{
 
                     // @include tablet {
@@ -1083,7 +1087,7 @@ main {
                     width: 339px;
                     border-radius: 10px;
                     color: #fff;
-                    margin: 12% 6%;
+                    margin: 21% 6%;
                     font-size: 1.5rem;
                     justify-content: center;
                 }
@@ -1427,7 +1431,7 @@ main {
         }
 
         @include iphone-12-Pro {
-            height: 202vh;
+            height: 215vh;
         }
 
         @include iphone-14_15-Pro {

@@ -844,6 +844,9 @@ main .home_1 {
       main .home_1 .home_txt-fx {
         margin-top: -12%;
         max-width: 1440px; } }
+    @media only screen and (max-width: 384px) {
+      main .home_1 .home_txt-fx {
+        margin: -12% 0 0 43%; } }
     main .home_1 .home_txt-fx .columns .col + .col {
       margin-left: 1.5em; }
     main .home_1 .home_txt-fx .columns .fade-in {
@@ -1308,7 +1311,7 @@ main .section-5 {
         width: 339px;
         border-radius: 10px;
         color: #fff;
-        margin: 12% 6%;
+        margin: 21% 6%;
         font-size: 1.5rem;
         justify-content: center; } }
     @media only screen and (max-width: 390px) and (max-width: 844px) {
@@ -1558,7 +1561,7 @@ main .section-5 {
 
 @media only screen and (max-width: 390px) and (max-width: 844px) {
   main .grid {
-    height: 202vh; } }
+    height: 215vh; } }
 
 @media only screen and (min-width: 393px) and (max-width: 852px) {
   main .grid {
@@ -1635,7 +1638,7 @@ main .grid .grid-gallery {
   @media only screen and (max-width: 384px) {
     .section-form {
       display: flex;
-      margin: -60% 0 0 0;
+      margin: -52% 0 0 0;
       background-color: #fff; } }
   .section-form .contactForm {
     position: relative;
@@ -3375,7 +3378,8 @@ main .detallePvc {
       border-radius: 20px; }
       @media only screen and (max-width: 384px) {
         main .detallePvc .strip-Pvc img {
-          margin: 22% 0 10px 0; } }
+          margin: 22% 0 10px 0;
+          height: 445px; } }
     main .detallePvc .strip-Pvc .strip-content-Pvc {
       font-family: 'Poppins';
       color: #333;
@@ -5048,7 +5052,7 @@ main .disposicion .btn-redirect:hover {
         margin-top: -127%; } }
     @media only screen and (max-width: 384px) {
       #main-tya .ais-container {
-        margin: -460% 0 0 -15%;
+        margin: -360% 0 0 -15%;
         width: 98%; } }
     #main-tya .ais-container .ais-slide {
       /*aca n = 0,1,2,3....*/ }
@@ -5863,6 +5867,8 @@ main .disposicion .btn-redirect:hover {
                 background-color: #d30809; }
             .techosPolicarbonato .navChapaPolicarbonato .menuChapaPolicarbonato ul .nav__itemTChapaPolicarbonato .nav__linkChapaPolicarbonato:hover, .techosPolicarbonato .navChapaPolicarbonato .menuChapaPolicarbonato ul .nav__itemTChapaPolicarbonato .nav__linkEspumas:hover, .techosPolicarbonato .navChapaPolicarbonato .menuChapaPolicarbonato ul .nav__itemEspumas .nav__linkChapaPolicarbonato:hover, .techosPolicarbonato .navChapaPolicarbonato .menuChapaPolicarbonato ul .nav__itemEspumas .nav__linkEspumas:hover, .techosPolicarbonato .navChapaPolicarbonato .menuEspumas ul .nav__itemTChapaPolicarbonato .nav__linkChapaPolicarbonato:hover, .techosPolicarbonato .navChapaPolicarbonato .menuEspumas ul .nav__itemTChapaPolicarbonato .nav__linkEspumas:hover, .techosPolicarbonato .navChapaPolicarbonato .menuEspumas ul .nav__itemEspumas .nav__linkChapaPolicarbonato:hover, .techosPolicarbonato .navChapaPolicarbonato .menuEspumas ul .nav__itemEspumas .nav__linkEspumas:hover, .techosPolicarbonato .navEspumas .menuChapaPolicarbonato ul .nav__itemTChapaPolicarbonato .nav__linkChapaPolicarbonato:hover, .techosPolicarbonato .navEspumas .menuChapaPolicarbonato ul .nav__itemTChapaPolicarbonato .nav__linkEspumas:hover, .techosPolicarbonato .navEspumas .menuChapaPolicarbonato ul .nav__itemEspumas .nav__linkChapaPolicarbonato:hover, .techosPolicarbonato .navEspumas .menuChapaPolicarbonato ul .nav__itemEspumas .nav__linkEspumas:hover, .techosPolicarbonato .navEspumas .menuEspumas ul .nav__itemTChapaPolicarbonato .nav__linkChapaPolicarbonato:hover, .techosPolicarbonato .navEspumas .menuEspumas ul .nav__itemTChapaPolicarbonato .nav__linkEspumas:hover, .techosPolicarbonato .navEspumas .menuEspumas ul .nav__itemEspumas .nav__linkChapaPolicarbonato:hover, .techosPolicarbonato .navEspumas .menuEspumas ul .nav__itemEspumas .nav__linkEspumas:hover {
               color: #d30809; }
+    .techosPolicarbonato .navChapaPolicarbonato .menuEspumas ul, .techosPolicarbonato .navEspumas .menuEspumas ul {
+      margin: 9% 0% 0% 20%; }
   .techosPolicarbonato .containerChapaPolicarbonato, .techosPolicarbonato .containerEspuma {
     display: flex;
     justify-content: center;
