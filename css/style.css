@@ -4508,7 +4508,7 @@ main .disposicion .btn-redirect:hover {
     #main-tya #home-tya .trapezoide-tya {
       width: 340px;
       height: 130px;
-      background: #fafafa;
+      background: #fff;
       position: absolute;
       transform: perspective(400px) rotateY(30deg);
       transform-origin: 100% 63%;
@@ -4526,7 +4526,7 @@ main .disposicion .btn-redirect:hover {
       font-size: 2.5rem;
       font-weight: 600;
       position: absolute;
-      margin: 30% 0 0 133px;
+      margin: 30% 0 0 178px;
       text-align: flex-start;
       color: #0c0c0c;
       border-bottom: 6px solid #666666;
@@ -4990,7 +4990,7 @@ main .disposicion .btn-redirect:hover {
       font-family: "Poppins", sans-serif;
       font-weight: 450;
       position: absolute;
-      margin: 1% 0 0 -880px; }
+      margin: 1% 0 0 -981px; }
       @media only screen and (min-width: 1600px) and (max-width: 1920px) {
         #main-tya #aislaciones h3 {
           margin-left: -66%; } }
@@ -5009,7 +5009,7 @@ main .disposicion .btn-redirect:hover {
       height: 44px;
       position: absolute;
       top: 60%;
-      left: 72px;
+      left: 95px;
       border-radius: 20px;
       background-position: 50% 50%;
       background-size: cover;
@@ -5035,9 +5035,8 @@ main .disposicion .btn-redirect:hover {
       background-color: #d30809; }
   #main-tya .ais-container {
     position: absolute;
-    top: 804.5%;
-    left: 65%;
-    transform: translate(-50%, 50%);
+    top: 771.5%;
+    left: 37%;
     width: 920px;
     height: 460px;
     background: #f5f5f5;
@@ -5453,7 +5452,7 @@ main .disposicion .btn-redirect:hover {
           list-style: none; } }
       .techos .navTechoAlveolar .menuTecho ul, .techos .navTechoAlveolar .menuTechoAlveolar ul, .techos .navTecho .menuTecho ul, .techos .navTecho .menuTechoAlveolar ul, .alveolar .navTechoAlveolar .menuTecho ul, .alveolar .navTechoAlveolar .menuTechoAlveolar ul, .alveolar .navTecho .menuTecho ul, .alveolar .navTecho .menuTechoAlveolar ul {
         width: 80%;
-        margin: 1.8% 0% 0% 20%;
+        margin: 19.8% 0% 0% 20%;
         padding-right: 0;
         display: flex;
         justify-content: space-between;
@@ -5544,7 +5543,7 @@ main .disposicion .btn-redirect:hover {
     height: 23rem;
     z-index: 444;
     position: relative;
-    margin-top: 2%; }
+    margin-top: 13%; }
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
       .techos .cardTecho, .techos .cardTechoAlveolar, .alveolar .cardTecho, .alveolar .cardTechoAlveolar {
         height: 400px;
@@ -5825,7 +5824,7 @@ main .disposicion .btn-redirect:hover {
       overflow: hidden; }
       .techosPolicarbonato .navChapaPolicarbonato .menuChapaPolicarbonato ul, .techosPolicarbonato .navChapaPolicarbonato .menuEspumas ul, .techosPolicarbonato .navEspumas .menuChapaPolicarbonato ul, .techosPolicarbonato .navEspumas .menuEspumas ul {
         width: 80%;
-        margin: 0% 0% 0% 20%;
+        margin: 14% 0% 0% 20%;
         padding-right: 0;
         display: flex;
         justify-content: space-between;
@@ -5901,13 +5900,12 @@ main .disposicion .btn-redirect:hover {
       border-radius: 1rem;
       box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
       display: flex;
-      margin: 1.5rem;
       overflow: hidden;
       width: 58rem;
       height: 23rem;
       z-index: 444;
       position: relative;
-      margin-top: 2%; }
+      margin-top: 8%; }
       @media only screen and (min-width: 1600px) and (max-width: 1920px) {
         .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato, .techosPolicarbonato .containerEspuma .cardEspumas {
           height: 400px;

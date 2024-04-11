@@ -154,7 +154,7 @@
 
                 ul {
                     width: 80%;
-                    margin: 1.8% 0% 0% 20%;
+                    margin: 19.8% 0% 0% 20%;
                     padding-right: 0;
                     display: flex;
                     justify-content: space-between;
@@ -273,7 +273,7 @@
             height: 23rem;
             z-index: 444;
             position: relative;
-            margin-top: 2%;
+            margin-top: 13%;
 
             @include monitor-27 {
                 height: 400px;
@@ -643,7 +643,7 @@
 
             ul {
                 width: 80%;
-                margin: 0% 0% 0% 20%;
+                margin: 14% 0% 0% 20%;
                 padding-right: 0;
                 display: flex;
                 justify-content: space-between;
@@ -745,14 +745,13 @@
             border-radius: 1rem;
             box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
             display: flex;
-            margin: 1.5rem;
             overflow: hidden;
             width: 58rem;
             height: 23rem;
             // display: none;
             z-index: 444;
             position: relative;
-            margin-top: 2%;
+            margin-top: 8%;
 
             @include monitor-27 {
                 height: 400px;
