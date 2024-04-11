@@ -609,7 +609,7 @@ main #home {
           main #home .container .home-slider .home-list .home-item {
             display: none; } }
         main #home .container .home-slider .home-list .home-item img {
-          width: 1350px;
+          width: 1505px;
           max-width: 100vw;
           height: 100%;
           object-fit: cover;
@@ -838,7 +838,7 @@ main .home_1 {
     justify-content: center;
     text-align: center;
     max-width: 1000px;
-    margin-left: 10.5em;
+    margin-left: 18.5%;
     height: 280px; }
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
       main .home_1 .home_txt-fx {
@@ -1377,7 +1377,8 @@ main .section-5 {
       display: none; }
   main .section-5 .services .container .row {
     padding: 10px 10px 10px 50px;
-    margin-right: 15px; }
+    margin-right: 15px;
+    margin-top: 5%; }
     @media only screen and (max-width: 1024px) {
       main .section-5 .services .container .row {
         margin: 0 0 0 -76px;
@@ -2490,7 +2491,7 @@ main .muro-compuesto {
       color: #000000;
       position: absolute;
       margin-top: -21.4%;
-      margin-left: 40%;
+      margin-left: 66.9%;
       font-family: "Inter", sans-serif;
       font-size: 1.4em; }
       @media only screen and (min-width: 1600px) and (max-width: 1920px) {
@@ -2807,7 +2808,7 @@ main .banner-shop {
     padding: 10px 0px 10px 35px;
     width: 200px;
     margin-top: 5%;
-    margin-left: 41%; }
+    margin-left: 43%; }
     @media only screen and (max-width: 768px) {
       main .banner-shop .btn-e-shop {
         display: flex;
@@ -3574,7 +3575,7 @@ main #cielorraso {
           list-style: none; } }
       main #cielorraso .nav-cielorraso .menu-cielorraso ul {
         width: 100%;
-        margin: 1.8% 0% 0% 0%;
+        margin: 18% 0% 0% 0%;
         padding-right: 0;
         display: flex;
         justify-content: space-between;
