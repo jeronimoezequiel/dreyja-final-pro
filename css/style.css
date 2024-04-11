@@ -1898,7 +1898,7 @@ main .grid .grid-gallery {
   font-size: 14px; }
   @media only screen and (max-width: 384px) {
     #footer {
-      margin-top: -60%; } }
+      margin-top: 0%; } }
   #footer .footer-top {
     background: #f6f6f6;
     padding: 60px 0 30px 0; }
@@ -5046,7 +5046,7 @@ main .disposicion .btn-redirect:hover {
         margin-top: -127%; } }
     @media only screen and (max-width: 384px) {
       #main-tya .ais-container {
-        margin: -400% 0 0 -15%;
+        margin: -350% 0 0 -15%;
         width: 98%; } }
     #main-tya .ais-container .ais-slide {
       /*aca n = 0,1,2,3....*/ }
