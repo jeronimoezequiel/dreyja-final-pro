@@ -199,7 +199,8 @@ header nav {
       background-color: #000; } }
   @media only screen and (max-width: 384px) {
     header nav {
-      background-color: #000; } }
+      background-color: #000;
+      width: 280px; } }
   header nav .menu {
     position: relative;
     margin: 0 auto;
@@ -5052,7 +5053,7 @@ main .disposicion .btn-redirect:hover {
         margin-top: -127%; } }
     @media only screen and (max-width: 384px) {
       #main-tya .ais-container {
-        margin: -170% 0 0 -36%;
+        margin: -250% 0 0 -36%;
         width: 98%; } }
     #main-tya .ais-container .ais-slide {
       /*aca n = 0,1,2,3....*/ }
