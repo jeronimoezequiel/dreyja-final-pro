@@ -704,10 +704,16 @@
             }
         }
 
+        .navChapaPolicarbonato{
+            @include samsung-L {
+                margin: -813px 0 0 -173%;
+            }
+        }
+
         .menuEspumas  {
 
             @include samsung-L {
-                margin: 78px 0 0 58%;
+                margin: -48px 0 0 58%;
             }
             ul {
                 margin: 9% 0% 0% 20%;

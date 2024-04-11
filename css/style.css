@@ -5052,7 +5052,7 @@ main .disposicion .btn-redirect:hover {
         margin-top: -127%; } }
     @media only screen and (max-width: 384px) {
       #main-tya .ais-container {
-        margin: -190% 0 0 -36%;
+        margin: -170% 0 0 -36%;
         width: 98%; } }
     #main-tya .ais-container .ais-slide {
       /*aca n = 0,1,2,3....*/ }
@@ -5871,8 +5871,11 @@ main .disposicion .btn-redirect:hover {
       .techosPolicarbonato .navChapaPolicarbonato .menuChapaPolicarbonato, .techosPolicarbonato .navEspumas .menuChapaPolicarbonato {
         margin: 67px 0 0 58%; } }
     @media only screen and (max-width: 384px) {
+      .techosPolicarbonato .navChapaPolicarbonato .navChapaPolicarbonato, .techosPolicarbonato .navEspumas .navChapaPolicarbonato {
+        margin: -813px 0 0 -173%; } }
+    @media only screen and (max-width: 384px) {
       .techosPolicarbonato .navChapaPolicarbonato .menuEspumas, .techosPolicarbonato .navEspumas .menuEspumas {
-        margin: 78px 0 0 58%; } }
+        margin: -48px 0 0 58%; } }
     .techosPolicarbonato .navChapaPolicarbonato .menuEspumas ul, .techosPolicarbonato .navEspumas .menuEspumas ul {
       margin: 9% 0% 0% 20%; }
   .techosPolicarbonato .containerChapaPolicarbonato, .techosPolicarbonato .containerEspuma {
