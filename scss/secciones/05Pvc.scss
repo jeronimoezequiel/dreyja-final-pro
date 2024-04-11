@@ -145,11 +145,11 @@
                 border-radius: 20px;
                 width: 140px;
 
-                @include tablet {
-                        font-size: 12px;
-                        width: 94px;
-                        padding: 7px 23px 
-                }
+                // @include tablet {
+                //         font-size: 12px;
+                //         width: 94px;
+                //         padding: 7px 23px 
+                // }
             }
             .cielorraso-pvc:hover {
                 background: #757575;
@@ -175,6 +175,13 @@
         @include monitor-27 {
             margin-top: -14%;
             height: 90vh;
+        }
+
+        @include samsung-L {
+            display: flex;
+            margin: -97% 0 0 0;
+            background-color: black;
+            height: 700px;
         }
     
         &::before {
@@ -202,6 +209,18 @@
                 @include tablet {
                     font-size: 2.3rem;
                 }
+
+                @include monitor-27 {
+                    margin: 4% 0 0 4%;
+                    font-size: 2.5rem;
+                }
+    
+                @include samsung-L {
+                    font-size: 1.6rem;
+                    max-width: 87%;
+                    display: flex;
+                    text-align: center;
+                }
         }
     
         .navegacion-cielorraso-desmontable {
@@ -210,6 +229,10 @@
                 margin: 250px 0 0 -950px;
                 z-index: 4;
                 position: relative;
+
+                @include samsung-L {
+                    display: none;
+                }
     
                 ul {
                     margin: 8.5% 0 0 0;
@@ -252,28 +275,35 @@
                 margin: -39% 0 0 -32%;
                 z-index: 555;
                 color: #fff;
-    
-                @include tablet {
-                    position: fixed;
-                    top: 0;
-                    right: -250px;
-                    background: #000;
-                    width: 250px;
-                    height: 120vh;
-                    display: flex;
-                    transition: all 300ms;
-                }
 
                 @include monitor-27 {
                     margin-top: -33%;
                     margin-left: -18%;
                 }
     
+                @include samsung-L {
+                    z-index: 999;
+                    height: 90px;
+                    position: absolute;
+                    top: 284px;
+                    left: 0;
+                    width: 100%;
+                    color: #fff;
+                }
+
                 .menu-cielorraso-desmontable {
                     position: relative;
                     margin: 70px 0 0 58%;
                     max-width: 4500px;
                     overflow: hidden;
+
+                    @include samsung-L {
+                        display: ruby;
+                        padding: 10px 20px;
+                        width: 403px;
+                        margin: 0 0 0 113px;
+                        list-style: none;
+                    }
     
                     ul {
                         width: 100%;
@@ -283,20 +313,22 @@
                         justify-content: space-between;
                         font-size: .9rem;
                         font-weight: 300;
-    
-                        @include tablet {
-                            display: flex;
-                            flex-direction: column;
-                            margin-top: 34px;
-                            margin-left: 0px;
-                            font-size: 1em;
-                        }
 
                         @include monitor-27 {
                             font-size: 1.1rem;
                         }
+
+                        @include samsung-L {
+                            display: contents;
+                        }
                         .nav__item-cielorraso-desmontable {
                             margin-top: .5%;
+
+                            @include samsung-L {
+                                margin-right: 20px;
+                                margin-top: -13px;
+                                margin-left: -2px;
+                            }
                         
                             a {
                                 list-style: none;
@@ -340,8 +372,28 @@
                 z-index: 333;
                 position: relative;
 
+                @include monitor-27 {
+                    height: 400px;
+                    width: 1000px;
+                    margin: 2% 0 0 32%;
+                }
+
+                @include samsung-L {
+                    margin: 60% 0 0 20.5%;
+                    width: 330px;
+                    height: 700px;
+                    display: block;
+                }
+
                     .cielorraso-background-left-column {
                         background: map-get($color--azul, dreyja);
+
+                        @include samsung-L {
+                            position: absolute; /* Posicionar absolutamente */
+                            top: 0;
+                            left: 0;
+                            width: 100%; /* Ocupar todo el ancho del contenedor padre */
+                        }
                     }
                     .cielorraso-background2-left-column {
                         background: map-get($color--azul, dreyja);
@@ -365,6 +417,16 @@
                     @include monitor-27 {
                         margin: 14%;
                     }
+
+                    @include samsung-L {
+                        position: relative; /* Establecer el contenedor padre como relativo */
+                        display: flex; /* Utilizar flexbox para alinear elementos */
+                        flex-direction: column; /* Establecer dirección de columna */
+                        justify-content: space-between; /* Espacio entre elementos */
+                        width: 113%;
+                        margin: 13% 0 0 -19%;
+                        height: 70%;
+                    }
     
                     &.active-card-cielorraso-desmontable {
                         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -381,6 +443,10 @@
                         opacity: 0.6;
                         letter-spacing: .1rem;
                         text-transform: uppercase;
+
+                        @include monitor-27 {
+                            font-size: 1.4rem;
+                        }
                     }
     
                     .cielorraso-left-column-desmontable {
@@ -391,13 +457,34 @@
                         flex-direction: column;
                         align-items: center;
                         justify-content: space-between;
+
+                        @include monitor-27 {
+                            max-width: 13rem;
+                        }
+
+                        @include samsung-L {
+                            display: none;
+                            // flex-grow: 1; /* Ocupar todo el espacio disponible */
+                            order: 1; /* Colocar a la izquierda (por defecto) */
+                            max-width: 347.5px;
+                            max-height: 100px;
+                            z-index: 1;
+                        }
     
                         h4 {
                             color: #fff;
+
+                            @include monitor-27 {
+                                font-size: 1.7rem;
+                            }
                         }
     
                         i {
                             font-size: 5rem;
+
+                            @include samsung-L {
+                                display: none;
+                            }
                         }
                     }
     
@@ -407,12 +494,32 @@
                         flex-direction: column;
                         align-items: flex-start;
                         justify-content: space-between;
+
+                        @include portatil {
+                            max-width: 300px;
+                            margin: 0 0 0 -19px;
+                        }
+
+                        @include samsung-L {
+                            max-width: 100%;
+                            order: 2;
+                            margin: -18% 0 0 0px;
+                            z-index: 999;
+                        }
     
                         p {
                             font-family: 'Poppins';
                             font-size: .9rem;
                             color: #000;
                             max-width: 400px;
+
+                            @include portatil {
+                                font-size: .75rem;
+                            }
+
+                            @include monitor-27 {
+                                font-size: 1.1rem;
+                            }
                         }
     
                         span {
@@ -430,6 +537,16 @@
                             width: 350px;
                             max-width: 300px;
                             margin-left: auto;
+
+                            @include portatil {
+                                margin: 10% 0 0 14px;
+                            }
+    
+                            @include samsung-L {
+                                order: 0;
+                                margin: 0 0 0 15%;
+                                z-index: 0;
+                            }
     
                             .owl-carousel-desmontable {
                                 .cielorraso-item-desmontable {
@@ -437,6 +554,15 @@
                                         width: 100%;
                                         height: auto;
                                         margin: 0;
+
+                                        @include monitor-27 {
+                                            margin-top: 44%;
+                                        }
+
+                                        @include samsung-L {
+                                            width: 230px;
+                                            height: 230px;
+                                        }
                                     }
                                 }
                             }
@@ -571,11 +697,11 @@
         padding: 1px;
         margin: 13% 0 0 0;
 
-        @include tablet {
+        @include samsung-L {
             display: flex;
             height: 180px;
             width: 100%;
-            margin: 0 0 40% 0;
+            margin: -53% 0 40% 0;
         }
         h2 {
             font-family: 'Poppins';
