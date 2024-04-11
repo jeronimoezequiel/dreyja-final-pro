@@ -3668,7 +3668,7 @@ main #cielorraso {
       border-radius: 1rem;
       box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
       display: flex;
-      margin: 1.5rem;
+      margin: 6rem 0 0 0;
       overflow: hidden;
       width: 58rem;
       height: 23rem;
@@ -3859,7 +3859,7 @@ main .drywall {
     height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
-    margin: 210px 0 0 -970px; }
+    margin: 246px 0 0 -1087px; }
     @media only screen and (max-width: 1024px) {
       main .drywall .navegacion {
         margin: 10% 0 0 -43%; } }
@@ -4188,7 +4188,7 @@ main .banner-shop-cs {
   main .banner-shop-cs h2 {
     font-family: 'Poppins';
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #fff;
     width: 100%;
     display: flex;
@@ -4460,9 +4460,10 @@ main .disposicion .btn-redirect {
   display: flex;
   position: absolute;
   margin-top: -14%;
-  margin-left: 40%;
-  background: var(--section-cs);
-  border: 2px solid #fff;
+  margin-left: 43%;
+  background: #273238;
+  border: 2px solid #d30809;
+  color: #fff;
   border-radius: 30px;
   padding: 10px 0px 10px 35px;
   width: 200px; }
@@ -4479,7 +4480,7 @@ main .disposicion .btn-redirect {
     font-size: 'Poppins';
     font-weight: 400;
     text-decoration: none;
-    color: #333; }
+    color: #fff; }
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
       main .disposicion .btn-redirect a {
         color: #273238;
@@ -4489,7 +4490,7 @@ main .disposicion .btn-redirect {
 main .disposicion .btn-redirect:hover {
   cursor: pointer;
   transition: all .3s ease-in-out;
-  background-color: #273238;
+  background-color: #d30809;
   font-family: 'Poppins';
   font-weight: 500; }
 

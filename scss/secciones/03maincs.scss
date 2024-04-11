@@ -740,7 +740,7 @@ main {
                     border-radius: 1rem;
                     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
                     display: flex;
-                    margin: 1.5rem;
+                    margin: 6rem 0 0 0;
                     overflow: hidden;
                     width: 58rem;
                     height: 23rem;
@@ -990,7 +990,7 @@ main {
                 height: 100%;
                 overflow-y: auto;
                 overflow-x: hidden;
-                margin: 210px 0 0 -970px;
+                margin: 246px 0 0 -1087px;
 
                 @include portatil {
                     margin: 10% 0 0 -43%;
@@ -1435,7 +1435,7 @@ main {
             h2 {
                 font-family: 'Poppins';
                 font-weight: 300;
-                font-size: 2rem;
+                font-size: 1.6rem;
                 color: #fff;
                 width: 100%;
                 display: flex;
@@ -1803,9 +1803,10 @@ main {
                 display: flex;
                 position: absolute;
                 margin-top: -14%;
-                margin-left: 40%;
-                background: var(--section-cs);
-                border: 2px solid #fff;
+                margin-left: 43%;
+                background: map-get($color--azul, dreyja);
+                border: 2px solid map-get($color--bordo, dreyja);
+                color: #fff;
                 border-radius: 30px;
                 padding: 10px 0px 10px 35px;
                 width: 200px;
@@ -1824,7 +1825,7 @@ main {
                     font-size: 'Poppins';
                     font-weight: 400;
                     text-decoration: none;
-                    color: #333;
+                    color: #fff;
     
                     @include monitor-27 {
                         color: map-get($color--azul, dreyja );
@@ -1836,7 +1837,7 @@ main {
             .btn-redirect:hover{
                 cursor: pointer;
                 transition: all .3s ease-in-out;
-                background-color: map-get($color--azul, dreyja );
+                background-color: map-get($color--bordo, dreyja );
                 font-family: 'Poppins';
                 font-weight: 500;
             }
