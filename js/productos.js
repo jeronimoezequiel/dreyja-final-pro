@@ -278,7 +278,7 @@ const productos = [
     {
         id: "tx",
         nombre:"Larguero 24mm",
-        imagen: "../scss/recursos/tx/BARBIERI-LARGUERO-TX-LP-(24-MM)COPIA.jpg",
+        imagen: "../scss/recursos/tx/BARBIERI-LARGUERO-TX-LP-(24-MM).jpg",
         categoria: {
             nombre: "Tx",
             id: "tx",
@@ -426,7 +426,7 @@ function cargarProductos(productosElegidos) {
                 <h5 class="producto-titulo">${producto.nombre}</h3>
                 <p class="producto-marca">${producto.marca}</p>
                 <p class="producto-detalle">${producto.detalle}</p>
-                <span class="producto-consultar" id="${producto.id}"><a href="https://wa.me/5492995479547" class="btn-wsp" target="_blank">Consultar</span>
+                <span class="producto-consultar" id="${producto.id}"><a href="https://wa.me/5492216541916" class="btn-wsp" target="_blank">Consultar</span>
             </div>
         `;
         contenedorProductos.append(div);
