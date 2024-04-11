@@ -3192,6 +3192,10 @@ main #home-cs {
     height: 300px;
     background: #fafafa;
     border-radius: 20px; }
+    @media only screen and (max-width: 768px) {
+      main #home-cs .home-container {
+        width: 100%;
+        height: 125px; } }
 
 @keyframes roll {
   0% {
@@ -4503,6 +4507,9 @@ main .disposicion .btn-redirect:hover {
     height: 520px;
     background: url("https://reparandotucasa.com/wp-content/uploads/2021/03/image3-32.jpg");
     background-size: cover; }
+    @media only screen and (max-width: 384px) {
+      #main-tya #home-tya {
+        height: 170px; } }
     #main-tya #home-tya .trapezoide-tya {
       width: 340px;
       height: 130px;
@@ -5045,7 +5052,7 @@ main .disposicion .btn-redirect:hover {
         margin-top: -127%; } }
     @media only screen and (max-width: 384px) {
       #main-tya .ais-container {
-        margin: -200% 0 0 -36%;
+        margin: -180% 0 0 -36%;
         width: 98%; } }
     #main-tya .ais-container .ais-slide {
       /*aca n = 0,1,2,3....*/ }

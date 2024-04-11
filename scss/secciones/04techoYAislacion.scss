@@ -6,9 +6,9 @@
         background: url("https://reparandotucasa.com/wp-content/uploads/2021/03/image3-32.jpg");
         background-size: cover;
 
-        // // @include tablet {
-        //     height: 170px;
-        // }
+        @include samsung-L{
+            height: 170px;
+        }
 
         .trapezoide-tya {
             width: 340px;
@@ -708,7 +708,7 @@
         }
 
         @include samsung-L {
-            margin: -200% 0 0 -36%;
+            margin: -180% 0 0 -36%;
             width: 98%;
         }
 
