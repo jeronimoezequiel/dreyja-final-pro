@@ -708,7 +708,7 @@
         }
 
         @include samsung-L {
-            margin: -224% 0 0 -36%;
+            margin: -355% 0 0 -36%;
             width: 98%;
         }
 
@@ -964,11 +964,6 @@
             margin-top: 5%;
             margin-left: 40%;
 
-            // @include tablet {
-            //     display: flex;
-            //     margin: 105px 0 0 92px;
-            // }
-
             @include monitor-27 {
                 margin-left: 42%;
                 background: map-get($color--azul, dreyja);
@@ -977,7 +972,7 @@
             }
 
             @include samsung-L {
-                margin: 20% 0 0 23%;
+                margin: -15% 0 0 23%;
             }
 
             a {

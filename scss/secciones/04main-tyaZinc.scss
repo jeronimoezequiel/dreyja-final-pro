@@ -641,6 +641,10 @@
             max-width: 450px;
             overflow: hidden;
 
+            @include samsung-L {
+                margin: -118px 0 0 58%;
+            }
+
             ul {
                 width: 80%;
                 margin: 0% 0% 0% 20%;
@@ -699,6 +703,10 @@
         }
 
         .menuEspumas  {
+
+            @include samsung-L {
+                margin: -90px 0 0 58%;
+            }
             ul {
                 margin: 9% 0% 0% 20%;
             }
