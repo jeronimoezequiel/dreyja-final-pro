@@ -3205,7 +3205,7 @@ main #home-cs {
     transform: translate3d(0, 70%, 0); } }
     main #home-cs .home-container h1 {
       font-family: "Poppins", sans-serif;
-      margin: 8% 0px 0px 7%;
+      margin: 9% 0px 0px 7%;
       display: flex;
       font-size: .9rem; }
       @media only screen and (max-width: 1600px) {
@@ -3368,8 +3368,8 @@ main .detallePvc {
         position: relative; } }
     main .detallePvc .strip-Pvc img {
       max-width: 100%;
-      width: 448px;
-      height: 448px;
+      width: 800px;
+      height: 550px;
       margin: 10% 0 0 3%;
       border-radius: 20px; }
       @media only screen and (max-width: 384px) {
@@ -3668,7 +3668,7 @@ main #cielorraso {
       border-radius: 1rem;
       box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
       display: flex;
-      margin: 6rem 0 0 0;
+      margin: 8% 0 0 0;
       overflow: hidden;
       width: 58rem;
       height: 23rem;
@@ -4370,6 +4370,7 @@ main .wrapper {
           grid-template-columns: 1fr; } }
       main .wrapper .main-eshop .contenedor-productos .producto .producto-imagen {
         max-width: 100%;
+        width: 342px;
         border-top-right-radius: 1rem;
         border-top-left-radius: 1rem;
         border-bottom-left-radius: 0px;

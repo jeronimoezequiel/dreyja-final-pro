@@ -158,7 +158,7 @@ main {
             }
             h1 {
                 font-family: $typo-poppins;
-                margin: 8% 0px 0px 7%;
+                margin: 9% 0px 0px 7%;
                 display: flex;
                 font-size: .9rem;
 
@@ -340,10 +340,6 @@ main {
             height: 350px;
             max-width: 1310px; /* Ancho máximo para mantener la legibilidad en pantallas grandes */
             margin: 20px; /* Ajustado para mayor espacio entre tiras */
-            // background-color: #e6e6e6;
-            // border: 1px solid ;
-            // border-radius: 20px;
-            // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             display: flex; /* Utiliza flexbox para alinear elementos */
             align-items: center;
 
@@ -362,22 +358,14 @@ main {
 
             img {
                 max-width: 100%;
-                width: 448px;
-                height: 448px;
+                width: 800px;
+                height: 550px;
                 margin: 10% 0 0 3%;
                 border-radius: 20px;
 
                 @include samsung-L {
                     margin: 22% 0 10px 0;
                 }
-
-                // @include tablet {
-                //     display: flex;
-                //     max-width: 100%;
-                //     width: 225px;
-                //     height: 168px;
-                //     margin: 0 0 0 -3px;
-                // }
             }
             .strip-content-Pvc {
                 font-family: 'Poppins';
@@ -740,7 +728,7 @@ main {
                     border-radius: 1rem;
                     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
                     display: flex;
-                    margin: 6rem 0 0 0;
+                    margin: 8% 0 0 0;
                     overflow: hidden;
                     width: 58rem;
                     height: 23rem;
@@ -1688,6 +1676,7 @@ main {
                     .producto {
                         .producto-imagen {
                             max-width: 100%;
+                            width: 342px;
                             border-top-right-radius: 1rem;
                             border-top-left-radius: 1rem;
                             border-bottom-left-radius: 0px;
@@ -1748,13 +1737,6 @@ main {
     }
     
     .disposicion {
-    
-            // @include tablet {
-            //     height: 556px;
-            //     margin-bottom: -73.5%;
-            //     margin-top: -40%;
-            //     background: #fff;
-            // }
     
             @include samsung-L {
                 margin: -42% 0 60% 0;
