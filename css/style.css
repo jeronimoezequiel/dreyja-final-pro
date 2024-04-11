@@ -566,9 +566,9 @@ main #home {
       main #home .container {
         margin: -51% 0 0 0%; } }
     main #home .container .home-slider {
-      width: 100%;
+      width: 111.5%;
       height: 500px;
-      margin: auto;
+      margin: 0 0 0 -6%;
       position: relative;
       overflow: hidden; }
       @media only screen and (max-width: 384px) {
@@ -2489,8 +2489,8 @@ main .muro-compuesto {
     main .muro-compuesto .muro-compuesto-referencias .muro-sf-partes ul li:nth-child(6) a {
       color: #000000;
       position: absolute;
-      margin-top: -21;
-      margin-left: 66.8%;
+      margin-top: -21.4%;
+      margin-left: 40%;
       font-family: "Inter", sans-serif;
       font-size: 1.4em; }
       @media only screen and (min-width: 1600px) and (max-width: 1920px) {
@@ -5035,7 +5035,7 @@ main .disposicion .btn-redirect:hover {
       background-color: #d30809; }
   #main-tya .ais-container {
     position: absolute;
-    top: 771.5%;
+    top: 766%;
     left: 37%;
     width: 920px;
     height: 460px;
