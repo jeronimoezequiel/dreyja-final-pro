@@ -5052,7 +5052,7 @@ main .disposicion .btn-redirect:hover {
         margin-top: -127%; } }
     @media only screen and (max-width: 384px) {
       #main-tya .ais-container {
-        margin: -355% 0 0 -36%;
+        margin: -300% 0 0 -36%;
         width: 98%; } }
     #main-tya .ais-container .ais-slide {
       /*aca n = 0,1,2,3....*/ }
@@ -5827,9 +5827,6 @@ main .disposicion .btn-redirect:hover {
       margin: 70px 0 0 58%;
       max-width: 450px;
       overflow: hidden; }
-      @media only screen and (max-width: 384px) {
-        .techosPolicarbonato .navChapaPolicarbonato .menuChapaPolicarbonato, .techosPolicarbonato .navChapaPolicarbonato .menuEspumas, .techosPolicarbonato .navEspumas .menuChapaPolicarbonato, .techosPolicarbonato .navEspumas .menuEspumas {
-          margin: -118px 0 0 58%; } }
       .techosPolicarbonato .navChapaPolicarbonato .menuChapaPolicarbonato ul, .techosPolicarbonato .navChapaPolicarbonato .menuEspumas ul, .techosPolicarbonato .navEspumas .menuChapaPolicarbonato ul, .techosPolicarbonato .navEspumas .menuEspumas ul {
         width: 80%;
         margin: 0% 0% 0% 20%;
@@ -5871,8 +5868,11 @@ main .disposicion .btn-redirect:hover {
             .techosPolicarbonato .navChapaPolicarbonato .menuChapaPolicarbonato ul .nav__itemTChapaPolicarbonato .nav__linkChapaPolicarbonato:hover, .techosPolicarbonato .navChapaPolicarbonato .menuChapaPolicarbonato ul .nav__itemTChapaPolicarbonato .nav__linkEspumas:hover, .techosPolicarbonato .navChapaPolicarbonato .menuChapaPolicarbonato ul .nav__itemEspumas .nav__linkChapaPolicarbonato:hover, .techosPolicarbonato .navChapaPolicarbonato .menuChapaPolicarbonato ul .nav__itemEspumas .nav__linkEspumas:hover, .techosPolicarbonato .navChapaPolicarbonato .menuEspumas ul .nav__itemTChapaPolicarbonato .nav__linkChapaPolicarbonato:hover, .techosPolicarbonato .navChapaPolicarbonato .menuEspumas ul .nav__itemTChapaPolicarbonato .nav__linkEspumas:hover, .techosPolicarbonato .navChapaPolicarbonato .menuEspumas ul .nav__itemEspumas .nav__linkChapaPolicarbonato:hover, .techosPolicarbonato .navChapaPolicarbonato .menuEspumas ul .nav__itemEspumas .nav__linkEspumas:hover, .techosPolicarbonato .navEspumas .menuChapaPolicarbonato ul .nav__itemTChapaPolicarbonato .nav__linkChapaPolicarbonato:hover, .techosPolicarbonato .navEspumas .menuChapaPolicarbonato ul .nav__itemTChapaPolicarbonato .nav__linkEspumas:hover, .techosPolicarbonato .navEspumas .menuChapaPolicarbonato ul .nav__itemEspumas .nav__linkChapaPolicarbonato:hover, .techosPolicarbonato .navEspumas .menuChapaPolicarbonato ul .nav__itemEspumas .nav__linkEspumas:hover, .techosPolicarbonato .navEspumas .menuEspumas ul .nav__itemTChapaPolicarbonato .nav__linkChapaPolicarbonato:hover, .techosPolicarbonato .navEspumas .menuEspumas ul .nav__itemTChapaPolicarbonato .nav__linkEspumas:hover, .techosPolicarbonato .navEspumas .menuEspumas ul .nav__itemEspumas .nav__linkChapaPolicarbonato:hover, .techosPolicarbonato .navEspumas .menuEspumas ul .nav__itemEspumas .nav__linkEspumas:hover {
               color: #d30809; }
     @media only screen and (max-width: 384px) {
+      .techosPolicarbonato .navChapaPolicarbonato .menuChapaPolicarbonato, .techosPolicarbonato .navEspumas .menuChapaPolicarbonato {
+        margin: 67px 0 0 58%; } }
+    @media only screen and (max-width: 384px) {
       .techosPolicarbonato .navChapaPolicarbonato .menuEspumas, .techosPolicarbonato .navEspumas .menuEspumas {
-        margin: -90px 0 0 58%; } }
+        margin: 78px 0 0 58%; } }
     .techosPolicarbonato .navChapaPolicarbonato .menuEspumas ul, .techosPolicarbonato .navEspumas .menuEspumas ul {
       margin: 9% 0% 0% 20%; }
   .techosPolicarbonato .containerChapaPolicarbonato, .techosPolicarbonato .containerEspuma {
