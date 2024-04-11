@@ -65,6 +65,10 @@
         min-height: 80vh;
         display: grid;
         place-items: center;
+
+        @include samsung-L {
+            margin: 10% 0 0 0;
+        }
         .aislaciones-row {
             width: 97%;
             display: grid;
@@ -255,6 +259,13 @@
         @include tablet {
             display: flex;
             margin: -95% 0 0 0;
+        }
+
+        @include samsung-L {
+            display: flex;
+            margin: 10% 0 0 0;
+            background-color: black;
+            height: 700px;
         }
     
         &::before {
@@ -472,6 +483,22 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+
+        @include monitor-27 {
+            height: 750px;
+        }
+
+        @include tablet {
+            display: flex;
+            margin: -95% 0 0 0;
+        }
+
+        @include samsung-L {
+            display: flex;
+            margin: 10% 0 0 0;
+            background-color: black;
+            height: 700px;
+        }
     
         &::before {
             content: "";
@@ -492,6 +519,15 @@
             position: absolute;
             margin: 16% 0 0 5%;
             z-index: 10;
+
+            @include monitor-27 {
+                margin: 4% 0 0 4%;
+                font-size: 2.5rem;
+            }
+
+            @include samsung-L {
+                font-size: 1.6rem;
+            }
         }
 
         h3 {
@@ -556,6 +592,10 @@
         @include acer-escritorio {
             margin-top: 10%;
         }
+
+        @include samsung-L {
+            margin: 345% 0 0 0;
+        }
     
         &::before {
             content: "";
@@ -576,6 +616,11 @@
             position: absolute;
             margin: -9% 0 0 -66%;
             z-index: 10;
+
+            @include samsung-L {
+                font-size: 1.6rem;
+                margin: -144% 0 0 -35%;
+            }
         }
 
         h3 {
@@ -588,6 +633,19 @@
             
             @include monitor-27 {
                 margin-left: -66%;
+            }
+
+            @include samsung-L {
+                margin: -127% 0 0 37%;
+                font-size: 1rem;
+                transform: translateX(-50%);
+                max-width: 63%;
+            }
+        
+            #brh3 {
+                @include samsung-L {
+                    display: none;
+                }
             }
         }
 
@@ -606,6 +664,10 @@
 
             @include monitor-27 {
                 margin-left: 2%;
+            }
+
+            @include samsung-L {
+                display: none;
             }
 
                 .contentBtn {
@@ -646,9 +708,10 @@
             margin-top: -127%;
         }
 
-        // @include acer-escritorio {
-        //     margin-top: -120%;
-        // }
+        @include samsung-L {
+            margin: -484% 0 0 -15%;
+            width: 98%;
+        }
 
         .ais-slide {
 
@@ -683,6 +746,12 @@
                         font-weight: bold;
                         opacity: 0;
                         animation: animate 1s ease-in-out 1 forwards;
+
+                        @include samsung-L {
+                            margin: 0 0 0 -26%;
+                            font-size: 1.3rem;
+                            max-width: 185px;
+                        }
                     }
 
                     .des {
@@ -693,6 +762,14 @@
                         opacity: 0;
                         animation: animate 1s ease-in-out 0.3s 1 forwards;
                         font-family: 'Poppins';
+
+                        @include samsung-L {
+                            margin: 0 0 0 -26%;
+                            max-width: 164px;
+                            font-weight: 600;
+                            font-size: .87rem;
+                            backdrop-filter: blur(20px);
+                        }
                     }
 
                     // span {
@@ -750,6 +827,12 @@
             .item:nth-child(2) .content {
                 display: block;
             }
+
+            .item {
+                @include samsung-L {
+                    margin: 0 0 0 -2%;
+                }
+            }
         }
 
         .button {
@@ -760,6 +843,10 @@
             font-size: 28px;
             cursor: pointer;
             margin: 0 0 0 -200px;
+
+            @include samsung-L {
+                margin: 0 0 0 18%;
+            }
 
             span {
                 width: 40px;
@@ -825,12 +912,18 @@
         padding: 1px;
         margin: 0 0 0 0;
 
-        @include tablet {
-            display: flex;
-            height: 180px;
-            width: 100%;
-            margin: -95% 0 40% 0;
+        // @include tablet {
+        //     display: flex;
+        //     height: 180px;
+        //     width: 100%;
+        //     margin: -95% 0 40% 0;
+        // }
+
+        @include samsung-L {
+            margin: 0 0 0 0;
+            height: 300px;
         }
+
         h2 {
             font-family: 'Poppins';
             font-weight: 300;
@@ -844,15 +937,21 @@
             align-items: center;
             top: 20%;
 
-            @include tablet {
-                display: flex;
-                font-size: 1.2rem;
-                margin: -133px 0 0 0;
-            }
+            // @include tablet {
+            //     display: flex;
+            //     font-size: 1.2rem;
+            //     margin: -133px 0 0 0;
+            // }
 
             @include monitor-27 {
                 max-width: 1000px;
                 margin-left: 19%;
+            }
+
+            @include samsung-L {
+                margin: -13% 0 0 5%;
+                font-size: 1rem;
+                max-width: 90%;
             }
         }
         .btn-e-shop-tya{
@@ -866,16 +965,20 @@
             margin-top: 5%;
             margin-left: 40%;
 
-            @include tablet {
-                display: flex;
-                margin: 105px 0 0 92px;
-            }
+            // @include tablet {
+            //     display: flex;
+            //     margin: 105px 0 0 92px;
+            // }
 
             @include monitor-27 {
                 margin-left: 42%;
                 background: map-get($color--azul, dreyja);
                 width: 300px; 
                 height: 60px;
+            }
+
+            @include samsung-L {
+                margin: 20% 0 0 23%;
             }
 
             a {
@@ -941,7 +1044,7 @@
                 @include tablet {
                     width: 90%;
                     font-size: 1.1rem;
-                    margin: -80% 0 0 20px;
+                    margin: -100% 0 0 20px;
                 }
             }
         }
@@ -959,7 +1062,7 @@
 
             @include tablet {
                 display: flex;
-                margin: -75px 0 0 90px
+                margin: -140px 0 0 90px
             }
 
             @include monitor-27 {

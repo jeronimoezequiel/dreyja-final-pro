@@ -8,10 +8,12 @@
     width: 100%;
     z-index: 1;
 
-        @include tablet {
-            display: flex;
-            margin: -95% 0 0 0;
-        }
+    @include samsung-L {
+        display: flex;
+        margin: -47% 0 0 0;
+        background-color: #fff;
+        height: 860px;
+    }
     
         &::before {
             content: "";
@@ -22,6 +24,10 @@
             height: 100%;
             background: inherit;
             filter: brightness(40%) contrast(120%) saturate(80%) grayscale(10%);
+        
+            @include samsung-L {
+                filter: none;
+            }
         }
     
         h2 {
@@ -35,13 +41,18 @@
             background-color: map-get($color--bordo, dreyja );
             padding: 15px 10px;
 
-            @include tablet {
-                font-size: 2.3rem;
-            }
-            
             @include monitor-27 {
                 margin: 4% 0 0 4%;
                 font-size: 2.5rem;
+            }
+
+            @include samsung-L {
+                background-color: map-get($color--bordo, dreyja );
+                font-size: 1.6rem;
+                position: relative;
+                height: 59px;
+                width: 316px;
+                max-width: 86%;
             }
         }
 
@@ -63,6 +74,10 @@
                 height: 60px;
                 width: 320px;
                 margin-left: -3.4%;
+            }
+
+            @include samsung-L {
+                display: none;
             }
 
                 .contentBtn, .contentBtnEspuma {
@@ -104,6 +119,16 @@
             @include monitor-27 {
                 margin: -46% 0 4% 19%;
             }
+
+            @include samsung-L {
+                z-index: 999;
+                height: 90px;
+                position: absolute;
+                top: 160px;
+                left: 0;
+                width: 100%;
+                color: #fff;
+            }
         
             .menuTecho, .menuTechoAlveolar {
                 position: relative;
@@ -117,6 +142,16 @@
                     max-width: 1000px;
                 }
 
+                @include samsung-L {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px 0;
+                    width: 467px;
+                    margin: -72px 0 0 -129px;
+                    list-style: none;
+                }
+
                 ul {
                     width: 80%;
                     margin: 1.8% 0% 0% 20%;
@@ -125,6 +160,18 @@
                     justify-content: space-between;
                     font-size: .9rem;
                     font-weight: bold;
+
+                    @include portatil {
+                        margin: 0% 0 0 27%;
+                        backdrop-filter: blur(20px);
+                        max-width: 353px;
+                        padding: 7px;
+                        border-radius: 20px;
+                    }
+
+                    @include samsung-L {
+                        display: flex;
+                    }
 
                     .nav__itemTecho, .nav__itemTechoAlveolar {
                         margin-top: .5%;
@@ -183,15 +230,33 @@
             margin: -10.5% 0 0 20.5%;
             z-index: 333;
             position: relative;
-        
+
+            @include samsung-L {
+                margin: -17% 0 0 -62%;
+                // width: 401px;
+                height: 700px;
+                display: block;
+            }
+
+            @include monitor-27 {
+                height: 400px;
+                width: 1000px;
+                margin: 2% 0 0 32%;
+            }
+
             .techo-background-left-column {
                 background: map-get($color--azul, dreyja);
+
+                @include samsung-L {
+                    position: absolute; /* Posicionar absolutamente */
+                    top: 0;
+                    left: 0;
+                    width: 100%; /* Ocupar todo el ancho del contenedor padre */
+                }
             }
-        
             .techo-background2-left-column {
                 background:  #3b4c55;
             }
-
             .background3 {
                 background:  #ffffff;
             }
@@ -214,6 +279,16 @@
                 height: 400px;
                 width: 1000px;
                 margin-top: 18%;
+            }
+
+            @include samsung-L {
+                position: relative; /* Establecer el contenedor padre como relativo */
+                display: flex; /* Utilizar flexbox para alinear elementos */
+                flex-direction: column; /* Establecer dirección de columna */
+                justify-content: space-between; /* Espacio entre elementos */
+                width: 113%;
+                margin: 8% 0 0 -19%;
+                height: 95%;
             }
         
             h2 {
@@ -242,6 +317,16 @@
                 @include monitor-27 {
                     height: 55vh;
                 }
+
+                @include samsung-L {
+                    display: none;
+                    // flex-grow: 1; /* Ocupar todo el espacio disponible */
+                    order: 1; /* Colocar a la izquierda (por defecto) */
+                    max-width: 347.5px;
+                    max-height: 100px;
+                    // margin: 50% 0 0 0;
+                    z-index: 1;
+                }
         
                 h4 {
                     color: #fff;
@@ -265,12 +350,23 @@
                 @include monitor-27 {
                     margin-top: -40%;
                 }
+
+                @include samsung-L {
+                    max-width: 100%;
+                    order: 2;
+                    margin: 60% 0 0 0px;
+                    z-index: 999;
+                }
         
                 p {
                     font-family: 'Poppins';
                     font-size: .9rem;
                     color: #000;
                     max-width: 400px;
+
+                    @include monitor-27 {
+                        font-size: 1.1rem;
+                    }
                 }
         
                 span {
@@ -293,12 +389,27 @@
                 justify-content: center;
                 margin: -41% 0px 0 16%;
                 max-width: 500px;
+
+                @include monitor-27 {
+                    margin-top: -40%;
+                }
+
+                @include samsung-L {
+                    max-width: 100%;
+                    order: 2;
+                    margin: 60% 0 0 0px;
+                    z-index: 999;
+                }
         
                 p {
                     font-family: 'Poppins';
                     font-size: .9rem;
                     color: #000;
                     max-width: 400px;
+
+                    @include monitor-27 {
+                        font-size: 1.1rem;
+                    }
                 }
         
                 span {
@@ -319,6 +430,12 @@
                 margin-left: auto; // Alinear a la derecha
                 position: relative;
                 margin-top: -28%;
+
+                @include samsung-L {
+                    order: 0;
+                    margin: -200% 0 0 20%;
+                    z-index: 0;
+                }
         
                 .owl-carousel {
                     .cielorraso-item {
@@ -326,6 +443,15 @@
                             width: 100%; // La imagen ocupa el 100% del contenedor
                             height: auto; // Altura automática para mantener la proporción
                             margin: 0; // Eliminar el margen
+
+                            @include monitor-27 {
+                                margin-top: 44%;
+                            }
+
+                            @include samsung-L {
+                                width: 277px;
+                                height: 210px;
+                            }
                         }
                     }
                 }
@@ -346,6 +472,12 @@
                 margin-left: auto;  /*Alinear a la derecha*/
                 position: relative;
                 margin-top: -28%;
+
+                @include samsung-L {
+                    order: 0;
+                    margin: -203% 0 0 5%;
+                    z-index: 0;
+                }
         
                 .owl-carousel {
                     .cielorraso-item {
@@ -353,6 +485,10 @@
                             width: 100%;  /*La imagen ocupa el 100% del contenedor*/
                             height: auto;  /*Altura automática para mantener la proporción*/
                             margin: 0;  /*Eliminar el margen*/
+
+                            @include monitor-27 {
+                                margin-top: 44%;
+                            }
                         }
                     }
                 }
@@ -374,15 +510,30 @@
     background: #ffffff;
     height: 570px;
 
+    @include samsung-L {
+        height: 215px;
+    }
+
     .techosChapaPolicarbonato {
         position: relative;
         height: 650px;
         width: 100%;
         z-index: 1;
 
+        @include monitor-27 {
+            height: 750px;
+        }
+
         @include tablet {
             display: flex;
             margin: -95% 0 0 0;
+        }
+
+        @include samsung-L {
+            display: flex;
+            margin: -32% 0 0 0;
+            background-color: black;
+            height: 700px;
         }
     
         &::before {
@@ -410,6 +561,15 @@
             @include tablet {
                 font-size: 2.3rem;
             }
+
+            @include monitor-27 {
+                margin: 4% 0 0 4%;
+                font-size: 2.5rem;
+            }
+
+            @include samsung-L {
+                font-size: 1.45rem;
+            }
         }
 
         .itemBtn {
@@ -424,6 +584,10 @@
             background-size: cover;
             display: inline-block;
             transition: 0.5s;
+
+            @include samsung-L {
+                display: none;
+            }
 
                 .contentBtn {
                     position: relative;
@@ -456,6 +620,20 @@
         margin: -49% 0 0 8%;
         z-index: 555;
         color: #fff;
+
+        @include monitor-27 {
+            margin: -46% 0 4% 19%;
+        }
+
+        @include samsung-L {
+            z-index: 999;
+            height: 90px;
+            position: absolute;
+            margin: -685px 0 0 -173%;
+            left: 0;
+            max-width: 265%;
+            color: #fff;
+        }
 
         .menuChapaPolicarbonato, .menuEspumas {
             position: relative;
@@ -530,12 +708,28 @@
         z-index: 333;
         position: relative;
 
-        @include acer-escritorio {
-            
+        @include monitor-27 {
+            height: 400px;
+            width: 1000px;
+            margin: 2% 0 0 32%;
+        }
+
+        @include samsung-L {
+            margin: -161% 0 0 21%;
+            height: 930px;
+            width: 302px;
+            display: block;
         }
 
         .techo-background-left-column {
             background: map-get($color--azul, dreyja);
+
+            @include samsung-L {
+                position: absolute; /* Posicionar absolutamente */
+                top: 0;
+                left: 0;
+                width: 100%; /* Ocupar todo el ancho del contenedor padre */
+            }
         }
     
         .techo-background2-left-column {
@@ -566,6 +760,16 @@
                 margin-top: 18%;
             }
 
+            @include samsung-L {
+                position: relative; /* Establecer el contenedor padre como relativo */
+                display: flex; /* Utilizar flexbox para alinear elementos */
+                flex-direction: column; /* Establecer dirección de columna */
+                justify-content: space-between; /* Espacio entre elementos */
+                width: 113%;
+                margin: 13% 0 0 -19%;
+                height: 73%;
+            }
+
             h2 {
                 letter-spacing: .1rem;
                 margin: 1rem 0;
@@ -592,6 +796,15 @@
                 @include monitor-27 {
                     height: 400px;
                 }
+
+                @include samsung-L {
+                    display: none;
+                    // flex-grow: 1; /* Ocupar todo el espacio disponible */
+                    order: 1; /* Colocar a la izquierda (por defecto) */
+                    max-width: 347.5px;
+                    max-height: 100px;
+                    z-index: 1;
+                }
         
                 h4 {
                     color: #fff;
@@ -600,6 +813,10 @@
         
                 i {
                     font-size: 5rem;
+
+                    @include samsung-L {
+                        display: none;
+                    }
                 }
             }
 
@@ -611,12 +828,23 @@
                 justify-content: center;
                 margin: -42% 0px 0 16%;
                 max-width: 500px;
+
+                @include samsung-L {
+                    max-width: 100%;
+                    order: 2;
+                    margin: 65% 0 0 0px;
+                    z-index: 999;
+                }
         
                 p {
                     font-family: 'Poppins';
                     font-size: .9rem;
                     color: #000;
                     max-width: 400px;
+
+                    @include monitor-27 {
+                        font-size: 1.1rem;
+                    }
                 }
         
                 span {
@@ -633,6 +861,13 @@
 
             .espumas-right-column {
                 margin-top: -37%;
+
+                @include samsung-L {
+                    max-width: 100%;
+                    order: 2;
+                    margin: 65% 0 0 0px;
+                    z-index: 999;
+                }
             }
 
             .chapaPolicarbonato-left-column-img, .espumas-left-column-img {
@@ -641,13 +876,37 @@
                 margin-left: auto;  /*Alinear a la derecha*/
                 position: relative;
                 margin: -35% 0 0 68%;
+
+                @include samsung-L {
+                    order: 0;
+                    margin: -209% 0 0 15%;
+                    z-index: 0;
+                }
         
                 .owl-carousel {
                     .chapaPolicarbonato-item, .espuma-item {
-
                         img {
                             width: 100%;  /*La imagen ocupa el 100% del contenedor*/
                             height: auto;  /*Altura automática para mantener la proporción*/
+                        
+                            @include monitor-27 {
+                                margin-top: 44%;
+                            }
+
+                            @include samsung-L {
+                                width: 230px;
+                                height: 230px;
+                            }
+                        }
+                    }
+
+                    .chapaPolicarbonato-item {
+                        margin-top: -68%;
+                    }
+
+                    .espuma-item {
+                        img {
+                            margin-top: 20%;
                         }
                     }
                 }
@@ -663,19 +922,63 @@
             }
         }
     }
-
-    // .containerEspuma {
-    //     margin: 0% 0 0 20.5%;
-    // }
 }
 
-.alveolar {
+#techosAlveolares {
     background-color: #333;
 
-    @include monitor-27 {
-        margin-top: 15%;
+    @include samsung-L {
+        margin: -9% 0 0 0;
+        background: transparent;
     }
 }
 
+#alveolar-card-1, #alveolar-card-2, #alveolar-card-1 {
+    @include samsung-L {
+        margin: 45% 0 0 -19%;
+    }
+}
 
+#menuTechoAlveolar {
+    @include samsung-L {
+        margin: 15% 0 0 -33%;
+    }
+}
 
+#alveolar-card-3, #alveolar-card-4 {
+    @include samsung-L {
+        margin: 45% 0 0 -19%;
+    }
+}
+
+#navEspumas {
+    @include samsung-L {
+        margin: 10% 0 0 0;
+        z-index: 999;
+        height: 90px;
+        position: absolute;
+        margin: 0 0 0 -173%;
+        left: 0;
+        max-width: 265%;
+        color: #fff;
+    }
+}
+
+#containerEspuma {
+    @include samsung-L {
+        margin-top: 30%;
+    }
+}
+
+#h2Espumas {
+    @include samsung-L {
+        margin: 184% 0 0 7.4%;
+    }
+}
+
+#imgEspumaDos {
+    @include samsung-L {
+        margin: 54% 0 0 0;
+        border-radius: 50%;
+    }
+}

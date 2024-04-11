@@ -213,7 +213,7 @@ main {
             @include tablet {
                 display: flex;
                 width: 98%;
-                height: 115px;
+                height: 125px;
                 margin: -98% 0 385px 3px;;
             }
 
@@ -643,7 +643,6 @@ main {
                             margin-top: -13px;
                             margin-left: -2px;
                             }
-                            
                         }
 
                         a{
@@ -745,7 +744,6 @@ main {
                     overflow: hidden;
                     width: 58rem;
                     height: 23rem;
-                    // display: none;
                     z-index: 444;
                     position: relative;
 
@@ -806,7 +804,6 @@ main {
                             order: 1; /* Colocar a la izquierda (por defecto) */
                             max-width: 347.5px;
                             max-height: 100px;
-                            // margin: 50% 0 0 0;
                             z-index: 1;
                         }
 
@@ -933,16 +930,6 @@ main {
                 background-color: #fff;
                 height: 815px;
             }
-
-            // @include portatil {
-            //     height: 600px;
-            // }
-
-            // @include tablet {
-            //     display: flex;
-            //     margin: -95% 0 0 0;
-            //     height: 500px;
-            // }
 
             &::before {
                 content: "";
@@ -1309,7 +1296,6 @@ main {
                             order: 1; /* Colocar a la izquierda (por defecto) */
                             max-width: 347.5px;
                             max-height: 100px;
-                            // margin: 50% 0 0 0;
                             z-index: 1;
                         }
 

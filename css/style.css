@@ -169,7 +169,7 @@ header nav {
   background: #fff;
   position: fixed;
   z-index: 999;
-  width: 1350px; }
+  width: 1500px; }
   @media only screen and (min-width: 1600px) and (max-width: 1920px) {
     header nav {
       width: 1600px;
@@ -3247,7 +3247,7 @@ main .tiposDeMuros .strip {
     main .tiposDeMuros .strip {
       display: flex;
       width: 98%;
-      height: 115px;
+      height: 125px;
       margin: -98% 0 385px 3px; } }
   @media only screen and (max-width: 1024px) {
     main .tiposDeMuros .strip {
@@ -4547,6 +4547,9 @@ main .disposicion .btn-redirect:hover {
     min-height: 80vh;
     display: grid;
     place-items: center; }
+    @media only screen and (max-width: 384px) {
+      #main-tya .aislaciones {
+        margin: 10% 0 0 0; } }
     #main-tya .aislaciones .aislaciones-row {
       width: 97%;
       display: grid;
@@ -4690,6 +4693,12 @@ main .disposicion .btn-redirect:hover {
       #main-tya #zinc {
         display: flex;
         margin: -95% 0 0 0; } }
+    @media only screen and (max-width: 384px) {
+      #main-tya #zinc {
+        display: flex;
+        margin: 10% 0 0 0;
+        background-color: black;
+        height: 700px; } }
     #main-tya #zinc::before {
       content: "";
       position: absolute;
@@ -4863,6 +4872,19 @@ main .disposicion .btn-redirect:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; }
+    @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+      #main-tya #pol {
+        height: 750px; } }
+    @media only screen and (max-width: 768px) {
+      #main-tya #pol {
+        display: flex;
+        margin: -95% 0 0 0; } }
+    @media only screen and (max-width: 384px) {
+      #main-tya #pol {
+        display: flex;
+        margin: 10% 0 0 0;
+        background-color: black;
+        height: 700px; } }
     #main-tya #pol::before {
       content: "";
       position: absolute;
@@ -4880,6 +4902,13 @@ main .disposicion .btn-redirect:hover {
       position: absolute;
       margin: 16% 0 0 5%;
       z-index: 10; }
+      @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+        #main-tya #pol h2 {
+          margin: 4% 0 0 4%;
+          font-size: 2.5rem; } }
+      @media only screen and (max-width: 384px) {
+        #main-tya #pol h2 {
+          font-size: 1.6rem; } }
     #main-tya #pol h3 {
       color: #fff;
       font-size: 2.5rem;
@@ -4929,6 +4958,9 @@ main .disposicion .btn-redirect:hover {
     @media only screen and (max-width: 1600px) {
       #main-tya #aislaciones {
         margin-top: 10%; } }
+    @media only screen and (max-width: 384px) {
+      #main-tya #aislaciones {
+        margin: 345% 0 0 0; } }
     #main-tya #aislaciones::before {
       content: "";
       position: absolute;
@@ -4946,6 +4978,10 @@ main .disposicion .btn-redirect:hover {
       position: absolute;
       margin: -9% 0 0 -66%;
       z-index: 10; }
+      @media only screen and (max-width: 384px) {
+        #main-tya #aislaciones h2 {
+          font-size: 1.6rem;
+          margin: -144% 0 0 -35%; } }
     #main-tya #aislaciones h3 {
       color: #fff;
       font-size: 2.5rem;
@@ -4956,6 +4992,15 @@ main .disposicion .btn-redirect:hover {
       @media only screen and (min-width: 1600px) and (max-width: 1920px) {
         #main-tya #aislaciones h3 {
           margin-left: -66%; } }
+      @media only screen and (max-width: 384px) {
+        #main-tya #aislaciones h3 {
+          margin: -127% 0 0 37%;
+          font-size: 1rem;
+          transform: translateX(-50%);
+          max-width: 63%; } }
+      @media only screen and (max-width: 384px) {
+        #main-tya #aislaciones h3 #brh3 {
+          display: none; } }
     #main-tya #aislaciones .itemBtn {
       background-color: #273238;
       width: 325px;
@@ -4971,6 +5016,9 @@ main .disposicion .btn-redirect:hover {
       @media only screen and (min-width: 1600px) and (max-width: 1920px) {
         #main-tya #aislaciones .itemBtn {
           margin-left: 2%; } }
+      @media only screen and (max-width: 384px) {
+        #main-tya #aislaciones .itemBtn {
+          display: none; } }
       #main-tya #aislaciones .itemBtn .contentBtn {
         position: relative;
         top: 28%;
@@ -4996,6 +5044,10 @@ main .disposicion .btn-redirect:hover {
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
       #main-tya .ais-container {
         margin-top: -127%; } }
+    @media only screen and (max-width: 384px) {
+      #main-tya .ais-container {
+        margin: -484% 0 0 -15%;
+        width: 98%; } }
     #main-tya .ais-container .ais-slide {
       /*aca n = 0,1,2,3....*/ }
       #main-tya .ais-container .ais-slide .item {
@@ -5026,6 +5078,11 @@ main .disposicion .btn-redirect:hover {
             font-weight: bold;
             opacity: 0;
             animation: animate 1s ease-in-out 1 forwards; }
+            @media only screen and (max-width: 384px) {
+              #main-tya .ais-container .ais-slide .item .content .name {
+                margin: 0 0 0 -26%;
+                font-size: 1.3rem;
+                max-width: 185px; } }
           #main-tya .ais-container .ais-slide .item .content .des {
             width: 90%;
             margin-top: 10px;
@@ -5034,6 +5091,13 @@ main .disposicion .btn-redirect:hover {
             opacity: 0;
             animation: animate 1s ease-in-out 0.3s 1 forwards;
             font-family: 'Poppins'; }
+            @media only screen and (max-width: 384px) {
+              #main-tya .ais-container .ais-slide .item .content .des {
+                margin: 0 0 0 -26%;
+                max-width: 164px;
+                font-weight: 600;
+                font-size: .87rem;
+                backdrop-filter: blur(20px); } }
 
 @keyframes animate {
   from {
@@ -5063,6 +5127,9 @@ main .disposicion .btn-redirect:hover {
         opacity: 0; }
       #main-tya .ais-container .ais-slide .item:nth-child(2) .content {
         display: block; }
+      @media only screen and (max-width: 384px) {
+        #main-tya .ais-container .ais-slide .item {
+          margin: 0 0 0 -2%; } }
     #main-tya .ais-container .button {
       width: 100%;
       text-align: center;
@@ -5071,6 +5138,9 @@ main .disposicion .btn-redirect:hover {
       font-size: 28px;
       cursor: pointer;
       margin: 0 0 0 -200px; }
+      @media only screen and (max-width: 384px) {
+        #main-tya .ais-container .button {
+          margin: 0 0 0 18%; } }
       #main-tya .ais-container .button span {
         width: 40px;
         height: 35px;
@@ -5118,12 +5188,10 @@ main .disposicion .btn-redirect:hover {
     width: 100%;
     padding: 1px;
     margin: 0 0 0 0; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 384px) {
       #main-tya .banner-shop-tya {
-        display: flex;
-        height: 180px;
-        width: 100%;
-        margin: -95% 0 40% 0; } }
+        margin: 0 0 0 0;
+        height: 300px; } }
     #main-tya .banner-shop-tya h2 {
       font-family: 'Poppins';
       font-weight: 300;
@@ -5136,15 +5204,15 @@ main .disposicion .btn-redirect:hover {
       justify-content: center;
       align-items: center;
       top: 20%; }
-      @media only screen and (max-width: 768px) {
-        #main-tya .banner-shop-tya h2 {
-          display: flex;
-          font-size: 1.2rem;
-          margin: -133px 0 0 0; } }
       @media only screen and (min-width: 1600px) and (max-width: 1920px) {
         #main-tya .banner-shop-tya h2 {
           max-width: 1000px;
           margin-left: 19%; } }
+      @media only screen and (max-width: 384px) {
+        #main-tya .banner-shop-tya h2 {
+          margin: -13% 0 0 5%;
+          font-size: 1rem;
+          max-width: 90%; } }
     #main-tya .banner-shop-tya .btn-e-shop-tya {
       display: flex;
       position: absolute;
@@ -5155,16 +5223,15 @@ main .disposicion .btn-redirect:hover {
       width: 200px;
       margin-top: 5%;
       margin-left: 40%; }
-      @media only screen and (max-width: 768px) {
-        #main-tya .banner-shop-tya .btn-e-shop-tya {
-          display: flex;
-          margin: 105px 0 0 92px; } }
       @media only screen and (min-width: 1600px) and (max-width: 1920px) {
         #main-tya .banner-shop-tya .btn-e-shop-tya {
           margin-left: 42%;
           background: #273238;
           width: 300px;
           height: 60px; } }
+      @media only screen and (max-width: 384px) {
+        #main-tya .banner-shop-tya .btn-e-shop-tya {
+          margin: 20% 0 0 23%; } }
       #main-tya .banner-shop-tya .btn-e-shop-tya a {
         text-decoration: none;
         color: #fff; }
@@ -5217,7 +5284,7 @@ main .disposicion .btn-redirect:hover {
         #main-tya .disposicion-tya .disposicion-content .disposicion-title {
           width: 90%;
           font-size: 1.1rem;
-          margin: -80% 0 0 20px; } }
+          margin: -100% 0 0 20px; } }
   #main-tya .disposicion-tya .btn-redirect-tya {
     display: flex;
     position: absolute;
@@ -5232,7 +5299,7 @@ main .disposicion .btn-redirect:hover {
     @media only screen and (max-width: 768px) {
       #main-tya .disposicion-tya .btn-redirect-tya {
         display: flex;
-        margin: -75px 0 0 90px; } }
+        margin: -140px 0 0 90px; } }
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
       #main-tya .disposicion-tya .btn-redirect-tya {
         margin-left: 42%;
@@ -5266,10 +5333,12 @@ main .disposicion .btn-redirect:hover {
   height: 650px;
   width: 100%;
   z-index: 1; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 384px) {
     .techos, .alveolar {
       display: flex;
-      margin: -95% 0 0 0; } }
+      margin: -47% 0 0 0;
+      background-color: #fff;
+      height: 860px; } }
   .techos::before, .alveolar::before {
     content: "";
     position: absolute;
@@ -5279,6 +5348,9 @@ main .disposicion .btn-redirect:hover {
     height: 100%;
     background: inherit;
     filter: brightness(40%) contrast(120%) saturate(80%) grayscale(10%); }
+    @media only screen and (max-width: 384px) {
+      .techos::before, .alveolar::before {
+        filter: none; } }
   .techos h2, .alveolar h2 {
     color: #fff;
     font-size: 2rem;
@@ -5289,13 +5361,18 @@ main .disposicion .btn-redirect:hover {
     z-index: 10;
     background-color: #d30809;
     padding: 15px 10px; }
-    @media only screen and (max-width: 768px) {
-      .techos h2, .alveolar h2 {
-        font-size: 2.3rem; } }
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
       .techos h2, .alveolar h2 {
         margin: 4% 0 0 4%;
         font-size: 2.5rem; } }
+    @media only screen and (max-width: 384px) {
+      .techos h2, .alveolar h2 {
+        background-color: #d30809;
+        font-size: 1.6rem;
+        position: relative;
+        height: 59px;
+        width: 316px;
+        max-width: 86%; } }
   .techos .itemBtn, .techos .itemBtnEspuma, .alveolar .itemBtn, .alveolar .itemBtnEspuma {
     background-color: #273238;
     width: 220px;
@@ -5314,6 +5391,9 @@ main .disposicion .btn-redirect:hover {
         height: 60px;
         width: 320px;
         margin-left: -3.4%; } }
+    @media only screen and (max-width: 384px) {
+      .techos .itemBtn, .techos .itemBtnEspuma, .alveolar .itemBtn, .alveolar .itemBtnEspuma {
+        display: none; } }
     .techos .itemBtn .contentBtn, .techos .itemBtn .contentBtnEspuma, .techos .itemBtnEspuma .contentBtn, .techos .itemBtnEspuma .contentBtnEspuma, .alveolar .itemBtn .contentBtn, .alveolar .itemBtn .contentBtnEspuma, .alveolar .itemBtnEspuma .contentBtn, .alveolar .itemBtnEspuma .contentBtnEspuma {
       position: relative;
       top: 27%;
@@ -5341,6 +5421,15 @@ main .disposicion .btn-redirect:hover {
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
       .techos .navTechoAlveolar, .techos .navTecho, .alveolar .navTechoAlveolar, .alveolar .navTecho {
         margin: -46% 0 4% 19%; } }
+    @media only screen and (max-width: 384px) {
+      .techos .navTechoAlveolar, .techos .navTecho, .alveolar .navTechoAlveolar, .alveolar .navTecho {
+        z-index: 999;
+        height: 90px;
+        position: absolute;
+        top: 160px;
+        left: 0;
+        width: 100%;
+        color: #fff; } }
     .techos .navTechoAlveolar .menuTecho, .techos .navTechoAlveolar .menuTechoAlveolar, .techos .navTecho .menuTecho, .techos .navTecho .menuTechoAlveolar, .alveolar .navTechoAlveolar .menuTecho, .alveolar .navTechoAlveolar .menuTechoAlveolar, .alveolar .navTecho .menuTecho, .alveolar .navTecho .menuTechoAlveolar {
       position: relative;
       margin: 70px 0 0 58%;
@@ -5351,6 +5440,15 @@ main .disposicion .btn-redirect:hover {
           margin: 0 0 0 128px;
           white-space: nowrap;
           max-width: 1000px; } }
+      @media only screen and (max-width: 384px) {
+        .techos .navTechoAlveolar .menuTecho, .techos .navTechoAlveolar .menuTechoAlveolar, .techos .navTecho .menuTecho, .techos .navTecho .menuTechoAlveolar, .alveolar .navTechoAlveolar .menuTecho, .alveolar .navTechoAlveolar .menuTechoAlveolar, .alveolar .navTecho .menuTecho, .alveolar .navTecho .menuTechoAlveolar {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 0;
+          width: 467px;
+          margin: -72px 0 0 -129px;
+          list-style: none; } }
       .techos .navTechoAlveolar .menuTecho ul, .techos .navTechoAlveolar .menuTechoAlveolar ul, .techos .navTecho .menuTecho ul, .techos .navTecho .menuTechoAlveolar ul, .alveolar .navTechoAlveolar .menuTecho ul, .alveolar .navTechoAlveolar .menuTechoAlveolar ul, .alveolar .navTecho .menuTecho ul, .alveolar .navTecho .menuTechoAlveolar ul {
         width: 80%;
         margin: 1.8% 0% 0% 20%;
@@ -5359,6 +5457,16 @@ main .disposicion .btn-redirect:hover {
         justify-content: space-between;
         font-size: .9rem;
         font-weight: bold; }
+        @media only screen and (max-width: 1024px) {
+          .techos .navTechoAlveolar .menuTecho ul, .techos .navTechoAlveolar .menuTechoAlveolar ul, .techos .navTecho .menuTecho ul, .techos .navTecho .menuTechoAlveolar ul, .alveolar .navTechoAlveolar .menuTecho ul, .alveolar .navTechoAlveolar .menuTechoAlveolar ul, .alveolar .navTecho .menuTecho ul, .alveolar .navTecho .menuTechoAlveolar ul {
+            margin: 0% 0 0 27%;
+            backdrop-filter: blur(20px);
+            max-width: 353px;
+            padding: 7px;
+            border-radius: 20px; } }
+        @media only screen and (max-width: 384px) {
+          .techos .navTechoAlveolar .menuTecho ul, .techos .navTechoAlveolar .menuTechoAlveolar ul, .techos .navTecho .menuTecho ul, .techos .navTecho .menuTechoAlveolar ul, .alveolar .navTechoAlveolar .menuTecho ul, .alveolar .navTechoAlveolar .menuTechoAlveolar ul, .alveolar .navTecho .menuTecho ul, .alveolar .navTecho .menuTechoAlveolar ul {
+            display: flex; } }
         .techos .navTechoAlveolar .menuTecho ul .nav__itemTecho, .techos .navTechoAlveolar .menuTecho ul .nav__itemTechoAlveolar, .techos .navTechoAlveolar .menuTechoAlveolar ul .nav__itemTecho, .techos .navTechoAlveolar .menuTechoAlveolar ul .nav__itemTechoAlveolar, .techos .navTecho .menuTecho ul .nav__itemTecho, .techos .navTecho .menuTecho ul .nav__itemTechoAlveolar, .techos .navTecho .menuTechoAlveolar ul .nav__itemTecho, .techos .navTecho .menuTechoAlveolar ul .nav__itemTechoAlveolar, .alveolar .navTechoAlveolar .menuTecho ul .nav__itemTecho, .alveolar .navTechoAlveolar .menuTecho ul .nav__itemTechoAlveolar, .alveolar .navTechoAlveolar .menuTechoAlveolar ul .nav__itemTecho, .alveolar .navTechoAlveolar .menuTechoAlveolar ul .nav__itemTechoAlveolar, .alveolar .navTecho .menuTecho ul .nav__itemTecho, .alveolar .navTecho .menuTecho ul .nav__itemTechoAlveolar, .alveolar .navTecho .menuTechoAlveolar ul .nav__itemTecho, .alveolar .navTecho .menuTechoAlveolar ul .nav__itemTechoAlveolar {
           margin-top: .5%;
           color: #ffffff; }
@@ -5399,8 +5507,26 @@ main .disposicion .btn-redirect:hover {
     margin: -10.5% 0 0 20.5%;
     z-index: 333;
     position: relative; }
+    @media only screen and (max-width: 384px) {
+      .techos .containerTecho, .techos .containerTechoAlveolar, .alveolar .containerTecho, .alveolar .containerTechoAlveolar {
+        margin: -17% 0 0 -62%;
+        height: 700px;
+        display: block; } }
+    @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+      .techos .containerTecho, .techos .containerTechoAlveolar, .alveolar .containerTecho, .alveolar .containerTechoAlveolar {
+        height: 400px;
+        width: 1000px;
+        margin: 2% 0 0 32%; } }
     .techos .containerTecho .techo-background-left-column, .techos .containerTechoAlveolar .techo-background-left-column, .alveolar .containerTecho .techo-background-left-column, .alveolar .containerTechoAlveolar .techo-background-left-column {
       background: #273238; }
+      @media only screen and (max-width: 384px) {
+        .techos .containerTecho .techo-background-left-column, .techos .containerTechoAlveolar .techo-background-left-column, .alveolar .containerTecho .techo-background-left-column, .alveolar .containerTechoAlveolar .techo-background-left-column {
+          position: absolute;
+          /* Posicionar absolutamente */
+          top: 0;
+          left: 0;
+          width: 100%;
+          /* Ocupar todo el ancho del contenedor padre */ } }
     .techos .containerTecho .techo-background2-left-column, .techos .containerTechoAlveolar .techo-background2-left-column, .alveolar .containerTecho .techo-background2-left-column, .alveolar .containerTechoAlveolar .techo-background2-left-column {
       background: #3b4c55; }
     .techos .containerTecho .background3, .techos .containerTechoAlveolar .background3, .alveolar .containerTecho .background3, .alveolar .containerTechoAlveolar .background3 {
@@ -5422,6 +5548,19 @@ main .disposicion .btn-redirect:hover {
         height: 400px;
         width: 1000px;
         margin-top: 18%; } }
+    @media only screen and (max-width: 384px) {
+      .techos .cardTecho, .techos .cardTechoAlveolar, .alveolar .cardTecho, .alveolar .cardTechoAlveolar {
+        position: relative;
+        /* Establecer el contenedor padre como relativo */
+        display: flex;
+        /* Utilizar flexbox para alinear elementos */
+        flex-direction: column;
+        /* Establecer dirección de columna */
+        justify-content: space-between;
+        /* Espacio entre elementos */
+        width: 113%;
+        margin: 8% 0 0 -19%;
+        height: 95%; } }
     .techos .cardTecho h2, .techos .cardTechoAlveolar h2, .alveolar .cardTecho h2, .alveolar .cardTechoAlveolar h2 {
       letter-spacing: .1rem;
       margin: 1rem 0;
@@ -5443,6 +5582,14 @@ main .disposicion .btn-redirect:hover {
       @media only screen and (min-width: 1600px) and (max-width: 1920px) {
         .techos .cardTecho .techo-left-column, .techos .cardTecho .techoAlveolar-left-column, .techos .cardTechoAlveolar .techo-left-column, .techos .cardTechoAlveolar .techoAlveolar-left-column, .alveolar .cardTecho .techo-left-column, .alveolar .cardTecho .techoAlveolar-left-column, .alveolar .cardTechoAlveolar .techo-left-column, .alveolar .cardTechoAlveolar .techoAlveolar-left-column {
           height: 55vh; } }
+      @media only screen and (max-width: 384px) {
+        .techos .cardTecho .techo-left-column, .techos .cardTecho .techoAlveolar-left-column, .techos .cardTechoAlveolar .techo-left-column, .techos .cardTechoAlveolar .techoAlveolar-left-column, .alveolar .cardTecho .techo-left-column, .alveolar .cardTecho .techoAlveolar-left-column, .alveolar .cardTechoAlveolar .techo-left-column, .alveolar .cardTechoAlveolar .techoAlveolar-left-column {
+          display: none;
+          order: 1;
+          /* Colocar a la izquierda (por defecto) */
+          max-width: 347.5px;
+          max-height: 100px;
+          z-index: 1; } }
       .techos .cardTecho .techo-left-column h4, .techos .cardTecho .techoAlveolar-left-column h4, .techos .cardTechoAlveolar .techo-left-column h4, .techos .cardTechoAlveolar .techoAlveolar-left-column h4, .alveolar .cardTecho .techo-left-column h4, .alveolar .cardTecho .techoAlveolar-left-column h4, .alveolar .cardTechoAlveolar .techo-left-column h4, .alveolar .cardTechoAlveolar .techoAlveolar-left-column h4 {
         color: #fff;
         padding: 1rem; }
@@ -5459,11 +5606,20 @@ main .disposicion .btn-redirect:hover {
       @media only screen and (min-width: 1600px) and (max-width: 1920px) {
         .techos .cardTecho .techo-right-column, .techos .cardTechoAlveolar .techo-right-column, .alveolar .cardTecho .techo-right-column, .alveolar .cardTechoAlveolar .techo-right-column {
           margin-top: -40%; } }
+      @media only screen and (max-width: 384px) {
+        .techos .cardTecho .techo-right-column, .techos .cardTechoAlveolar .techo-right-column, .alveolar .cardTecho .techo-right-column, .alveolar .cardTechoAlveolar .techo-right-column {
+          max-width: 100%;
+          order: 2;
+          margin: 60% 0 0 0px;
+          z-index: 999; } }
       .techos .cardTecho .techo-right-column p, .techos .cardTechoAlveolar .techo-right-column p, .alveolar .cardTecho .techo-right-column p, .alveolar .cardTechoAlveolar .techo-right-column p {
         font-family: 'Poppins';
         font-size: .9rem;
         color: #000;
         max-width: 400px; }
+        @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+          .techos .cardTecho .techo-right-column p, .techos .cardTechoAlveolar .techo-right-column p, .alveolar .cardTecho .techo-right-column p, .alveolar .cardTechoAlveolar .techo-right-column p {
+            font-size: 1.1rem; } }
       .techos .cardTecho .techo-right-column span, .techos .cardTechoAlveolar .techo-right-column span, .alveolar .cardTecho .techo-right-column span, .alveolar .cardTechoAlveolar .techo-right-column span {
         border-radius: 3rem;
         background: #273238;
@@ -5481,11 +5637,23 @@ main .disposicion .btn-redirect:hover {
       justify-content: center;
       margin: -41% 0px 0 16%;
       max-width: 500px; }
+      @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+        .techos .cardTecho .techoAlveolar-right-column, .techos .cardTechoAlveolar .techoAlveolar-right-column, .alveolar .cardTecho .techoAlveolar-right-column, .alveolar .cardTechoAlveolar .techoAlveolar-right-column {
+          margin-top: -40%; } }
+      @media only screen and (max-width: 384px) {
+        .techos .cardTecho .techoAlveolar-right-column, .techos .cardTechoAlveolar .techoAlveolar-right-column, .alveolar .cardTecho .techoAlveolar-right-column, .alveolar .cardTechoAlveolar .techoAlveolar-right-column {
+          max-width: 100%;
+          order: 2;
+          margin: 60% 0 0 0px;
+          z-index: 999; } }
       .techos .cardTecho .techoAlveolar-right-column p, .techos .cardTechoAlveolar .techoAlveolar-right-column p, .alveolar .cardTecho .techoAlveolar-right-column p, .alveolar .cardTechoAlveolar .techoAlveolar-right-column p {
         font-family: 'Poppins';
         font-size: .9rem;
         color: #000;
         max-width: 400px; }
+        @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+          .techos .cardTecho .techoAlveolar-right-column p, .techos .cardTechoAlveolar .techoAlveolar-right-column p, .alveolar .cardTecho .techoAlveolar-right-column p, .alveolar .cardTechoAlveolar .techoAlveolar-right-column p {
+            font-size: 1.1rem; } }
       .techos .cardTecho .techoAlveolar-right-column span, .techos .cardTechoAlveolar .techoAlveolar-right-column span, .alveolar .cardTecho .techoAlveolar-right-column span, .alveolar .cardTechoAlveolar .techoAlveolar-right-column span {
         border-radius: 3rem;
         background: #273238;
@@ -5501,10 +5669,22 @@ main .disposicion .btn-redirect:hover {
       margin-left: auto;
       position: relative;
       margin-top: -28%; }
+      @media only screen and (max-width: 384px) {
+        .techos .cardTecho .techo-left-column-img, .techos .cardTechoAlveolar .techo-left-column-img, .alveolar .cardTecho .techo-left-column-img, .alveolar .cardTechoAlveolar .techo-left-column-img {
+          order: 0;
+          margin: -200% 0 0 20%;
+          z-index: 0; } }
       .techos .cardTecho .techo-left-column-img .owl-carousel .cielorraso-item img, .techos .cardTechoAlveolar .techo-left-column-img .owl-carousel .cielorraso-item img, .alveolar .cardTecho .techo-left-column-img .owl-carousel .cielorraso-item img, .alveolar .cardTechoAlveolar .techo-left-column-img .owl-carousel .cielorraso-item img {
         width: 100%;
         height: auto;
         margin: 0; }
+        @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+          .techos .cardTecho .techo-left-column-img .owl-carousel .cielorraso-item img, .techos .cardTechoAlveolar .techo-left-column-img .owl-carousel .cielorraso-item img, .alveolar .cardTecho .techo-left-column-img .owl-carousel .cielorraso-item img, .alveolar .cardTechoAlveolar .techo-left-column-img .owl-carousel .cielorraso-item img {
+            margin-top: 44%; } }
+        @media only screen and (max-width: 384px) {
+          .techos .cardTecho .techo-left-column-img .owl-carousel .cielorraso-item img, .techos .cardTechoAlveolar .techo-left-column-img .owl-carousel .cielorraso-item img, .alveolar .cardTecho .techo-left-column-img .owl-carousel .cielorraso-item img, .alveolar .cardTechoAlveolar .techo-left-column-img .owl-carousel .cielorraso-item img {
+            width: 277px;
+            height: 210px; } }
       .techos .cardTecho .techo-left-column-img .carousel-selectors .selector i, .techos .cardTechoAlveolar .techo-left-column-img .carousel-selectors .selector i, .alveolar .cardTecho .techo-left-column-img .carousel-selectors .selector i, .alveolar .cardTechoAlveolar .techo-left-column-img .carousel-selectors .selector i {
         color: #333;
         font-size: 30px; }
@@ -5516,6 +5696,11 @@ main .disposicion .btn-redirect:hover {
       /*Alinear a la derecha*/
       position: relative;
       margin-top: -28%; }
+      @media only screen and (max-width: 384px) {
+        .techos .cardTecho .techoAlveolar-left-column-img, .techos .cardTechoAlveolar .techoAlveolar-left-column-img, .alveolar .cardTecho .techoAlveolar-left-column-img, .alveolar .cardTechoAlveolar .techoAlveolar-left-column-img {
+          order: 0;
+          margin: -203% 0 0 5%;
+          z-index: 0; } }
       .techos .cardTecho .techoAlveolar-left-column-img .owl-carousel .cielorraso-item img, .techos .cardTechoAlveolar .techoAlveolar-left-column-img .owl-carousel .cielorraso-item img, .alveolar .cardTecho .techoAlveolar-left-column-img .owl-carousel .cielorraso-item img, .alveolar .cardTechoAlveolar .techoAlveolar-left-column-img .owl-carousel .cielorraso-item img {
         width: 100%;
         /*La imagen ocupa el 100% del contenedor*/
@@ -5523,6 +5708,9 @@ main .disposicion .btn-redirect:hover {
         /*Altura automática para mantener la proporción*/
         margin: 0;
         /*Eliminar el margen*/ }
+        @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+          .techos .cardTecho .techoAlveolar-left-column-img .owl-carousel .cielorraso-item img, .techos .cardTechoAlveolar .techoAlveolar-left-column-img .owl-carousel .cielorraso-item img, .alveolar .cardTecho .techoAlveolar-left-column-img .owl-carousel .cielorraso-item img, .alveolar .cardTechoAlveolar .techoAlveolar-left-column-img .owl-carousel .cielorraso-item img {
+            margin-top: 44%; } }
       .techos .cardTecho .techoAlveolar-left-column-img .carousel-selectors .selector i, .techos .cardTechoAlveolar .techoAlveolar-left-column-img .carousel-selectors .selector i, .alveolar .cardTecho .techoAlveolar-left-column-img .carousel-selectors .selector i, .alveolar .cardTechoAlveolar .techoAlveolar-left-column-img .carousel-selectors .selector i {
         color: #333;
         font-size: 30px; }
@@ -5531,15 +5719,27 @@ main .disposicion .btn-redirect:hover {
   margin: 9% 0 0 0;
   background: #ffffff;
   height: 570px; }
+  @media only screen and (max-width: 384px) {
+    .techosPolicarbonato {
+      height: 215px; } }
   .techosPolicarbonato .techosChapaPolicarbonato {
     position: relative;
     height: 650px;
     width: 100%;
     z-index: 1; }
+    @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+      .techosPolicarbonato .techosChapaPolicarbonato {
+        height: 750px; } }
     @media only screen and (max-width: 768px) {
       .techosPolicarbonato .techosChapaPolicarbonato {
         display: flex;
         margin: -95% 0 0 0; } }
+    @media only screen and (max-width: 384px) {
+      .techosPolicarbonato .techosChapaPolicarbonato {
+        display: flex;
+        margin: -32% 0 0 0;
+        background-color: black;
+        height: 700px; } }
     .techosPolicarbonato .techosChapaPolicarbonato::before {
       content: "";
       position: absolute;
@@ -5562,6 +5762,13 @@ main .disposicion .btn-redirect:hover {
       @media only screen and (max-width: 768px) {
         .techosPolicarbonato .techosChapaPolicarbonato h2 {
           font-size: 2.3rem; } }
+      @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+        .techosPolicarbonato .techosChapaPolicarbonato h2 {
+          margin: 4% 0 0 4%;
+          font-size: 2.5rem; } }
+      @media only screen and (max-width: 384px) {
+        .techosPolicarbonato .techosChapaPolicarbonato h2 {
+          font-size: 1.45rem; } }
     .techosPolicarbonato .techosChapaPolicarbonato .itemBtn {
       background-color: #273238;
       width: 220px;
@@ -5574,6 +5781,9 @@ main .disposicion .btn-redirect:hover {
       background-size: cover;
       display: inline-block;
       transition: 0.5s; }
+      @media only screen and (max-width: 384px) {
+        .techosPolicarbonato .techosChapaPolicarbonato .itemBtn {
+          display: none; } }
       .techosPolicarbonato .techosChapaPolicarbonato .itemBtn .contentBtn {
         position: relative;
         top: 27%;
@@ -5594,6 +5804,18 @@ main .disposicion .btn-redirect:hover {
     margin: -49% 0 0 8%;
     z-index: 555;
     color: #fff; }
+    @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+      .techosPolicarbonato .navChapaPolicarbonato, .techosPolicarbonato .navEspumas {
+        margin: -46% 0 4% 19%; } }
+    @media only screen and (max-width: 384px) {
+      .techosPolicarbonato .navChapaPolicarbonato, .techosPolicarbonato .navEspumas {
+        z-index: 999;
+        height: 90px;
+        position: absolute;
+        margin: -685px 0 0 -173%;
+        left: 0;
+        max-width: 265%;
+        color: #fff; } }
     .techosPolicarbonato .navChapaPolicarbonato .menuChapaPolicarbonato, .techosPolicarbonato .navChapaPolicarbonato .menuEspumas, .techosPolicarbonato .navEspumas .menuChapaPolicarbonato, .techosPolicarbonato .navEspumas .menuEspumas {
       position: relative;
       margin: 70px 0 0 58%;
@@ -5647,8 +5869,27 @@ main .disposicion .btn-redirect:hover {
     margin: -10.5% 0 0 20.5%;
     z-index: 333;
     position: relative; }
+    @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+      .techosPolicarbonato .containerChapaPolicarbonato, .techosPolicarbonato .containerEspuma {
+        height: 400px;
+        width: 1000px;
+        margin: 2% 0 0 32%; } }
+    @media only screen and (max-width: 384px) {
+      .techosPolicarbonato .containerChapaPolicarbonato, .techosPolicarbonato .containerEspuma {
+        margin: -161% 0 0 21%;
+        height: 930px;
+        width: 302px;
+        display: block; } }
     .techosPolicarbonato .containerChapaPolicarbonato .techo-background-left-column, .techosPolicarbonato .containerEspuma .techo-background-left-column {
       background: #273238; }
+      @media only screen and (max-width: 384px) {
+        .techosPolicarbonato .containerChapaPolicarbonato .techo-background-left-column, .techosPolicarbonato .containerEspuma .techo-background-left-column {
+          position: absolute;
+          /* Posicionar absolutamente */
+          top: 0;
+          left: 0;
+          width: 100%;
+          /* Ocupar todo el ancho del contenedor padre */ } }
     .techosPolicarbonato .containerChapaPolicarbonato .techo-background2-left-column, .techosPolicarbonato .containerEspuma .techo-background2-left-column {
       background: #3b4c55; }
     .techosPolicarbonato .containerChapaPolicarbonato .background3, .techosPolicarbonato .containerEspuma .background3 {
@@ -5670,6 +5911,19 @@ main .disposicion .btn-redirect:hover {
           height: 400px;
           width: 1000px;
           margin-top: 18%; } }
+      @media only screen and (max-width: 384px) {
+        .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato, .techosPolicarbonato .containerEspuma .cardEspumas {
+          position: relative;
+          /* Establecer el contenedor padre como relativo */
+          display: flex;
+          /* Utilizar flexbox para alinear elementos */
+          flex-direction: column;
+          /* Establecer dirección de columna */
+          justify-content: space-between;
+          /* Espacio entre elementos */
+          width: 113%;
+          margin: 13% 0 0 -19%;
+          height: 73%; } }
       .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato h2, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas h2, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato h2, .techosPolicarbonato .containerEspuma .cardEspumas h2 {
         letter-spacing: .1rem;
         margin: 1rem 0;
@@ -5691,11 +5945,22 @@ main .disposicion .btn-redirect:hover {
         @media only screen and (min-width: 1600px) and (max-width: 1920px) {
           .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .ChapaPolicarbonato-left-column, .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .espumas-left-column, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .ChapaPolicarbonato-left-column, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .espumas-left-column, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .ChapaPolicarbonato-left-column, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .espumas-left-column, .techosPolicarbonato .containerEspuma .cardEspumas .ChapaPolicarbonato-left-column, .techosPolicarbonato .containerEspuma .cardEspumas .espumas-left-column {
             height: 400px; } }
+        @media only screen and (max-width: 384px) {
+          .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .ChapaPolicarbonato-left-column, .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .espumas-left-column, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .ChapaPolicarbonato-left-column, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .espumas-left-column, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .ChapaPolicarbonato-left-column, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .espumas-left-column, .techosPolicarbonato .containerEspuma .cardEspumas .ChapaPolicarbonato-left-column, .techosPolicarbonato .containerEspuma .cardEspumas .espumas-left-column {
+            display: none;
+            order: 1;
+            /* Colocar a la izquierda (por defecto) */
+            max-width: 347.5px;
+            max-height: 100px;
+            z-index: 1; } }
         .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .ChapaPolicarbonato-left-column h4, .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .espumas-left-column h4, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .ChapaPolicarbonato-left-column h4, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .espumas-left-column h4, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .ChapaPolicarbonato-left-column h4, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .espumas-left-column h4, .techosPolicarbonato .containerEspuma .cardEspumas .ChapaPolicarbonato-left-column h4, .techosPolicarbonato .containerEspuma .cardEspumas .espumas-left-column h4 {
           color: #fff;
           padding: 1rem; }
         .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .ChapaPolicarbonato-left-column i, .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .espumas-left-column i, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .ChapaPolicarbonato-left-column i, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .espumas-left-column i, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .ChapaPolicarbonato-left-column i, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .espumas-left-column i, .techosPolicarbonato .containerEspuma .cardEspumas .ChapaPolicarbonato-left-column i, .techosPolicarbonato .containerEspuma .cardEspumas .espumas-left-column i {
           font-size: 5rem; }
+          @media only screen and (max-width: 384px) {
+            .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .ChapaPolicarbonato-left-column i, .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .espumas-left-column i, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .ChapaPolicarbonato-left-column i, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .espumas-left-column i, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .ChapaPolicarbonato-left-column i, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .espumas-left-column i, .techosPolicarbonato .containerEspuma .cardEspumas .ChapaPolicarbonato-left-column i, .techosPolicarbonato .containerEspuma .cardEspumas .espumas-left-column i {
+              display: none; } }
       .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .ChapaPolicarbonato-right-column, .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .espumas-right-column, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .ChapaPolicarbonato-right-column, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .espumas-right-column, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .ChapaPolicarbonato-right-column, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .espumas-right-column, .techosPolicarbonato .containerEspuma .cardEspumas .ChapaPolicarbonato-right-column, .techosPolicarbonato .containerEspuma .cardEspumas .espumas-right-column {
         padding: 2rem;
         display: flex;
@@ -5704,11 +5969,20 @@ main .disposicion .btn-redirect:hover {
         justify-content: center;
         margin: -42% 0px 0 16%;
         max-width: 500px; }
+        @media only screen and (max-width: 384px) {
+          .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .ChapaPolicarbonato-right-column, .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .espumas-right-column, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .ChapaPolicarbonato-right-column, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .espumas-right-column, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .ChapaPolicarbonato-right-column, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .espumas-right-column, .techosPolicarbonato .containerEspuma .cardEspumas .ChapaPolicarbonato-right-column, .techosPolicarbonato .containerEspuma .cardEspumas .espumas-right-column {
+            max-width: 100%;
+            order: 2;
+            margin: 65% 0 0 0px;
+            z-index: 999; } }
         .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .ChapaPolicarbonato-right-column p, .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .espumas-right-column p, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .ChapaPolicarbonato-right-column p, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .espumas-right-column p, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .ChapaPolicarbonato-right-column p, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .espumas-right-column p, .techosPolicarbonato .containerEspuma .cardEspumas .ChapaPolicarbonato-right-column p, .techosPolicarbonato .containerEspuma .cardEspumas .espumas-right-column p {
           font-family: 'Poppins';
           font-size: .9rem;
           color: #000;
           max-width: 400px; }
+          @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+            .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .ChapaPolicarbonato-right-column p, .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .espumas-right-column p, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .ChapaPolicarbonato-right-column p, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .espumas-right-column p, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .ChapaPolicarbonato-right-column p, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .espumas-right-column p, .techosPolicarbonato .containerEspuma .cardEspumas .ChapaPolicarbonato-right-column p, .techosPolicarbonato .containerEspuma .cardEspumas .espumas-right-column p {
+              font-size: 1.1rem; } }
         .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .ChapaPolicarbonato-right-column span, .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .espumas-right-column span, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .ChapaPolicarbonato-right-column span, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .espumas-right-column span, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .ChapaPolicarbonato-right-column span, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .espumas-right-column span, .techosPolicarbonato .containerEspuma .cardEspumas .ChapaPolicarbonato-right-column span, .techosPolicarbonato .containerEspuma .cardEspumas .espumas-right-column span {
           border-radius: 3rem;
           background: #273238;
@@ -5720,6 +5994,12 @@ main .disposicion .btn-redirect:hover {
           align-self: flex-end; }
       .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .espumas-right-column, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .espumas-right-column, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .espumas-right-column, .techosPolicarbonato .containerEspuma .cardEspumas .espumas-right-column {
         margin-top: -37%; }
+        @media only screen and (max-width: 384px) {
+          .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .espumas-right-column, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .espumas-right-column, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .espumas-right-column, .techosPolicarbonato .containerEspuma .cardEspumas .espumas-right-column {
+            max-width: 100%;
+            order: 2;
+            margin: 65% 0 0 0px;
+            z-index: 999; } }
       .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .chapaPolicarbonato-left-column-img, .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .espumas-left-column-img, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .chapaPolicarbonato-left-column-img, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .espumas-left-column-img, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .chapaPolicarbonato-left-column-img, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .espumas-left-column-img, .techosPolicarbonato .containerEspuma .cardEspumas .chapaPolicarbonato-left-column-img, .techosPolicarbonato .containerEspuma .cardEspumas .espumas-left-column-img {
         width: 350px;
         max-width: 300px;
@@ -5728,20 +6008,73 @@ main .disposicion .btn-redirect:hover {
         /*Alinear a la derecha*/
         position: relative;
         margin: -35% 0 0 68%; }
+        @media only screen and (max-width: 384px) {
+          .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .chapaPolicarbonato-left-column-img, .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .espumas-left-column-img, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .chapaPolicarbonato-left-column-img, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .espumas-left-column-img, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .chapaPolicarbonato-left-column-img, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .espumas-left-column-img, .techosPolicarbonato .containerEspuma .cardEspumas .chapaPolicarbonato-left-column-img, .techosPolicarbonato .containerEspuma .cardEspumas .espumas-left-column-img {
+            order: 0;
+            margin: -209% 0 0 15%;
+            z-index: 0; } }
         .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .chapaPolicarbonato-left-column-img .owl-carousel .chapaPolicarbonato-item img, .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .chapaPolicarbonato-left-column-img .owl-carousel .espuma-item img, .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .espumas-left-column-img .owl-carousel .chapaPolicarbonato-item img, .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .espumas-left-column-img .owl-carousel .espuma-item img, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .chapaPolicarbonato-left-column-img .owl-carousel .chapaPolicarbonato-item img, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .chapaPolicarbonato-left-column-img .owl-carousel .espuma-item img, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .espumas-left-column-img .owl-carousel .chapaPolicarbonato-item img, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .espumas-left-column-img .owl-carousel .espuma-item img, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .chapaPolicarbonato-left-column-img .owl-carousel .chapaPolicarbonato-item img, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .chapaPolicarbonato-left-column-img .owl-carousel .espuma-item img, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .espumas-left-column-img .owl-carousel .chapaPolicarbonato-item img, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .espumas-left-column-img .owl-carousel .espuma-item img, .techosPolicarbonato .containerEspuma .cardEspumas .chapaPolicarbonato-left-column-img .owl-carousel .chapaPolicarbonato-item img, .techosPolicarbonato .containerEspuma .cardEspumas .chapaPolicarbonato-left-column-img .owl-carousel .espuma-item img, .techosPolicarbonato .containerEspuma .cardEspumas .espumas-left-column-img .owl-carousel .chapaPolicarbonato-item img, .techosPolicarbonato .containerEspuma .cardEspumas .espumas-left-column-img .owl-carousel .espuma-item img {
           width: 100%;
           /*La imagen ocupa el 100% del contenedor*/
           height: auto;
           /*Altura automática para mantener la proporción*/ }
+          @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+            .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .chapaPolicarbonato-left-column-img .owl-carousel .chapaPolicarbonato-item img, .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .chapaPolicarbonato-left-column-img .owl-carousel .espuma-item img, .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .espumas-left-column-img .owl-carousel .chapaPolicarbonato-item img, .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .espumas-left-column-img .owl-carousel .espuma-item img, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .chapaPolicarbonato-left-column-img .owl-carousel .chapaPolicarbonato-item img, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .chapaPolicarbonato-left-column-img .owl-carousel .espuma-item img, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .espumas-left-column-img .owl-carousel .chapaPolicarbonato-item img, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .espumas-left-column-img .owl-carousel .espuma-item img, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .chapaPolicarbonato-left-column-img .owl-carousel .chapaPolicarbonato-item img, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .chapaPolicarbonato-left-column-img .owl-carousel .espuma-item img, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .espumas-left-column-img .owl-carousel .chapaPolicarbonato-item img, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .espumas-left-column-img .owl-carousel .espuma-item img, .techosPolicarbonato .containerEspuma .cardEspumas .chapaPolicarbonato-left-column-img .owl-carousel .chapaPolicarbonato-item img, .techosPolicarbonato .containerEspuma .cardEspumas .chapaPolicarbonato-left-column-img .owl-carousel .espuma-item img, .techosPolicarbonato .containerEspuma .cardEspumas .espumas-left-column-img .owl-carousel .chapaPolicarbonato-item img, .techosPolicarbonato .containerEspuma .cardEspumas .espumas-left-column-img .owl-carousel .espuma-item img {
+              margin-top: 44%; } }
+          @media only screen and (max-width: 384px) {
+            .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .chapaPolicarbonato-left-column-img .owl-carousel .chapaPolicarbonato-item img, .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .chapaPolicarbonato-left-column-img .owl-carousel .espuma-item img, .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .espumas-left-column-img .owl-carousel .chapaPolicarbonato-item img, .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .espumas-left-column-img .owl-carousel .espuma-item img, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .chapaPolicarbonato-left-column-img .owl-carousel .chapaPolicarbonato-item img, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .chapaPolicarbonato-left-column-img .owl-carousel .espuma-item img, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .espumas-left-column-img .owl-carousel .chapaPolicarbonato-item img, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .espumas-left-column-img .owl-carousel .espuma-item img, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .chapaPolicarbonato-left-column-img .owl-carousel .chapaPolicarbonato-item img, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .chapaPolicarbonato-left-column-img .owl-carousel .espuma-item img, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .espumas-left-column-img .owl-carousel .chapaPolicarbonato-item img, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .espumas-left-column-img .owl-carousel .espuma-item img, .techosPolicarbonato .containerEspuma .cardEspumas .chapaPolicarbonato-left-column-img .owl-carousel .chapaPolicarbonato-item img, .techosPolicarbonato .containerEspuma .cardEspumas .chapaPolicarbonato-left-column-img .owl-carousel .espuma-item img, .techosPolicarbonato .containerEspuma .cardEspumas .espumas-left-column-img .owl-carousel .chapaPolicarbonato-item img, .techosPolicarbonato .containerEspuma .cardEspumas .espumas-left-column-img .owl-carousel .espuma-item img {
+              width: 230px;
+              height: 230px; } }
+        .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .chapaPolicarbonato-left-column-img .owl-carousel .chapaPolicarbonato-item, .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .espumas-left-column-img .owl-carousel .chapaPolicarbonato-item, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .chapaPolicarbonato-left-column-img .owl-carousel .chapaPolicarbonato-item, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .espumas-left-column-img .owl-carousel .chapaPolicarbonato-item, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .chapaPolicarbonato-left-column-img .owl-carousel .chapaPolicarbonato-item, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .espumas-left-column-img .owl-carousel .chapaPolicarbonato-item, .techosPolicarbonato .containerEspuma .cardEspumas .chapaPolicarbonato-left-column-img .owl-carousel .chapaPolicarbonato-item, .techosPolicarbonato .containerEspuma .cardEspumas .espumas-left-column-img .owl-carousel .chapaPolicarbonato-item {
+          margin-top: -68%; }
+        .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .chapaPolicarbonato-left-column-img .owl-carousel .espuma-item img, .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .espumas-left-column-img .owl-carousel .espuma-item img, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .chapaPolicarbonato-left-column-img .owl-carousel .espuma-item img, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .espumas-left-column-img .owl-carousel .espuma-item img, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .chapaPolicarbonato-left-column-img .owl-carousel .espuma-item img, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .espumas-left-column-img .owl-carousel .espuma-item img, .techosPolicarbonato .containerEspuma .cardEspumas .chapaPolicarbonato-left-column-img .owl-carousel .espuma-item img, .techosPolicarbonato .containerEspuma .cardEspumas .espumas-left-column-img .owl-carousel .espuma-item img {
+          margin-top: 20%; }
         .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .chapaPolicarbonato-left-column-img .carousel-selectors .selector i, .techosPolicarbonato .containerChapaPolicarbonato .cardChapaPolicarbonato .espumas-left-column-img .carousel-selectors .selector i, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .chapaPolicarbonato-left-column-img .carousel-selectors .selector i, .techosPolicarbonato .containerChapaPolicarbonato .cardEspumas .espumas-left-column-img .carousel-selectors .selector i, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .chapaPolicarbonato-left-column-img .carousel-selectors .selector i, .techosPolicarbonato .containerEspuma .cardChapaPolicarbonato .espumas-left-column-img .carousel-selectors .selector i, .techosPolicarbonato .containerEspuma .cardEspumas .chapaPolicarbonato-left-column-img .carousel-selectors .selector i, .techosPolicarbonato .containerEspuma .cardEspumas .espumas-left-column-img .carousel-selectors .selector i {
           color: #333;
           font-size: 30px; }
 
-.alveolar {
+#techosAlveolares {
   background-color: #333; }
-  @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-    .alveolar {
-      margin-top: 15%; } }
+  @media only screen and (max-width: 384px) {
+    #techosAlveolares {
+      margin: -9% 0 0 0;
+      background: transparent; } }
+
+@media only screen and (max-width: 384px) {
+  #alveolar-card-1, #alveolar-card-2, #alveolar-card-1 {
+    margin: 45% 0 0 -19%; } }
+
+@media only screen and (max-width: 384px) {
+  #menuTechoAlveolar {
+    margin: 15% 0 0 -33%; } }
+
+@media only screen and (max-width: 384px) {
+  #alveolar-card-3, #alveolar-card-4 {
+    margin: 45% 0 0 -19%; } }
+
+@media only screen and (max-width: 384px) {
+  #navEspumas {
+    margin: 10% 0 0 0;
+    z-index: 999;
+    height: 90px;
+    position: absolute;
+    margin: 0 0 0 -173%;
+    left: 0;
+    max-width: 265%;
+    color: #fff; } }
+
+@media only screen and (max-width: 384px) {
+  #containerEspuma {
+    margin-top: 30%; } }
+
+@media only screen and (max-width: 384px) {
+  #h2Espumas {
+    margin: 184% 0 0 7.4%; } }
+
+@media only screen and (max-width: 384px) {
+  #imgEspumaDos {
+    margin: 54% 0 0 0;
+    border-radius: 50%; } }
 
 .main-pvc #home-pvc {
   width: 100%;
