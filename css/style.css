@@ -6117,7 +6117,6 @@ main .disposicion .btn-redirect:hover {
     font-weight: 600;
     position: absolute;
     margin: 30% 0 0 160px;
-    text-align: flex-start;
     color: #0c0c0c;
     border-bottom: 6px solid #666666;
     padding-bottom: .1em; }
@@ -6195,7 +6194,7 @@ main .disposicion .btn-redirect:hover {
 
 .main-pvc #cielorraso-desmontable {
   position: relative;
-  height: 580px;
+  height: 655px;
   width: 100%;
   background-color: #4b4b4b;
   z-index: 1;
@@ -6285,7 +6284,7 @@ main .disposicion .btn-redirect:hover {
     height: 90px;
     position: relative;
     width: 1700px;
-    margin: -35% 0 0 -23%;
+    margin: -35% 0 0 -24%;
     z-index: 555;
     color: #fff; }
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
