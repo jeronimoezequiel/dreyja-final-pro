@@ -695,7 +695,7 @@
 
     .ais-container {
         position: absolute;
-        top: 766%;
+        top: 60px;
         left: 37%;
         width: 920px;
         height: 460px;
@@ -703,11 +703,16 @@
         overflow-x: hidden;
         border-radius: 20px;
 
+        @include samsung-L {
+            width: 98%;
+    margin-top: 14%;
+    height: 520px;
+    margin-left: -36%;
+        }
+
         @include monitor-27 {
             margin-top: -127%;
         }
-
-        
 
         .ais-slide {
 

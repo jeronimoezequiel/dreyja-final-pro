@@ -5040,13 +5040,19 @@ main .disposicion .btn-redirect:hover {
       background-color: #d30809; }
   #main-tya .ais-container {
     position: absolute;
-    top: 766%;
+    top: 60px;
     left: 37%;
     width: 920px;
     height: 460px;
     background: #f5f5f5;
     overflow-x: hidden;
     border-radius: 20px; }
+    @media only screen and (max-width: 384px) {
+      #main-tya .ais-container {
+        width: 98%;
+        margin-top: 14%;
+        height: 520px;
+        margin-left: -36%; } }
     @media only screen and (min-width: 1600px) and (max-width: 1920px) {
       #main-tya .ais-container {
         margin-top: -127%; } }
