@@ -82,7 +82,6 @@ header{
         @include samsung-L {
             background-color: map-get($color--azul, dreyja);
             display: flex;
-            // margin: 6% 0 0 83%;
             font-size: 1.1rem;
             position: fixed;
         }
@@ -117,7 +116,6 @@ header{
         }
 
         @include portatil {
-            background-color: yellow;
             width: 1024px;
             height: 80px;
             margin: 0 auto;
