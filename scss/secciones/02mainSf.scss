@@ -115,6 +115,14 @@ main {
                     font-size: 3rem;
                     margin-left: -24%;
                 }
+
+                @include android-M1 {
+                    margin: 42px -46%;
+                }
+
+                @include iphone-14-15-proMax {
+                    margin: 12% -40%;
+                }
             }
         }
     }
@@ -339,6 +347,11 @@ main {
             height: 750px;
             margin: -100% 0px;
         }
+
+        @include iphone-14-plus {
+            margin: -90% 0 0 0;
+        }
+
         @keyframes roll {
             0% {
                 opacity: 0;
@@ -369,7 +382,11 @@ main {
                         font-size: 1em;
                         margin-left: -50px;
                         white-space: nowrap;
-                        }
+                    }
+
+                    @include android-M1 {
+                        margin: 0 -100%;
+                    }
                     }
                 .question-2{
 
@@ -449,11 +466,32 @@ main {
             @include tablet {
                 display: flex;
             }
+
+            @include android-M1 {
+                margin: -5% 0;
+            }
+
             .muro-sf-partes ul {
                 list-style: none;
 
                 @include tablet {
                     font-size: .8em;
+                }
+
+                @include iphone-14-plus {
+                    margin-top: 70%;
+                }
+
+                @include iphone-14_15-Pro {
+                    margin-top: 10%;
+                }
+
+                @include iphone-13-mini {
+                    margin-top: -18%;
+                }
+
+                @include iphone-Se {
+                    margin-top: -25%;
                 }
                 li a {
                     text-decoration: none;
@@ -470,6 +508,14 @@ main {
 
                     @include tablet {
                         margin: -42.4% 0px 0px 19.5px
+                    }
+
+                    @include iphone-14-plus {
+                        margin: -38.5% 22px;
+                    }
+
+                    @include android-M1 {
+                        margin: -40.5% 5%;
                     }
                 }
                 li:nth-child(1) a:hover {
@@ -489,6 +535,14 @@ main {
 
                     @include tablet {
                         margin: -41.4% 0px 0px 292.5px;
+                    }
+
+                    @include iphone-14-plus {
+                        margin: -38% 0px 0px 296px;
+                    }
+
+                    @include android-M1 {
+                        margin: -40% 81%;
                     }
                 }
                 li:nth-child(2) a:hover {
@@ -510,6 +564,14 @@ main {
                     @include tablet {
                         margin: -56% 0px 0px 292.5px;
                     }
+
+                    @include iphone-14-plus {
+                        margin: -51% 0px 0px 296px;
+                    }
+
+                    @include android-M1 {
+                        margin: -55% 81%;
+                    }
                 }
                 li:nth-child(3) a:hover {
                     color: map-get($color--bordo, dreyja );
@@ -528,6 +590,10 @@ main {
 
                     @include tablet {
                         margin: -61.5% 0px 0px 292px;
+                    }
+
+                    @include iphone-14-plus {
+                        margin: -56% 0px 0px 296px;
                     }
                 }
                 li:nth-child(4) a:hover {
@@ -549,6 +615,14 @@ main {
                     @include tablet {
                         margin: -51.5% 0px 0px 19px;
                     }
+
+                    @include iphone-14-plus {
+                        margin: -47% 22px;
+                    }
+
+                    @include android-M1 {
+                        margin: -50.5% 4.8%;
+                    }
                 }
                 li:nth-child(5) a:hover {
                     color: map-get($color--bordo, dreyja );
@@ -568,6 +642,14 @@ main {
 
                     @include tablet {
                         margin: -61.5% 0px 0px 18.5px;
+                    }
+
+                    @include iphone-14-plus {
+                        margin: -56% 22px;
+                    }
+
+                    @include android-M1 {
+                        margin: -61% 4.8%;
                     }
                 }
                 li:nth-child(6) a:hover {
@@ -589,6 +671,14 @@ main {
                     @include tablet {
                         margin: -70.5% 0px 0px 19.5px;
                     }
+
+                    @include iphone-14-plus {
+                        margin: -64.5% 22.5px;
+                    }
+
+                    @include android-M1 {
+                        margin: -71% 5%;
+                    }
                 }
                 li:nth-child(7) a:hover {
                     color: map-get($color--bordo, dreyja );
@@ -609,6 +699,18 @@ main {
                     @include tablet {
                         margin: -83.6% 0px 0px 118px;
                     }
+
+                    @include iphone-14-plus {
+                        margin: -76% 0px 0px 121px;
+                    }
+
+                    @include iphone-13-mini {
+                        margin-top: -85%;
+                    }
+
+                    @include android-M1 {
+                        margin: -85.3% 32.5%;
+                    }
                 }
                 li:nth-child(8) a:hover {
                     color: map-get($color--bordo, dreyja );
@@ -628,8 +730,17 @@ main {
                 margin: -14% 0 0 0;
             }
 
+            @include iphone-14-plus {
+                margin-left: 3%;
+            }
+
             @include samsung-L {
                 margin-top: -5%;
+            }
+
+            @include android-M1 {
+                margin-top: 5%;
+                height: 197vh;
             }
 
             .container-partes {
@@ -682,6 +793,10 @@ main {
                         @include tablet {
                             font-size: .9rem;
                         }
+
+                        @include iphone-14-plus{
+                            margin-top: 4%;
+                        }
                     }
                 }
                 .div{
@@ -723,9 +838,12 @@ main {
                     margin: 6% 0 0 81%; 
                     float: right;  
 
-                    
                     @include tablet {
                         margin: 0 20px 0 0;
+                    }
+
+                    @include android-M1 {
+                        margin: 10% 0;
                     }
                 }
                 .titulo-fade-der{
@@ -742,6 +860,10 @@ main {
 
                     @include samsung-L {
                         margin: -26% 0 0 20px;
+                    }
+
+                    @include android-M1 {
+                        margin: -41% 0;
                     }
                 }
                 .parrafo{
@@ -773,6 +895,10 @@ main {
                             display: flex;
                             flex-direction: column;
                         }
+
+                        // @include android-M1 {
+                        //     margin: -3% 0 23% 14px;
+                        // }
                     }
                     
                     .p-right {
@@ -786,6 +912,10 @@ main {
                             margin: -83px 0 53px -27%;
                             text-align: justify;
                         }
+
+                        // @include android-M1 {
+                        //     margin-top: -53.5%;
+                        // }
                     }
                 }
                 .btn-content, .btn-contentSf{
@@ -804,6 +934,11 @@ main {
                     letter-spacing: 1px;
                     border-radius: 10px;
 
+                    @include android-M1 {
+                        display: none;
+                        pointer-events: none;
+                    }
+
                     @include samsung-L {
                         display: none;
                     }
@@ -815,10 +950,19 @@ main {
                         width: 62px;
                     }
 
+                    @include iphone-12-Pro {
+                        display: none;
+                        pointer-events: none;
+                    }
+
                     i {
                         font-size: 1.1rem;
 
                         @include samsung-L {
+                            display: none;
+                        }
+
+                        @include android-M1 {
                             display: none;
                         }
                     }
@@ -832,8 +976,19 @@ main {
                     @include samsung-L {
                         display: none;
                     }
+
+                    @include iphone-14_15-Pro {
+                        display: none;
+                    }
+
+                    @include iphone-12-Pro {
+                        display: none;
+                        pointer-events: none;
+                    }
                 }
+
                 .btn-c-right, .btn-c-rightSf {
+
                     @include tablet {
                         font-family: 'Poppins';
                         background-color: black;
@@ -854,7 +1009,25 @@ main {
                     @include samsung-L {
                         display: none;
                     }
+
+                    @include android-M1 {
+                        display: none;
+                    } 
+                    
+                    @include android-M1 {
+                        display: none;
+                    }
                 }
+
+                .btn-c-right {
+                    display: none;
+
+                    @include iphone-12-Pro {
+                        display: none;
+                        pointer-events: none;
+                    }
+                }
+
                 .btn-content:hover, .btn-contentSf:hover {
                     cursor: pointer;
                     transition: all .3s ease-in-out;
@@ -921,6 +1094,26 @@ main {
             height: 180px;
             width: 100%;
             margin: 260% 0 0 0;
+        }
+
+        @include iphone-14_15-Pro {
+            margin: 235% 0 0 0;
+        }
+
+        @include iphone-12-Pro {
+            margin: 236% 0 0 0;
+        }
+
+        @include samsung-L {
+            margin: 247% 0 0 0;
+        }
+
+        @include android-M1 {
+            margin-top: 338%;
+        }
+
+        @include iphone-14-plus {
+            margin-top: 117%;
         }
 
         h2 {
@@ -996,6 +1189,27 @@ main {
             flex-direction: column;
             width: 100%;
             background-color: blue;
+        }
+
+        @include iphone-14_15-Pro {
+            margin-bottom: 10%;
+        }
+        
+        @include iphone-12-Pro {
+            margin-bottom: 10%;
+        }
+
+        @include samsung-L {
+            margin-bottom: -20%;
+        }
+
+        @include android-M1 {
+            margin-bottom: -76%;
+            background-color: #fff;
+        }
+
+        @include iphone-14-plus {
+            margin-bottom: 42%;
         }
 
             .content {
@@ -1293,6 +1507,7 @@ main {
             }
     }
 }
+
 
 
 

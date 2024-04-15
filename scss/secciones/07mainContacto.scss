@@ -56,6 +56,14 @@
         margin-top: -18%;
         height: 75px
         }
+    
+    @include iphone-14-15-proMax {
+        height: 85px;
+    }
+
+    @include iphone-14-plus {
+        height: 85px;
+    }
     .contacto-title-center {
         display: flex;
         position: absolute;
@@ -184,6 +192,7 @@
     @include tablet {
         height: 700px;
     }
+
     .grid-contacto {  
         padding: 40px;
         display: grid;

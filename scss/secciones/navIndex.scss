@@ -85,6 +85,10 @@ header{
             font-size: 1.1rem;
             position: fixed;
         }
+
+        @include iphone-Se {
+            max-width: 375px;
+        }
     }
     
     #back_menu{
@@ -178,7 +182,6 @@ header{
                 @include monitor-27 {
                     display: flex;
                     justify-content: space-between;
-                    // gap: 20px; // Espacio entre las pestañas del menú
                     white-space: nowrap; // Evita el corte de palabras
                     word-break: break-all; // Permite quiebres de palabras en cualquier parte
                     margin-left: -1%;
@@ -217,7 +220,7 @@ header{
                 @include samsung-L {
                     height: 78vh;
                     margin: 43px 0 0 -23px;
-                    font-size: 1.15rem;
+                    font-size: 1.1rem;
                 }
     
                 .nav__item{
@@ -291,19 +294,29 @@ header{
                             text-underline-offset: 24px; 
                         }
 
+                        @include iphone-14-15-proMax {
+                            font-weight: bold;
+                            font-size: 1.3rem;
+                        }
+
+                        @include iphone-14-plus {
+                            font-weight: bold;
+                            font-size: 1.2rem;
+                        }
+
                         @include iphone-14_15-Pro {
                             font-weight: bold;
-                            font-size: 1.4rem;
+                            font-size: 1.2rem;
                         }
 
                         @include iphone-12-Pro {
                             font-weight: bold;
-                            font-size: 1.4rem;
+                            font-size: 1.2rem;
                         }
 
                         @include samsung-L {
                             font-weight: bold;
-                            font-size: 1.3rem;
+                            font-size: 1.1rem;
                         }
                     }
                     

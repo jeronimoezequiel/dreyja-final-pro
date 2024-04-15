@@ -13,6 +13,34 @@
         height: 360px;
         margin: 6% 0 0 0;
 
+        @include iphone-14-15-proMax {
+            height: 240px;
+            width: 1000px;
+            margin-left: -153px;
+            margin-top: 0;
+        }
+
+        @include iphone-14-plus {
+            height: 240px;
+            width: 1000px;
+            margin-left: -153px;
+            margin-top: 0;
+        }
+
+        @include iphone-14_15-Pro {
+            height: 240px;
+            width: 1000px;
+            margin-left: -153px;
+            margin-top: 0;
+        }
+
+        @include iphone-12-Pro {
+            height: 240px;
+            width: 1000px;
+            margin-left: -153px;
+            margin-top: 0;
+        }
+
         @include samsung-L {
             height: 240px;
             width: 1000px;
@@ -48,6 +76,14 @@
         height: 140vh 
     }
 
+    @include iphone-Se {
+        margin-bottom: 247%;
+    }
+
+    @include android-M1 {
+        margin-bottom: 300%;
+    }
+
     .quienes-somos-content {
 
         .introduction {
@@ -72,6 +108,26 @@
             margin-bottom: 5%;
             grid-template-areas:
             "ahorro sustentabilidad";
+
+            @include iphone-14-15-proMax {
+                margin-top: 5%;
+                margin-bottom: -10%;
+            }
+
+            @include iphone-14-plus {
+                margin-top: 5%;
+                margin-bottom: -10%;
+            }
+
+            @include iphone-14_15-Pro {
+                margin-top: 5%;
+                margin-bottom: -10%;
+            }
+
+            @include iphone-12-Pro {
+                margin-top: 5%;
+                margin-bottom: -10%;
+            }
 
             .ahorro {
                 grid-area: ahorro;
@@ -112,7 +168,6 @@
                 width: 90%;
                 text-align: center;
                 margin: -80px 0 40px -3px;
-                background: map-get($color--azul, dreyja);
             }
         }
         .introduction{
@@ -141,6 +196,22 @@
                 margin-left: 7%;
             }
 
+            @include iphone-14-15-proMax {
+                margin: -30% 0;
+            }
+
+            @include iphone-14-plus {
+                margin: -30% 0;
+            }
+
+            @include iphone-14_15-Pro {
+                margin: -30% 0;
+            }
+
+            @include iphone-12-Pro {
+                margin: -30% 0;
+            }
+
             .ul-izquierda{
                 display: flex;
                 flex-direction: column;
@@ -152,6 +223,14 @@
                     background: rgb(245, 245, 245);
                     width: 332px;
                     margin: 0 0 0 1px
+                }
+
+                @include iphone-14-15-proMax {
+                    width: 366px;
+                }
+
+                @include iphone-14-plus {
+                    width: 366px;
                 }
             }
             .ul-derecha{
@@ -166,9 +245,39 @@
 }
 
 .disposicion-qs {
-    @include samsung-L {
-        margin: -40% 0 60% 0;
+
+    @include iphone-14_15-Pro {
+        margin: -103% 0 60% 0;
     }
+
+    @include iphone-12-Pro {
+        margin: -103% 0 60% 0;
+    }
+
+    @include samsung-L {
+        margin: -71% 0 60% 0;
+    }
+
+    @include iphone-13-mini {
+        margin: -71% 0 60% 0;
+    }
+
+    @include iphone-Se {
+        margin: -71% 0 60% 0;
+    }
+
+    @include android-M1 {
+        margin: -75% 0 60% 0;
+    }
+
+    @include iphone-14-15-proMax {
+        margin: -175% 0 60% 0;
+    }
+
+    @include iphone-14-plus {
+        margin: -175% 0 60% 0;
+    }
+
     .disposicion-6-qs{
         height: 70vh;
         background-image: url(https://i.pinimg.com/564x/09/dc/24/09dc24e77ec05440710cbc536e6426b5.jpg);
@@ -203,6 +312,26 @@
             align-items: center;
             margin-top: -38%;
 
+            @include iphone-14-15-proMax {
+                font-size: 1.3rem;
+                margin: -70% 0 0 0;
+            }
+
+            @include iphone-14-plus {
+                font-size: 1.3rem;
+                margin: -70% 0 0 0;
+            }
+
+            @include iphone-14_15-Pro {
+                font-size: 1.3rem;
+                margin: -70% 0 0 0;
+            }
+
+            @include iphone-12-Pro {
+                font-size: 1.3rem;
+                margin: -70% 0 0 0;
+            }
+
             @include samsung-L {
                 font-size: 1.3rem;
                 margin: -70% 0 0 0;
@@ -230,6 +359,15 @@
             width: 300px; 
             height: 60px;
         }
+
+        @include iphone-14-15-proMax {
+            margin-left: 28%;
+        }
+
+        @include iphone-14-plus {
+            margin-left: 28%;
+        }
+
         a {
             font-size: 'Poppins';
             font-weight: 400;

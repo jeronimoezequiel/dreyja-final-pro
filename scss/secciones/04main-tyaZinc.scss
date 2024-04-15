@@ -8,7 +8,42 @@
     width: 100%;
     z-index: 1;
 
+    @include iphone-14-15-proMax {
+        display: flex;
+        margin: -47% 0 0 0;
+        background-color: #fff;
+        height: 860px;
+    }
+
+    @include iphone-14-plus {
+        display: flex;
+        margin: -47% 0 0 0;
+        background-color: #fff;
+        height: 860px;
+    }
+
+    @include iphone-14_15-Pro {
+        display: flex;
+        margin: -47% 0 0 0;
+        background-color: #fff;
+        height: 860px;
+    }
+
+    @include iphone-12-Pro {
+        display: flex;
+        margin: -47% 0 0 0;
+        background-color: #fff;
+        height: 860px;
+    }
+
     @include samsung-L {
+        display: flex;
+        margin: -47% 0 0 0;
+        background-color: #fff;
+        height: 860px;
+    }
+
+    @include android-M1 {
         display: flex;
         margin: -47% 0 0 0;
         background-color: #fff;
@@ -24,6 +59,14 @@
             height: 100%;
             background: inherit;
             filter: brightness(40%) contrast(120%) saturate(80%) grayscale(10%);
+
+            @include iphone-14_15-Pro {
+                filter: none;
+            }
+
+            @include iphone-12-Pro {
+                filter: none;
+            }
         
             @include samsung-L {
                 filter: none;
@@ -44,6 +87,42 @@
             @include monitor-27 {
                 margin: 4% 0 0 4%;
                 font-size: 2.5rem;
+            }
+
+            @include iphone-14-15-proMax {
+                background-color: map-get($color--bordo, dreyja );
+                font-size: 1.6rem;
+                position: relative;
+                height: 59px;
+                width: 316px;
+                max-width: 86%;
+            }
+
+            @include iphone-14-plus {
+                background-color: map-get($color--bordo, dreyja );
+                font-size: 1.6rem;
+                position: relative;
+                height: 59px;
+                width: 316px;
+                max-width: 86%;
+            }
+
+            @include iphone-14_15-Pro {
+                background-color: map-get($color--bordo, dreyja );
+                font-size: 1.6rem;
+                position: relative;
+                height: 59px;
+                width: 316px;
+                max-width: 86%;
+            }
+
+            @include iphone-12-Pro {
+                background-color: map-get($color--bordo, dreyja );
+                font-size: 1.6rem;
+                position: relative;
+                height: 59px;
+                width: 316px;
+                max-width: 86%;
             }
 
             @include samsung-L {
@@ -76,11 +155,27 @@
                 margin-left: -3.4%;
             }
 
+            @include iphone-14-15-proMax {
+                display: none;
+            }
+
+            @include iphone-14-plus {
+                display: none;
+            }
+
+            @include iphone-14_15-Pro {
+                display: none;
+            }
+
+            @include iphone-12-Pro {
+                display: none;
+            }
+
             @include samsung-L {
                 display: none;
             }
 
-                .contentBtn, .contentBtnEspuma {
+            .contentBtn, .contentBtnEspuma {
                     position: relative;
                     top: 27%;
                     width: 300px;
@@ -100,7 +195,7 @@
                             }
                         }
                     }
-                }
+            }
         }
 
         .itemBtn:hover, .itemBtnEspuma:hover {
@@ -118,6 +213,46 @@
 
             @include monitor-27 {
                 margin: -46% 0 4% 19%;
+            }
+
+            @include iphone-14-15-proMax {
+                z-index: 999;
+                height: 90px;
+                position: absolute;
+                top: 160px;
+                left: 0;
+                width: 100%;
+                color: #fff;
+            }
+
+            @include iphone-14-plus {
+                z-index: 999;
+                height: 90px;
+                position: absolute;
+                top: 160px;
+                left: 0;
+                width: 100%;
+                color: #fff;
+            }
+
+            @include iphone-14_15-Pro {
+                z-index: 999;
+                height: 90px;
+                position: absolute;
+                top: 160px;
+                left: 0;
+                width: 100%;
+                color: #fff;
+            }
+
+            @include iphone-12-Pro {
+                z-index: 999;
+                height: 90px;
+                position: absolute;
+                top: 160px;
+                left: 0;
+                width: 100%;
+                color: #fff;
             }
 
             @include samsung-L {
@@ -140,6 +275,46 @@
                     margin: 0 0 0 128px;
                     white-space: nowrap;
                     max-width: 1000px;
+                }
+
+                @include iphone-14-15-proMax {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px 0;
+                    width: 467px;
+                    margin: -72px 0 0 -129px;
+                    list-style: none;
+                }
+
+                @include iphone-14-plus {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px 0;
+                    width: 467px;
+                    margin: -72px 0 0 -129px;
+                    list-style: none;
+                }
+
+                @include iphone-14_15-Pro {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px 0;
+                    width: 467px;
+                    margin: -72px 0 0 -129px;
+                    list-style: none;
+                }
+
+                @include iphone-12-Pro {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px 0;
+                    width: 467px;
+                    margin: -72px 0 0 -129px;
+                    list-style: none;
                 }
 
                 @include samsung-L {
@@ -167,6 +342,22 @@
                         max-width: 353px;
                         padding: 7px;
                         border-radius: 20px;
+                    }
+
+                    @include iphone-14-15-proMax {
+                        display: flex;
+                    }
+
+                    @include iphone-14-plus {
+                        display: flex;
+                    }
+
+                    @include iphone-14_15-Pro {
+                        display: flex;
+                    }
+
+                    @include iphone-12-Pro {
+                        display: flex;
                     }
 
                     @include samsung-L {
@@ -231,17 +422,40 @@
             z-index: 333;
             position: relative;
 
-            @include samsung-L {
-                margin: -17% 0 0 -62%;
-                // width: 401px;
-                height: 700px;
-                display: block;
-            }
-
             @include monitor-27 {
                 height: 400px;
                 width: 1000px;
                 margin: 2% 0 0 32%;
+            }
+
+            @include iphone-14-15-proMax {
+                margin: -17% 0 0 -62%;
+                height: 700px;
+                display: block;
+            }
+
+            @include iphone-14-plus {
+                margin: -17% 0 0 -62%;
+                height: 700px;
+                display: block;
+            }
+
+            @include iphone-14_15-Pro {
+                margin: -17% 0 0 -62%;
+                height: 700px;
+                display: block;
+            }
+
+            @include iphone-12-Pro {
+                margin: -17% 0 0 -62%;
+                height: 700px;
+                display: block;
+            }
+
+            @include samsung-L {
+                margin: -17% 0 0 -62%;
+                height: 700px;
+                display: block;
             }
 
             .techo-background-left-column {
@@ -261,7 +475,7 @@
                 background:  #ffffff;
             }
         }
-        
+
         .cardTecho, .cardTechoAlveolar {
             background-color: #fff;
             border-radius: 1rem;
@@ -281,6 +495,46 @@
                 margin-top: 18%;
             }
 
+            @include iphone-14-15-proMax {
+                position: relative; 
+                display: flex; 
+                flex-direction: column; 
+                justify-content: space-between;
+                width: 113%;
+                margin: 8% 0 0 -19%;
+                height: 95%;
+            }
+
+            @include iphone-14-plus {
+                position: relative; 
+                display: flex; 
+                flex-direction: column; 
+                justify-content: space-between;
+                width: 113%;
+                margin: 8% 0 0 -19%;
+                height: 95%;
+            }
+
+            @include iphone-14_15-Pro {
+                position: relative; 
+                display: flex; 
+                flex-direction: column; 
+                justify-content: space-between;
+                width: 113%;
+                margin: 8% 0 0 -19%;
+                height: 95%;
+            }
+
+            @include iphone-12-Pro {
+                position: relative; /* Establecer el contenedor padre como relativo */
+                display: flex; /* Utilizar flexbox para alinear elementos */
+                flex-direction: column; /* Establecer dirección de columna */
+                justify-content: space-between; /* Espacio entre elementos */
+                width: 113%;
+                margin: 8% 0 0 -19%;
+                height: 95%;
+            }
+
             @include samsung-L {
                 position: relative; /* Establecer el contenedor padre como relativo */
                 display: flex; /* Utilizar flexbox para alinear elementos */
@@ -288,6 +542,26 @@
                 justify-content: space-between; /* Espacio entre elementos */
                 width: 113%;
                 margin: 8% 0 0 -19%;
+                height: 95%;
+            }
+
+            @include iphone-Se {
+                position: relative; /* Establecer el contenedor padre como relativo */
+                display: flex; /* Utilizar flexbox para alinear elementos */
+                flex-direction: column; /* Establecer dirección de columna */
+                justify-content: space-between; /* Espacio entre elementos */
+                width: 113%;
+                margin: 8% 0 0 -22%;
+                height: 95%;
+            }
+
+            @include android-M1 {
+                position: relative; /* Establecer el contenedor padre como relativo */
+                display: flex; /* Utilizar flexbox para alinear elementos */
+                flex-direction: column; /* Establecer dirección de columna */
+                justify-content: space-between; /* Espacio entre elementos */
+                width: 113%;
+                margin: 8% 0 0 -28%;
                 height: 95%;
             }
         
@@ -316,6 +590,38 @@
 
                 @include monitor-27 {
                     height: 55vh;
+                }
+
+                @include iphone-14-15-proMax {
+                    display: none;
+                    order: 1; /* Colocar a la izquierda (por defecto) */
+                    max-width: 347.5px;
+                    max-height: 100px;
+                    z-index: 1;
+                }
+
+                @include iphone-14-plus {
+                    display: none;
+                    order: 1; /* Colocar a la izquierda (por defecto) */
+                    max-width: 347.5px;
+                    max-height: 100px;
+                    z-index: 1;
+                }
+
+                @include iphone-14_15-Pro {
+                    display: none;
+                    order: 1; /* Colocar a la izquierda (por defecto) */
+                    max-width: 347.5px;
+                    max-height: 100px;
+                    z-index: 1;
+                }
+
+                @include iphone-12-Pro {
+                    display: none;
+                    order: 1; /* Colocar a la izquierda (por defecto) */
+                    max-width: 347.5px;
+                    max-height: 100px;
+                    z-index: 1;
                 }
 
                 @include samsung-L {
@@ -349,6 +655,34 @@
 
                 @include monitor-27 {
                     margin-top: -40%;
+                }
+
+                @include iphone-14-15-proMax {
+                    max-width: 100%;
+                    order: 2;
+                    margin: 60% 0 0 0px;
+                    z-index: 999;
+                }
+
+                @include iphone-14-plus {
+                    max-width: 100%;
+                    order: 2;
+                    margin: 60% 0 0 0px;
+                    z-index: 999;
+                }
+
+                @include iphone-14_15-Pro {
+                    max-width: 100%;
+                    order: 2;
+                    margin: 60% 0 0 0px;
+                    z-index: 999;
+                }
+
+                @include iphone-12-Pro {
+                    max-width: 100%;
+                    order: 2;
+                    margin: 60% 0 0 0px;
+                    z-index: 999;
                 }
 
                 @include samsung-L {
@@ -394,6 +728,34 @@
                     margin-top: -40%;
                 }
 
+                @include iphone-14-15-proMax {
+                    max-width: 100%;
+                    order: 2;
+                    margin: 60% 0 0 0px;
+                    z-index: 999;
+                }
+
+                @include iphone-14-plus {
+                    max-width: 100%;
+                    order: 2;
+                    margin: 60% 0 0 0px;
+                    z-index: 999;
+                }
+
+                @include iphone-14_15-Pro {
+                    max-width: 100%;
+                    order: 2;
+                    margin: 60% 0 0 0px;
+                    z-index: 999;
+                }
+
+                @include iphone-12-Pro {
+                    max-width: 100%;
+                    order: 2;
+                    margin: 60% 0 0 0px;
+                    z-index: 999;
+                }
+
                 @include samsung-L {
                     max-width: 100%;
                     order: 2;
@@ -431,6 +793,30 @@
                 position: relative;
                 margin-top: -28%;
 
+                @include iphone-14-15-proMax {
+                    order: 0;
+                    margin: -170% 0 0 32%;
+                    z-index: 0;
+                }
+
+                @include iphone-14-plus {
+                    order: 0;
+                    margin: -160% 0 0 20%;
+                    z-index: 0;
+                }
+
+                @include iphone-14_15-Pro {
+                    order: 0;
+                    margin: -200% 0 0 20%;
+                    z-index: 0;
+                }
+
+                @include iphone-12-Pro {
+                    order: 0;
+                    margin: -200% 0 0 20%;
+                    z-index: 0;
+                }
+
                 @include samsung-L {
                     order: 0;
                     margin: -200% 0 0 20%;
@@ -446,6 +832,26 @@
 
                             @include monitor-27 {
                                 margin-top: 44%;
+                            }
+
+                            @include iphone-14-15-proMax {
+                                width: 277px;
+                                height: 210px;
+                            }
+
+                            @include iphone-14-plus {
+                                width: 277px;
+                                height: 210px;
+                            }
+
+                            @include iphone-14_15-Pro {
+                                width: 277px;
+                                height: 210px;
+                            }
+
+                            @include iphone-12-Pro {
+                                width: 277px;
+                                height: 210px;
                             }
 
                             @include samsung-L {
@@ -472,6 +878,30 @@
                 margin-left: auto;  /*Alinear a la derecha*/
                 position: relative;
                 margin-top: -28%;
+
+                @include iphone-14-15-proMax {
+                    order: 0;
+                    margin: -147% 0 0 13%;
+                    z-index: 0;
+                }
+
+                @include iphone-14-plus {
+                    order: 0;
+                    margin: -147% 0 0 13%;
+                    z-index: 0;
+                }
+
+                @include iphone-14_15-Pro {
+                    order: 0;
+                    margin: -203% 0 0 5%;
+                    z-index: 0;
+                }
+
+                @include iphone-12-Pro {
+                    order: 0;
+                    margin: -203% 0 0 5%;
+                    z-index: 0;
+                }
 
                 @include samsung-L {
                     order: 0;
@@ -510,6 +940,22 @@
     background: #ffffff;
     height: 570px;
 
+    @include iphone-14-15-proMax {
+        height: 215px;
+    }
+
+    @include iphone-14-plus {
+        height: 215px;
+    }
+
+    @include iphone-14_15-Pro {
+        height: 215px;
+    }
+    
+    @include iphone-12-Pro {
+        height: 215px;
+    }
+
     @include samsung-L {
         height: 215px;
     }
@@ -527,6 +973,34 @@
         @include tablet {
             display: flex;
             margin: -95% 0 0 0;
+        }
+
+        @include iphone-14-15-proMax {
+            display: flex;
+            margin: -32% 0 0 0;
+            background-color: black;
+            height: 700px;
+        }
+
+        @include iphone-14-plus {
+            display: flex;
+            margin: -32% 0 0 0;
+            background-color: black;
+            height: 700px;
+        }
+
+        @include iphone-14_15-Pro {
+            display: flex;
+            margin: -32% 0 0 0;
+            background-color: black;
+            height: 700px;
+        }
+
+        @include iphone-12-Pro {
+            display: flex;
+            margin: -32% 0 0 0;
+            background-color: black;
+            height: 700px;
         }
 
         @include samsung-L {
@@ -567,8 +1041,37 @@
                 font-size: 2.5rem;
             }
 
+            @include iphone-14-15-proMax {
+                margin: 3% 10px;
+                font-size: 1.6rem;
+            }
+
+            @include iphone-14-plus {
+                margin: 3% 10px;
+                font-size: 1.6rem;
+            }
+
+            @include iphone-14_15-Pro {
+                margin: 3% 10px;
+                font-size: 1.6rem;
+            }
+
+            @include iphone-12-Pro {
+                margin: 3% 10px;
+                font-size: 1.6rem;
+            }
+
+            @include iphone-Se {
+                margin: 10% 0;
+            }
+
             @include samsung-L {
                 font-size: 1.45rem;
+            }
+
+            @include android-M1 {
+                font-size: 1.4rem;
+                margin: 40px 4%;
             }
         }
 
@@ -584,6 +1087,22 @@
             background-size: cover;
             display: inline-block;
             transition: 0.5s;
+
+            @include iphone-14-15-proMax {
+                display: none;
+            }
+
+            @include iphone-14-plus {
+                display: none;
+            }
+
+            @include iphone-14_15-Pro {
+                display: none;
+            }
+
+            @include iphone-12-Pro {
+                display: none;
+            }
 
             @include samsung-L {
                 display: none;
@@ -625,6 +1144,46 @@
             margin: -46% 0 4% 19%;
         }
 
+        @include iphone-14-15-proMax {
+            z-index: 999;
+            height: 90px;
+            position: absolute;
+            margin: -685px 0 0 -173%;
+            left: 0;
+            max-width: 265%;
+            color: #fff;
+        }
+
+        @include iphone-14-plus {
+            z-index: 999;
+            height: 90px;
+            position: absolute;
+            margin: -685px 0 0 -173%;
+            left: 0;
+            max-width: 265%;
+            color: #fff;
+        }
+
+        @include iphone-14_15-Pro {
+            z-index: 999;
+            height: 90px;
+            position: absolute;
+            margin: -685px 0 0 -173%;
+            left: 0;
+            max-width: 265%;
+            color: #fff;
+        }
+
+        @include iphone-12-Pro {
+            z-index: 999;
+            height: 90px;
+            position: absolute;
+            margin: -685px 0 0 -173%;
+            left: 0;
+            max-width: 265%;
+            color: #fff;
+        }
+
         @include samsung-L {
             z-index: 999;
             height: 90px;
@@ -656,6 +1215,26 @@
 
                     @include monitor-27 {
                         margin: 39% 0 0 -32%;
+                    }
+
+                    @include iphone-14-15-proMax {
+                        margin: 2% 3%;
+                    }
+
+                    @include iphone-14-plus {
+                        margin: 2% 3%;
+                    }
+
+                    @include iphone-14_15-Pro {
+                        margin: 2% 3%;
+                    }
+
+                    @include iphone-12-Pro {
+                        margin: 2% 3%;
+                    }
+
+                    @include android-M1 {
+                        margin: 6% 3%;
                     }
 
                     .nav__linkChapaPolicarbonato, .nav__linkEspumas {
@@ -699,18 +1278,72 @@
         }
 
         .menuChapaPolicarbonato{
+
+            @include iphone-14-15-proMax {
+                margin: 67px 0 0 58%;
+            }
+
+            @include iphone-14-plus {
+                margin: 67px 0 0 58%;
+            }
+
+            @include iphone-14_15-Pro {
+                margin: 67px 0 0 58%;
+            }
+
+            @include iphone-12-Pro {
+                margin: 67px 0 0 58%;
+            }
+
             @include samsung-L {
                 margin: 67px 0 0 58%;
+            }
+
+            @include android-M1 {
+                margin: 63px 0 0 56%;
             }
         }
 
         .navChapaPolicarbonato{
+
+            @include iphone-14-15-proMax {
+                margin: -813px 0 0 -173%;
+            }
+
+            @include iphone-14-plus {
+                margin: -813px 0 0 -173%;
+            }
+
+            @include iphone-14_15-Pro {
+                margin: -813px 0 0 -173%;
+            }
+
+            @include iphone-12-Pro {
+                margin: -813px 0 0 -173%;
+            }
+
             @include samsung-L {
                 margin: -813px 0 0 -173%;
             }
         }
 
         .menuEspumas  {
+
+            @include iphone-14-15-proMax {
+                margin: 78px 0 0 58%;
+            }
+
+            @include iphone-14-plus {
+                margin: 78px 0 0 58%;
+            }
+
+            @include iphone-14_15-Pro {
+                margin: 78px 0 0 58%;
+            }
+
+            @include iphone-12-Pro {
+                margin: 78px 0 0 58%;
+            }
 
             @include samsung-L {
                 margin: 88px 0 0 58%;
@@ -736,6 +1369,34 @@
             margin: 2% 0 0 32%;
         }
 
+        @include iphone-14-15-proMax {
+            margin: -161% 0 0 21%;
+            height: 930px;
+            width: 302px;
+            display: block;
+        }
+
+        @include iphone-14-plus {
+            margin: -161% 0 0 21%;
+            height: 930px;
+            width: 302px;
+            display: block;
+        }
+
+        @include iphone-14_15-Pro {
+            margin: -161% 0 0 21%;
+            height: 930px;
+            width: 302px;
+            display: block;
+        }
+
+        @include iphone-12-Pro {
+            margin: -161% 0 0 21%;
+            height: 930px;
+            width: 302px;
+            display: block;
+        }
+
         @include samsung-L {
             margin: -161% 0 0 21%;
             height: 930px;
@@ -745,6 +1406,34 @@
 
         .techo-background-left-column {
             background: map-get($color--azul, dreyja);
+
+            @include iphone-14-15-proMax {
+                position: absolute; /* Posicionar absolutamente */
+                top: 0;
+                left: 0;
+                width: 100%; /* Ocupar todo el ancho del contenedor padre */
+            }
+
+            @include iphone-14-plus {
+                position: absolute; /* Posicionar absolutamente */
+                top: 0;
+                left: 0;
+                width: 100%; /* Ocupar todo el ancho del contenedor padre */
+            }
+
+            @include iphone-14_15-Pro {
+                position: absolute; /* Posicionar absolutamente */
+                top: 0;
+                left: 0;
+                width: 100%; /* Ocupar todo el ancho del contenedor padre */
+            }
+
+            @include iphone-12-Pro {
+                position: absolute; /* Posicionar absolutamente */
+                top: 0;
+                left: 0;
+                width: 100%; /* Ocupar todo el ancho del contenedor padre */
+            }
 
             @include samsung-L {
                 position: absolute; /* Posicionar absolutamente */
@@ -781,6 +1470,46 @@
                 margin-top: 18%;
             }
 
+            @include iphone-14-15-proMax {
+                position: relative; /* Establecer el contenedor padre como relativo */
+                display: flex; /* Utilizar flexbox para alinear elementos */
+                flex-direction: column; /* Establecer dirección de columna */
+                justify-content: space-between; /* Espacio entre elementos */
+                width: 113%;
+                margin: 17% 0 0 -19%;
+                height: 73%;
+            }
+
+            @include iphone-14-plus {
+                position: relative; /* Establecer el contenedor padre como relativo */
+                display: flex; /* Utilizar flexbox para alinear elementos */
+                flex-direction: column; /* Establecer dirección de columna */
+                justify-content: space-between; /* Espacio entre elementos */
+                width: 123%;
+                margin: 17% 0 0 -19%;
+                height: 73%;
+            }
+
+            @include iphone-14_15-Pro {
+                position: relative; /* Establecer el contenedor padre como relativo */
+                display: flex; /* Utilizar flexbox para alinear elementos */
+                flex-direction: column; /* Establecer dirección de columna */
+                justify-content: space-between; /* Espacio entre elementos */
+                width: 113%;
+                margin: 17% 0 0 -19%;
+                height: 73%;
+            }
+
+            @include iphone-12-Pro {
+                position: relative; /* Establecer el contenedor padre como relativo */
+                display: flex; /* Utilizar flexbox para alinear elementos */
+                flex-direction: column; /* Establecer dirección de columna */
+                justify-content: space-between; /* Espacio entre elementos */
+                width: 113%;
+                margin: 17% 0 0 -19%;
+                height: 73%;
+            }
+
             @include samsung-L {
                 position: relative; /* Establecer el contenedor padre como relativo */
                 display: flex; /* Utilizar flexbox para alinear elementos */
@@ -789,6 +1518,10 @@
                 width: 113%;
                 margin: 13% 0 0 -19%;
                 height: 73%;
+            }
+
+            @include android-M1 {
+                margin: 5% 0 0 -22%;
             }
 
             h2 {
@@ -818,6 +1551,38 @@
                     height: 400px;
                 }
 
+                @include iphone-14-15-proMax {
+                    display: none;
+                    order: 1; /* Colocar a la izquierda (por defecto) */
+                    max-width: 347.5px;
+                    max-height: 100px;
+                    z-index: 1;
+                }
+
+                @include iphone-14-plus {
+                    display: none;
+                    order: 1; /* Colocar a la izquierda (por defecto) */
+                    max-width: 347.5px;
+                    max-height: 100px;
+                    z-index: 1;
+                }
+
+                @include iphone-14_15-Pro {
+                    display: none;
+                    order: 1; /* Colocar a la izquierda (por defecto) */
+                    max-width: 347.5px;
+                    max-height: 100px;
+                    z-index: 1;
+                }
+
+                @include iphone-12-Pro {
+                    display: none;
+                    order: 1; /* Colocar a la izquierda (por defecto) */
+                    max-width: 347.5px;
+                    max-height: 100px;
+                    z-index: 1;
+                }
+
                 @include samsung-L {
                     display: none;
                     // flex-grow: 1; /* Ocupar todo el espacio disponible */
@@ -835,6 +1600,22 @@
                 i {
                     font-size: 5rem;
 
+                    @include iphone-14-15-proMax {
+                        display: none;
+                    }
+
+                    @include iphone-14-plus {
+                        display: none;
+                    }
+
+                    @include iphone-14_15-Pro {
+                        display: none;
+                    }
+
+                    @include iphone-12-Pro {
+                        display: none;
+                    }
+
                     @include samsung-L {
                         display: none;
                     }
@@ -849,6 +1630,34 @@
                 justify-content: center;
                 margin: -42% 0px 0 16%;
                 max-width: 500px;
+
+                @include iphone-14-15-proMax {
+                    max-width: 100%;
+                    order: 2;
+                    margin: 65% 0 0 0px;
+                    z-index: 999;
+                }
+
+                @include iphone-14-plus {
+                    max-width: 100%;
+                    order: 2;
+                    margin: 65% 0 0 0px;
+                    z-index: 999;
+                }
+
+                @include iphone-14_15-Pro {
+                    max-width: 100%;
+                    order: 2;
+                    margin: 65% 0 0 0px;
+                    z-index: 999;
+                }
+
+                @include iphone-12-Pro {
+                    max-width: 100%;
+                    order: 2;
+                    margin: 65% 0 0 0px;
+                    z-index: 999;
+                }
 
                 @include samsung-L {
                     max-width: 100%;
@@ -883,6 +1692,34 @@
             .espumas-right-column {
                 margin-top: -37%;
 
+                @include iphone-14-15-proMax {
+                    max-width: 100%;
+                    order: 2;
+                    margin: 65% 0 0 0px;
+                    z-index: 999;
+                }
+
+                @include iphone-14-plus {
+                    max-width: 100%;
+                    order: 2;
+                    margin: 65% 0 0 0px;
+                    z-index: 999;
+                }
+
+                @include iphone-14_15-Pro {
+                    max-width: 100%;
+                    order: 2;
+                    margin: 65% 0 0 0px;
+                    z-index: 999;
+                }
+
+                @include iphone-12-Pro {
+                    max-width: 100%;
+                    order: 2;
+                    margin: 65% 0 0 0px;
+                    z-index: 999;
+                }
+
                 @include samsung-L {
                     max-width: 100%;
                     order: 2;
@@ -898,9 +1735,33 @@
                 position: relative;
                 margin: -35% 0 0 68%;
 
+                @include iphone-14_15-Pro {
+                    order: 0;
+                    margin: -209% 0 0 15%;
+                    z-index: 0;
+                }
+
+                @include iphone-12-Pro {
+                    order: 0;
+                    margin: -209% 0 0 15%;
+                    z-index: 0;
+                }
+
                 @include samsung-L {
                     order: 0;
                     margin: -209% 0 0 15%;
+                    z-index: 0;
+                }
+
+                @include iphone-14-15-proMax {
+                    order: 0;
+                    margin: -172% 0 0 15%;
+                    z-index: 0;
+                }
+
+                @include iphone-14-plus {
+                    order: 0;
+                    margin: -172% 0 0 15%;
                     z-index: 0;
                 }
         
@@ -912,6 +1773,26 @@
                         
                             @include monitor-27 {
                                 margin-top: 44%;
+                            }
+
+                            @include iphone-14-15-proMax {
+                                width: 230px;
+                                height: 230px;
+                            }
+
+                            @include iphone-14-plus {
+                                width: 230px;
+                                height: 230px;
+                            }
+
+                            @include iphone-14_15-Pro {
+                                width: 230px;
+                                height: 230px;
+                            }
+
+                            @include iphone-12-Pro {
+                                width: 230px;
+                                height: 230px;
                             }
 
                             @include samsung-L {
@@ -942,11 +1823,53 @@
                 }
             }
         }
+
+        .cardChapaPolicarbonato {
+            @include iphone-14-15-proMax {
+                position: relative; /* Establecer el contenedor padre como relativo */
+                display: flex; /* Utilizar flexbox para alinear elementos */
+                flex-direction: column; /* Establecer dirección de columna */
+                justify-content: space-between; /* Espacio entre elementos */
+                width: 130%;
+                margin: 37% 0 0 -25%;
+                height: 73%;
+            }
+
+            @include iphone-14-plus {
+                position: relative; /* Establecer el contenedor padre como relativo */
+                display: flex; /* Utilizar flexbox para alinear elementos */
+                flex-direction: column; /* Establecer dirección de columna */
+                justify-content: space-between; /* Espacio entre elementos */
+                width: 130%;
+                margin: 37% 0 0 -25%;
+                height: 73%;
+            }
+        }
     }
 }
 
 #techosAlveolares {
     background-color: #333;
+
+    @include iphone-14-15-proMax {
+        margin: -9% 0 0 0;
+        background: transparent;
+    }
+
+    @include iphone-14-plus {
+        margin: -9% 0 0 0;
+        background: transparent;
+    }
+
+    @include iphone-14_15-Pro {
+        margin: -9% 0 0 0;
+        background: transparent;
+    }
+
+    @include iphone-12-Pro {
+        margin: -9% 0 0 0;
+        background: transparent;
+    }
 
     @include samsung-L {
         margin: -9% 0 0 0;
@@ -954,25 +1877,129 @@
     }
 }
 
-#alveolar-card-1, #alveolar-card-2, #alveolar-card-1 {
+#alveolar-card-1, #alveolar-card-2 {
+
+    @include iphone-14-15-proMax {
+        margin: 45% 0 0 -16%;
+    }
+
+    @include iphone-14-plus {
+        margin: 45% 0 0 -16%;
+    }
+
+    @include iphone-14_15-Pro {
+        margin: 45% 0 0 -19%;
+    }
+
+    @include iphone-12-Pro {
+        margin: 45% 0 0 -19%;
+    }
+    
     @include samsung-L {
         margin: 45% 0 0 -19%;
+    }
+
+    @include android-M1 {
+        margin: 45% 0 0 -28%;
+    }
+
+    @include iphone-Se {
+        margin: 45% 0 0 -22%;
+    }
+}
+
+#alveolar-card-3, #alveolar-card-4 {
+
+    @include iphone-14-15-proMax {
+        margin: 45% 0 0 -19%;
+    }
+
+    @include iphone-14-plus {
+        margin: 45% 0 0 -19%;
+    }
+
+    @include iphone-14_15-Pro {
+        margin: 45% 0 0 -19%;
+    }
+
+    @include iphone-12-Pro {
+        margin: 45% 0 0 -19%;
+    }
+
+    @include samsung-L {
+        margin: 45% 0 0 -19%;
+    }
+
+    @include iphone-Se {
+        margin: 45% 0 0 -22%;
     }
 }
 
 #menuTechoAlveolar {
+
+    @include iphone-14-15-proMax {
+        margin: 15% 0 0 -33%;
+    }
+
+    @include iphone-14-plus {
+        margin: 15% 0 0 -33%;
+    }
+
+    @include iphone-14_15-Pro {
+        margin: 15% 0 0 -33%;
+    }
+
+    @include iphone-12-Pro {
+        margin: 15% 0 0 -33%;
+    }
+
     @include samsung-L {
         margin: 15% 0 0 -33%;
     }
 }
 
-#alveolar-card-3, #alveolar-card-4 {
-    @include samsung-L {
-        margin: 45% 0 0 -19%;
-    }
-}
-
 #navEspumas {
+
+    @include iphone-14-15-proMax {
+        z-index: 999;
+        height: 90px;
+        position: absolute;
+        margin: -35px 0 0 -173%;
+        left: 0;
+        max-width: 265%;
+        color: #fff;
+    }
+
+    @include iphone-14-plus {
+        z-index: 999;
+        height: 90px;
+        position: absolute;
+        margin: -35px 0 0 -173%;
+        left: 0;
+        max-width: 265%;
+        color: #fff;
+    }
+
+    @include iphone-14_15-Pro {
+        z-index: 999;
+        height: 90px;
+        position: absolute;
+        margin: -35px 0 0 -173%;
+        left: 0;
+        max-width: 265%;
+        color: #fff;
+    }
+
+    @include iphone-12-Pro {
+        z-index: 999;
+        height: 90px;
+        position: absolute;
+        margin: -35px 0 0 -173%;
+        left: 0;
+        max-width: 265%;
+        color: #fff;
+    }
+
     @include samsung-L {
         z-index: 999;
         height: 90px;
@@ -985,18 +2012,81 @@
 }
 
 #containerEspuma {
+
+    @include iphone-14-15-proMax {
+        margin-top: 30%;
+    }
+
+    @include iphone-14-plus {
+        margin-top: 30%;
+    }
+
+    @include iphone-14_15-Pro {
+        margin-top: 30%;
+    }
+
+    @include iphone-12-Pro {
+        margin-top: 30%;
+    }
+
     @include samsung-L {
         margin-top: 30%;
     }
 }
 
 #h2Espumas {
+    
+    @include iphone-14-15-proMax {
+        margin: 183% 0 0 7.4%;
+    }
+
+    @include iphone-14-plus {
+        margin: 183% 0 0 7.4%;
+    }
+
+    @include iphone-14_15-Pro {
+        margin: 183% 0 0 7.4%;
+    }
+
+    @include iphone-12-Pro {
+        margin: 183% 0 0 7.4%;
+    }
+
+    @include iphone-Se {
+        margin: 190% 0 0 7.4%;
+    }
+
     @include samsung-L {
-        margin: 184% 0 0 7.4%;
+        margin: 185% 0 0 7.4%;
+    }
+
+    @include android-M1 {
+        margin-top: 200%;
     }
 }
 
 #imgEspumaDos {
+
+    @include iphone-14-15-proMax {
+        margin: 54% 0 0 0;
+        border-radius: 50%;
+    }
+
+    @include iphone-14-plus {
+        margin: 54% 0 0 0;
+        border-radius: 50%;
+    }
+
+    @include iphone-14_15-Pro {
+        margin: 54% 0 0 0;
+        border-radius: 50%;
+    }
+
+    @include iphone-12-Pro {
+        margin: 54% 0 0 0;
+        border-radius: 50%;
+    }
+
     @include samsung-L {
         margin: 54% 0 0 0;
         border-radius: 50%;
