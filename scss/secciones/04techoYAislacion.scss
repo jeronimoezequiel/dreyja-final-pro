@@ -1313,9 +1313,9 @@
             border: 2px solid #fff;
             border-radius: 30px;
             padding: 10px 0px 10px 35px;
-            width: 200px;
+            width: 243px;
             margin-top: 5%;
-            margin-left: 40%;
+            margin-left: 42%;
 
             @include monitor-27 {
                 margin-left: 42%;
@@ -1347,6 +1347,7 @@
             a {
                 text-decoration: none;
                 color: #fff;
+                margin: 0 10%;
 
                 @include monitor-27 {
                     color: #ffffff;
@@ -1436,12 +1437,12 @@
             display: flex;
             position: absolute;
             margin-top: -14%;
-            margin-left: 40%;
+            margin-left: 42%;
             background: map-get($color--azul, dreyja); 
             border: 2px solid #fff;
             border-radius: 30px;
             padding: 10px 0px 10px 35px;
-            width: 200px; 
+            width: 243px; 
             transition: 0.3s;
 
             @include tablet {
@@ -1465,6 +1466,7 @@
                 font-weight: 400;
                 text-decoration: none;
                 color: #fff;
+                margin: 0 10%;
 
                 @include monitor-27 {
                     color: #ffffff;

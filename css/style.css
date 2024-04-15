@@ -6883,9 +6883,9 @@ main .disposicion .btn-redirect:hover {
       border: 2px solid #fff;
       border-radius: 30px;
       padding: 10px 0px 10px 35px;
-      width: 200px;
+      width: 243px;
       margin-top: 5%;
-      margin-left: 40%; }
+      margin-left: 42%; }
       @media only screen and (min-width: 1600px) and (max-width: 1920px) {
         #main-tya .banner-shop-tya .btn-e-shop-tya {
           margin-left: 42%;
@@ -6909,7 +6909,8 @@ main .disposicion .btn-redirect:hover {
           margin: 22% 0 0 23%; } }
       #main-tya .banner-shop-tya .btn-e-shop-tya a {
         text-decoration: none;
-        color: #fff; }
+        color: #fff;
+        margin: 0 10%; }
         @media only screen and (min-width: 1600px) and (max-width: 1920px) {
           #main-tya .banner-shop-tya .btn-e-shop-tya a {
             color: #ffffff;
@@ -6979,12 +6980,12 @@ main .disposicion .btn-redirect:hover {
     display: flex;
     position: absolute;
     margin-top: -14%;
-    margin-left: 40%;
+    margin-left: 42%;
     background: #273238;
     border: 2px solid #fff;
     border-radius: 30px;
     padding: 10px 0px 10px 35px;
-    width: 200px;
+    width: 243px;
     transition: 0.3s; }
     @media only screen and (max-width: 768px) {
       #main-tya .disposicion-tya .btn-redirect-tya {
@@ -7003,7 +7004,8 @@ main .disposicion .btn-redirect:hover {
       font-size: 'Poppins';
       font-weight: 400;
       text-decoration: none;
-      color: #fff; }
+      color: #fff;
+      margin: 0 10%; }
       @media only screen and (min-width: 1600px) and (max-width: 1920px) {
         #main-tya .disposicion-tya .btn-redirect-tya a {
           color: #ffffff;
