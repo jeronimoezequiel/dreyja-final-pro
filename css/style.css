@@ -5703,10 +5703,8 @@ main .wrapper {
     main .wrapper .main-eshop .contenedor-productos {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 3rem; }
-      @media only screen and (max-width: 998px) {
-        main .wrapper .main-eshop .contenedor-productos {
-          grid-template-columns: repeat(3, 1fr); } }
+      gap: 3rem;
+      cursor: pointer; }
       @media only screen and (max-width: 675px) {
         main .wrapper .main-eshop .contenedor-productos {
           grid-template-columns: repeat(2, 1fr); } }

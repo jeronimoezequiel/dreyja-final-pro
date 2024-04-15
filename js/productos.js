@@ -168,7 +168,7 @@ const productos = [
     {
         id: "complementos",
         nombre:"Tornillo 6x3 con estrias",
-        imagen: "../scss/recursos/complementos/BARBIERI-TORNILLOS-6x3-4-NEGRO-CON-ESTRIAS.jpg",
+        imagen: "../scss/recursos/complementos/BARBIERI-TORNILLOS-6X3-4-NEGRO-CON-ESTRIAS.jpg",
         categoria: {
             nombre: "Complementos",
             id: "complementos",
@@ -278,7 +278,7 @@ const productos = [
     {
         id: "tx",
         nombre:"Larguero 24mm",
-        imagen: "../scss/recursos/tx/BARBIERI-LARGUERO-TX-LP-(24-MM).jpg",
+        imagen: "../scss/recursos/TX/BARBIERI-LARGUERO-TX-LP-(24-MM).jpg",
         categoria: {
             nombre: "Tx",
             id: "tx",
@@ -289,7 +289,7 @@ const productos = [
     {
         id: "tx",
         nombre:"Perimetral P1516",
-        imagen: "../scss/recursos/tx/BARBIERI-PERIMETRAL-TX-P1516.jpg",
+        imagen: "../scss/recursos/TX/BARBIERI-PERIMETRAL-TX-P1516.jpg",
         categoria: {
             nombre: "Tx",
             id: "tx",
@@ -300,7 +300,7 @@ const productos = [
     {
         id: "tx",
         nombre:"Travesaño corto 24mm",
-        imagen: "../scss/recursos/tx/BARBIERI-TRAV-CORTO-TX-TP-1516(24-MM).jpg",
+        imagen: "../scss/recursos/TX/BARBIERI-TRAV-CORTO-TX-TP-1516(24-MM).jpg",
         categoria: {
             nombre: "Tx",
             id: "tx",
