@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const emailInput = document.getElementById('emailInput');
 
     // Establecer el valor predeterminado al cargar la página
-    emailInput.value = 'dreyjasrl@gmail.com';
+    emailInput.value = 'info@dreyja.com';
 
     // Agregar un evento al formulario para interceptar el envío
     document.getElementById('subscribeForm').addEventListener('submit', function(event) {
