@@ -267,7 +267,7 @@
         
             .menuTecho, .menuTechoAlveolar {
                 position: relative;
-                margin: 70px 0 0 58%;
+                margin: 24px 0 0 58%;
                 max-width: 450px;
                 overflow: hidden;
 
@@ -1196,7 +1196,7 @@
 
         .menuChapaPolicarbonato, .menuEspumas {
             position: relative;
-            margin: 70px 0 0 58%;
+            margin: 54px 0 0 58%;
             max-width: 450px;
             overflow: hidden;
 
@@ -1328,6 +1328,7 @@
         }
 
         .menuEspumas  {
+            margin: -15px 0 0 58%;
 
             @include iphone-14-15-proMax {
                 margin: 78px 0 0 58%;
@@ -1359,7 +1360,7 @@
         justify-content: center;
         height: 100vh;
         align-items: center;
-        margin: -10.5% 0 0 20.5%;
+        margin: -16.1% 0 0 20.5%;
         z-index: 333;
         position: relative;
 
@@ -1845,6 +1846,10 @@
                 height: 73%;
             }
         }
+    }
+
+    .containerEspuma {
+        margin: -12.2% 0 0 20.5%;
     }
 }
 

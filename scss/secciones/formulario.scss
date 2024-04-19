@@ -14,7 +14,13 @@
 
     @include iphone-14_15-Pro {
         display: flex;
-        margin: -113% 0 0% 0;
+        margin: -100% 0 0% 0;
+        background-color: #fff;
+    }
+
+    @include iphone-14_15-Pro {
+        display: flex;
+        margin: -100% 0 0% 0;
         background-color: #fff;
     }
 
@@ -35,7 +41,7 @@
     }
 
     @include iphone-14-plus {
-        margin-top: -105%;
+        margin-top: -90%;
     }
 
     .contactForm{

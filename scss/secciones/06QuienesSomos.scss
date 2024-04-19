@@ -239,6 +239,15 @@
                 margin-left: 0%;
                 background: rgb(238, 238, 238);
                 padding: 50px;
+                width: 332px;
+
+                @include iphone-14-15-proMax {
+                    width: 366px;
+                }
+
+                @include iphone-14-plus {
+                    width: 366px;
+                }
             }
         }
     }

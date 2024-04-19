@@ -193,6 +193,22 @@
         height: 700px;
     }
 
+    @include iphone-14-15-proMax {
+        height: 1000px;
+    }
+
+    @include iphone-14-plus {
+        height: 1000px;
+    }
+
+    @include iphone-14_15-Pro {
+        height: 970px;
+    }
+
+    @include iphone-12-Pro {
+        height: 970px;
+    }
+
     .grid-contacto {  
         padding: 40px;
         display: grid;
@@ -226,12 +242,46 @@
 
             img {
                 width: 100%;
-                height: 100%;
+                height: 80%;
+                margin-top: 13%;
+                margin-left: 38%;
                 border-radius: 30px;
 
                 @include tablet {
                     height: 230px;
                     margin-top: 71px;
+                }
+
+                @include iphone-14-15-proMax {
+                    margin-left: 100px;
+                }
+
+                @include iphone-14-plus {
+                    margin-left: 100px;
+                }
+
+                @include iphone-14_15-Pro {
+                    margin-left: 84px;
+                }
+
+                @include iphone-12-Pro {
+                    margin-left: 81px;
+                }
+
+                @include samsung-L {
+                    margin-left: 74.5px;
+                }
+
+                @include iphone-Se {
+                    margin-left: 66px;
+                }
+
+                @include iphone-13-mini {
+                    margin-left: 66px;
+                }
+
+                @include android-M1 {
+                    margin-left: 52px;
                 }
             }
             .ayuda-title{
@@ -265,7 +315,7 @@
                 display: flex;
                 position: absolute;
                 text-align: center;
-                margin-top: 10.5%;
+                margin-top: 9.5%;
                 font-family: 'Poppins';
                 font-size: 1rem;
                 background: #d7e1ec;
@@ -302,8 +352,9 @@
             }
 
             img {
-                width: 100%;
-                height: 100%;
+                width: 99%;
+                height: 85%;
+                margin-top: 20%;
                 border-radius: 30px;
                 
             }
